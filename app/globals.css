@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  body {
+    @apply font-montserrat bg-body text-black tracking-[0.5px];
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-bold leading-3;
+  }
+
+  h1 {
+    @apply xl:text-[40px] text-[30px] leading-[40px];
+  }
+  h2 {
+    @apply xl:text-[35px] text-[25px] leading-[40px];
+  }
+  h3 {
+    @apply xl:text-[30px] text-[25px] leading-[39px];
+  }
+  h4 {
+    @apply text-[16px] xl:text-[14px] 
+  }
+  p {
+    @apply text-black/80 leading-8;
+  }
+  a {
+    @apply transition-all duration-300 cursor-pointer;
+  }
+  label {
+    @apply text-black font-normal block mb-2;
+  }
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: #826294;
+}
+
+
+.swiper-button-next:after,
+.swiper-button-prev:after,
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  color: #826294;
+}
+
+.hover:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.hover span {
+  display: inline-block;
+  
+}
+
+.hover span:after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: #866896;
+  transition: 300ms;
+  
+}
+
+.hover span:hover:after {
+  width: 100%;
+}
+
+.active-link {
+  text-decoration: underline;
+  text-decoration-color: #866896;
+  text-decoration-thickness: 2px;
+}
