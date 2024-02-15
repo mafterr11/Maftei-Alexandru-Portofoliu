@@ -73,7 +73,7 @@ const qualificationData = [
 
 const skillData = [
   {
-    title: "skills",
+    title: "frontend",
     data: [
       {
         name: "HTML, CSS",
@@ -87,6 +87,11 @@ const skillData = [
       {
         name: "NextJS 14",
       },
+    ],
+  },
+  {
+    title: "backend",
+    data: [
       {
         name: "Java",
       },
@@ -187,7 +192,7 @@ const About = () => {
                       {/* experience */}
                       <div className="flex flex-col gap-y-6">
                         <div className="flex gap-x-4 items-center text-[22px] text-accent">
-                          <Briefcase size={28}/>
+                          <Briefcase size={28} />
                           <h4 className="capitalize font-medium">
                             {getData(qualificationData, "experience").title}
                           </h4>
@@ -258,7 +263,53 @@ const About = () => {
                   </div>
                 </TabsContent>
                 <TabsContent value="skills">
-                  Change your password here.
+                  <div className="text-center xl:text-left">
+                    <h3 className="mb-8">Tools I Use Everyday</h3>
+                    {/* skills */}
+                    <div className="mb-16">
+                      <h4 className="text-xl font-semibold mb-2">Frontend</h4>
+                      <div className="border-b border-accent mb-4"></div>
+                      {/* skill list frontend */}
+                      <div>
+                        {getData(skillData, "frontend").data.map(
+                          (item, index) => {
+                            const { name } = item;
+                            return (
+                              <div
+                                className="w-2/4 text-center xl:text-left mx-auto xl:mx-0"
+                                key={index}
+                              >
+                                <div className="font-medium">{name}</div>
+                              </div>
+                            );
+                          }
+                        )}
+                      </div>
+                    </div>
+                    {/* Skill List Backend */}
+                    <div>
+                      <h4 className="text-xl font-semibold mb-2 xl:text-left ">
+                        Backend
+                      </h4>
+                      <div className="border-b border-accent mb-4"></div>
+                           {/* skill list backend */}
+                           <div>
+                        {getData(skillData, "backend").data.map(
+                          (item, index) => {
+                            const { name } = item;
+                            return (
+                              <div
+                                className="w-2/4 text-center xl:text-left mx-auto xl:mx-0"
+                                key={index}
+                              >
+                                <div className="font-medium">{name}</div>
+                              </div>
+                            );
+                          }
+                        )}
+                      </div>
+                    </div>
+                  </div>
                 </TabsContent>
               </div>
             </Tabs>
