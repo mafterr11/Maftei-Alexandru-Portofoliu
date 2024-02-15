@@ -6,7 +6,7 @@ import { BiPhone } from "react-icons/bi";
 
 const Socials = () => {
   return (
-    <div className='flex items-center gap-x-5 text-[1.7rem] xs:text-3xl lg:text-4xl xl:text-3xl'>
+    <div className='flex items-center gap-x-5 text-[1.7rem] xs:text-2xl lg:text-3xl xl:text-2xl'>
       <Link
         href={"https://github.com/mafterr11"}
         target='blank'

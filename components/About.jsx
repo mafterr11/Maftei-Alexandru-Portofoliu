@@ -17,7 +17,7 @@ const infoData = [
   },
   {
     icon: <PhoneCall size={20} />,
-    text: "+40720.425.840",
+    text: "+40720425840",
   },
   {
     icon: <MailIcon size={20} />,
@@ -39,7 +39,7 @@ const qualificationData = [
     data: [
       {
         university: "ASE",
-        qualification: "Bachelor of Economy",
+        qualification: "Bachelor in Economy",
         years: "2014-2017",
       },
       {
@@ -159,7 +159,7 @@ const About = () => {
               <div className="text-lg mt-12 xl:mt-8">
                 <TabsContent value="personal">
                   <div className="text-center xl:text-left">
-                    <h3 className="mb-4">Unmatched Servuce Quality</h3>
+                    <h3 className="mb-4">Unmatched Service Quality</h3>
                     <p className="subtitle max-w-xl mx-auto xl:mx-0">
                       I specialize in crafting intuitive websites with
                       cutting-edge technology, delivering dynamic and engaging
@@ -279,7 +279,7 @@ const About = () => {
                                 className="w-2/4 text-center xl:text-left mx-auto xl:mx-0"
                                 key={index}
                               >
-                                <div className="font-medium">{name}</div>
+                                <div className="font-medium"><span className="hidden xl:inline-block">&#x2022;</span> {name}</div>
                               </div>
                             );
                           }
@@ -302,7 +302,7 @@ const About = () => {
                                 className="w-2/4 text-center xl:text-left mx-auto xl:mx-0"
                                 key={index}
                               >
-                                <div className="font-medium">{name}</div>
+                                <div className="font-medium"><span className="hidden xl:inline-block">&#x2022;</span> {name}</div>
                               </div>
                             );
                           }

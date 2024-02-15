@@ -8,7 +8,7 @@
   }
 
   body {
-    @apply font-montserrat bg-body text-black tracking-[0.5px];
+    @apply font-roboto bg-body text-black tracking-[0.5px];
   }
 
   h1,
@@ -18,7 +18,7 @@
   }
 
   h1 {
-    @apply text-6xl xl:text-[70px] xl:leading-[80px] tracking-[-2px] font-bold;
+    @apply text-6xl xl:text-[65px] xl:leading-[80px] tracking-[-2px] font-bold;
   }
   h2 {
     @apply text-4xl font-bold;

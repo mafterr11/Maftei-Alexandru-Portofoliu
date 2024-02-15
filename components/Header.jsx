@@ -11,7 +11,7 @@ const Header = () => {
           <Logo />
           <Nav
             containerStyles="hidden xl:flex items-center gap-x-28"
-            linkStyles="text-xl font-semibold"
+            linkStyles="text-xl"
           />
           <NavMobile
             containerStyles="xl:hidden"

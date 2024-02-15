@@ -42,7 +42,7 @@ const Hero = () => {
           </div>
           {/* image */}
           <div className="hidden xl:flex w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2">
-            <Image src="/profile-picture.jpg" width={800} height={800} alt="Alexandru Maftei profile picture" className="object-cover rounded-full"/>
+            <Image src="/companyLogo1.png" width={800} height={800} alt="Alexandru Maftei profile picture" className="object-cover rounded-full -rotate-3"/>
           </div>
         </div>
         <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">
