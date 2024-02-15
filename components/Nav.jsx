@@ -6,11 +6,11 @@ import Socials from './Socials';
 export const links = [
   {
     path: "/",
-    name: "acasă",
+    name: "home",
   },
   {
-    path: "/portofoliu",
-    name: "portofoliu",
+    path: "/projects",
+    name: "projects",
   },
   {
     path: "/contact",

@@ -8,12 +8,12 @@ import { RiMenu2Line } from "react-icons/ri";
 export const links = [
   {
     path: "/",
-    name: "acasă",
+    name: "home",
     icon: <IoHome />,
   },
   {
-    path: "/portofoliu",
-    name: "portofoliu",
+    path: "/projects",
+    name: "projects",
     icon: <BiSolidFoodMenu />,
   },
   {
