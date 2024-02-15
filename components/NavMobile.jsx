@@ -47,14 +47,14 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
       </div>
       <aside
         className={`${
-          isMenuOpen ? "top-0" : "-top-full"
-        } bg-grey fixed z-20 h-full p-10 inset-0 transition-all duration-500`}
+          isMenuOpen ? "right-0" : "-right-full"
+        } bg-grey fixed z-20 h-full p-10 top-0 bottom-0 transition-all duration-500`}
       >
         <div className="flex flex-col items-center justify-center h-full text-white">
           {/* close btn */}
           <div
             onClick={() => setIsMenuOpen(false)}
-            className="cursor-pointer text-4xl  absolute w-10 h-10 right-8 top-8 flex items-center justify-center"
+            className="cursor-pointer text-4xl  absolute w-8 h-8 right-1 top-1 flex items-center justify-center"
           >
             <IoCloseOutline />
           </div>
