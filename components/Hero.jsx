@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="py-12 xl:py-24 h-[84vh] xl:pt-56 bg-accent/10">
+    <section className="py-12 mb-24 xl:py-24 h-[90vh] xl:pt-56 bg-accent/10">
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8 relative">
           {/* text */}
@@ -42,7 +42,7 @@ const Hero = () => {
           </div>
           {/* image */}
           <div className="hidden xl:flex w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2">
-            <Image src="/profile-picture.jpg" width={800} height={800} className="object-cover rounded-full"/>
+            <Image src="/profile-picture.jpg" width={800} height={800} alt="Alexandru Maftei profile picture" className="object-cover rounded-full"/>
           </div>
         </div>
         <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">
