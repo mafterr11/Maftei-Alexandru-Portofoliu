@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className='flex flex-col items-center justify-center gap-y-4'>
           <Socials className="flex gap-x-6 text-[20px]"/>
-          <div>
+          <div className='text-center'>
             Copyright &copy; Maftei Alexandru. All rights reserved.
           </div>
         </div>

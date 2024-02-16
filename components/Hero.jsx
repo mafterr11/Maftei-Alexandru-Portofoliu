@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="py-12 mb-24 xl:py-24 h-[90vh] xl:pt-56 bg-accent/10">
+    <section className="py-12 mb-24 xl:py-24 xl:pt-56 bg-accent/10">
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8 relative">
           {/* text */}
@@ -16,8 +16,9 @@ const Hero = () => {
             </div>
             <h1 className="mb-4">Hello, my name is Maftei Alexandru</h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
-              Brief description of my profile with my skill set listed here also
-              and my capabilities
+              I'm a Frontend Developer skilled in modern web development and
+              Java Spring, adept at creating responsive websites and ensuring
+              seamless integration between frontend and backend.
             </p>
             {/* buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
@@ -42,7 +43,13 @@ const Hero = () => {
           </div>
           {/* image */}
           <div className="hidden xl:flex w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2">
-            <Image src="/companyLogo1.png" width={800} height={800} alt="Alexandru Maftei profile picture" className="object-cover rounded-full -rotate-3"/>
+            <Image
+              src="/companyLogo.webp"
+              width={800}
+              height={800}
+              alt="Alexandru Maftei profile picture"
+              className="object-cover rounded-full -rotate-3"
+            />
           </div>
         </div>
         <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">

@@ -12,28 +12,28 @@ const Socials = () => {
         target='blank'
         className='hover:text-accent hover:scale-95 transition-all duration-300'
       >
-        <RiGithubLine />
+        <RiGithubLine/>
       </Link>
       <a
         href='tel:+40720425840'
         target='blank'
         className='hover:text-accent hover:scale-95 transition-all duration-300'
       >
-        <BiPhone />
+        <BiPhone/>
       </a>
       <a
         href='http://wa.me/+40720425840'
         target='blank'
         className='hover:text-accent hover:scale-95 transition-all duration-300'
       >
-        <RiWhatsappLine />
+        <RiWhatsappLine/>
       </a>
       <Link
         href={"https://www.instagram.com/alexandru.maftei95/"}
         target='blank'
         className='hover:text-accent hover:scale-95 transition-all duration-300'
       >
-        <RiInstagramLine />
+        <RiInstagramLine/>
       </Link>
     </div>
   );

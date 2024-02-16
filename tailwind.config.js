@@ -32,10 +32,18 @@ module.exports = {
         DEFAULT: "#0d0c0b",
         heavy: "#000000",
       },
+      purple: {
+        light: "#e5e2eb",
+      },
+      grey: {
+        DEFAULT: "#232323",
+        light: "#dadada",
+      },
     },
     extend: {
       backgroundImage: {
-        work: "url('/project-bg-light.png')"
+        work: "url('/project-bg-light.png')",
+        contact: "url('/illustration-dark.svg')",
       },
       fontFamily: {
         roboto: [`var(--font-roboto)`, "sans-serif"],

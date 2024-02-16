@@ -13,8 +13,7 @@ const projectData = [
     image: "/logo.webp",
     category: "NextJS 14",
     name: "MadinyTattoo",
-    description:
-      "A presentation website for my tattoo artist. Check her out!",
+    description: "A presentation website for my tattoo artist. Check her out!",
     link: "https://madinytattoo.ro",
     github: "https://github.com/mafterr11/MadinyTattoo",
   },
@@ -22,8 +21,7 @@ const projectData = [
     image: "/logo.webp",
     category: "NextJS 14",
     name: "TNG GRUP",
-    description:
-      "A presentation website for a construction company.",
+    description: "A presentation website for a construction company.",
     link: "https://tng-grup.vercel.app",
     github: "https://github.com/mafterr11/TNG-GRUP",
   },
@@ -52,8 +50,7 @@ const Work = () => {
             Latest Projects
           </h2>
           <p className="subtitle mb-8">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
-            nihil voluptates soluta accusamus quia assumenda.
+            Highlighting my latest achievements and creative ventures.
           </p>
           <Link href="/projects">
             <Button>All Projects</Button>

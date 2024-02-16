@@ -125,7 +125,11 @@ const About = () => {
     <section className="xl:h-[860px] pb-12 xl:py-24">
       <div className="container mx-auto">
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
-        <div className="relative text-accent text-[65px]">&#x2022; <span className=" h-4 w-4 border-2 rounded-full border-black-heavy/70 absolute top-2 right-0"></span></div>About Me
+          <div className="relative text-accent text-[65px]">
+            &#x2022;{" "}
+            <span className=" h-4 w-4 border-2 rounded-full border-black-heavy/70 absolute top-2 right-0"></span>
+          </div>
+          About Me
         </h2>
         <div className="flex flex-col xl:flex-row gap-24">
           {/* Image */}
@@ -159,11 +163,11 @@ const About = () => {
               <div className="text-lg mt-12 xl:mt-8">
                 <TabsContent value="personal">
                   <div className="text-center xl:text-left">
-                    <h3 className="mb-4">Unmatched Service Quality</h3>
+                    <h3 className="mb-4">Top-Tier Service Excellence</h3>
                     <p className="subtitle max-w-xl mx-auto xl:mx-0">
-                      I specialize in crafting intuitive websites with
-                      cutting-edge technology, delivering dynamic and engaging
-                      user experiences.
+                      I excel in developing user-friendly websites using
+                      advanced technology, providing dynamic and captivating
+                      user interactions.
                     </p>
                     {/* icons */}
                     <div className="grid xl:grid-cols-2 gap-4 mb-12">
@@ -185,7 +189,7 @@ const About = () => {
                 <TabsContent value="qualifications">
                   <div>
                     <h3 className="mb-8 text-center xl:text-left">
-                      My Awesome Journey
+                      Qualifications & Professional Journey{" "}
                     </h3>
                     {/* experience / ed wrapper */}
                     <div className="grid md:grid-cols-2 gap-y-8">
@@ -279,7 +283,12 @@ const About = () => {
                                 className="w-2/4 text-center xl:text-left mx-auto xl:mx-0"
                                 key={index}
                               >
-                                <div className="font-medium"><span className="hidden xl:inline-block">&#x2022;</span> {name}</div>
+                                <div className="font-medium">
+                                  <span className="hidden xl:inline-block">
+                                    &#x2022;
+                                  </span>{" "}
+                                  {name}
+                                </div>
                               </div>
                             );
                           }
@@ -292,8 +301,8 @@ const About = () => {
                         Backend
                       </h4>
                       <div className="border-b border-accent mb-4"></div>
-                           {/* skill list backend */}
-                           <div>
+                      {/* skill list backend */}
+                      <div>
                         {getData(skillData, "backend").data.map(
                           (item, index) => {
                             const { name } = item;
@@ -302,7 +311,12 @@ const About = () => {
                                 className="w-2/4 text-center xl:text-left mx-auto xl:mx-0"
                                 key={index}
                               >
-                                <div className="font-medium"><span className="hidden xl:inline-block">&#x2022;</span> {name}</div>
+                                <div className="font-medium">
+                                  <span className="hidden xl:inline-block">
+                                    &#x2022;
+                                  </span>{" "}
+                                  {name}
+                                </div>
                               </div>
                             );
                           }
