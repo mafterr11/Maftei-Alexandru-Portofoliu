@@ -125,7 +125,7 @@ const About = () => {
     <section className="xl:h-[860px] pb-12 xl:py-24">
       <div className="container mx-auto">
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
-          About Me
+        <div className="relative text-accent text-[65px]">&#x2022; <span className=" h-4 w-4 border-2 rounded-full border-black-heavy/70 absolute top-2 right-0"></span></div>About Me
         </h2>
         <div className="flex flex-col xl:flex-row gap-24">
           {/* Image */}
@@ -264,7 +264,7 @@ const About = () => {
                 </TabsContent>
                 <TabsContent value="skills">
                   <div className="text-center xl:text-left">
-                    <h3 className="mb-8">Tools I Use Everyday</h3>
+                    <h3 className="mb-8">What I Use Everyday</h3>
                     {/* skills */}
                     <div className="mb-16">
                       <h4 className="text-xl font-semibold mb-2">Frontend</h4>

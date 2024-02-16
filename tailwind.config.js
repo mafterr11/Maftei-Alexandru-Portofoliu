@@ -32,23 +32,11 @@ module.exports = {
         DEFAULT: "#0d0c0b",
         heavy: "#000000",
       },
-      red: {
-        DEFAULT: "#EC1313",
-      },
-      grey: {
-        DEFAULT: "#232323",
-        light: "#dadada",
-      },
-      purple: {
-        DEFAULT: "#826294",
-        hover: "#866896",
-        // 7c5791
-      },
-      green: {
-        emerald: "#50C878",
-      },
     },
     extend: {
+      backgroundImage: {
+        work: "url('/project-bg-light.png')"
+      },
       fontFamily: {
         roboto: [`var(--font-roboto)`, "sans-serif"],
         montserrat: [`var(--font-montserrat)`, "sans-serif"],
