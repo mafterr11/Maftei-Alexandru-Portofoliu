@@ -5,7 +5,7 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projectData = [
   {
-    image: "/logo.webp",
+    image: "/work/madinytattoo.jpg",
     category: "NextJS 14",
     name: "MadinyTattoo",
     description: "A presentation website for my tattoo artist. Check her out!",
@@ -13,7 +13,7 @@ const projectData = [
     github: "https://github.com/mafterr11/MadinyTattoo",
   },
   {
-    image: "/logo.webp",
+    image: "/work/tng.JPG",
     category: "NextJS 14",
     name: "TNG GRUP",
     description: "A presentation website for a construction company.",

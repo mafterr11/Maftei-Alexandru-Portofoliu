@@ -9,12 +9,12 @@ const ProjectCard = ({ project }) => {
     <Card className="bg-body border-2 group overflow-hidden relative border-black/15">
       <CardHeader className="p-0">
         {/* Image */}
-        <div className="relative bg-work bg-[110%] bg-no-repeat bg-accent/15 w-full h-[320px] flex items-center justify-center">
+        <div className="relative bg-work bg-[110%] bg-no-repeat bg-accent/15 w-full h-[270px] flex items-center justify-center">
           <Image
-            className="absolute bottom-0 shadow-2xl"
-            src="/logo.webp"
-            width={247}
-            height={250}
+            className="absolute bottom-0 shadow-2xl h-[200px] w-[280px] rounded-t-[15px]"
+            src={project.image}
+            width={276}
+            height={255}
             alt="Alexandru Maftei latest projects"
             priority
           />

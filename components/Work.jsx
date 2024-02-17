@@ -10,7 +10,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const projectData = [
   {
-    image: "/logo.webp",
+    image: "/work/madinytattoo.jpg",
     category: "NextJS 14",
     name: "MadinyTattoo",
     description: "A presentation website for my tattoo artist. Check her out!",
@@ -18,7 +18,7 @@ const projectData = [
     github: "https://github.com/mafterr11/MadinyTattoo",
   },
   {
-    image: "/logo.webp",
+    image: "/work/tng.JPG",
     category: "NextJS 14",
     name: "TNG GRUP",
     description: "A presentation website for a construction company.",
@@ -57,9 +57,9 @@ const Work = () => {
           </Link>
         </div>
         {/* slider */}
-        <div className="xl:max-w-[900px] xl:absolute right-16 top-0">
+        <div className="xl:max-w-[900px] xl:absolute right-36 top-0">
           <Swiper
-            className="h-[520px]"
+            className="h-[480px]"
             slidesPerView={1}
             breakpoints={{
               640: {
