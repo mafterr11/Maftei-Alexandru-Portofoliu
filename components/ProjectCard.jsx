@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 
 const ProjectCard = ({ project }) => {
   return (
-    <Card className="bg-body border-2 group overflow-hidden relative border-black/15">
+    <Card className="bg-body border-2 group overflow-hidden relative border-black/15 h-[480px]">
       <CardHeader className="p-0">
         {/* Image */}
         <div className="relative bg-work bg-[110%] bg-no-repeat bg-accent/15 w-full h-[270px] flex items-center justify-center">

@@ -24,6 +24,7 @@ module.exports = {
       accent: "#826294",
       body: {
         DEFAULT: "#F0F0F5",
+        toast: "#e5e5e5",
         // F0F0F5
         // e5e5e5
       },
