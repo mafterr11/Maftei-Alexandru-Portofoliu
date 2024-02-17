@@ -26,7 +26,7 @@ const projectData = [
     github: "https://github.com/mafterr11/TNG-GRUP",
   },
   {
-    image: "/logo.webp",
+    image: "/work/manarh.png",
     category: "Fullstack",
     name: "Manarh",
     description:
