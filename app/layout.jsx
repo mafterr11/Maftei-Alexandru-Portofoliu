@@ -10,9 +10,10 @@ const roboto = Roboto({
 });
 
 export const metadata = {
-  title: "Maf Services - Web Developer",
+  title: "Maftei - Web Developer",
   description:
     "Hello, my name is Maftei Alexandru. Lets start this journey together and create your dream website! ",
+  keywords: "web development, frontend, web design, freelancer, bucuresti, romania, small buisiness, maftei alexandru, site prices"
 };
 
 export default function RootLayout({ children }) {
