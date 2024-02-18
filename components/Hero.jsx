@@ -14,7 +14,7 @@ const Hero = () => {
             <div className="text-sm uppercase font-semibold mb-4 text-accent tracking-[4px]">
               Web Developer
             </div>
-            <h1 className="mb-4">Hello, my name is Maftei Alexandru</h1>
+            <h1 className="mb-4">Hello, my name is Alexandru Maftei</h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
               I'm a Frontend Developer skilled in modern web development and
               Java Spring, adept at creating responsive websites and ensuring
