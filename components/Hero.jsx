@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { Download, Send } from "lucide-react";
-import { RiArrowDownSLine } from "react-icons/ri";
 import Image from "next/image";
 
 const Hero = () => {
@@ -51,9 +50,6 @@ const Hero = () => {
               className="object-cover rounded-full -rotate-3 border border-accent"
             />
           </div>
-        </div>
-        <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">
-          <RiArrowDownSLine className="text-3xl text-accent" />
         </div>
       </div>
     </section>
