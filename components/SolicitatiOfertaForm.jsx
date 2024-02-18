@@ -185,7 +185,7 @@ export default function SolicitatiOfertaForm() {
             )}
           />
         </div>
-        <Button className='flex items-center gap-x-1 max-w-[166px] '>
+        <Button className='flex items-center gap-x-1 max-w-[166px] rounded-[8px]'>
           Submit
           <ArrowRightIcon size={20} />
         </Button>

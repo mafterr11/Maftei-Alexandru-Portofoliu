@@ -48,7 +48,7 @@ const Hero = () => {
               width={800}
               height={800}
               alt="Alexandru Maftei profile picture"
-              className="object-cover rounded-full -rotate-3"
+              className="object-cover rounded-full -rotate-3 border border-accent"
             />
           </div>
         </div>
