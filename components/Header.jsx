@@ -10,7 +10,7 @@ const Header = () => {
         <div className="flex items-center justify-between md:max-lg:justify-between px-10 md:px-12 xl:gap-x-32">
           <Logo />
           <Nav
-            containerStyles="hidden xl:flex items-center gap-x-28"
+            containerStyles="hidden xl:flex items-center gap-x-16"
             linkStyles="text-xl"
           />
           <NavMobile
