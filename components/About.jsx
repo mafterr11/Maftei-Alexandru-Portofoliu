@@ -284,7 +284,7 @@ const About = () => {
                                 key={index}
                               >
                                 <div className="font-medium">
-                                  <span className="hidden xl:inline-block">
+                                  <span className="hidden xl:inline-block text-accent">
                                     &#x2022;
                                   </span>{" "}
                                   {name}
@@ -312,7 +312,7 @@ const About = () => {
                                 key={index}
                               >
                                 <div className="font-medium">
-                                  <span className="hidden xl:inline-block">
+                                  <span className="hidden xl:inline-block text-accent">
                                     &#x2022;
                                   </span>{" "}
                                   {name}
