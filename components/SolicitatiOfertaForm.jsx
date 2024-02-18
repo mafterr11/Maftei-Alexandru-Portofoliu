@@ -24,14 +24,14 @@ import { useToast } from "@/components/ui/use-toast";
 
 const formSchema = z.object({
   nume: z.string().min(3, {
-    message: "Min 3 caractere",
+    message: "Enter your full name",
   }),
   email: z.string().email(),
   telefon: z.string().min(10, {
-    message: "Introduceti numarul",
+    message: "Enter a valid phone number",
   }),
   mesaj: z.string().max(200, {
-    message: "Max 200 caractere.",
+    message: "Max 200 characters.",
   }),
 });
 

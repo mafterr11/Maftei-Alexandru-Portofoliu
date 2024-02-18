@@ -40,6 +40,9 @@ module.exports = {
         DEFAULT: "#232323",
         light: "#dadada",
       },
+      red: {
+        DEFAULT: "#ED2939",
+      },
     },
     extend: {
       backgroundImage: {
