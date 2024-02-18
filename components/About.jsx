@@ -139,7 +139,7 @@ const About = () => {
               width={800}
               height={800}
               alt="Alexandru Maftei profile picture"
-              className="object-cover rounded-full"
+              className="object-cover rounded-full border border-accent"
             />
           </div>
           {/* Tabs */}
