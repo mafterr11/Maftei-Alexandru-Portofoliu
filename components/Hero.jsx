@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="py-12 mb-24 xl:py-24 xl:pt-56 bg-accent/10">
+    <section className="py-24 mb-24 xl:pt-56 bg-accent/10">
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8 relative">
           {/* text */}
@@ -15,14 +15,14 @@ const Hero = () => {
             </div>
             <h1 className="mb-4">Hello, my name is Alexandru Maftei</h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
-              I'm a Frontend Developer skilled in modern web development and
+              I am a Frontend Developer skilled in modern web development and
               Java Spring, adept at creating responsive websites and ensuring
               seamless integration between frontend and backend.
             </p>
             {/* buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
               <Link href="/contact">
-                <Button className="gap-x-2">
+                <Button className="gap-x-2"> 
                   Contact Me <Send size={18} />
                 </Button>
               </Link>
