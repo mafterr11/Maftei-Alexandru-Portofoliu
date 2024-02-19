@@ -25,7 +25,7 @@ const infoData = [
   },
   {
     icon: <Calendar size={20} />,
-    text: "Born 08 Aug, 1995",
+    text: "Born 14 Aug, 1995",
   },
   {
     icon: <GraduationCap size={20} />,
