@@ -62,7 +62,7 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
           {/* logo */}
           <Link href={"/"} onClick={() => setIsMenuOpen(false)} className="absolute top-8">
             <h3 className="flex flex-col items-center justify-center">
-              <span className="text-accent">MAF</span> Services
+              <span className="text-accent">Myriad</span> Tech
             </h3>
           </Link>
           {/* links */}

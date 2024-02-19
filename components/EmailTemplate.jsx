@@ -8,7 +8,7 @@ export const EmailTemplate = ({
 }) => (
   <div>
     <h1>
-      Solicitare noua de oferta - MAF SERVICES!
+      Solicitare noua de oferta - Myriad
     </h1>
     <p>Nume complet: {nume}</p>
     <p>Email: {email}</p>
