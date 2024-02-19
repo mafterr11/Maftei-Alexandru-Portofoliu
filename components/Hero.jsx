@@ -27,7 +27,7 @@ const Hero = () => {
                 </Button>
               </Link>
               <Link
-                href={"/Alexandru Maftei CV.pdf"}
+                href={"/CV.pdf"}
                 target="_blank"
                 rel="noopener noreferrer"
                 locale={false}
