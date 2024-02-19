@@ -27,18 +27,17 @@ const Hero = () => {
                   Contact Me <Send size={18} />
                 </Button>
               </Link>
-              <Link
+              <a
                 href="/CV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                locale={false}
                 download
               >
                 <Button className="gap-x-2" variant="secondary">
                   Download CV
                   <Download size={18} />
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
           {/* image */}
