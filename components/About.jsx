@@ -9,6 +9,7 @@ import {
   Calendar,
   Briefcase,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const infoData = [
   {
@@ -118,6 +119,8 @@ const skillData = [
 ];
 
 const About = () => {
+  const t = useTranslations("About");
+
   const getData = (arr, title) => {
     return arr.find((item) => item.title === title);
   };
@@ -129,7 +132,7 @@ const About = () => {
             &#x2022;{" "}
             <span className=" h-4 w-4 border-2 rounded-full border-black-heavy/70 absolute top-2 right-0"></span>
           </div>
-          About Me
+          {t("title")}
         </h2>
         <div className="flex flex-col xl:flex-row gap-24">
           {/* Image */}
@@ -147,27 +150,25 @@ const About = () => {
             <Tabs defaultValue="personal" className="xl:w-[650px]">
               <TabsList className="w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border">
                 <TabsTrigger className="w-[162px] xl:w-auto" value="personal">
-                  Personal Info
+                  {t("tab1.trigger")}
                 </TabsTrigger>
                 <TabsTrigger
                   className="w-[162px] xl:w-auto"
                   value="qualifications"
                 >
-                  Qualifications
+                  {t("tab2.trigger")}
                 </TabsTrigger>
                 <TabsTrigger className="w-[162px] xl:w-auto" value="skills">
-                  Skills
+                  {t("tab3.trigger")}
                 </TabsTrigger>
               </TabsList>
               {/* tabs content */}
               <div className="text-lg mt-12 xl:mt-8">
                 <TabsContent value="personal">
                   <div className="text-center xl:text-left">
-                    <h3 className="mb-4">Top-Tier Service Excellence</h3>
+                    <h3 className="mb-4">{t("tab1.title")}</h3>
                     <p className="subtitle max-w-xl mx-auto xl:mx-0">
-                      I excel in developing user-friendly websites using
-                      advanced technology, providing dynamic and captivating
-                      user interactions.
+                      {t("tab1.description")}
                     </p>
                     {/* icons */}
                     <div className="grid xl:grid-cols-2 gap-4 mb-12">
@@ -189,7 +190,7 @@ const About = () => {
                 <TabsContent value="qualifications">
                   <div>
                     <h3 className="mb-8 text-center xl:text-left">
-                      Qualifications & Professional Journey{" "}
+                    {t('tab2.title')}{" "}
                     </h3>
                     {/* experience / ed wrapper */}
                     <div className="grid md:grid-cols-2 gap-y-8">
@@ -268,7 +269,7 @@ const About = () => {
                 </TabsContent>
                 <TabsContent value="skills">
                   <div className="text-center xl:text-left">
-                    <h3 className="mb-8">What I Use Everyday</h3>
+                    <h3 className="mb-8">{t('tab3.title')}</h3>
                     {/* skills */}
                     <div className="mb-16">
                       <h4 className="text-xl font-semibold mb-2">Frontend</h4>

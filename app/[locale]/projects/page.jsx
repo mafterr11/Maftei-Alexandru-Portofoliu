@@ -2,46 +2,46 @@
 import React, { useState } from "react";
 import { Tabs, TabsList, TabsContent, TabsTrigger } from "@/components/ui/tabs";
 import ProjectCard from "@/components/ProjectCard";
+import { useTranslations } from "next-intl";
 
-const projectData = [
-  {
-    image: "/work/madinytattoo.webp",
-    category: "NextJS 14",
-    name: "MadinyTattoo",
-    description: "A presentation website for my tattoo artist. Check her out!",
-    link: "https://madinytattoo.ro",
-    github: "https://github.com/mafterr11/MadinyTattoo",
-  },
-  {
-    image: "/work/tng.webp",
-    category: "NextJS 14",
-    name: "TNG GRUP",
-    description: "A presentation website for a construction company.",
-    link: "https://tng-grup.vercel.app",
-    github: "https://github.com/mafterr11/TNG-GRUP",
-  },
-  {
-    image: "/work/manarh.webp",
-    category: "Fullstack",
-    name: "Manarh",
-    description:
-      "A fullstack website for an architecture firm, custom auth etc!",
-    link: "/",
-    github: "/",
-  },
-];
-
-const uniqueCategories = [
-  "all projects",
-  ...new Set(projectData.map((item) => item.category)),
-];
 
 const Projects = () => {
+  const t = useTranslations("Proiecte");
+  const projectData = [
+    {
+      image: "/work/madinytattoo.webp",
+      category: "NextJS 14",
+      name: "MadinyTattoo",
+      description: t("madiny"),
+      link: "https://madinytattoo.ro",
+      github: "https://github.com/mafterr11/MadinyTattoo",
+    },
+    {
+      image: "/work/tng.webp",
+      category: "NextJS 14",
+      name: "TNG GRUP",
+      description: t("tng"),
+      link: "https://tng-grup.vercel.app",
+      github: "https://github.com/mafterr11/TNG-GRUP",
+    },
+    {
+      image: "/work/manarh.webp",
+      category: "Fullstack",
+      name: "Manarh",
+      description: t("manarh"),
+      link: "/",
+      github: "/",
+    },
+  ];
+  const uniqueCategories = [
+    t("page.tab"),
+    ...new Set(projectData.map((item) => item.category)),
+  ];
   const [categories, setCategories] = useState(uniqueCategories);
-  const [category, setCategory] = useState("all projects");
+  const [category, setCategory] = useState(t("page.tab"));
   const filteredProjects = projectData.filter((project) => {
     // if category  is all projects return all projects, else filter
-    return category === "all projects"
+    return category === t("page.tab")
       ? project
       : project.category === category;
   });
@@ -54,7 +54,7 @@ const Projects = () => {
             &#x2022;{" "}
             <span className=" h-4 w-4 border-2 rounded-full border-black-heavy/70 absolute top-2 right-0"></span>
           </div>
-          My Projects
+          {t("page.title")}
         </h2>
         {/* tabs */}
         <Tabs defaultValue={category} className="mb-24 xl:mb-48">

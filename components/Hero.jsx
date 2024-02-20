@@ -3,28 +3,28 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import { Download, Send } from "lucide-react";
 import Image from "next/image";
+import {useTranslations} from 'next-intl';
 
 const Hero = () => {
+  const t = useTranslations('Hero');
   return (
     <section className="py-24 mb-24 xl:pt-56 bg-accent/10">
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8 relative">
           {/* text */}
-          <div className="flex flex-col max-w-[600px] mx-auto xl:mx-0 text-center xl:text-left">
+          <div className="flex flex-col max-w-[650px] mx-auto xl:mx-0 text-center xl:text-left">
             <div className="text-sm uppercase font-semibold mb-4 text-accent tracking-[4px]">
               Web Developer
             </div>
-            <h1 className="mb-4">Hello, my name is Alexandru Maftei</h1>
+            <h1 className="mb-4">{t('title')}</h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
-              I am a Frontend Developer skilled in modern web development and
-              Java Spring, adept at creating responsive websites and ensuring
-              seamless integration between frontend and backend.
+            {t('subtitle')}
             </p>
             {/* buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
               <Link href="/contact">
                 <Button className="gap-x-2"> 
-                  Contact Me <Send size={18} />
+                {t('contact-button')} <Send size={18} />
                 </Button>
               </Link>
               <a
@@ -34,7 +34,7 @@ const Hero = () => {
                 download
               >
                 <Button className="gap-x-2" variant="secondary">
-                  Download CV
+                {t('download-button')}
                   <Download size={18} />
                 </Button>
               </a>

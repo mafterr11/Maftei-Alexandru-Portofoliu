@@ -1,0 +1,83 @@
+{
+  "Hero": {
+    "title": "Hello, my name is Alexandru Maftei",
+    "subtitle": "I am a Frontend Developer skilled in modern web development and Java Spring, adept at creating responsive websites and ensuring seamless integration between frontend and backend.",
+    "contact-button": "Contact Me",
+    "download-button": "Download CV"
+  },
+  "About": {
+    "title": "About Me",
+    "tab1": {
+      "trigger": "Personal Info",
+      "title": "Top-Tier Service Excellence",
+      "description": "I excel in developing user-friendly websites using advanced technology, providing dynamic and captivating user interactions."
+    },
+    "tab2": {
+      "trigger": "Qualifications",
+      "title": "Qualifications & Professional Journey"
+    },
+    "tab3": {
+      "trigger": "Skills",
+      "title": "What I Use Everyday"
+    }
+  },
+  "Services": {
+    "title": "My Services",
+    "first": {
+      "description": "Crafting visually stunning and intuitive websites that prioritize user experience, ensuring your online presence is impactful."
+    },
+    "second": {
+      "description": "Building robust, scalable web solutions with the latest technologies to deliver high-performance websites tailored to meet your business needs."
+    },
+    "third": {
+      "description": "Maximizing your online visibility and driving targeted traffic to your site with customized Google Ads strategies.",
+      "soon": "COMING SOON"
+    }
+  },
+  "Work": {
+    "title": "Latest Projects",
+    "subtitle": "Highlighting my latest achievements and creative ventures.",
+    "projects-button": "All Projects"
+  },
+  "Cta": {
+    "title": "Prepared to turn your dreams into reality? Im always here to help",
+    "contact-button": "Contact Me"
+  },
+  "Proiecte": {
+    "madiny": "A presentation website for my tattoo artist. Check her out!",
+    "tng": "A presentation website for a construction company.",
+    "manarh": "A fullstack website for an architecture firm, custom auth etc!",
+    "page": {
+      "title": "My Projects",
+      "tab": "All Projects"
+    }
+  },
+  "Nav": {
+    "home": {
+      "name": "Home",
+      "link": "/en"
+    },
+    "projects": {
+      "name": "Projects",
+      "link": "/en/projects"
+    },
+    "contact": {
+      "name": "Contact",
+      "link": "/en/contact"
+    }
+  },
+  "Contact": {
+   "title": "Let's Work Together",
+   "subtitle": "I am eager to start our journey!",
+   "subtitle2": "Say Hello",
+   "form": {
+    "name": "Full Name",
+    "tel": "Phone Number",
+    "msg": "Tell us your request!",
+    "btn": "Submit"
+   }
+  },
+  "Footer": {
+    "copyright": "All rights reserved."
+  }
+}

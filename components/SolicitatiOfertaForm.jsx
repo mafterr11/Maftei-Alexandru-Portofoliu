@@ -24,6 +24,7 @@ import { useToast } from "@/components/ui/use-toast";
 // RECAPTCHA
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import axios from "axios";
+import { useTranslations } from "next-intl";
 
 const formSchema = z.object({
   nume: z.string().min(3, {
@@ -57,6 +58,7 @@ export default function SolicitatiOfertaForm() {
     },
   });
   const { toast } = useToast();
+  const t = useTranslations("Contact");
 
   // RECAPTCHA
   const captchaSubmit = async () => {
@@ -133,7 +135,7 @@ export default function SolicitatiOfertaForm() {
                   <FormControl as="div">
                     <div className="relative flex items-center">
                       <Input
-                        placeholder="Full Name"
+                        placeholder={t("form.name")}
                         type="name"
                         id="nume"
                         autoComplete="name"
@@ -181,7 +183,7 @@ export default function SolicitatiOfertaForm() {
                   <FormControl>
                     <div className="relative flex items-center">
                       <Input
-                        placeholder="Phone Number"
+                        placeholder={t("form.tel")}
                         type="tel"
                         id="telefon"
                         autoComplete="tel"
@@ -204,7 +206,7 @@ export default function SolicitatiOfertaForm() {
                   <FormControl>
                     <div className="relative flex items-center">
                       <Textarea
-                        placeholder="Tell us your request!"
+                        placeholder={t("form.msg")}
                         id="mesaj"
                         {...field}
                       />
@@ -220,7 +222,7 @@ export default function SolicitatiOfertaForm() {
             />
           </div>
           <Button className="flex items-center gap-x-1 max-w-[166px] rounded-[8px]">
-            Submit
+            {t("form.btn")}
             <ArrowRightIcon size={20} />
           </Button>
         </form>

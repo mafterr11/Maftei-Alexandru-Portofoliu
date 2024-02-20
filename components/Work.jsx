@@ -1,42 +1,12 @@
-"use client";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-
-import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
-import ProjectCard from "./ProjectCard";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-const projectData = [
-  {
-    image: "/work/madinytattoo.webp",
-    category: "NextJS 14",
-    name: "MadinyTattoo",
-    description: "A presentation website for my tattoo artist. Check her out!",
-    link: "https://madinytattoo.ro",
-    github: "https://github.com/mafterr11/MadinyTattoo",
-  },
-  {
-    image: "/work/tng.webp",
-    category: "NextJS 14",
-    name: "TNG GRUP",
-    description: "A presentation website for a construction company.",
-    link: "https://tng-grup.vercel.app",
-    github: "https://github.com/mafterr11/TNG-GRUP",
-  },
-  {
-    image: "/work/manarh.webp",
-    category: "Fullstack",
-    name: "Manarh",
-    description:
-      "A fullstack website for an architecture firm, custom auth etc!",
-    link: "/",
-    github: "/",
-  },
-];
-
+import WorkSwiper from "./WorkSwiper";
+import { NextIntlClientProvider, useTranslations, useMessages } from "next-intl";
+import pick from 'lodash/pick';
 const Work = () => {
+  const t = useTranslations("Work");
+  const messages = useMessages();
+
   return (
     <section className="relative mb-12 xl:mb-48">
       <div className="container mx-auto">
@@ -47,38 +17,22 @@ const Work = () => {
               &#x2022;{" "}
               <span className=" h-4 w-4 border-2 rounded-full border-black-heavy/70 absolute top-2 right-0"></span>
             </div>
-            Latest Projects
+            {t("title")}
           </h2>
-          <p className="subtitle mb-8">
-            Highlighting my latest achievements and creative ventures.
-          </p>
+          <p className="subtitle mb-8">{t("subtitle")}</p>
           <Link href="/projects">
-            <Button>All Projects</Button>
+            <Button>{t("projects-button")}</Button>
           </Link>
         </div>
         {/* slider */}
         <div className="xl:max-w-[900px] xl:absolute right-36 top-0">
-          <Swiper
-            className="h-[520px]"
-            slidesPerView={1}
-            breakpoints={{
-              640: {
-                slidesPerView: 2,
-              },
-            }}
-            spaceBetween={30}
-            modules={[Pagination]}
-            pagination={{ clickable: true }}
+          <NextIntlClientProvider 
+            messages={
+              pick(messages, 'Proiecte')
+            }
           >
-            {/* show only first 4 projects */}
-            {projectData.slice(0.4).map((project, index) => {
-              return (
-                <SwiperSlide key={index}>
-                  <ProjectCard project={project} />
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
+            <WorkSwiper />
+          </NextIntlClientProvider>
         </div>
       </div>
     </section>

@@ -4,27 +4,29 @@ import { useState } from "react";
 import { BiSolidFoodMenu } from "react-icons/bi";
 import { IoCloseOutline, IoHome, IoChatbubblesSharp } from "react-icons/io5";
 import { RiMenu2Line } from "react-icons/ri";
-import Socials from './Socials';
-
-export const links = [
-  {
-    path: "/",
-    name: "home",
-    icon: <IoHome />,
-  },
-  {
-    path: "/projects",
-    name: "projects",
-    icon: <BiSolidFoodMenu />,
-  },
-  {
-    path: "/contact",
-    name: "contact",
-    icon: <IoChatbubblesSharp />,
-  },
-];
+import Socials from "./Socials";
+import { useTranslations } from "next-intl";
 
 const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
+  const t = useTranslations("Nav");
+
+  const links = [
+    {
+      path: t("home.link"),
+      name: t("home.name"),
+      icon: <IoHome />,
+    },
+    {
+      path: t("projects.link"),
+      name: t("projects.name"),
+      icon: <BiSolidFoodMenu />,
+    },
+    {
+      path: t("contact.link"),
+      name: t("contact.name"),
+      icon: <IoChatbubblesSharp />,
+    },
+  ];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServiciiOpen, setIsServiciiOpen] = useState(false);
 
@@ -60,7 +62,11 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
             <IoCloseOutline />
           </div>
           {/* logo */}
-          <Link href={"/"} onClick={() => setIsMenuOpen(false)} className="absolute top-8">
+          <Link
+            href={"/"}
+            onClick={() => setIsMenuOpen(false)}
+            className="absolute top-8"
+          >
             <h3 className="flex flex-col items-center justify-center">
               <span className="text-accent">Myriad</span> Tech
             </h3>
@@ -82,7 +88,7 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
             })}
           </div>
         </div>
-          <Socials/>
+        <Socials />
       </aside>
     </div>
   );
