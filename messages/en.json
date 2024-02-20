@@ -19,7 +19,9 @@
     "tab3": {
       "trigger": "Skills",
       "title": "What I Use Everyday"
-    }
+    },
+    "exp": "Experience",
+    "edu": "Education"
   },
   "Services": {
     "title": "My Services",

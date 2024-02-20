@@ -52,9 +52,9 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
       <aside
         className={`${
           isMenuOpen ? "right-0" : "-right-full"
-        } bg-body fixed z-20 h-full p-14 top-0 bottom-0 transition-all duration-500 border-accent border-2`}
+        } bg-body fixed z-20 h-full px-8 pt-8 pb-4 top-0 bottom-0 transition-all duration-500 border-accent border-2`}
       >
-        <div className="flex flex-col items-center justify-center h-full text-black">
+        <div className="flex flex-col items-center justify-between h-full text-black">
           {/* close btn */}
           <div
             onClick={() => setIsMenuOpen(false)}
@@ -63,15 +63,17 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
             <IoCloseOutline />
           </div>
           {/* logo */}
+          <div>
           <Link
             href={"/"}
             onClick={() => setIsMenuOpen(false)}
-            className="absolute top-8"
-          >
+            className=""
+            >
             <h3 className="flex flex-col items-center justify-center">
               <span className="text-accent">Myriad</span> Tech
             </h3>
           </Link>
+            </div>
           {/* links */}
           <div className="flex flex-col gap-y-8">
             {links.map((link, index) => {
@@ -88,10 +90,11 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
               );
             })}
           </div>
-        </div>
-        <div className="">
+          {/* bottom part */}
+        <div className="flex flex-col items-center justify-center gap-y-5">
         <LocalSwitcher/>  
         <Socials />
+        </div>
         </div>
       </aside>
     </div>

@@ -19,7 +19,9 @@
     "tab3": {
       "trigger": "Abilități",
       "title": "Ce Folosesc Zilnic"
-    }
+    },
+    "exp": "Experiență",
+    "edu": "Educație"
   },
   "Services": {
     "title": "Serviciile Mele",

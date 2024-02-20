@@ -26,7 +26,7 @@ const infoData = [
   },
   {
     icon: <Calendar size={20} />,
-    text: "Born 14 Aug, 1995",
+    text: "14 Aug, 1995",
   },
   {
     icon: <GraduationCap size={20} />,
@@ -34,43 +34,7 @@ const infoData = [
   },
 ];
 
-const qualificationData = [
-  {
-    title: "education",
-    data: [
-      {
-        university: "ASE",
-        qualification: "Bachelor in Economy",
-        years: "2014-2017",
-      },
-      {
-        university: "SDA Academy - Java/Frontend",
-        qualification: "Certificate",
-        years: "2023-2024",
-      },
-    ],
-  },
-  {
-    title: "experience",
-    data: [
-      {
-        company: "DB Schenker",
-        role: "Transport Agent",
-        years: "2018-2022",
-      },
-      {
-        company: "Porsche Inter Auto",
-        role: "Digital Specialist",
-        years: "2022-2024",
-      },
-      {
-        company: "Freelancer",
-        role: "Web Developer",
-        years: "2024-present",
-      },
-    ],
-  },
-];
+
 
 const skillData = [
   {
@@ -120,7 +84,43 @@ const skillData = [
 
 const About = () => {
   const t = useTranslations("About");
-
+  const qualificationData = [
+    {
+      title: t("edu"),
+      data: [
+        {
+          university: "ASE",
+          qualification: "Bachelor in Economy",
+          years: "2014-2017",
+        },
+        {
+          university: "SDA Academy - Java/Frontend",
+          qualification: "Certificate",
+          years: "2023-2024",
+        },
+      ],
+    },
+    {
+      title: t("exp"),
+      data: [
+        {
+          company: "DB Schenker",
+          role: "Transport Agent",
+          years: "2018-2022",
+        },
+        {
+          company: "Porsche Inter Auto",
+          role: "Digital Specialist",
+          years: "2022-2024",
+        },
+        {
+          company: "Freelancer",
+          role: "Web Developer",
+          years: "2024-present",
+        },
+      ],
+    },
+  ];
   const getData = (arr, title) => {
     return arr.find((item) => item.title === title);
   };
@@ -199,12 +199,12 @@ const About = () => {
                         <div className="flex gap-x-4 items-center text-[22px] text-accent">
                           <Briefcase size={28} />
                           <h4 className="capitalize font-medium">
-                            {getData(qualificationData, "experience").title}
+                            {getData(qualificationData, t("exp")).title}
                           </h4>
                         </div>
                         {/* list */}
                         <div className="flex flex-col gap-y-8 mt-4">
-                          {getData(qualificationData, "experience").data.map(
+                          {getData(qualificationData, t("exp")).data.map(
                             (item, index) => {
                               const { company, role, years } = item;
                               return (
@@ -234,12 +234,12 @@ const About = () => {
                         <div className="flex gap-x-4 items-center text-[22px] text-accent">
                           <GraduationCap size={28} />
                           <h4 className="capitalize font-medium">
-                            {getData(qualificationData, "education").title}
+                            {getData(qualificationData, t("edu")).title}
                           </h4>
                         </div>
                         {/* list */}
                         <div className="flex flex-col gap-y-8 mt-4">
-                          {getData(qualificationData, "education").data.map(
+                          {getData(qualificationData, t("edu")).data.map(
                             (item, index) => {
                               const { university, qualification, years } = item;
                               return (
