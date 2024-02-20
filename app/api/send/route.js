@@ -10,7 +10,7 @@ export async function POST(request) {
     const data = await resend.emails.send({
       from: "Myriad@myriad-tech.ro",
       to: ["alexandrumaftei95@gmail.com"],
-      subject: "MAF Services - Solicitare Nouă",
+      subject: "Myriad - Solicitare Nouă",
       react: EmailTemplate(formData), // pass the entire formData object to the template
     });
 

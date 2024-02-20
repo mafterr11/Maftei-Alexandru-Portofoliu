@@ -1,6 +1,7 @@
-"use client"
+"use client";
 import { MailIcon, PhoneCall } from "lucide-react";
-import SolicitatiOfertaForm from '@/components/SolicitatiOfertaForm';
+import SolicitatiOfertaForm from "@/components/SolicitatiOfertaForm";
+import GoogleCaptchaWrapper from "../GoogleCaptchaWrapper";
 
 const Contact = () => {
   return (
@@ -38,7 +39,9 @@ const Contact = () => {
             </div>
           </div>
           {/* Form */}
-          <SolicitatiOfertaForm />
+          <GoogleCaptchaWrapper>
+            <SolicitatiOfertaForm />
+          </GoogleCaptchaWrapper>
         </div>
       </div>
     </section>

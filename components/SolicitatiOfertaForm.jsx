@@ -21,6 +21,9 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
+// RECAPTCHA
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
+import axios from "axios";
 
 const formSchema = z.object({
   nume: z.string().min(3, {
@@ -41,6 +44,9 @@ const formSchema = z.object({
 });
 
 export default function SolicitatiOfertaForm() {
+  // RECAPTCHA
+  const { executeRecaptcha } = useGoogleReCaptcha();
+
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -52,7 +58,29 @@ export default function SolicitatiOfertaForm() {
   });
   const { toast } = useToast();
 
+  // RECAPTCHA
+  const captchaSubmit = async () => {
+
+    if (!executeRecaptcha) {
+      return;
+    }
+    const gRecaptchaToken = await executeRecaptcha("InquirySubmit");
+
+    const response = await axios({
+      method: "post",
+      url: "/api/recaptchaSubmit",
+      data: {
+        gRecaptchaToken,
+      },
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+    });
+  };
+
   const onSubmit = async (formData) => {
+    captchaSubmit();
     try {
       const response = await fetch("/api/send", {
         method: "POST",
@@ -89,112 +117,114 @@ export default function SolicitatiOfertaForm() {
   };
 
   return (
-    <Form {...form}>
-      <form
-        className="mt-4 space-y-2 xs:space-y-4"
-        onSubmit={form.handleSubmit(onSubmit)}
-      >
-        {/* Nume si Prenume */}
-        <div>
-          <FormField
-            control={form.control}
-            name="nume"
-            render={({ field }) => (
-              <FormItem>
-                <FormControl as="div">
-                  <div className="relative flex items-center">
-                    <Input
-                      placeholder="Full Name"
-                      type="name"
-                      id="nume"
-                      autoComplete="name"
-                      {...field}
-                    />
-                    <User className="absolute right-6" size={20} />
-                  </div>
-                </FormControl>
-                <FormMessage className="text-red" />
-              </FormItem>
-            )}
-          />
-        </div>
-        {/* Email */}
-        <div>
-          <FormField
-            control={form.control}
-            name="email"
-            render={({ field }) => (
-              <FormItem>
-                <FormControl>
-                  <div className="relative flex items-center">
-                    <Input
-                      placeholder="Email"
-                      type="email"
-                      id="email"
-                      autoComplete="email"
-                      {...field}
-                    />
-                    <MailIcon className="absolute right-6" size={20} />
-                  </div>
-                </FormControl>
-                <FormMessage className="text-red" />
-              </FormItem>
-            )}
-          />
-        </div>
-        {/* Tel */}
-        <div>
-          <FormField
-            control={form.control}
-            name="telefon"
-            render={({ field }) => (
-              <FormItem>
-                <FormControl>
-                  <div className="relative flex items-center">
-                    <Input
-                      placeholder="Phone Number"
-                      type="tel"
-                      id="telefon"
-                      autoComplete="tel"
-                      {...field}
-                    />
-                    <PhoneIcon className="absolute top-4 right-6" size={20} />
-                  </div>
-                </FormControl>
-                <FormMessage className="text-red" />
-              </FormItem>
-            )}
-          />
-        </div>
-        <div>
-          <FormField
-            control={form.control}
-            name="mesaj"
-            render={({ field }) => (
-              <FormItem>
-                <FormControl>
-                  <div className="relative flex items-center">
-                    <Textarea
-                      placeholder="Tell us your request!"
-                      id="mesaj"
-                      {...field}
-                    />
-                    <MessageSquare
-                      className="absolute top-4 right-6"
-                      size={20}
-                    />
-                  </div>
-                </FormControl>
-                <FormMessage className="text-red" />
-              </FormItem>
-            )}
-          />
-        </div>
-        <Button className="flex items-center gap-x-1 max-w-[166px] rounded-[8px]">
-          Submit
-          <ArrowRightIcon size={20} />
-        </Button>
-      </form>
-    </Form>
+    <>
+      <Form {...form}>
+        <form
+          className="mt-4 space-y-2 xs:space-y-4"
+          onSubmit={form.handleSubmit(onSubmit)}
+        >
+          {/* Nume si Prenume */}
+          <div>
+            <FormField
+              control={form.control}
+              name="nume"
+              render={({ field }) => (
+                <FormItem>
+                  <FormControl as="div">
+                    <div className="relative flex items-center">
+                      <Input
+                        placeholder="Full Name"
+                        type="name"
+                        id="nume"
+                        autoComplete="name"
+                        {...field}
+                      />
+                      <User className="absolute right-6" size={20} />
+                    </div>
+                  </FormControl>
+                  <FormMessage className="text-red" />
+                </FormItem>
+              )}
+            />
+          </div>
+          {/* Email */}
+          <div>
+            <FormField
+              control={form.control}
+              name="email"
+              render={({ field }) => (
+                <FormItem>
+                  <FormControl>
+                    <div className="relative flex items-center">
+                      <Input
+                        placeholder="Email"
+                        type="email"
+                        id="email"
+                        autoComplete="email"
+                        {...field}
+                      />
+                      <MailIcon className="absolute right-6" size={20} />
+                    </div>
+                  </FormControl>
+                  <FormMessage className="text-red" />
+                </FormItem>
+              )}
+            />
+          </div>
+          {/* Tel */}
+          <div>
+            <FormField
+              control={form.control}
+              name="telefon"
+              render={({ field }) => (
+                <FormItem>
+                  <FormControl>
+                    <div className="relative flex items-center">
+                      <Input
+                        placeholder="Phone Number"
+                        type="tel"
+                        id="telefon"
+                        autoComplete="tel"
+                        {...field}
+                      />
+                      <PhoneIcon className="absolute top-4 right-6" size={20} />
+                    </div>
+                  </FormControl>
+                  <FormMessage className="text-red" />
+                </FormItem>
+              )}
+            />
+          </div>
+          <div>
+            <FormField
+              control={form.control}
+              name="mesaj"
+              render={({ field }) => (
+                <FormItem>
+                  <FormControl>
+                    <div className="relative flex items-center">
+                      <Textarea
+                        placeholder="Tell us your request!"
+                        id="mesaj"
+                        {...field}
+                      />
+                      <MessageSquare
+                        className="absolute top-4 right-6"
+                        size={20}
+                      />
+                    </div>
+                  </FormControl>
+                  <FormMessage className="text-red" />
+                </FormItem>
+              )}
+            />
+          </div>
+          <Button className="flex items-center gap-x-1 max-w-[166px] rounded-[8px]">
+            Submit
+            <ArrowRightIcon size={20} />
+          </Button>
+        </form>
+      </Form>
+    </>
   );
 }
