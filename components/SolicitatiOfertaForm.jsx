@@ -30,7 +30,9 @@ const formSchema = z.object({
   telefon: z.string().min(10, {
     message: "Enter a valid phone number",
   }),
-  mesaj: z.string().max(200, {
+  mesaj: z.string().min(10, {
+    message: "Min 10 characters"
+  }).max(200, {
     message: "Max 200 characters.",
   }),
 });
