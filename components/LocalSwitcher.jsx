@@ -27,11 +27,11 @@ export default function LocalSwitcher() {
         id="language-switch"
       />
       {localeActive === "en" ? (
-        <Label htmlFor="language-switch" className="absolute top-[0.29rem] right-[0.35rem]">
+        <Label htmlFor="language-switch" className="absolute top-[0.30rem] right-[3.8rem] xl:top-[0.29rem] xl:right-[0.35rem]">
           EN
         </Label>
       ) : (
-        <Label htmlFor="language-switch" className="absolute top-[0.29rem] right-[0.35rem]">
+        <Label htmlFor="language-switch" className="absolute top-[0.30rem] right-[3.8rem] xl:top-[0.29rem] xl:right-[0.35rem]">
           RO
         </Label>
       )}

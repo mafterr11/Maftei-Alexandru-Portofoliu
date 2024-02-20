@@ -6,6 +6,7 @@ import { IoCloseOutline, IoHome, IoChatbubblesSharp } from "react-icons/io5";
 import { RiMenu2Line } from "react-icons/ri";
 import Socials from "./Socials";
 import { useTranslations } from "next-intl";
+import LocalSwitcher from "./LocalSwitcher";
 
 const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
   const t = useTranslations("Nav");
@@ -51,7 +52,7 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
       <aside
         className={`${
           isMenuOpen ? "right-0" : "-right-full"
-        } bg-body fixed z-20 h-full p-10 top-0 bottom-0 transition-all duration-500 border-accent border-2`}
+        } bg-body fixed z-20 h-full p-14 top-0 bottom-0 transition-all duration-500 border-accent border-2`}
       >
         <div className="flex flex-col items-center justify-center h-full text-black">
           {/* close btn */}
@@ -88,7 +89,10 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
             })}
           </div>
         </div>
+        <div className="">
+        <LocalSwitcher/>  
         <Socials />
+        </div>
       </aside>
     </div>
   );
