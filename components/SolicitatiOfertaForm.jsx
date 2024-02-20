@@ -30,11 +30,14 @@ const formSchema = z.object({
   telefon: z.string().min(10, {
     message: "Enter a valid phone number",
   }),
-  mesaj: z.string().min(10, {
-    message: "Min 10 characters"
-  }).max(200, {
-    message: "Max 200 characters.",
-  }),
+  mesaj: z
+    .string()
+    .min(10, {
+      message: "Min 10 characters",
+    })
+    .max(200, {
+      message: "Max 200 characters.",
+    }),
 });
 
 export default function SolicitatiOfertaForm() {
@@ -88,29 +91,29 @@ export default function SolicitatiOfertaForm() {
   return (
     <Form {...form}>
       <form
-        className='mt-4 space-y-2 xs:space-y-4'
+        className="mt-4 space-y-2 xs:space-y-4"
         onSubmit={form.handleSubmit(onSubmit)}
       >
         {/* Nume si Prenume */}
         <div>
           <FormField
             control={form.control}
-            name='nume'
+            name="nume"
             render={({ field }) => (
               <FormItem>
-                <FormControl as='div'>
-                  <div className='relative flex items-center'>
+                <FormControl as="div">
+                  <div className="relative flex items-center">
                     <Input
-                      placeholder='Full Name'
-                      type='name'
-                      id='nume'
-                      autoComplete='name'
+                      placeholder="Full Name"
+                      type="name"
+                      id="nume"
+                      autoComplete="name"
                       {...field}
                     />
-                    <User className='absolute right-6' size={20} />
+                    <User className="absolute right-6" size={20} />
                   </div>
                 </FormControl>
-                <FormMessage className='text-red' />
+                <FormMessage className="text-red" />
               </FormItem>
             )}
           />
@@ -119,22 +122,22 @@ export default function SolicitatiOfertaForm() {
         <div>
           <FormField
             control={form.control}
-            name='email'
+            name="email"
             render={({ field }) => (
               <FormItem>
                 <FormControl>
-                  <div className='relative flex items-center'>
+                  <div className="relative flex items-center">
                     <Input
-                      placeholder='Email'
-                      type='email'
-                      id='email'
-                      autoComplete='email'
+                      placeholder="Email"
+                      type="email"
+                      id="email"
+                      autoComplete="email"
                       {...field}
                     />
-                    <MailIcon className='absolute right-6' size={20} />
+                    <MailIcon className="absolute right-6" size={20} />
                   </div>
                 </FormControl>
-                <FormMessage className='text-red' />
+                <FormMessage className="text-red" />
               </FormItem>
             )}
           />
@@ -143,22 +146,22 @@ export default function SolicitatiOfertaForm() {
         <div>
           <FormField
             control={form.control}
-            name='telefon'
+            name="telefon"
             render={({ field }) => (
               <FormItem>
                 <FormControl>
-                  <div className='relative flex items-center'>
+                  <div className="relative flex items-center">
                     <Input
-                      placeholder='Phone Number'
-                      type='tel'
-                      id='telefon'
-                      autoComplete='tel'
+                      placeholder="Phone Number"
+                      type="tel"
+                      id="telefon"
+                      autoComplete="tel"
                       {...field}
                     />
-                    <PhoneIcon className='absolute top-4 right-6' size={20} />
+                    <PhoneIcon className="absolute top-4 right-6" size={20} />
                   </div>
                 </FormControl>
-                <FormMessage className='text-red' />
+                <FormMessage className="text-red" />
               </FormItem>
             )}
           />
@@ -166,28 +169,28 @@ export default function SolicitatiOfertaForm() {
         <div>
           <FormField
             control={form.control}
-            name='mesaj'
+            name="mesaj"
             render={({ field }) => (
               <FormItem>
                 <FormControl>
-                  <div className='relative flex items-center'>
+                  <div className="relative flex items-center">
                     <Textarea
-                      placeholder='Tell us your request!'
-                      id='mesaj'
+                      placeholder="Tell us your request!"
+                      id="mesaj"
                       {...field}
                     />
                     <MessageSquare
-                      className='absolute top-4 right-6'
+                      className="absolute top-4 right-6"
                       size={20}
                     />
                   </div>
                 </FormControl>
-                <FormMessage className='text-red' />
+                <FormMessage className="text-red" />
               </FormItem>
             )}
           />
         </div>
-        <Button className='flex items-center gap-x-1 max-w-[166px] rounded-[8px]'>
+        <Button className="flex items-center gap-x-1 max-w-[166px] rounded-[8px]">
           Submit
           <ArrowRightIcon size={20} />
         </Button>
