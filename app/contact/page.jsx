@@ -15,7 +15,7 @@ const Contact = () => {
               <span className="w-[30px] h-[2px] bg-accent"></span>
               <div>Say Hello</div>
             </div>
-            <h1 className="max-w-md mb-8">Let's Work Together.</h1>
+            <h1 className="max-w-md mb-8">Let's Work Together</h1>
             <p className="subtitle max-w-[400px]">
               I am eager to start our journey!
             </p>
