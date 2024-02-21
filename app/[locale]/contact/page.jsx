@@ -18,7 +18,7 @@ const Contact = () => {
               <div>{t("subtitle2")}</div>
             </div>
             <h1 className="max-w-md mb-8">{t("title")}</h1>
-            <p className="subtitle max-w-[400px]">
+            <p className="subtitle max-w-[500px]">
             {t("subtitle")}
             </p>
           </div>
