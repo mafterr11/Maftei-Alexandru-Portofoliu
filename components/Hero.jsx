@@ -41,13 +41,13 @@ const Hero = () => {
             </div>
           </div>
           {/* image */}
-          <div className="hidden xl:flex w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2">
+          <div className="hidden xl:flex w-[500px] h-[500px] bg-no-repeat absolute -top-2 -right-2">
             <Image
               src="/logo.webp"
               width={800}
               height={800}
               alt="Alexandru Maftei profile picture"
-              className="object-cover rounded-full  border-2 border-accent"
+              className="object-cover rounded-full border-2 border-accent "
             />
           </div>
         </div>
