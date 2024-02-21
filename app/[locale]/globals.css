@@ -24,10 +24,10 @@
     @apply text-4xl font-bold;
   }
   h3 {
-    @apply text-3xl font-bold
+    @apply text-3xl font-bold;
   }
   h4 {
-    @apply text-[22px] font-semibold; 
+    @apply text-[22px] font-semibold;
   }
   p {
     @apply text-black/80 leading-8;
@@ -52,7 +52,6 @@
   background-color: #826294;
 }
 
-
 .swiper-button-next:after,
 .swiper-button-prev:after,
 .swiper-button-next:after,
@@ -67,17 +66,15 @@
 
 .hover span {
   display: inline-block;
-  
 }
 
 .hover span:after {
-  content: '';
+  content: "";
   width: 0px;
   height: 2px;
   display: block;
   background: #866896;
   transition: 300ms;
-  
 }
 
 .hover span:hover:after {
@@ -89,4 +86,3 @@
   text-decoration-color: #866896;
   text-decoration-thickness: 2px;
 }
-
