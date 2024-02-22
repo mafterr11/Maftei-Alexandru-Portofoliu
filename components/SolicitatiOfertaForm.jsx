@@ -62,7 +62,6 @@ export default function SolicitatiOfertaForm() {
 
   // RECAPTCHA
   const captchaSubmit = async () => {
-
     if (!executeRecaptcha) {
       return;
     }
@@ -222,10 +221,29 @@ export default function SolicitatiOfertaForm() {
               )}
             />
           </div>
-          <Button className="flex items-center gap-x-1 max-w-[166px] rounded-[8px]">
-            {t("form.btn")}
-            <ArrowRightIcon size={20} />
-          </Button>
+          <div className="recaptcha-branding flex flex-col gap-y-4 md:flex-row md:gap-x-4">
+            <Button className="flex items-center gap-x-1 max-w-[166px] rounded-[8px]">
+              {t("form.btn")}
+              <ArrowRightIcon size={20} />
+            </Button>
+            <p className="leading-normal">
+              This site is protected by reCAPTCHA and the Google{" "}
+              <a
+                href="https://policies.google.com/privacy"
+                className="text-accent underline"
+              >
+                Privacy Policy
+              </a>{" "}
+              and{" "}
+              <a
+                href="https://policies.google.com/terms"
+                className="text-accent underline"
+              >
+                Terms of Service
+              </a>{" "}
+              apply.
+            </p>
+          </div>
         </form>
       </Form>
     </>
