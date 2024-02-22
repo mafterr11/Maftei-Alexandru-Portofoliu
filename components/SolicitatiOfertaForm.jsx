@@ -63,52 +63,59 @@ export default function SolicitatiOfertaForm() {
   // RECAPTCHA
   const captchaSubmit = async () => {
     if (!executeRecaptcha) {
-      return;
+      console.error("ReCAPTCHA not ready");
+      throw new Error("ReCAPTCHA not ready");
     }
     const gRecaptchaToken = await executeRecaptcha("InquirySubmit");
-
-    const response = await axios({
-      method: "post",
-      url: "/api/recaptchaSubmit",
-      data: {
-        gRecaptchaToken,
-      },
-      headers: {
-        Accept: "application/json, text/plain, */*",
-        "Content-Type": "application/json",
-      },
+    // Verify the token on the backend in this endpoint
+    const response = await axios.post("/api/recaptchaSubmit", {
+      gRecaptchaToken,
     });
-
-    if (response?.data?.success === true) {
-      return;
+    
+    if (response.data.success) {
+      // Return the token if verification is successful
+      return gRecaptchaToken;
     } else {
-      return;
+      // Throw an error if verification fails
+      throw new Error("Failed to verify reCAPTCHA");
     }
-  }
+  };
+  
 
   const onSubmit = async (formData) => {
-    // RECAPTCHA
-    captchaSubmit();
     try {
+      // Await the captchaSubmit function to complete and get the token
+      const gRecaptchaToken = await captchaSubmit();
+  
+      // Check if the gRecaptchaToken is not undefined or null before proceeding
+      if (!gRecaptchaToken) {
+        // Handle the case where gRecaptchaToken is not received properly
+        toast({
+          title: "Captcha verification failed",
+          description: "Please complete the captcha to submit the form.",
+        });
+        return; // Exit the function as we don't have a valid token
+      }
+  
+      // Include the reCAPTCHA token in your submission data
       const response = await fetch("/api/send", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, gRecaptchaToken }),
       });
-
+  
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
-
+  
       const data = await response.json();
       if (data.success) {
         toast({
           title: "Mulțumim pentru interesul acordat!",
           description: "Vă vom contacta cât mai curând!",
         });
-        // Reset the form here
         form.reset(); // This will reset the form to defaultValues specified in useForm
       } else {
         toast({
@@ -123,6 +130,7 @@ export default function SolicitatiOfertaForm() {
       });
     }
   };
+  
 
   return (
     <>
