@@ -28,7 +28,7 @@ export default function LocalSwitcher() {
         id="language-switch"
         aria-label="Language Switch" // Providing an accessible name
       />
-      <Label htmlFor="language-switch" className={`absolute top-[0.35rem] ${localeActive === "en" ? "left-[0.50rem]" : "right-[0.50rem]"}`}>
+      <Label htmlFor="language-switch" className={`absolute top-[0.35rem] cursor-pointer ${localeActive === "en" ? "left-[0.50rem]" : "right-[0.50rem]"}`}>
         {localeActive.toUpperCase()}
       </Label>
     </div>
