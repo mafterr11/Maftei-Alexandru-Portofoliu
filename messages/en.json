@@ -81,6 +81,8 @@
     }
   },
   "Footer": {
-    "copyright": "All rights reserved."
+    "copyright": "All rights reserved.",
+    "gdpr": "/en/politica-de-confidentialitate",
+    "name": "Privacy Policy"
   }
 }

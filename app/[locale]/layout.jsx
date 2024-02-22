@@ -28,7 +28,7 @@ export default function RootLayout({ children, params: { locale } }) {
     <html lang={locale}>
       <body className={roboto.className}>
         <NextIntlClientProvider messages={pick(messages, "Nav", "Proiecte", "Contact")}>
-          <Header />
+        <Header />
         {children}
         <Footer />
         <Toaster />
