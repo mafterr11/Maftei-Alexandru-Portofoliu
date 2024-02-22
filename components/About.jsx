@@ -194,41 +194,6 @@ const About = () => {
                     </h3>
                     {/* experience / ed wrapper */}
                     <div className="grid md:grid-cols-2 gap-y-8">
-                      {/* experience */}
-                      <div className="flex flex-col gap-y-6">
-                        <div className="flex gap-x-4 items-center text-[22px] text-accent">
-                          <Briefcase size={28} />
-                          <h4 className="capitalize font-medium">
-                            {getData(qualificationData, t("exp")).title}
-                          </h4>
-                        </div>
-                        {/* list */}
-                        <div className="flex flex-col gap-y-8 mt-4">
-                          {getData(qualificationData, t("exp")).data.map(
-                            (item, index) => {
-                              const { company, role, years } = item;
-                              return (
-                                <div className="flex gap-x-8 group" key={index}>
-                                  <div className="h-[84px] w-[1px] bg-black/15 relative ml-2">
-                                    <div className="h-[11px] w-[11px] rounded-full bg-accent absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
-                                  </div>
-                                  <div>
-                                    <div className="font-semibold text-xl leading-none mb-2">
-                                      {company}
-                                    </div>
-                                    <div className="text-lg leading-none mb-4">
-                                      {role}
-                                    </div>
-                                    <div className="text-base font-medium">
-                                      {years}
-                                    </div>
-                                  </div>
-                                </div>
-                              );
-                            }
-                          )}
-                        </div>
-                      </div>
                       {/* ed */}
                       <div className="flex flex-col gap-y-6">
                         <div className="flex gap-x-4 items-center text-[22px] text-accent">
@@ -253,6 +218,41 @@ const About = () => {
                                     </div>
                                     <div className="text-lg leading-none mb-4">
                                       {qualification}
+                                    </div>
+                                    <div className="text-base font-medium">
+                                      {years}
+                                    </div>
+                                  </div>
+                                </div>
+                              );
+                            }
+                          )}
+                        </div>
+                      </div>
+                      {/* experience */}
+                      <div className="flex flex-col gap-y-6">
+                        <div className="flex gap-x-4 items-center text-[22px] text-accent">
+                          <Briefcase size={28} />
+                          <h4 className="capitalize font-medium">
+                            {getData(qualificationData, t("exp")).title}
+                          </h4>
+                        </div>
+                        {/* list */}
+                        <div className="flex flex-col gap-y-8 mt-4">
+                          {getData(qualificationData, t("exp")).data.map(
+                            (item, index) => {
+                              const { company, role, years } = item;
+                              return (
+                                <div className="flex gap-x-8 group" key={index}>
+                                  <div className="h-[84px] w-[1px] bg-black/15 relative ml-2">
+                                    <div className="h-[11px] w-[11px] rounded-full bg-accent absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
+                                  </div>
+                                  <div>
+                                    <div className="font-semibold text-xl leading-none mb-2">
+                                      {company}
+                                    </div>
+                                    <div className="text-lg leading-none mb-4">
+                                      {role}
                                     </div>
                                     <div className="text-base font-medium">
                                       {years}
