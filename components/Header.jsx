@@ -7,8 +7,8 @@ const Header = () => {
   return (
     <header className="bg-body py-3 text-black fixed top-0 right-0 left-0 w-full shadow-inner z-50 transition-all duration-200 border-b-[2px] border-accent">
       <div>
-        <div className="flex items-center justify-between md:max-lg:justify-between px-10 md:px-12 xl:gap-x-32">
-          <Logo />
+        <div className="flex items-center justify-between md:max-lg:justify-between px-7 md:px-12 xl:gap-x-32">
+          <Logo source={"/header-pc.png"} size={"h-7"}/>
           <Nav
             containerStyles="hidden xl:flex items-center gap-x-16"
             linkStyles="text-xl"

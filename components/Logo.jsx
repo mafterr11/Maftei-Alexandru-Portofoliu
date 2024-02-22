@@ -1,14 +1,13 @@
+import Image from "next/image";
 import Link from "next/link";
 
-const Logo = () => {
+const Logo = ({source, size}) => {
   return (
-    <div>
-      <Link href="/" className="flex items-center justify-center gap-x-4">
-        <h3>
-          <span className="text-accent">Myriad</span> Tech
-        </h3>
-      </Link>
-    </div>
+        <Link href="/">
+        <div className={`${size} w-auto`}>
+        <Image src={source} width={800} height={800} className={`${size} w-auto`} alt="Myriad Tech logo"/>
+        </div>
+        </Link>
   );
 };
 
