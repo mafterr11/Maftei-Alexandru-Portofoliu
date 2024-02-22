@@ -78,7 +78,13 @@ export default function SolicitatiOfertaForm() {
         "Content-Type": "application/json",
       },
     });
-  };
+
+    if (response?.data?.success === true) {
+      return;
+    } else {
+      return;
+    }
+  }
 
   const onSubmit = async (formData) => {
     // RECAPTCHA
