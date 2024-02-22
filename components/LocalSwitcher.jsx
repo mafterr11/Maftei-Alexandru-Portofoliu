@@ -12,7 +12,7 @@ export default function LocalSwitcher() {
   const actualPath = `/${pathname.split('/').filter(Boolean).slice(1).join('/')}`;
 
   const toggleLocale = () => {
-    const nextLocale = localeActive === "en" ? "en" : "ro";
+    const nextLocale = localeActive === "en" ? "ro" : "en";
     startTransition(() => {
       router.replace(`/${nextLocale}${actualPath}`);
     });
