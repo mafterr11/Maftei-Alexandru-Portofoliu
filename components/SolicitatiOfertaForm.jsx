@@ -82,6 +82,7 @@ export default function SolicitatiOfertaForm() {
   };
 
   const onSubmit = async (formData) => {
+    // RECAPTCHA
     captchaSubmit();
     try {
       const response = await fetch("/api/send", {
