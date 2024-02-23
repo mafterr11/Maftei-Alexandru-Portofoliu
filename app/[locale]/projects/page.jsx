@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Tabs, TabsList, TabsContent, TabsTrigger } from "@/components/ui/tabs";
 import ProjectCard from "@/components/ProjectCard";
 import { useTranslations } from "next-intl";
+import { Dot } from "@/components/Dot";
 
 
 const Projects = () => {
@@ -50,10 +51,7 @@ const Projects = () => {
     <section className="min-h-screen pt-40">
       <div className="container mx-auto">
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
-          <div className="relative text-accent text-[65px]">
-            &#x2022;{" "}
-            <span className=" h-4 w-4 border-2 rounded-full border-black-heavy/70 absolute top-2 right-0"></span>
-          </div>
+          <Dot />
           {t("page.title")}
         </h2>
         {/* tabs */}

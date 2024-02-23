@@ -64,8 +64,8 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
             <IoCloseOutline />
           </div>
           {/* logo */}
-          <div onClick={() => setIsMenuOpen(false)}>
-            <Logo source={"/header-mobile.png"} size={"h-14"} />
+          <div onClick={() => setIsMenuOpen(false)} className="mt-3">
+            <Logo source={"/header-mobile.png"} size={"h-[3.75rem]"} />
           </div>
           {/* links */}
           <div className='flex flex-col gap-y-8'>

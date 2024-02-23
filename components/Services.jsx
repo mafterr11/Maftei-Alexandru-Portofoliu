@@ -7,6 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { useTranslations } from "next-intl";
+import { Dot } from './Dot';
 
 const Services = () => {
   const t = useTranslations("Services");
@@ -32,10 +33,7 @@ const Services = () => {
     <section className="mb-12 xl:mb-36 bg-purple-light py-12 pb-20">
       <div className="container mx-auto">
         <h2 className="section-title mb-24 text-center mx-auto">
-          <div className="relative text-accent text-[65px]">
-            &#x2022;{" "}
-            <span className=" h-4 w-4 border-2 rounded-full border-black-heavy/70 absolute top-2 right-0"></span>
-          </div>
+          <Dot />
           {t("title")}
         </h2>
         {/* grid items */}

@@ -11,7 +11,7 @@ const Footer = () => {
         <div className='flex flex-col items-center justify-center'>
           <Socials className='flex gap-x-6 text-[20px]' />
           <div className='text-center my-2'>
-            Copyright &copy; Maftei Alexandru. {t("copyright")}
+            Copyright &copy; <a href="https://www.linkedin.com/in/maftei-alexandru/" className="hover "><span className="text-accent">Maftei Alexandru.</span></a> {t("copyright")}
           </div>
           <div className='text-center font-semibold underline'>
             <Link href={t("gdpr")}>{t("name")}</Link>
