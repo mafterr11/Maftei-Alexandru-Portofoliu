@@ -22,7 +22,7 @@ const Projects = () => {
       category: "NextJS 14",
       name: "TNG GRUP",
       description: t("tng"),
-      link: "https://tng-grup.vercel.app",
+      link: "https://tngag.ro",
       github: "https://github.com/mafterr11/TNG-GRUP",
     },
     {
