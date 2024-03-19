@@ -117,7 +117,7 @@ const About = () => {
         {
           company: "Freelancer",
           role: "Web Developer",
-          years: "2024-present",
+          years: "2023-present",
         },
       ],
     },
