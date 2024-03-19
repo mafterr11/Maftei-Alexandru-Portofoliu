@@ -22,7 +22,7 @@ const Hero = () => {
             </p>
             {/* buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
-              <Link href="/contact">
+              <Link href={t('contact-link')}>
                 <Button className="gap-x-2"> 
                 {t('contact-button')} <Send size={18} />
                 </Button>
