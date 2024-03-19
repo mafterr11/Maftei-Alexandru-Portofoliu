@@ -49,14 +49,14 @@
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
-  background-color: #826294;
+  background-color: #796250;
 }
 
 .swiper-button-next:after,
 .swiper-button-prev:after,
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
-  color: #826294;
+  color: #796250;
 }
 
 .hover:hover {
@@ -73,7 +73,7 @@
   width: 0px;
   height: 2px;
   display: block;
-  background: #866896;
+  background: #796250;
   transition: 300ms;
 }
 
