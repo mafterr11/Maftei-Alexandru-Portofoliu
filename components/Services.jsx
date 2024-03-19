@@ -30,7 +30,7 @@ const Services = () => {
     },
   ];
   return (
-    <section className="mb-12 xl:mb-36 bg-purple-light py-12 pb-20">
+    <section className="mb-12 xl:mb-36 bg-bej-light py-12 pb-20">
       <div className="container mx-auto">
         <h2 className="section-title mb-24 text-center mx-auto">
           <Dot />
@@ -44,7 +44,7 @@ const Services = () => {
                 key={index}
                 className="w-full bg-accent/0 max-w-[424px] h-[320px] flex flex-col pt-16 pb-10 justify-center items-center relative"
               >
-                <CardHeader className="text-accent absolute -top-[65px] bg-purple-light">
+                <CardHeader className="text-accent absolute -top-[65px] bg-bej-light">
                   <div className="flex justify-center items-center w-[140px] h-[80px]">
                     {item.icon}
                   </div>

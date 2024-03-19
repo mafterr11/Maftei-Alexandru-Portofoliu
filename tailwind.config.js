@@ -21,23 +21,21 @@ module.exports = {
       xl: "1200px",
     },
     colors: {
-      accent: "#826294",
+      accent: "#796250",
       body: {
-        DEFAULT: "#F0F0F5",
-        toast: "#e5e5e5",
-        // F0F0F5
-        // e5e5e5
+        DEFAULT: "#f9f4f0",
+        // toast: "#e5e5e5",
       },
       white: "#fff",
       black: {
         DEFAULT: "#0d0c0b",
         heavy: "#000000",
       },
-      purple: {
-        light: "#e5e2eb",
+      bej: {
+        light: "#efebe9",
       },
       grey: {
-        DEFAULT: "#232323",
+        // DEFAULT: "#232323",
         light: "#ECECEC",
       },
       red: {
