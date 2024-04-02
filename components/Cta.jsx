@@ -7,7 +7,7 @@ const Cta = () => {
   const t = useTranslations("Cta");
   const tLink = useTranslations("Hero");
 
-  return <section className="py-24 bg-accent/10 mb-24">
+  return <section className="py-24 bg-body-light mb-24">
     <div  className="container mx-auto">
         <div className="flex flex-col items-center">
             <h2 className="max-w-3xl text-center mb-6 flex flex-col items-center justify-center">
