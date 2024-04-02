@@ -8,7 +8,7 @@ import {useTranslations} from 'next-intl';
 const Hero = () => {
   const t = useTranslations('Hero');
   return (
-    <section className="py-24 mb-24 xl:pt-56 bg-accent/10">
+    <section className="py-24 mb-24 xl:pt-56 bg-body-light">
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8 relative">
           {/* text */}

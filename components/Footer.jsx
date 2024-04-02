@@ -6,7 +6,7 @@ const Footer = () => {
   const t = useTranslations("Footer");
 
   return (
-    <footer className='py-4 border-t-2 border-accent bg-accent/10'>
+    <footer className='py-4 border-t-2 border-accent bg-body-light'>
       <div className='container mx-auto'>
         <div className='flex flex-col items-center justify-center'>
           <Socials className='flex gap-x-6 text-[20px]' />

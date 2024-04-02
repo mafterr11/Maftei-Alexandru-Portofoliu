@@ -23,16 +23,14 @@ module.exports = {
     colors: {
       accent: "#796250",
       body: {
-        DEFAULT: "#f9f4f0",
+        DEFAULT: "#F1F2EB",
+        light: "#E4E3DB",
         // toast: "#e5e5e5",
       },
       white: "#fff",
       black: {
         DEFAULT: "#0d0c0b",
         heavy: "#000000",
-      },
-      bej: {
-        light: "#efebe9",
       },
       grey: {
         // DEFAULT: "#232323",
