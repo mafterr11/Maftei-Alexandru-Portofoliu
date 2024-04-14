@@ -42,7 +42,7 @@ const Services = () => {
             return (
               <Card
                 key={index}
-                className="w-full bg-accent/0 max-w-[424px] h-[320px] flex flex-col pt-16 pb-10 justify-center items-center relative"
+                className="w-full bg-accent/0 max-w-[424px] h-[320px] flex flex-col pt-20 pb-10 justify-start items-center relative"
               >
                 <CardHeader className="text-accent absolute -top-[65px] bg-body-light">
                   <div className="flex justify-center items-center w-[140px] h-[80px]">

@@ -23,7 +23,7 @@ module.exports = {
     colors: {
       accent: "#796250",
       body: {
-        DEFAULT: "#F1F2EB",
+        DEFAULT: "#F7F8F3",
         light: "#E4E3DB",
         // toast: "#e5e5e5",
       },
