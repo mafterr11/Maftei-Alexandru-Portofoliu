@@ -8,6 +8,7 @@ import {
   useMessages,
 } from "next-intl";
 import pick from "lodash/pick";
+import { Analytics } from "@vercel/analytics/react"
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -30,6 +31,7 @@ export default function RootLayout({ children, params: { locale } }) {
         <NextIntlClientProvider messages={pick(messages, "Nav", "Proiecte", "Contact")}>
         <Header />
         {children}
+        <Analytics />
         <Footer />
         <Toaster />
         </NextIntlClientProvider>
