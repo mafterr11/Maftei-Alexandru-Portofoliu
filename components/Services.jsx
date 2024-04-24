@@ -7,20 +7,20 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { useTranslations } from "next-intl";
-import { Dot } from './Dot';
+import { Dot } from "./Dot";
 
 const Services = () => {
   const t = useTranslations("Services");
   const servicesData = [
     {
-      icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
-      title: "Web Design",
-      description: t("first.description"),
-    },
-    {
       icon: <Blocks size={72} strokeWidth={0.8} />,
       title: "Web Development",
       description: t("second.description"),
+    },
+    {
+      icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
+      title: "Web Design",
+      description: t("first.description"),
     },
     {
       icon: <Gem size={72} strokeWidth={0.8} />,
