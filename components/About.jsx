@@ -48,10 +48,19 @@ const skillData = [
         name: "JavaScript",
       },
       {
-        name: "TailwindCSS",
+        name: "ReactJS",
       },
       {
         name: "NextJS 14",
+      },
+      {
+        name: "TailwindCSS",
+      },
+      {
+        name: "Shadcn-UI",
+      },
+      {
+        name: "Framer Motion",
       },
     ],
   },
@@ -71,7 +80,7 @@ const skillData = [
         name: "Hibernate",
       },
       {
-        name: "MySQL",
+        name: "MySQL, PostgreSQL",
       },
       {
         name: "PostMan",
@@ -273,13 +282,13 @@ const About = () => {
                       <h4 className="text-xl font-semibold mb-2">Frontend</h4>
                       <div className="border-b border-accent mb-4"></div>
                       {/* skill list frontend */}
-                      <div>
+                      <div className="grid md:grid-cols-2">
                         {getData(skillData, "frontend").data.map(
                           (item, index) => {
                             const { name } = item;
                             return (
                               <div
-                                className="w-2/4 text-center xl:text-left mx-auto xl:mx-0"
+                                className="text-center xl:text-left mx-auto xl:mx-0"
                                 key={index}
                               >
                                 <div className="font-medium">
@@ -301,13 +310,13 @@ const About = () => {
                       </h4>
                       <div className="border-b border-accent mb-4"></div>
                       {/* skill list backend */}
-                      <div>
+                      <div className="grid md:grid-cols-2">
                         {getData(skillData, "backend").data.map(
                           (item, index) => {
                             const { name } = item;
                             return (
                               <div
-                                className="w-2/4 text-center xl:text-left mx-auto xl:mx-0"
+                                className="text-center xl:text-left mx-auto xl:mx-0"
                                 key={index}
                               >
                                 <div className="font-medium">
