@@ -6,15 +6,15 @@ import { Badge } from "@/components/ui/badge";
 
 const ProjectCard = ({ project }) => {
   return (
-    <Card className="bg-body border-2 group overflow-hidden relative border-black/15 h-[580px] shadow-md">
+    <Card className="bg-body border-2 group overflow-hidden relative border-black/15 h-[620px] shadow-md">
       <CardHeader className="p-0">
         {/* Image */}
-        <div className="relative bg-work bg-[110%] bg-no-repeat bg-accent/15 w-full h-[270px] flex items-center justify-center">
+        <div className="relative bg-work bg-[110%] bg-no-repeat bg-accent/15 w-full h-[300px] flex items-center justify-center">
           <Image
-            className="absolute bottom-0 shadow-2xl h-[200px] w-[280px] rounded-t-[15px]"
+            className="absolute bottom-0 shadow-2xl h-[250px] w-[280px] rounded-t-[15px]"
             src={project.image}
-            width={276}
-            height={255}
+            width={500}
+            height={500}
             alt="Alexandru Maftei latest projects"
             priority
           />

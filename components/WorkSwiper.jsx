@@ -45,7 +45,7 @@ const WorkSwiper = () => {
   ];
   return (
     <Swiper
-      className="h-[610px]"
+      className="h-[660px]"
       slidesPerView={1}
       breakpoints={{
         640: {
