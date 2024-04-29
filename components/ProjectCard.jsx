@@ -10,6 +10,7 @@ const ProjectCard = ({ project }) => {
       <CardHeader className="p-0">
         {/* Image */}
         <div className="relative bg-work bg-[110%] bg-no-repeat bg-accent/15 w-full h-[240px] flex items-center justify-center">
+          {/* 1920 x 1079 pozele de proiect */}
           <Image
             className="absolute bottom-0 shadow-2xl h-[180px] w-[320px] rounded-t-md object-contain"
             src={project.image}
