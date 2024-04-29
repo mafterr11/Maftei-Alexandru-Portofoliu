@@ -279,7 +279,7 @@ export default function SolicitatiOfertaForm() {
               )}
             />
           </div>
-          <div className="recaptcha-branding flex flex-col gap-y-4 md:flex-row md:gap-x-4">
+          <div className="recaptcha-branding flex flex-col gap-y-4 md:flex-row md:gap-x-4 max-xl:pt-4">
             <Button className="flex items-center gap-x-1 max-w-[166px] rounded-[8px]">
               {t("form.btn")}
               <ArrowRightIcon size={20} />
