@@ -23,7 +23,7 @@ const Hero = () => {
             {/* buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
               <Link href={t('contact-link')}>
-                <Button className="gap-x-2"> 
+                <Button className="gap-x-2 shadow-button"> 
                 {t('contact-button')} <Send size={18} />
                 </Button>
               </Link>
@@ -33,7 +33,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 download
               >
-                <Button className="gap-x-2" variant="secondary">
+                <Button className="gap-x-2 shadow-button" variant="secondary">
                 {t('download-button')}
                   <Download size={18} />
                 </Button>

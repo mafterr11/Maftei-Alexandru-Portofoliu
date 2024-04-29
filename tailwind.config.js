@@ -41,6 +41,9 @@ module.exports = {
       },
     },
     extend: {
+      boxShadow: {
+        'button': '2px 3px 3px rgba(0, 0, 0, 0.25)',
+      },
       backgroundImage: {
         work: "url('/project-bg-light.png')",
         contact: "url('/illustration-dark.svg')",
