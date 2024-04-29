@@ -10,7 +10,7 @@ const Projects = () => {
   const t = useTranslations("Proiecte");
   const projectData = [
     {
-      image: "/work/madinytattoo.webp",
+      image: "/work/madinytattoo.png",
       category: "NextJS 14",
       name: "MadinyTattoo",
       description: t("madiny"),
@@ -18,7 +18,7 @@ const Projects = () => {
       github: "https://github.com/mafterr11/MadinyTattoo",
     },
     {
-      image: "/work/tng.webp",
+      image: "/work/tng.png",
       category: "NextJS 14",
       name: "TNG GRUP",
       description: t("tng"),
@@ -26,7 +26,7 @@ const Projects = () => {
       github: "https://github.com/mafterr11/TNG-GRUP",
     },
     {
-      image: "/work/manarh.webp",
+      image: "/work/manarh.png",
       category: "In Progress",
       name: "Manarh",
       description: t("manarh"),
