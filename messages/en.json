@@ -48,13 +48,14 @@
     "contact-button": "Contact Me"
   },
   "Proiecte": {
-    "madiny": "Explore the creative universe of MadinyTattoo: the platform where each body art concept comes to life through craftsmanship and customized design.",
-    "tng": "Navigate through the TNG Group portfolio, the web platform that connects you with construction innovation shaping the urban landscape.",
-    "manarh": "Manarh: The digital experience in architecture, offering personalized interfaces and a modern vision on architectural design.",
     "page": {
       "title": "My Projects",
       "tab": "All Projects"
-    }
+    },
+    "madiny": "Explore the creative universe of MadinyTattoo: the platform where each body art concept comes to life through craftsmanship and customized design.",
+    "tng": "Navigate through the TNG Group portfolio, the web platform that connects you with construction innovation shaping the urban landscape.",
+    "manarh": "The digital experience in architecture, offering personalized interfaces and a modern vision on architectural design.",
+    "monte-bianco": "The website features an intuitive mobile dropdown menu, enabling easy navigation on various devices. Users can effortlessly browse through the extensive product catalog via interactive tabs, enhancing the browsing experience." 
   },
   "Nav": {
     "home": {

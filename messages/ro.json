@@ -48,13 +48,14 @@
     "contact-button": "Contactați-mă"
   },
   "Proiecte": {
-    "madiny": "Explorați universul creativ al lui MadinyTattoo: platforma web unde fiecare concept de artă corporală prinde viață prin măiestrie și design personalizat.",
-    "tng": "Navigați prin portofoliul TNG Grup, platforma web ce vă conectează cu inovația în construcții care modelează peisajul urban.",
-    "manarh": "Manarh: Experiența digitală în arhitectură, oferind interfețe personalizate și o viziune modernă asupra designului arhitectural.",
     "page": {
       "title": "Proiectele Mele",
       "tab": "Toate Proiectele"
-    }
+    },
+    "madiny": "Explorați universul creativ al lui MadinyTattoo: platforma web unde fiecare concept de artă corporală prinde viață prin măiestrie și design personalizat.",
+    "tng": "Navigați prin portofoliul TNG Grup, platforma web ce vă conectează cu inovația în construcții care modelează peisajul urban.",
+    "manarh": "Experiența digitală în arhitectură, oferind interfețe personalizate și o viziune modernă asupra designului arhitectural.",
+    "monte-bianco": "Site-ul dispune de un meniu dropdown mobil intuitiv, care permite o navigare ușoară pe diverse dispozitive. Utilizatorii pot naviga fără efort prin catalogul extins de produse prin intermediul unor file interactive, îmbunătățind experiența de navigare."
   },
   "Nav": {
     "home": {

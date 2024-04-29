@@ -22,21 +22,30 @@ const WorkSwiper = () => {
       category: "NextJS 14",
       name: "TNG GRUP",
       description: t("tng"),
-      link: "https://tng-grup.vercel.app",
+      link: "https://tngag.ro",
       github: "https://github.com/mafterr11/TNG-GRUP",
     },
     {
       image: "/work/manarh.webp",
-      category: "Fullstack",
+      category: "In Progress",
       name: "Manarh",
       description: t("manarh"),
       link: "/",
       github: "/",
     },
+     {
+      image: "/work/monte-bianco.png",
+      category: "In Progress",
+      name: "Monte Bianco",
+      description: t("monte-bianco"),
+      link: "https://montebianco.vercel.app",
+      github: "/",
+    },
+    
   ];
   return (
     <Swiper
-      className="h-[520px]"
+      className="h-[610px]"
       slidesPerView={1}
       breakpoints={{
         640: {

@@ -27,12 +27,21 @@ const Projects = () => {
     },
     {
       image: "/work/manarh.webp",
-      category: "Fullstack",
+      category: "In Progress",
       name: "Manarh",
       description: t("manarh"),
       link: "/",
       github: "/",
     },
+     {
+      image: "/work/monte-bianco.png",
+      category: "In Progress",
+      name: "Monte Bianco",
+      description: t("monte-bianco"),
+      link: "https://montebianco.vercel.app",
+      github: "/",
+    },
+    
   ];
   const uniqueCategories = [
     t("page.tab"),
