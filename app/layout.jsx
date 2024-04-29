@@ -4,6 +4,9 @@ export const metadata = {
     "Hello, my name is Maftei Alexandru. Lets start this journey together and create your dream website! ",
   keywords:
     "web development, frontend, web design, freelancer, bucuresti, romania, small buisiness, maftei alexandru, site prices, myriad tech",
+    icons: {
+      icon: "/icon.svg"
+    }
 };
 
 export default function RootLayout({ children }) {
