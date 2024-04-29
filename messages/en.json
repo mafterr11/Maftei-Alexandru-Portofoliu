@@ -75,15 +75,36 @@
     "subtitle": "I am eager to start our journey - let's collaborate to create something truly remarkable. Reach out today and let's turn ideas into reality!",
     "subtitle2": "Say Hello",
     "form": {
-      "name": "Full Name",
-      "tel": "Phone Number",
-      "msg": "Tell us your request!",
-      "btn": "Submit"
+      "name": {
+        "label":"Full Name",
+        "input": "Add your full name"
+      },
+      "email": {
+        "label":"Email",
+        "input": "Your email address"
+      },
+      "tel": {
+        "label":"Phone Number",
+        "input": "Enter your phone number"
+      },
+      "msg": {
+        "label":"Message",
+        "input": "What would you like to discuss?"
+      },
+      "gdpr": "I agree to data processing (GDPR)",
+      "btn": "Submit",
+      "reCaptcha": {
+        "1": "This site is protected by reCAPTCHA and the Google",
+        "2": "Privacy Policy",
+        "3": "and",
+        "4": "Terms of Service",
+        "5": "apply."
     }
-  },
-  "Footer": {
-    "copyright": "All rights reserved.",
-    "gdpr": "/en/politica-de-confidentialitate",
-    "name": "Privacy Policy"
   }
+},
+"Footer": {
+  "copyright": "All rights reserved.",
+  "gdpr": "/en/politica-de-confidentialitate",
+  "name": "Privacy Policy"
+}
 }

@@ -75,10 +75,31 @@
     "subtitle": "Sunt nerăbdător să începem călătoria noastră - să colaborăm pentru a crea ceva cu adevărat remarcabil. Luați legătura astăzi și să transformăm ideile în realitate!",
     "subtitle2": "Salutări",
     "form": {
-      "name": "Numele Complet",
-      "tel": "Număr de telefon",
-      "msg": "Transmiteți un mesaj",
-      "btn": "Trimite"
+      "name": {
+        "label":"Nume",
+        "input": "Numele Complet"
+      },
+      "email": {
+        "label":"Email",
+        "input": "Adresa dvs. de email"
+      },
+      "tel": {
+        "label":"Telefon",
+        "input": "Număr de telefon"
+      },
+      "msg": {
+        "label":"Mesaj",
+        "input": "Transmiteți un mesaj"
+      },
+      "gdpr": "Sunt de acord cu prelucrarea datelor(GDPR)",
+      "btn": "Trimite",
+      "reCaptcha": {
+        "1": "Site protejat de reCAPTCHA și se aplică",
+        "2": "Politica de confidențialitate",
+        "3": "și",
+        "4": "Termenii și condițiile",
+        "5": "Google."
+      }
     }
   },
   "Footer": {

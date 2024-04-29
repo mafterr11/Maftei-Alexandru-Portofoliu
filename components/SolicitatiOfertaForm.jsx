@@ -25,6 +25,7 @@ import { useToast } from "@/components/ui/use-toast";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import axios from "axios";
 import { useTranslations } from "next-intl";
+import { Label } from "./ui/label";
 
 const formSchema = z.object({
   nume: z.string().min(3, {
@@ -42,6 +43,9 @@ const formSchema = z.object({
     .max(200, {
       message: "Max 200 characters.",
     }),
+  acceptTerms: z.boolean().refine((val) => val === true, {
+    message: "You must agree to the GDPR",
+  }),
 });
 
 export default function SolicitatiOfertaForm() {
@@ -55,6 +59,7 @@ export default function SolicitatiOfertaForm() {
       email: "",
       telefon: "",
       mesaj: "",
+      acceptTerms: false,
     },
   });
   const { toast } = useToast();
@@ -71,7 +76,7 @@ export default function SolicitatiOfertaForm() {
     const response = await axios.post("/api/recaptchaSubmit", {
       gRecaptchaToken,
     });
-    
+
     if (response.data.success) {
       // Return the token if verification is successful
       return gRecaptchaToken;
@@ -80,13 +85,12 @@ export default function SolicitatiOfertaForm() {
       throw new Error("Failed to verify reCAPTCHA");
     }
   };
-  
 
   const onSubmit = async (formData) => {
     try {
       // Await the captchaSubmit function to complete and get the token
       const gRecaptchaToken = await captchaSubmit();
-  
+
       // Check if the gRecaptchaToken is not undefined or null before proceeding
       if (!gRecaptchaToken) {
         // Handle the case where gRecaptchaToken is not received properly
@@ -96,7 +100,7 @@ export default function SolicitatiOfertaForm() {
         });
         return; // Exit the function as we don't have a valid token
       }
-  
+
       // Include the reCAPTCHA token in your submission data
       const response = await fetch("/api/send", {
         method: "POST",
@@ -105,11 +109,11 @@ export default function SolicitatiOfertaForm() {
         },
         body: JSON.stringify({ ...formData, gRecaptchaToken }),
       });
-  
+
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
-  
+
       const data = await response.json();
       if (data.success) {
         toast({
@@ -130,7 +134,6 @@ export default function SolicitatiOfertaForm() {
       });
     }
   };
-  
 
   return (
     <>
@@ -147,15 +150,18 @@ export default function SolicitatiOfertaForm() {
               render={({ field }) => (
                 <FormItem>
                   <FormControl as="div">
-                    <div className="relative flex items-center">
-                      <Input
-                        placeholder={t("form.name")}
-                        type="name"
-                        id="nume"
-                        autoComplete="name"
-                        {...field}
-                      />
-                      <User className="absolute right-6" size={20} />
+                    <div className="">
+                      <Label>{t("form.name.label")}</Label>
+                      <div className="relative flex items-center">
+                        <Input
+                          placeholder={t("form.name.input")}
+                          type="name"
+                          id="nume"
+                          autoComplete="name"
+                          {...field}
+                        />
+                        <User className="absolute right-6" size={20} />
+                      </div>
                     </div>
                   </FormControl>
                   <FormMessage className="text-red" />
@@ -171,15 +177,18 @@ export default function SolicitatiOfertaForm() {
               render={({ field }) => (
                 <FormItem>
                   <FormControl>
-                    <div className="relative flex items-center">
-                      <Input
-                        placeholder="Email"
-                        type="email"
-                        id="email"
-                        autoComplete="email"
-                        {...field}
-                      />
-                      <MailIcon className="absolute right-6" size={20} />
+                    <div>
+                      <Label>{t("form.email.label")}</Label>
+                      <div className="relative flex items-center">
+                        <Input
+                          placeholder={t("form.email.input")}
+                          type="email"
+                          id="email"
+                          autoComplete="email"
+                          {...field}
+                        />
+                        <MailIcon className="absolute right-6" size={20} />
+                      </div>
                     </div>
                   </FormControl>
                   <FormMessage className="text-red" />
@@ -195,15 +204,21 @@ export default function SolicitatiOfertaForm() {
               render={({ field }) => (
                 <FormItem>
                   <FormControl>
-                    <div className="relative flex items-center">
-                      <Input
-                        placeholder={t("form.tel")}
-                        type="tel"
-                        id="telefon"
-                        autoComplete="tel"
-                        {...field}
-                      />
-                      <PhoneIcon className="absolute top-4 right-6" size={20} />
+                    <div>
+                      <Label>{t("form.tel.label")}</Label>
+                      <div className="relative flex items-center">
+                        <Input
+                          placeholder={t("form.tel.input")}
+                          type="tel"
+                          id="telefon"
+                          autoComplete="tel"
+                          {...field}
+                        />
+                        <PhoneIcon
+                          className="absolute top-4 right-6"
+                          size={20}
+                        />
+                      </div>
                     </div>
                   </FormControl>
                   <FormMessage className="text-red" />
@@ -218,16 +233,45 @@ export default function SolicitatiOfertaForm() {
               render={({ field }) => (
                 <FormItem>
                   <FormControl>
-                    <div className="relative flex items-center">
-                      <Textarea
-                        placeholder={t("form.msg")}
-                        id="mesaj"
+                    <div>
+                      <Label>{t("form.msg.label")}</Label>
+                      <div className="relative flex items-center">
+                        <Textarea
+                          placeholder={t("form.msg.input")}
+                          id="mesaj"
+                          {...field}
+                        />
+                        <MessageSquare
+                          className="absolute top-4 right-6"
+                          size={20}
+                        />
+                      </div>
+                    </div>
+                  </FormControl>
+                  <FormMessage className="text-red" />
+                </FormItem>
+              )}
+            />
+          </div>
+          <div>
+            <FormField
+              control={form.control}
+              name="acceptTerms"
+              render={({ field }) => (
+                <FormItem>
+                  <FormControl
+                    as="label"
+                    className="flex items-center space-x-3 pl-1"
+                  >
+                    <div>
+                      <Input
+                        type="checkbox"
                         {...field}
+                        id="acceptTerms"
+                        checked={field.value}
+                        className="h-[15px] w-[15px]"
                       />
-                      <MessageSquare
-                        className="absolute top-4 right-6"
-                        size={20}
-                      />
+                      <span className="text-[15px]">{t("form.gdpr")}</span>
                     </div>
                   </FormControl>
                   <FormMessage className="text-red" />
@@ -241,21 +285,21 @@ export default function SolicitatiOfertaForm() {
               <ArrowRightIcon size={20} />
             </Button>
             <p className="leading-normal">
-              This site is protected by reCAPTCHA and the Google{" "}
+              {t("form.reCaptcha.1")}{" "}
               <a
                 href="https://policies.google.com/privacy"
                 className="text-accent underline"
               >
-                Privacy Policy
+                {t("form.reCaptcha.2")}
               </a>{" "}
-              and{" "}
+              {t("form.reCaptcha.3")}{" "}
               <a
                 href="https://policies.google.com/terms"
                 className="text-accent underline"
               >
-                Terms of Service
+                {t("form.reCaptcha.4")}
               </a>{" "}
-              apply.
+              {t("form.reCaptcha.5")}
             </p>
           </div>
         </form>

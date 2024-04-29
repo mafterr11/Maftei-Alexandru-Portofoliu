@@ -14,5 +14,6 @@ export const EmailTemplate = ({
     <p>Email: {email}</p>
     <p>Telefon: {telefon}</p>
     <p>Mesaj: {mesaj}</p>
+    <p>Odata cu primirea acestul email, utilizatorul a fost de acord cu GDPR-ul.</p>
   </div>
 );
