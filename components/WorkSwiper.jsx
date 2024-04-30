@@ -1,7 +1,8 @@
 "use client";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import "swiper/css/autoplay";
+import { Pagination, Autoplay } from "swiper/modules";
 import ProjectCard from "./ProjectCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useTranslations } from "next-intl";
@@ -47,14 +48,19 @@ const WorkSwiper = () => {
     <Swiper
       className="h-[660px]"
       slidesPerView={1}
+      slidesPerGroup={1}
       breakpoints={{
         640: {
           slidesPerView: 2,
         },
       }}
       spaceBetween={30}
-      modules={[Pagination]}
+      modules={[Pagination, Autoplay]}
       pagination={{ clickable: true }}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: true, 
+      }}
     >
       {/* show only first 4 projects */}
       {projectData.slice(0.4).map((project, index) => {

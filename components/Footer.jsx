@@ -10,8 +10,8 @@ const Footer = () => {
       <div className='container mx-auto'>
         <div className='flex flex-col items-center justify-center'>
           <Socials className='flex gap-x-6 text-[20px]' />
-          <div className='text-center my-2'>
-            Copyright &copy; <a href="https://www.linkedin.com/in/maftei-alexandru/" className="hover">{currentYear} <span className="text-accent">Maftei Alexandru.</span></a>
+          <div className='text-center my-2 flex items-center justify-center gap-x-1'>
+            Copyright &copy; {currentYear} -<a href="https://www.linkedin.com/in/maftei-alexandru/" className="hover"><span className="text-accent">Maftei Alexandru.</span></a>
           </div>
           <div className='text-center font-semibold underline'>
             <Link href={t("gdpr")}>{t("name")}</Link>

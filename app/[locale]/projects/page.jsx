@@ -26,7 +26,7 @@ const Projects = () => {
       github: "https://github.com/mafterr11/TNG-GRUP",
     },
     {
-      image: "/work/manarh.png",
+      image: "/work/manarh.webp",
       category: "In Progress",
       name: "Manarh",
       description: t("manarh"),
