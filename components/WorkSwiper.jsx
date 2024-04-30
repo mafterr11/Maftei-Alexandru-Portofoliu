@@ -59,7 +59,7 @@ const WorkSwiper = () => {
       pagination={{ clickable: true }}
       autoplay={{
         delay: 2500,
-        disableOnInteraction: true, 
+        pauseOnMouseEnter: true,
       }}
     >
       {/* show only first 4 projects */}
