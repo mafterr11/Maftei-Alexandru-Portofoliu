@@ -6,42 +6,42 @@ import { Badge } from "@/components/ui/badge";
 
 const ProjectCard = ({ project }) => {
   return (
-    <Card className="bg-body border-2 group overflow-hidden relative border-black/15 h-[590px] shadow-md">
-      <CardHeader className="p-0">
+    <Card className='bg-body border-2 group overflow-hidden relative border-black/15 h-[590px] shadow-md'>
+      <CardHeader className='p-0'>
         {/* Image */}
-        <div className="relative bg-work bg-[110%] bg-no-repeat bg-accent/15 w-full h-[240px] flex items-center justify-center">
+        <div className='relative bg-work bg-[110%] bg-no-repeat bg-accent/15 w-full h-[240px] flex items-center justify-center'>
           {/* 1920 x 1079 pozele de proiect */}
           <Image
-            className="absolute bottom-0 shadow-2xl h-[180px] w-[320px] rounded-t-md object-contain"
+            className='absolute bottom-0 shadow-2xl h-[180px] w-[320px] rounded-t-md object-contain'
             src={project.image}
             width={500}
             height={500}
-            alt="Alexandru Maftei latest projects"
+            alt='Alexandru Maftei latest projects'
             priority
           />
           {/* btns */}
-          <div className="flex flex-col gap-y-4 absolute top-4 right-2">
+          <div className='flex flex-col gap-y-4 absolute top-4 right-2'>
             <Link
               href={project.link}
-              className="hover:bg-accent/70 w-[45px] h-[45px] rounded-md flex justify-center items-center xl:scale-0 xl:opacity-0 max-lg:opacity-100 max-lg:scale-100 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 bg-black/90"
+              className='hover:bg-accent/70 w-[45px] h-[45px] rounded-md flex justify-center items-center xl:scale-0 xl:opacity-0 max-lg:opacity-100 max-lg:scale-100 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 bg-black/90'
             >
-              <Link2Icon className="text-white" />
+              <Link2Icon className='text-white' />
             </Link>
             <Link
               href={project.github}
-              className="hover:bg-accent/70 w-[45px] h-[45px] rounded-md flex justify-center items-center xl:scale-0 xl:opacity-0 max-lg:opacity-100 max-lg:scale-100 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 bg-black/90"
+              className='hover:bg-accent/70 w-[45px] h-[45px] rounded-md flex justify-center items-center xl:scale-0 xl:opacity-0 max-lg:opacity-100 max-lg:scale-100 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 bg-black/90'
             >
-              <Github className="text-white" />
+              <Github className='text-white' />
             </Link>
           </div>
         </div>
       </CardHeader>
-      <div className="h-full px-8 py-6">
-        <Badge className="bg-accent text-white uppercase text-sm font-medium mb-2 absolute top-4 left-5">
+      <div className='h-full px-8 py-6'>
+        <Badge className='bg-accent text-white uppercase text-sm font-medium mb-2 absolute top-4 left-5'>
           {project.category}
         </Badge>
-        <h4 className="mb-4">{project.name}</h4>
-        <p className="text-lg">{project.description}</p>
+        <h4 className='mb-4'>{project.name}</h4>
+        <p className='text-lg'>{project.description}</p>
       </div>
     </Card>
   );
