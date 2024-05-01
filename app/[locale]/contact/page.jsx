@@ -51,6 +51,15 @@ const Contact = () => {
                 {t("whatsapp")}
               </a>
             </div>
+            <div className='font-bold'>{t("or")}</div>
+            {/* Send email */}
+            <div className='flex items-center gap-x-24'>
+              <div className="flex items-center gap-x-6 relative">
+              <MailIcon size={24} className='text-accent' />
+              {t("email")}
+              <MoveRight size={35} strokeWidth={1} className="absolute -right-12 max-xl:rotate-90"/>
+              </div>
+            </div>
           </div>
           {/* Form */}
           <GoogleCaptchaWrapper>
