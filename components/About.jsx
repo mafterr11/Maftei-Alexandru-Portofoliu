@@ -1,5 +1,8 @@
+"use client"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/variants";
 import {
   User2,
   MailIcon,
@@ -135,15 +138,25 @@ const About = () => {
     return arr.find((item) => item.title === title);
   };
   return (
-    <section className="xl:h-[860px] pb-12 xl:py-24">
+    <section className="xl:h-[900px] pb-12 xl:py-24">
       <div className="container mx-auto">
-        <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
+        <motion.h2 
+         variants={fadeIn("up", 0.4)}
+         initial='hidden'
+         whileInView={"show"}
+         viewport={{ once: true, ammount: 0.4 }}
+        className="section-title mb-8 xl:mb-24 text-center mx-auto">
          <Dot />
           {t("title")}
-        </h2>
+        </motion.h2>
         <div className="flex flex-col xl:flex-row gap-24">
           {/* Image */}
-          <div className="w-[505px] h-[505px] bg-no-repeat xl:flex hidden flex-1 relative">
+          <motion.div 
+           variants={fadeIn("down", 0.4)}
+           initial='hidden'
+           whileInView={"show"}
+           viewport={{ once: true, ammount: 0.4 }}
+          className="w-[505px] h-[505px] bg-no-repeat xl:flex hidden flex-1 relative">
             <Image
               src="/profile-picture.jpg"
               width={800}
@@ -151,9 +164,14 @@ const About = () => {
               alt="Alexandru Maftei profile picture"
               className="object-cover rounded-full border-2 border-accent"
             />
-          </div>
+          </motion.div>
           {/* Tabs */}
-          <div className="flex-1">
+          <motion.div 
+           variants={fadeIn("down", 0.6)}
+           initial='hidden'
+           whileInView={"show"}
+           viewport={{ once: true, ammount: 0.4 }}
+          className="flex-1">
             <Tabs defaultValue="personal" className="xl:w-[650px]">
               <TabsList className="w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border">
                 <TabsTrigger className="w-[162px] xl:w-auto" value="personal">
@@ -335,7 +353,7 @@ const About = () => {
                 </TabsContent>
               </div>
             </Tabs>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
