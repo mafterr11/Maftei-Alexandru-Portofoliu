@@ -17,7 +17,7 @@ const Work = () => {
   const messages = useMessages();
 
   return (
-    <section className="relative mb-12 overflow-x-hidden xl:mb-96">
+    <section className="relative mb-12 max-xl:overflow-x-hidden xl:mb-96">
       <div className="container mx-auto">
         {/* text */}
         <motion.div
