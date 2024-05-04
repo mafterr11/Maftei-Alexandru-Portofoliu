@@ -6,7 +6,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 import ProjectCard from "./ProjectCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useTranslations } from "next-intl";
- 
+
 const WorkSwiper = () => {
   const t = useTranslations("Proiecte");
   const projectData = [
@@ -34,7 +34,7 @@ const WorkSwiper = () => {
       link: "/",
       github: "/",
     },
-     {
+    {
       image: "/work/monte-bianco.png",
       category: "In Progress",
       name: "Monte Bianco",
@@ -42,7 +42,6 @@ const WorkSwiper = () => {
       link: "https://montebianco.vercel.app",
       github: "/",
     },
-    
   ];
   return (
     <Swiper

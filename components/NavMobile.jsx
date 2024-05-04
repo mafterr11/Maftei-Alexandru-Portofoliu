@@ -46,20 +46,20 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
       {/* nav trigger btn */}
       <div
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className='cursor-pointer outline-none'
+        className="cursor-pointer outline-none"
       >
-        <RiMenu2Line className='text-4xl transition-all duration-200' />
+        <RiMenu2Line className="text-4xl transition-all duration-200" />
       </div>
       <aside
         className={`${
           isMenuOpen ? "right-0" : "-right-full"
-        } bg-body fixed z-20 h-full px-8 pt-8 pb-4 top-0 bottom-0 transition-all duration-500 border-accent border-l-2`}
+        } fixed bottom-0 top-0 z-20 h-full border-l-2 border-accent bg-body px-8 pb-4 pt-8 transition-all duration-500`}
       >
-        <div className='flex flex-col items-center justify-between h-full text-black'>
+        <div className="flex h-full flex-col items-center justify-between text-black">
           {/* close btn */}
           <div
             onClick={() => setIsMenuOpen(false)}
-            className='cursor-pointer text-4xl  absolute w-8 h-8 right-3 top-2 flex items-center justify-center'
+            className="absolute right-3  top-2 flex h-8 w-8 cursor-pointer items-center justify-center text-4xl"
           >
             <IoCloseOutline />
           </div>
@@ -68,13 +68,13 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
             <Logo source={"/header-mobile.png"} size={"h-[3.75rem]"} />
           </div>
           {/* links */}
-          <div className='flex flex-col gap-y-8'>
+          <div className="flex flex-col gap-y-8">
             {links.map((link, index) => {
               return (
                 <Link
                   key={index}
                   href={link.path}
-                  className='flex items-center gap-x-3 justify-base hover:text-orange'
+                  className="justify-base hover:text-orange flex items-center gap-x-3"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   <div className={`${iconStyles}`}>{link.icon}</div>
@@ -84,7 +84,7 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
             })}
           </div>
           {/* bottom part */}
-          <div className='flex flex-col items-center justify-center gap-y-5'>
+          <div className="flex flex-col items-center justify-center gap-y-5">
             <LocalSwitcher />
             <Socials />
           </div>

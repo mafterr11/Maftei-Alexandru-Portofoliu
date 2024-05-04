@@ -9,7 +9,7 @@ export default function LocalSwitcher() {
   const router = useRouter();
   const localeActive = useLocale();
   const pathname = usePathname();
-  const actualPath = `/${pathname.split('/').filter(Boolean).slice(1).join('/')}`;
+  const actualPath = `/${pathname.split("/").filter(Boolean).slice(1).join("/")}`;
 
   const toggleLocale = () => {
     const nextLocale = localeActive === "en" ? "ro" : "en";
@@ -20,7 +20,7 @@ export default function LocalSwitcher() {
 
   // Adjusted to reflect a proper switch behavior
   return (
-    <div className="flex items-center justify-center relative">
+    <div className="relative flex items-center justify-center">
       <Switch
         checked={localeActive === "en"} // Assuming "en" is the "checked" state
         onCheckedChange={toggleLocale} // This prop handles change events
@@ -28,7 +28,10 @@ export default function LocalSwitcher() {
         id="language-switch"
         aria-label="Language Switch" // Providing an accessible name
       />
-      <Label htmlFor="language-switch" className={`absolute text-[15px] top-[1px] cursor-pointer ${localeActive === "en" ? "left-[0.10rem]" : "right-[0.30rem]"}`}>
+      <Label
+        htmlFor="language-switch"
+        className={`absolute top-[1px] cursor-pointer text-[15px] ${localeActive === "en" ? "left-[0.10rem]" : "right-[0.30rem]"}`}
+      >
         {localeActive.toUpperCase()}
       </Label>
     </div>

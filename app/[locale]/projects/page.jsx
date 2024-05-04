@@ -55,14 +55,14 @@ const Projects = () => {
   });
 
   return (
-    <section className='min-h-screen pt-40'>
-      <div className='container mx-auto'>
+    <section className="min-h-screen pt-40">
+      <div className="container mx-auto">
         <motion.h2
           variants={fadeIn("down", 0.2)}
-          initial='hidden'
+          initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, ammount: 0.4 }}
-          className='section-title mb-8 xl:mb-16 text-center mx-auto'
+          className="section-title mx-auto mb-8 text-center xl:mb-16"
         >
           <Dot />
           {t("page.title")}
@@ -70,35 +70,36 @@ const Projects = () => {
         {/* tabs */}
         <motion.div
           variants={fadeIn("down", 0.5)}
-          initial='hidden'
+          initial="hidden"
           whileInView={"show"}
-          viewport={{ once: true, ammount: 0.4 }}>
-        <Tabs defaultValue={category} className='mb-24 xl:mb-48'>
-          <TabsList className='w-full grid h-full md:grid-cols-3 lg:max-w-[640px] mb-12 mx-auto md:border'>
-            {categories.map((category, index) => {
-              return (
-                <TabsTrigger
-                  value={category}
-                  key={index}
-                  className='capitalize w-[162px] md:w-auto'
-                  onClick={() => setCategory(category)}
-                >
-                  {category}
-                </TabsTrigger>
-              );
-            })}
-          </TabsList>
-          {/* tabs content */}
-          <div className='text-lg xl:mt-8 grid grid-cols-1 lg:grid-cols-3 gap-4'>
-            {filteredProjects.map((project, index) => {
-              return (
-                <TabsContent value={category} key={index}>
-                  <ProjectCard project={project} />
-                </TabsContent>
-              );
-            })}
-          </div>
-        </Tabs>
+          viewport={{ once: true, ammount: 0.4 }}
+        >
+          <Tabs defaultValue={category} className="mb-24 xl:mb-48">
+            <TabsList className="mx-auto mb-12 grid h-full w-full md:grid-cols-3 md:border lg:max-w-[640px]">
+              {categories.map((category, index) => {
+                return (
+                  <TabsTrigger
+                    value={category}
+                    key={index}
+                    className="w-[162px] capitalize md:w-auto"
+                    onClick={() => setCategory(category)}
+                  >
+                    {category}
+                  </TabsTrigger>
+                );
+              })}
+            </TabsList>
+            {/* tabs content */}
+            <div className="grid grid-cols-1 gap-4 text-lg lg:grid-cols-3 xl:mt-8">
+              {filteredProjects.map((project, index) => {
+                return (
+                  <TabsContent value={category} key={index}>
+                    <ProjectCard project={project} />
+                  </TabsContent>
+                );
+              })}
+            </div>
+          </Tabs>
         </motion.div>
       </div>
     </section>

@@ -36,41 +36,40 @@ const Services = () => {
     },
   ];
   return (
-    <section className='mb-12 xl:mb-36 bg-body-light py-12 pb-20'>
-      <div className='container mx-auto'>
+    <section className="mb-12 bg-body-light py-12 pb-20 xl:mb-36">
+      <div className="container mx-auto">
         <motion.h2
           variants={fadeIn("down", 0.4)}
-          initial='hidden'
+          initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, ammount: 0.4 }}
-          className='section-title mb-24 text-center mx-auto'
+          className="section-title mx-auto mb-24 text-center"
         >
           <Dot />
           {t("title")}
         </motion.h2>
         {/* grid items */}
-        <div className='grid xl:grid-cols-3 justify-center gap-y-24 xl:gap-x-8'>
+        <div className="grid justify-center gap-y-24 xl:grid-cols-3 xl:gap-x-8">
           {servicesData.map((item, index) => {
             return (
-              
-              <motion.div 
-              key={index}
-              variants={fadeIn("down", item.speed)}
-         initial='hidden'
-         whileInView={"show"}
-         viewport={{ once: true, ammount: 0.4 }}
-             >
-                <Card className='w-full bg-accent/0 max-w-[424px] h-[320px] flex flex-col pt-20 pb-10 justify-start items-center relative'>
-                  <CardHeader className='text-accent absolute -top-[65px] bg-body-light'>
-                    <div className='flex justify-center items-center w-[140px] h-[80px]'>
+              <motion.div
+                key={index}
+                variants={fadeIn("down", item.speed)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: true, ammount: 0.4 }}
+              >
+                <Card className="relative flex h-[320px] w-full max-w-[424px] flex-col items-center justify-start bg-accent/0 pb-10 pt-20">
+                  <CardHeader className="absolute -top-[65px] bg-body-light text-accent">
+                    <div className="flex h-[80px] w-[140px] items-center justify-center">
                       {item.icon}
                     </div>
                   </CardHeader>
-                  <CardContent className='text-center'>
-                    <CardTitle className='mb-4'>{item.title}</CardTitle>
-                    <CardDescription className='text-lg relative'>
+                  <CardContent className="text-center">
+                    <CardTitle className="mb-4">{item.title}</CardTitle>
+                    <CardDescription className="relative text-lg">
                       {item.description}
-                      <span className='absolute -bottom-14 left-0 right-0 font-bold underline'>
+                      <span className="absolute -bottom-14 left-0 right-0 font-bold underline">
                         {item.soon}
                       </span>
                     </CardDescription>

@@ -8,7 +8,7 @@
   }
 
   body {
-    @apply font-roboto bg-body text-black tracking-[0.5px] overflow-x-hidden;
+    @apply overflow-x-hidden bg-body font-roboto tracking-[0.5px] text-black;
   }
 
   h1,
@@ -18,7 +18,7 @@
   }
 
   h1 {
-    @apply text-6xl xl:text-[65px] xl:leading-[80px] tracking-[-2px] font-bold;
+    @apply text-6xl font-bold tracking-[-2px] xl:text-[65px] xl:leading-[80px];
   }
   h2 {
     @apply text-4xl font-bold;
@@ -30,19 +30,19 @@
     @apply text-[22px] font-semibold;
   }
   p {
-    @apply text-black/80 leading-8;
+    @apply leading-8 text-black/80;
   }
   a {
-    @apply transition-all duration-300 cursor-pointer;
+    @apply cursor-pointer transition-all duration-300;
   }
   label {
-    @apply text-black font-normal block mb-2;
+    @apply mb-2 block font-normal text-black;
   }
   .subtitle {
-    @apply text-lg mb-8 font-light;
+    @apply mb-8 text-lg font-light;
   }
   .section-title {
-    @apply text-4xl font-bold w-max relative flex items-center justify-between gap-x-3;
+    @apply relative flex w-max items-center justify-between gap-x-3 text-4xl font-bold;
   }
 }
 
@@ -87,8 +87,8 @@
   text-decoration-thickness: 2px;
 }
 
- /* Move reCAPTCHA v3 badge to the left */
- 
- .grecaptcha-badge {
- visibility: hidden;
+/* Move reCAPTCHA v3 badge to the left */
+
+.grecaptcha-badge {
+  visibility: hidden;
 }

@@ -3,7 +3,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Socials from "./Socials";
 import { useTranslations } from "next-intl";
-import LocalSwitcher from './LocalSwitcher';
+import LocalSwitcher from "./LocalSwitcher";
 
 const Nav = ({ containerStyles, linkStyles }) => {
   const t = useTranslations("Nav");
@@ -33,8 +33,8 @@ const Nav = ({ containerStyles, linkStyles }) => {
               href={link.path}
               className={`${linkStyles} ${
                 currentRoute === link.path
-                  ? "underline decoration-accent decoration-2 underline-offset-[0.5rem] capitalize text-base hover:scale-[0.97]"
-                  : "capitalize text-base hover hover:scale-[0.97]"
+                  ? "text-base capitalize underline decoration-accent decoration-2 underline-offset-[0.5rem] hover:scale-[0.97]"
+                  : "hover text-base capitalize hover:scale-[0.97]"
               }`}
             >
               <span>{link.name}</span>

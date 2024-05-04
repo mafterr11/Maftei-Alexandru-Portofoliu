@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -13,7 +13,7 @@ import {
   Briefcase,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Dot } from './Dot';
+import { Dot } from "./Dot";
 
 const infoData = [
   {
@@ -37,8 +37,6 @@ const infoData = [
     text: "Academia de Studii Economice ",
   },
 ];
-
-
 
 const skillData = [
   {
@@ -138,42 +136,45 @@ const About = () => {
     return arr.find((item) => item.title === title);
   };
   return (
-    <section className="xl:h-[900px] pb-12 xl:py-24">
+    <section className="pb-12 xl:h-[900px] xl:py-24">
       <div className="container mx-auto">
-        <motion.h2 
-         variants={fadeIn("up", 0.4)}
-         initial='hidden'
-         whileInView={"show"}
-         viewport={{ once: true, ammount: 0.4 }}
-        className="section-title mb-8 xl:mb-24 text-center mx-auto">
-         <Dot />
+        <motion.h2
+          variants={fadeIn("up", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, ammount: 0.4 }}
+          className="section-title mx-auto mb-8 text-center xl:mb-24"
+        >
+          <Dot />
           {t("title")}
         </motion.h2>
-        <div className="flex flex-col xl:flex-row gap-24">
+        <div className="flex flex-col gap-24 xl:flex-row">
           {/* Image */}
-          <motion.div 
-           variants={fadeIn("down", 0.4)}
-           initial='hidden'
-           whileInView={"show"}
-           viewport={{ once: true, ammount: 0.4 }}
-          className="w-[505px] h-[505px] bg-no-repeat xl:flex hidden flex-1 relative">
+          <motion.div
+            variants={fadeIn("down", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, ammount: 0.4 }}
+            className="relative hidden h-[505px] w-[505px] flex-1 bg-no-repeat xl:flex"
+          >
             <Image
               src="/profile-picture.jpg"
               width={800}
               height={800}
               alt="Alexandru Maftei profile picture"
-              className="object-cover rounded-full border-2 border-accent"
+              className="rounded-full border-2 border-accent object-cover"
             />
           </motion.div>
           {/* Tabs */}
-          <motion.div 
-           variants={fadeIn("down", 0.6)}
-           initial='hidden'
-           whileInView={"show"}
-           viewport={{ once: true, ammount: 0.4 }}
-          className="flex-1">
+          <motion.div
+            variants={fadeIn("down", 0.6)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, ammount: 0.4 }}
+            className="flex-1"
+          >
             <Tabs defaultValue="personal" className="xl:w-[650px]">
-              <TabsList className="w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border">
+              <TabsList className="grid w-full xl:max-w-[520px] xl:grid-cols-3 xl:border">
                 <TabsTrigger className="w-[162px] xl:w-auto" value="personal">
                   {t("tab1.trigger")}
                 </TabsTrigger>
@@ -188,19 +189,19 @@ const About = () => {
                 </TabsTrigger>
               </TabsList>
               {/* tabs content */}
-              <div className="text-lg mt-12 xl:mt-8">
+              <div className="mt-12 text-lg xl:mt-8">
                 <TabsContent value="personal">
                   <div className="text-center xl:text-left">
                     <h3 className="mb-4">{t("tab1.title")}</h3>
-                    <p className="subtitle max-w-xl mx-auto xl:mx-0">
+                    <p className="subtitle mx-auto max-w-xl xl:mx-0">
                       {t("tab1.description")}
                     </p>
                     {/* icons */}
-                    <div className="grid xl:grid-cols-2 gap-4 mb-12">
+                    <div className="mb-12 grid gap-4 xl:grid-cols-2">
                       {infoData.map((item, index) => {
                         return (
                           <div
-                            className="flex items-center gap-x-4 mx-auto xl:mx-0"
+                            className="mx-auto flex items-center gap-x-4 xl:mx-0"
                             key={index}
                           >
                             <div className="text-accent">{item.icon}</div>
@@ -215,33 +216,33 @@ const About = () => {
                 <TabsContent value="qualifications">
                   <div>
                     <h3 className="mb-8 text-center xl:text-left">
-                    {t('tab2.title')}{" "}
+                      {t("tab2.title")}{" "}
                     </h3>
                     {/* experience / ed wrapper */}
-                    <div className="grid md:grid-cols-2 gap-y-8">
+                    <div className="grid gap-y-8 md:grid-cols-2">
                       {/* ed */}
                       <div className="flex flex-col gap-y-6">
-                        <div className="flex gap-x-4 items-center text-[22px] text-accent">
+                        <div className="flex items-center gap-x-4 text-[22px] text-accent">
                           <GraduationCap size={28} />
-                          <h4 className="capitalize font-medium">
+                          <h4 className="font-medium capitalize">
                             {getData(qualificationData, t("edu")).title}
                           </h4>
                         </div>
                         {/* list */}
-                        <div className="flex flex-col gap-y-8 mt-4">
+                        <div className="mt-4 flex flex-col gap-y-8">
                           {getData(qualificationData, t("edu")).data.map(
                             (item, index) => {
                               const { university, qualification, years } = item;
                               return (
-                                <div className="flex gap-x-8 group" key={index}>
-                                  <div className="h-[84px] w-[1px] bg-black/15 relative ml-2">
-                                    <div className="h-[11px] w-[11px] rounded-full bg-accent absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
+                                <div className="group flex gap-x-8" key={index}>
+                                  <div className="relative ml-2 h-[84px] w-[1px] bg-black/15">
+                                    <div className="absolute -left-[5px] h-[11px] w-[11px] rounded-full bg-accent transition-all duration-500 group-hover:translate-y-[84px]"></div>
                                   </div>
                                   <div>
-                                    <div className="font-semibold text-xl leading-none mb-2">
+                                    <div className="mb-2 text-xl font-semibold leading-none">
                                       {university}
                                     </div>
-                                    <div className="text-lg leading-none mb-4">
+                                    <div className="mb-4 text-lg leading-none">
                                       {qualification}
                                     </div>
                                     <div className="text-base font-medium">
@@ -250,33 +251,33 @@ const About = () => {
                                   </div>
                                 </div>
                               );
-                            }
+                            },
                           )}
                         </div>
                       </div>
                       {/* experience */}
                       <div className="flex flex-col gap-y-6">
-                        <div className="flex gap-x-4 items-center text-[22px] text-accent">
+                        <div className="flex items-center gap-x-4 text-[22px] text-accent">
                           <Briefcase size={28} />
-                          <h4 className="capitalize font-medium">
+                          <h4 className="font-medium capitalize">
                             {getData(qualificationData, t("exp")).title}
                           </h4>
                         </div>
                         {/* list */}
-                        <div className="flex flex-col gap-y-8 mt-4">
+                        <div className="mt-4 flex flex-col gap-y-8">
                           {getData(qualificationData, t("exp")).data.map(
                             (item, index) => {
                               const { company, role, years } = item;
                               return (
-                                <div className="flex gap-x-8 group" key={index}>
-                                  <div className="h-[84px] w-[1px] bg-black/15 relative ml-2">
-                                    <div className="h-[11px] w-[11px] rounded-full bg-accent absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
+                                <div className="group flex gap-x-8" key={index}>
+                                  <div className="relative ml-2 h-[84px] w-[1px] bg-black/15">
+                                    <div className="absolute -left-[5px] h-[11px] w-[11px] rounded-full bg-accent transition-all duration-500 group-hover:translate-y-[84px]"></div>
                                   </div>
                                   <div>
-                                    <div className="font-semibold text-xl leading-none mb-2">
+                                    <div className="mb-2 text-xl font-semibold leading-none">
                                       {company}
                                     </div>
-                                    <div className="text-lg leading-none mb-4">
+                                    <div className="mb-4 text-lg leading-none">
                                       {role}
                                     </div>
                                     <div className="text-base font-medium">
@@ -285,7 +286,7 @@ const About = () => {
                                   </div>
                                 </div>
                               );
-                            }
+                            },
                           )}
                         </div>
                       </div>
@@ -294,11 +295,11 @@ const About = () => {
                 </TabsContent>
                 <TabsContent value="skills">
                   <div className="text-center xl:text-left">
-                    <h3 className="mb-8">{t('tab3.title')}</h3>
+                    <h3 className="mb-8">{t("tab3.title")}</h3>
                     {/* skills */}
                     <div className="mb-16">
-                      <h4 className="text-xl font-semibold mb-2">Frontend</h4>
-                      <div className="border-b border-accent mb-4"></div>
+                      <h4 className="mb-2 text-xl font-semibold">Frontend</h4>
+                      <div className="mb-4 border-b border-accent"></div>
                       {/* skill list frontend */}
                       <div className="grid md:grid-cols-2">
                         {getData(skillData, "frontend").data.map(
@@ -306,27 +307,27 @@ const About = () => {
                             const { name } = item;
                             return (
                               <div
-                                className="text-center xl:text-left mx-auto xl:mx-0"
+                                className="mx-auto text-center xl:mx-0 xl:text-left"
                                 key={index}
                               >
                                 <div className="font-medium">
-                                  <span className="hidden xl:inline-block text-accent">
+                                  <span className="hidden text-accent xl:inline-block">
                                     &#x2022;
                                   </span>{" "}
                                   {name}
                                 </div>
                               </div>
                             );
-                          }
+                          },
                         )}
                       </div>
                     </div>
                     {/* Skill List Backend */}
                     <div>
-                      <h4 className="text-xl font-semibold mb-2 xl:text-left ">
+                      <h4 className="mb-2 text-xl font-semibold xl:text-left ">
                         Backend
                       </h4>
-                      <div className="border-b border-accent mb-4"></div>
+                      <div className="mb-4 border-b border-accent"></div>
                       {/* skill list backend */}
                       <div className="grid md:grid-cols-2">
                         {getData(skillData, "backend").data.map(
@@ -334,18 +335,18 @@ const About = () => {
                             const { name } = item;
                             return (
                               <div
-                                className="text-center xl:text-left mx-auto xl:mx-0"
+                                className="mx-auto text-center xl:mx-0 xl:text-left"
                                 key={index}
                               >
                                 <div className="font-medium">
-                                  <span className="hidden xl:inline-block text-accent">
+                                  <span className="hidden text-accent xl:inline-block">
                                     &#x2022;
                                   </span>{" "}
                                   {name}
                                 </div>
                               </div>
                             );
-                          }
+                          },
                         )}
                       </div>
                     </div>

@@ -215,7 +215,7 @@ export default function SolicitatiOfertaForm() {
                           {...field}
                         />
                         <PhoneIcon
-                          className="absolute top-4 right-6"
+                          className="absolute right-6 top-4"
                           size={20}
                         />
                       </div>
@@ -242,7 +242,7 @@ export default function SolicitatiOfertaForm() {
                           {...field}
                         />
                         <MessageSquare
-                          className="absolute top-4 right-6"
+                          className="absolute right-6 top-4"
                           size={20}
                         />
                       </div>
@@ -279,8 +279,8 @@ export default function SolicitatiOfertaForm() {
               )}
             />
           </div>
-          <div className="recaptcha-branding flex flex-col gap-y-4 md:flex-row md:gap-x-4 max-xl:pt-4">
-            <Button className="flex items-center gap-x-1 max-w-[166px] rounded-[8px]">
+          <div className="recaptcha-branding flex flex-col gap-y-4 max-xl:pt-4 md:flex-row md:gap-x-4">
+            <Button className="flex max-w-[166px] items-center gap-x-1 rounded-[8px]">
               {t("form.btn")}
               <ArrowRightIcon size={20} />
             </Button>

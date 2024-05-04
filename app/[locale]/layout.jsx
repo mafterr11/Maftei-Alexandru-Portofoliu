@@ -3,12 +3,9 @@ import "./globals.css";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { Toaster } from "@/components/ui/toaster";
-import {
-  NextIntlClientProvider,
-  useMessages,
-} from "next-intl";
+import { NextIntlClientProvider, useMessages } from "next-intl";
 import pick from "lodash/pick";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -21,9 +18,9 @@ export const metadata = {
     "Hello, my name is Maftei Alexandru. Lets start this journey together and create your dream website! ",
   keywords:
     "web development, frontend, web design, freelancer, bucuresti, romania, small buisiness, maftei alexandru, site prices, myriad tech",
-    icons: {
-      icon: "/icon.svg"
-    }
+  icons: {
+    icon: "/icon.svg",
+  },
 };
 
 export default function RootLayout({ children, params: { locale } }) {
@@ -31,12 +28,24 @@ export default function RootLayout({ children, params: { locale } }) {
   return (
     <html lang={locale}>
       <body className={roboto.className}>
-        <NextIntlClientProvider messages={pick(messages,"Hero", "About", "Services", "Work", "Cta", "Nav", "Proiecte", "Contact")}>
-        <Header />
-        {children}
-        <Analytics />
-        <Footer />
-        <Toaster />
+        <NextIntlClientProvider
+          messages={pick(
+            messages,
+            "Hero",
+            "About",
+            "Services",
+            "Work",
+            "Cta",
+            "Nav",
+            "Proiecte",
+            "Contact",
+          )}
+        >
+          <Header />
+          {children}
+          <Analytics />
+          <Footer />
+          <Toaster />
         </NextIntlClientProvider>
       </body>
     </html>

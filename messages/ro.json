@@ -4,7 +4,7 @@
     "subtitle": "Sunt un Fullstack Developer cu abilități în dezvoltarea web modernă și Java Spring, adept în crearea de site-uri web responsive și asigurarea unei integrări fără probleme între frontend și backend.",
     "contact-button": "Contactați-mă",
     "contact-link": "/ro/contact",
-    "download-button": "Descărcați CV" 
+    "download-button": "Descărcați CV"
   },
   "About": {
     "title": "Despre Mine",
@@ -80,19 +80,19 @@
     "email": "Dați-ne un email",
     "form": {
       "name": {
-        "label":"Nume",
+        "label": "Nume",
         "input": "Numele Complet"
       },
       "email": {
-        "label":"Email",
+        "label": "Email",
         "input": "Adresa dvs. de email"
       },
       "tel": {
-        "label":"Telefon",
+        "label": "Telefon",
         "input": "Număr de telefon"
       },
       "msg": {
-        "label":"Mesaj",
+        "label": "Mesaj",
         "input": "Transmiteți un mesaj"
       },
       "gdpr": "Sunt de acord cu prelucrarea datelor(GDPR)",
@@ -130,7 +130,6 @@
     "20": "8. Dreptul de retragere a consimțământului: Puteți retrage consimțământul pentru prelucrarea bazată pe acesta, oricând.",
     "21": "9. Drepturi legate de deciziile automate: În cazul prelucrării automate a datelor, puteți cere revizuirea umană, puteți exprima un punct de vedere sau puteți contesta decizia.",
     "22": "Myriad Tech poate actualiza periodic politicile de confidențialitate, conform schimbărilor în legislația privind protecția datelor. Orice modificări vor fi publicate pe site-ul nostru, unde veți găsi informații actualizate"
-   
   },
   "Footer": {
     "gdpr": "/ro/politica-de-confidentialitate",
