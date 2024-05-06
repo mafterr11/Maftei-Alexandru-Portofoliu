@@ -193,7 +193,7 @@ const About = () => {
                 <TabsContent value="personal">
                   <div className="text-center xl:text-left">
                     <h3 className="mb-4">{t("tab1.title")}</h3>
-                    <p className="subtitle mx-auto max-w-xl xl:mx-0">
+                    <p className="subtitle mx-auto max-w-xl xl:mx-0 max-xl:text-balance">
                       {t("tab1.description")}
                     </p>
                     {/* icons */}

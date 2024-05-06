@@ -38,7 +38,7 @@ const Hero = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, ammount: 0.4 }}
-              className="subtitle mx-auto max-w-[490px] xl:mx-0"
+              className="subtitle mx-auto max-w-[490px] xl:mx-0 max-xl:text-balance"
             >
               {t("subtitle")}
             </motion.p>

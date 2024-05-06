@@ -41,7 +41,7 @@ const ContactPage = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, ammount: 0.4 }}
-              className="subtitle max-w-[500px]"
+              className="subtitle max-w-[500px] text-balance"
             >
               {t("subtitle")}
             </motion.p>
