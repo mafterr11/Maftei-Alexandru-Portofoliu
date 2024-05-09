@@ -1,7 +1,7 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
     siteUrl:
-      process.env.SITE_URL ||
+      process.env.NEXT_PUBLIC_SERVER_URL ||
       "http://localhost:3000" ||
       "https://myriad-tech.ro",
     generateRobotsTxt: true, // (optional)
