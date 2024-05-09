@@ -12,35 +12,51 @@ const Projects = () => {
   const projectData = [
     {
       image: "/work/madinytattoo.png",
-      category: "NextJS 14",
+      category: t("category.presentation"),
       name: "MadinyTattoo",
       description: t("madiny"),
       link: "https://madinytattoo.ro",
-      github: "https://github.com/mafterr11/MadinyTattoo",
+      // github: "https://github.com/mafterr11/MadinyTattoo",
     },
     {
       image: "/work/tng.png",
-      category: "NextJS 14",
+      category: t("category.presentation"),
       name: "TNG GRUP",
       description: t("tng"),
       link: "https://tngag.ro",
-      github: "https://github.com/mafterr11/TNG-GRUP",
+      // github: "https://github.com/mafterr11/TNG-GRUP",
     },
     {
       image: "/work/manarh.webp",
-      category: "In Progress",
+      category: t("category.progress"), //Fullstack
       name: "Manarh",
       description: t("manarh"),
       link: "/",
-      github: "/",
+      // github: "/",
     },
     {
       image: "/work/monte-bianco.png",
-      category: "In Progress",
+      category: t("category.progress"),
       name: "Monte Bianco",
       description: t("monte-bianco"),
       link: "https://montebianco.vercel.app",
-      github: "/",
+      // github: "/",
+    },
+    {
+      image: "/work/myriad-AI.png",
+      category: t("category.progress"),
+      name: "Myriad-AI",
+      description: t("myriad-AI"),
+      link: "https://myriad-ai.vercel.app",
+      // github: "/",
+    },
+    {
+      image: "/work/electroniCobra.png",
+      category: "ecommerce",
+      name: "electroniCobra",
+      description: t("electroniCobra"),
+      link: "https://ecommerce-template-demo.vercel.app",
+      // github: "/",
     },
   ];
   const uniqueCategories = [
@@ -75,7 +91,7 @@ const Projects = () => {
           viewport={{ once: true, ammount: 0.4 }}
         >
           <Tabs defaultValue={category} className="mb-24 xl:mb-48">
-            <TabsList className="mx-auto mb-12 grid h-full w-full md:grid-cols-3 md:border lg:max-w-[640px]">
+            <TabsList className="mx-auto mb-12 grid h-full w-full md:grid-cols-4 md:border lg:max-w-[640px] max-md:gap-y-3">
               {categories.map((category, index) => {
                 return (
                   <TabsTrigger

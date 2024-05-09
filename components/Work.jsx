@@ -17,8 +17,8 @@ const Work = () => {
   const messages = useMessages();
 
   return (
-    <section className="relative mb-12 max-xl:overflow-x-hidden xl:mb-96">
-      <div className="container mx-auto">
+    <section className="relative mb-12 max-xl:overflow-x-hidden xl:mb-24 xl:py-16">
+      <div className="container flex flex-col xl:flex-row gap-x-40">
         {/* text */}
         <motion.div
           variants={fadeIn("right", 0.4)}
@@ -42,7 +42,7 @@ const Work = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, ammount: 0.4 }}
-          className="right-36 top-0 xl:absolute xl:max-w-[900px]"
+          className="xl:max-w-[800px]"
         >
           {/* <NextIntlClientProvider 
             messages={

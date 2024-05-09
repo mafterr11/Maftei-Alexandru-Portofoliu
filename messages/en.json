@@ -55,7 +55,13 @@
     "madiny": "This is a modern minimalist website, featuring a captivating video background on the home page. The platform brings body art to life with craftsmanship and customized design, providing an immersive digital experience.",
     "tng": "Navigate the TNG Group's portfolio through its presentation website that includes a custom complex contact form, enhanced security with reCaptcha, and various shadow-modified elements.",
     "manarh": "This full-stack website features both user authentication and a personalized favorites section built from scratch, along with multiple custom elements tailored according to customer ideas. ",
-    "monte-bianco": "The website features an intuitive mobile dropdown menu, enabling easy navigation on various devices. Users can effortlessly browse through the extensive product catalog via interactive tabs, enhancing the browsing experience."
+    "monte-bianco": "The website features an intuitive mobile dropdown menu, enabling easy navigation on various devices. Users can effortlessly browse through the extensive product catalog via interactive tabs, enhancing the browsing experience.",
+    "myriad-AI": "With its CMS(Content Management System) integration, clients can effortlessly manage content, making updates and customization a seamless experience. This is perfect for businesses seeking an online presence that is easy to maintain.",
+    "electroniCobra": "This is an e-commerce website offering secure authentication features, providing customers with a seamless and safe shopping experience. The platform is  tailored for businesses that need a versatile, reliable online store with robust customer authentication.",
+    "category": {
+      "presentation": "Presentation site",
+      "progress": "In progress"
+    }
   },
   "Nav": {
     "home": {
