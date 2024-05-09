@@ -1,7 +1,7 @@
 import * as React from "react";
 
 export const EmailTemplate = ({ nume, email, telefon, mesaj }) => (
-  <div>
+  <>
     <h1>Solicitare noua de oferta - Myriad</h1>
     <p>Nume complet: {nume}</p>
     <p>Email: {email}</p>
@@ -10,5 +10,5 @@ export const EmailTemplate = ({ nume, email, telefon, mesaj }) => (
     <p>
       Odata cu primirea acestul email, utilizatorul a fost de acord cu GDPR-ul.
     </p>
-  </div>
+  </>
 );

@@ -143,7 +143,7 @@ export default function SolicitatiOfertaForm() {
           onSubmit={form.handleSubmit(onSubmit)}
         >
           {/* Nume si Prenume */}
-          <div>
+          <>
             <FormField
               control={form.control}
               name="nume"
@@ -168,16 +168,16 @@ export default function SolicitatiOfertaForm() {
                 </FormItem>
               )}
             />
-          </div>
+          </>
           {/* Email */}
-          <div>
+          <>
             <FormField
               control={form.control}
               name="email"
               render={({ field }) => (
                 <FormItem>
                   <FormControl>
-                    <div>
+                    <>
                       <Label>{t("form.email.label")}</Label>
                       <div className="relative flex items-center">
                         <Input
@@ -189,22 +189,22 @@ export default function SolicitatiOfertaForm() {
                         />
                         <MailIcon className="absolute right-6" size={20} />
                       </div>
-                    </div>
+                    </>
                   </FormControl>
                   <FormMessage className="text-red" />
                 </FormItem>
               )}
             />
-          </div>
+          </>
           {/* Tel */}
-          <div>
+          <>
             <FormField
               control={form.control}
               name="telefon"
               render={({ field }) => (
                 <FormItem>
                   <FormControl>
-                    <div>
+                    <>
                       <Label>{t("form.tel.label")}</Label>
                       <div className="relative flex items-center">
                         <Input
@@ -219,21 +219,21 @@ export default function SolicitatiOfertaForm() {
                           size={20}
                         />
                       </div>
-                    </div>
+                    </>
                   </FormControl>
                   <FormMessage className="text-red" />
                 </FormItem>
               )}
             />
-          </div>
-          <div>
+          </>
+          <>
             <FormField
               control={form.control}
               name="mesaj"
               render={({ field }) => (
                 <FormItem>
                   <FormControl>
-                    <div>
+                    <>
                       <Label>{t("form.msg.label")}</Label>
                       <div className="relative flex items-center">
                         <Textarea
@@ -246,14 +246,14 @@ export default function SolicitatiOfertaForm() {
                           size={20}
                         />
                       </div>
-                    </div>
+                    </>
                   </FormControl>
                   <FormMessage className="text-red" />
                 </FormItem>
               )}
             />
-          </div>
-          <div>
+          </>
+          <>
             <FormField
               control={form.control}
               name="acceptTerms"
@@ -263,7 +263,7 @@ export default function SolicitatiOfertaForm() {
                     as="label"
                     className="flex items-center space-x-3 pl-1"
                   >
-                    <div>
+                    <>
                       <Input
                         type="checkbox"
                         {...field}
@@ -272,13 +272,13 @@ export default function SolicitatiOfertaForm() {
                         className="h-[15px] w-[15px]"
                       />
                       <span className="text-[15px]">{t("form.gdpr")}</span>
-                    </div>
+                    </>
                   </FormControl>
                   <FormMessage className="text-red" />
                 </FormItem>
               )}
             />
-          </div>
+          </>
           <div className="recaptcha-branding flex flex-col gap-y-4 max-xl:pt-4 md:flex-row md:gap-x-4">
             <Button className="flex max-w-[166px] items-center gap-x-1 rounded-[8px]">
               {t("form.btn")}
