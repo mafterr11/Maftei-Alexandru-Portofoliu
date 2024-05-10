@@ -6,7 +6,7 @@ import { RiWhatsappLine } from "react-icons/ri";
 import { MoveRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";
-import GoogleCaptchaWrapper from "./../../app/GoogleCaptchaWrapper";
+import GoogleCaptchaWrapper from "../../GoogleCaptchaWrapper";
 
 const ContactPage = () => {
   const t = useTranslations("Contact");

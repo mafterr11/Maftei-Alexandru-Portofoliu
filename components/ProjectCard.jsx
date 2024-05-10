@@ -6,10 +6,10 @@ import { Badge } from "@/components/ui/badge";
 
 const ProjectCard = ({ project }) => {
   return (
-    <Card className="group relative h-[590px] overflow-hidden border-2 border-black/15 bg-body shadow-md">
+    <Card className="group relative h-[610px] overflow-hidden border-2 border-black/15 bg-body shadow-md">
       <CardHeader className="p-0">
         {/* Image */}
-        <div className="relative flex h-[240px] w-full items-center justify-center bg-accent/15 bg-work bg-[110%] bg-no-repeat">
+        <div className="relative flex h-[250px] w-full items-center justify-center bg-accent/15 bg-work bg-[110%] bg-no-repeat">
           {/* 1920 x 1079 pozele de proiect */}
           <Image
             className="absolute bottom-0 h-[180px] w-[320px] rounded-t-md object-contain shadow-2xl"
