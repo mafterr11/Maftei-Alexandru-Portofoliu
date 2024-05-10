@@ -30,7 +30,7 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
     },
   ];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isServiciiOpen, setIsServiciiOpen] = useState(false);
+  // const [isServiciiOpen, setIsServiciiOpen] = useState(false);
 
   // const toggleServicii = () => {
   //   setIsServiciiOpen((prev) => !prev);
@@ -65,7 +65,7 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
           </div>
           {/* logo */}
           <div onClick={() => setIsMenuOpen(false)} className="mt-3">
-            <Logo source={"/header-mobile.png"} size={"h-[3.75rem]"} />
+            <Logo source={"/header-mobile2.png"} size={"h-[3.75rem]"} />
           </div>
           {/* links */}
           <div className="flex flex-col gap-y-8">
