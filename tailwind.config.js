@@ -50,7 +50,7 @@ module.exports = {
       },
       fontFamily: {
         roboto: [`var(--font-roboto)`, "sans-serif"],
-        montserrat: [`var(--font-montserrat)`, "sans-serif"],
+        recursive: [`var(--font-recursive)`, "sans-serif"],
       },
       keyframes: {
         "accordion-down": {

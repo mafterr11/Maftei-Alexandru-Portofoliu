@@ -73,12 +73,12 @@ const WorkSwiper = () => {
       modules={[Pagination, Autoplay]}
       pagination={{ clickable: true }}
       autoplay={{
-        delay: 2500,
+        delay: 3000,
         pauseOnMouseEnter: true,
       }}
     >
       {/* show only first 4 projects */}
-      {projectData.slice(0.4).map((project, index) => {
+      {projectData.map((project, index) => {
         return (
           <SwiperSlide key={index}>
             <ProjectCard project={project} />

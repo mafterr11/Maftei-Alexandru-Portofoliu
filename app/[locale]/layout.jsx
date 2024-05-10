@@ -1,4 +1,4 @@
-import { Roboto } from "next/font/google";
+import { Roboto, Recursive} from "next/font/google";
 import "./globals.css";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -10,6 +10,12 @@ import { Analytics } from "@vercel/analytics/react";
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["100", "300", "400", "500", "700", "900"],
+  variable: "--font-roboto"
+});
+const recursive = Recursive({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900", "1000"],
+  variable: "--font-recursive"
 });
 
 export const metadata = {
@@ -27,7 +33,7 @@ export default function RootLayout({ children, params: { locale } }) {
   const messages = useMessages();
   return (
     <html lang={locale}>
-      <body className={roboto.className}>
+      <body className={`${roboto.variable} ${recursive.variable}`}>
         <NextIntlClientProvider
           messages={pick(
             messages,

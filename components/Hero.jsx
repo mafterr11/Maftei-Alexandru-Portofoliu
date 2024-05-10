@@ -20,7 +20,7 @@ const Hero = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, ammount: 0.4 }}
-              className="mb-4 text-sm font-semibold uppercase tracking-[4px] text-accent"
+              className="mb-4 text-sm font-semibold uppercase tracking-[4px] text-accent font-recursive"
             >
               Web Developer
             </motion.div>
