@@ -27,6 +27,22 @@ const Projects = () => {
       // github: "https://github.com/mafterr11/TNG-GRUP",
     },
     {
+      image: "/work/myriad-AI.png",
+      category: t("category.presentation"),
+      name: "Myriad-AI",
+      description: t("myriad-AI"),
+      link: "https://myriad-ai.vercel.app",
+      // github: "/",
+    },
+    {
+      image: "/work/electroniCobra.png",
+      category: "ecommerce",
+      name: "electroniCobra",
+      description: t("electroniCobra"),
+      link: "https://ecommerce-template-demo.vercel.app",
+      // github: "/",
+    },
+    {
       image: "/work/manarh.webp",
       category: t("category.progress"), //Fullstack
       name: "Manarh",
@@ -40,22 +56,6 @@ const Projects = () => {
       name: "Monte Bianco",
       description: t("monte-bianco"),
       link: "https://montebianco.vercel.app",
-      // github: "/",
-    },
-    {
-      image: "/work/myriad-AI.png",
-      category: t("category.progress"),
-      name: "Myriad-AI",
-      description: t("myriad-AI"),
-      link: "https://myriad-ai.vercel.app",
-      // github: "/",
-    },
-    {
-      image: "/work/electroniCobra.png",
-      category: "ecommerce",
-      name: "electroniCobra",
-      description: t("electroniCobra"),
-      link: "https://ecommerce-template-demo.vercel.app",
       // github: "/",
     },
   ];
@@ -91,7 +91,7 @@ const Projects = () => {
           viewport={{ once: true, ammount: 0.4 }}
         >
           <Tabs defaultValue={category} className="mb-24 xl:mb-48">
-            <TabsList className="mx-auto mb-12 grid h-full w-full md:grid-cols-4 md:border lg:max-w-[640px] max-md:gap-y-3">
+            <TabsList className="mx-auto mb-12 grid h-full w-full max-md:gap-y-3 md:grid-cols-4 md:border lg:max-w-[640px]">
               {categories.map((category, index) => {
                 return (
                   <TabsTrigger

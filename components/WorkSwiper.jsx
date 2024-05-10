@@ -27,6 +27,22 @@ const WorkSwiper = () => {
       // github: "https://github.com/mafterr11/TNG-GRUP",
     },
     {
+      image: "/work/myriad-AI.png",
+      category: t("category.presentation"),
+      name: "Myriad-AI",
+      description: t("myriad-AI"),
+      link: "https://myriad-ai.vercel.app",
+      // github: "/",
+    },
+    {
+      image: "/work/electroniCobra.png",
+      category: "ecommerce",
+      name: "electroniCobra",
+      description: t("electroniCobra"),
+      link: "https://ecommerce-template-demo.vercel.app",
+      // github: "/",
+    },
+    {
       image: "/work/manarh.webp",
       category: t("category.progress"), //Fullstack
       name: "Manarh",
@@ -40,22 +56,6 @@ const WorkSwiper = () => {
       name: "Monte Bianco",
       description: t("monte-bianco"),
       link: "https://montebianco.vercel.app",
-      // github: "/",
-    },
-    {
-      image: "/work/myriad-AI.png",
-      category: t("category.progress") + " CMS" ,
-      name: "Myriad-AI",
-      description: t("myriad-AI"),
-      link: "https://myriad-ai.vercel.app",
-      // github: "/",
-    },
-    {
-      image: "/work/electroniCobra.png",
-      category: "ecommerce",
-      name: "electroniCobra",
-      description: t("electroniCobra"),
-      link: "https://ecommerce-template-demo.vercel.app",
       // github: "/",
     },
   ];
