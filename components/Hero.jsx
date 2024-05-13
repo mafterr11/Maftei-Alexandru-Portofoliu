@@ -85,7 +85,7 @@ const Hero = () => {
             className="absolute -right-2 -top-2 hidden h-[500px] w-[500px] bg-no-repeat xl:flex"
           >
             <Image
-              src="/logo.png"
+              src="/logo.webp"
               width={800}
               height={800}
               alt="Alexandru Maftei profile picture"
