@@ -7,25 +7,25 @@
     "download-button": "Descărcați CV"
   },
   "About": {
-    "title": "Despre Mine",
+    "title": "Despre mine",
     "tab1": {
-      "trigger": "Informații Personale",
-      "title": "Excelență de Top în Servicii",
+      "trigger": "Informații personale",
+      "title": "Excelență de top în servicii",
       "description": "Excelez în dezvoltarea de site-uri web prietenoase cu utilizatorul, folosind tehnologie avansată, oferind interacțiuni cu utilizatorii dinamice și captivante."
     },
     "tab2": {
       "trigger": "Calificări",
-      "title": "Calificări și Parcurs Profesional"
+      "title": "Calificări și parcurs profesional"
     },
     "tab3": {
       "trigger": "Abilități",
-      "title": "Ce Folosesc Zilnic"
+      "title": "Ce tehnologii folosesc"
     },
     "exp": "Experiență",
     "edu": "Educație"
   },
   "Services": {
-    "title": "Serviciile Mele",
+    "title": "Serviciile mele",
     "first": {
       "description": "Prin intermediul Figma, realizăm site-uri web vizual impresionante și intuitive, prioritizând experiența utilizatorului pentru a vă asigura o prezență online impactantă."
     },
@@ -38,7 +38,7 @@
     }
   },
   "Work": {
-    "title": "Ultimele Proiecte",
+    "title": "Ultimele proiecte",
     "subtitle": "Evidențiind ultimele mele realizări și inițiative creative.",
     "projects-button": "Toate Proiectele"
   },
@@ -49,8 +49,8 @@
   },
   "Proiecte": {
     "page": {
-      "title": "Proiectele Mele",
-      "tab": "Toate Proiectele"
+      "title": "Proiectele mele",
+      "tab": "Toate proiectele"
     },
     "madiny": "Acesta este un site web modern minimalist, care include un fundal video captivant pe pagina de start. Platforma aduce arta corporală la viață cu măiestrie și design personalizat, oferind o experiență digitală imersivă.",
     "tng": "Navigați prin portofoliul Grupului TNG printr-un site de prezentare care include un formular de contact complex personalizat, securitate îmbunătățită cu reCaptcha și diverse elemente modificate cu umbre.",
@@ -60,7 +60,8 @@
     "electroniCobra": "Acesta este un magazin online care oferă funcții de autentificare securizată, oferind clienților o experiență de cumpărături fără probleme și sigură. Platforma este concepută pentru afaceri care au nevoie de un magazin online versatil și de încredere, cu autentificare robustă a clienților.",
     "category": {
       "presentation": "Site de prezentare",
-      "progress": "În desfășurare" 
+      "progress": "În desfășurare",
+      "shop": "E-commerce"
     }
   },
   "Nav": {
@@ -113,7 +114,7 @@
     }
   },
   "Terms": {
-    "titlu": "Politica de Confidențialitate",
+    "titlu": "Politica de confidențialitate",
     "1": "Myriad Tech se angajează să gestioneze în mod sigur și responsabil datele personale furnizate de către utilizatorii săi, conform Regulamentului General pentru Protecția Datelor (GDPR - EU 2016/679). Această politică de confidențialitate se aplică exclusiv website-ului www.myriad-tech.ro și explică cum colectăm, utilizăm și protejăm informațiile personale, asigurându-ne că acestea sunt folosite numai pentru scopuri bine definite și comunicate în prealabil utilizatorilor noștri.",
     "2": "Ne asumăm responsabilitatea de a proteja datele personale ale vizitatorilor site-ului www.myriad-tech.ro printr-un set de măsuri tehnice și proceduri organizatorice. Aceste măsuri sunt menite să apere datele împotriva oricărei forme de acces neautorizat, manipulare sau pierdere accidentală. Ne angajăm să monitorizăm și să adaptăm continuu aceste măsuri, aliniindu-ne la evoluția tehnologică actuală. În cazul improbabil al unei încălcări a securității datelor care ar putea prezenta un risc pentru drepturile și libertățile dvs., vă asigurăm că veți fi notificat(ă) fără întârziere.",
     "3": "Atenționăm explicit că serviciile site-ului www.myriad-tech.ro sunt destinate și permit prelucrarea datelor personale doar pentru persoanele care au atins vârsta de 16 ani. Folosirea serviciilor noastre de către minorii sub această vârstă necesită acordul expres al părinților sau al reprezentanților legali. Dacă identificăm cazuri de prelucrare a datelor personale ale minorilor fără acest consimțământ, vom opri imediat prelucrarea și vom lua măsuri adecvate pentru a rectifica situația.",
@@ -139,6 +140,6 @@
   },
   "Footer": {
     "gdpr": "/ro/politica-de-confidentialitate",
-    "name": "Politica de Confidențialitate"
+    "name": "Politica de c  onfidențialitate"
   }
 }

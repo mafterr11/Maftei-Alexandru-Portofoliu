@@ -60,7 +60,8 @@
     "electroniCobra": "This is an e-commerce website offering secure authentication features, providing customers with a seamless and safe shopping experience. The platform is  tailored for businesses that need a versatile, reliable online store with robust customer authentication.",
     "category": {
       "presentation": "Presentation site",
-      "progress": "In progress"
+      "progress": "In progress",
+      "shop": "Magazin online"
     }
   },
   "Nav": {
