@@ -36,6 +36,6 @@ export function constructMetadata({
       creator: "@myriad-tech",
     },
     icons,
-    metadataBase: new URL("https://myriad-tech.ro"),
+    metadataBase: new URL("https://myriad-tech.ro" || "https://www.myriad-tech.ro"),
   };
 }

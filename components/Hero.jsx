@@ -88,6 +88,7 @@ const Hero = () => {
               src="/logo.png"
               width={800}
               height={800}
+              priority
               alt="Alexandru Maftei profile picture"
               className="rounded-full border-2 border-accent object-cover"
             />
