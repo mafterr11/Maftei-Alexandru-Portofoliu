@@ -85,11 +85,11 @@ const Hero = () => {
             className="absolute -right-2 -top-2 hidden h-[500px] w-[500px] bg-no-repeat xl:flex"
           >
             <Image
-              src="/logo.webp"
+              src="/2.png"
               width={800}
               height={800}
               alt="Alexandru Maftei profile picture"
-              className="rounded-full border-2 border-accent object-cover "
+              className="rounded-full border-2 border-accent object-cover"
             />
           </motion.div>
         </div>

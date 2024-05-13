@@ -18,7 +18,7 @@ const Work = () => {
 
   return (
     <section className="relative mb-12 max-xl:overflow-x-hidden xl:mb-24 xl:py-16">
-      <div className="container flex flex-col xl:flex-row gap-x-40">
+      <div className="container flex flex-col gap-x-40 xl:flex-row">
         {/* text */}
         <motion.div
           variants={fadeIn("right", 0.4)}
