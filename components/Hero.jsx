@@ -20,7 +20,7 @@ const Hero = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, ammount: 0.4 }}
-              className="mb-4 text-sm font-semibold uppercase tracking-[4px] text-accent font-recursive"
+              className="mb-4 font-recursive text-sm font-semibold uppercase tracking-[4px] text-accent"
             >
               Web Developer
             </motion.div>
@@ -38,7 +38,7 @@ const Hero = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, ammount: 0.4 }}
-              className="subtitle mx-auto max-w-[490px] xl:mx-0 max-xl:text-balance"
+              className="subtitle mx-auto max-w-[490px] max-xl:text-balance xl:mx-0"
             >
               {t("subtitle")}
             </motion.p>
