@@ -1,6 +1,8 @@
-import { clsx } from "clsx";
+import { type ClassValue, clsx } from "clsx";
+import { Metadata } from "next";
 import { twMerge } from "tailwind-merge";
-export function cn(...inputs) {
+
+export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
@@ -10,7 +12,13 @@ export function constructMetadata({
   keywords = "dezvoltare web, design web personalizat, dezvoltator web freelancer, site-uri responsive, solutii e-commerce, Myriad Tech, design web, freelancer, bucuresti, romania, afacere mica, maftei alexandru, preturi site, super pret",
   image = "/logo.png",
   icons = "/icon.svg",
-} = {}) {
+}: {
+  title?: string;
+  description?: string;
+  keywords?: string;
+  image?: string;
+  icons?: string;
+} = {}): Metadata {
   return {
     title,
     description,
@@ -24,7 +32,6 @@ export function constructMetadata({
       card: "summary_large_image",
       title,
       description,
-      keywords,
       images: [image],
       creator: "@myriad-tech",
     },
