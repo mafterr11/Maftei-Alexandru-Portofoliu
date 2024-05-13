@@ -40,7 +40,8 @@
   "Work": {
     "title": "Ultimele proiecte",
     "subtitle": "Evidențiind ultimele mele realizări și inițiative creative.",
-    "projects-button": "Toate Proiectele"
+    "projects-button": "Toate Proiectele",
+    "projects-link": "/ro/projects"
   },
   "Cta": {
     "title": "Pregătit să îți transformi visele în realitate?",
@@ -51,6 +52,7 @@
     "page": {
       "title": "Proiectele mele",
       "tab": "Toate proiectele"
+      
     },
     "madiny": "Acesta este un site web modern minimalist, care include un fundal video captivant pe pagina de start. Platforma aduce arta corporală la viață cu măiestrie și design personalizat, oferind o experiență digitală imersivă.",
     "tng": "Navigați prin portofoliul Grupului TNG printr-un site de prezentare care include un formular de contact complex personalizat, securitate îmbunătățită cu reCaptcha și diverse elemente modificate cu umbre.",

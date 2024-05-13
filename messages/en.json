@@ -40,7 +40,8 @@
   "Work": {
     "title": "Latest Projects",
     "subtitle": "My latest achievements and creative ventures.",
-    "projects-button": "All Projects"
+    "projects-button": "All Projects",
+    "projects-link": "/en/projects"
   },
   "Cta": {
     "title": "Prepared to turn your dreams into reality?",

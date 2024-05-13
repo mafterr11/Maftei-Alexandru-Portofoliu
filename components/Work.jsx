@@ -32,7 +32,7 @@ const Work = () => {
             {t("title")}
           </h2>
           <p className="subtitle mb-8">{t("subtitle")}</p>
-          <Link href="/projects">
+          <Link href={t("projects-link")}>
             <Button>{t("projects-button")}</Button>
           </Link>
         </motion.div>
