@@ -51,7 +51,7 @@ const Hero = () => {
                 viewport={{ once: true, ammount: 0.4 }}
               >
                 <Link href={t("contact-link")}>
-                  <Button className="gap-x-2 shadow-button">
+                  <Button className="gap-x-2 shadow-button min-w-[180px]">
                     {t("contact-button")} <Send size={18} />
                   </Button>
                 </Link>
@@ -68,7 +68,7 @@ const Hero = () => {
                   rel="noopener noreferrer"
                   download
                 >
-                  <Button className="gap-x-2 shadow-button" variant="secondary">
+                  <Button className="gap-x-2 shadow-button min-w-[180px]" variant="secondary">
                     {t("download-button")}
                     <Download size={18} />
                   </Button>
