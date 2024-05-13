@@ -3,10 +3,18 @@ import Image from "next/image";
 import { Card, CardHeader } from "@/components/ui/card";
 import { Github, Link2Icon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { useRouter } from "next/navigation";
 
 const ProjectCard = ({ project }) => {
+  const router = useRouter();
+  const handleClick = () => {
+    router.push(`${project.link}`);
+  };
   return (
-    <Card className="group relative h-[620px] overflow-hidden border-2 border-black/15 bg-body shadow-md">
+    <Card
+      className="group hover:cursor-pointer hover:bg-accent/5 relative h-[620px] overflow-hidden border-2 border-black/15 bg-body shadow-md"
+      onClick={() => handleClick()}
+    >
       <CardHeader className="p-0">
         {/* Image */}
         <div className="relative flex h-[250px] w-full items-center justify-center bg-accent/15 bg-work bg-[110%] bg-no-repeat">
@@ -41,7 +49,7 @@ const ProjectCard = ({ project }) => {
           {project.category}
         </Badge>
         <h4 className="mb-4">{project.name}</h4>
-        <p className="text-lg text-bakab">{project.description}</p>
+        <p className="text-bakab text-lg">{project.description}</p>
       </div>
     </Card>
   );

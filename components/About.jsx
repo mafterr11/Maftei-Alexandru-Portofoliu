@@ -214,7 +214,7 @@ const About = () => {
                 </TabsContent>
                 {/* qualifications */}
                 <TabsContent value="qualifications">
-                  <>
+                  <div>
                     <h3 className="mb-8 text-center xl:text-left">
                       {t("tab2.title")}{" "}
                     </h3>
@@ -238,7 +238,7 @@ const About = () => {
                                   <div className="relative ml-2 h-[84px] w-[1px] bg-black/15">
                                     <div className="absolute -left-[5px] h-[11px] w-[11px] rounded-full bg-accent transition-all duration-500 group-hover:translate-y-[84px]"></div>
                                   </div>
-                                  <>
+                                  <div>
                                     <div className="mb-2 text-xl font-semibold leading-none">
                                       {university}
                                     </div>
@@ -248,7 +248,7 @@ const About = () => {
                                     <div className="text-base font-medium">
                                       {years}
                                     </div>
-                                  </>
+                                  </div>
                                 </div>
                               );
                             },
@@ -273,7 +273,7 @@ const About = () => {
                                   <div className="relative ml-2 h-[84px] w-[1px] bg-black/15">
                                     <div className="absolute -left-[5px] h-[11px] w-[11px] rounded-full bg-accent transition-all duration-500 group-hover:translate-y-[84px]"></div>
                                   </div>
-                                  <>
+                                  <div>
                                     <div className="mb-2 text-xl font-semibold leading-none">
                                       {company}
                                     </div>
@@ -283,7 +283,7 @@ const About = () => {
                                     <div className="text-base font-medium">
                                       {years}
                                     </div>
-                                  </>
+                                  </div>
                                 </div>
                               );
                             },
@@ -291,7 +291,7 @@ const About = () => {
                         </div>
                       </div>
                     </div>
-                  </>
+                  </div>
                 </TabsContent>
                 <TabsContent value="skills">
                   <div className="text-center xl:text-left">
@@ -323,7 +323,7 @@ const About = () => {
                       </div>
                     </div>
                     {/* Skill List Backend */}
-                    <>
+                    <div>
                       <h4 className="mb-2 text-xl font-semibold xl:text-left ">
                         Backend
                       </h4>
@@ -349,7 +349,7 @@ const About = () => {
                           },
                         )}
                       </div>
-                    </>
+                    </div>
                   </div>
                 </TabsContent>
               </div>

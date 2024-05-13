@@ -36,7 +36,7 @@ const ProjectsPage = () => {
     },
     {
       image: "/work/electroniCobra.png",
-      category: "ecommerce",
+      category: t("category.shop"),
       name: "electroniCobra",
       description: t("electroniCobra"),
       link: "https://ecommerce-template-demo.vercel.app",
@@ -97,7 +97,7 @@ const ProjectsPage = () => {
                   <TabsTrigger
                     value={category}
                     key={index}
-                    className="w-[162px] capitalize md:w-auto"
+                    className="w-[162px] md:w-auto"
                     onClick={() => setCategory(category)}
                   >
                     {category}

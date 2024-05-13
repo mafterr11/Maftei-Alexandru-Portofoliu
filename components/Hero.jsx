@@ -20,7 +20,7 @@ const Hero = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, ammount: 0.4 }}
-              className="mb-4 text-sm font-semibold uppercase tracking-[4px] text-accent font-recursive"
+              className="mb-4 font-recursive text-sm font-semibold uppercase tracking-[4px] text-accent"
             >
               Web Developer
             </motion.div>
@@ -38,7 +38,7 @@ const Hero = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, ammount: 0.4 }}
-              className="subtitle mx-auto max-w-[490px] xl:mx-0 max-xl:text-balance"
+              className="subtitle mx-auto max-w-[490px] max-xl:text-balance xl:mx-0"
             >
               {t("subtitle")}
             </motion.p>
@@ -51,7 +51,7 @@ const Hero = () => {
                 viewport={{ once: true, ammount: 0.4 }}
               >
                 <Link href={t("contact-link")}>
-                  <Button className="gap-x-2 shadow-button">
+                  <Button className="gap-x-2 shadow-button min-w-[180px]">
                     {t("contact-button")} <Send size={18} />
                   </Button>
                 </Link>
@@ -68,7 +68,7 @@ const Hero = () => {
                   rel="noopener noreferrer"
                   download
                 >
-                  <Button className="gap-x-2 shadow-button" variant="secondary">
+                  <Button className="gap-x-2 shadow-button min-w-[180px]" variant="secondary">
                     {t("download-button")}
                     <Download size={18} />
                   </Button>
@@ -85,11 +85,11 @@ const Hero = () => {
             className="absolute -right-2 -top-2 hidden h-[500px] w-[500px] bg-no-repeat xl:flex"
           >
             <Image
-              src="/logo.webp"
+              src="/logo.png"
               width={800}
               height={800}
               alt="Alexandru Maftei profile picture"
-              className="rounded-full border-2 border-accent object-cover "
+              className="rounded-full border-2 border-accent object-cover"
             />
           </motion.div>
         </div>

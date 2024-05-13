@@ -53,7 +53,7 @@ const ContactPage = () => {
             whileInView={"show"}
             viewport={{ once: true, ammount: 0.4 }}
             className="hidden w-full bg-contact bg-contain bg-top bg-no-repeat xl:flex"
-          ></motion.div>
+          />
         </div>
         {/* info text and form */}
         <div className="mb-24 grid xl:mb-32 xl:grid-cols-2">
