@@ -263,7 +263,7 @@ export default function SolicitatiOfertaForm() {
                     as="label"
                     className="flex items-center space-x-3 pl-1"
                   >
-                    <>
+                    <div>
                       <Input
                         type="checkbox"
                         {...field}
@@ -272,7 +272,7 @@ export default function SolicitatiOfertaForm() {
                         className="h-[15px] w-[15px]"
                       />
                       <span className="text-[15px]">{t("form.gdpr")}</span>
-                    </>
+                    </div>
                   </FormControl>
                   <FormMessage className="text-red" />
                 </FormItem>
