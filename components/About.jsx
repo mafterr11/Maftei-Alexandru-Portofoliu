@@ -52,6 +52,9 @@ const skillData = [
         name: "NextJS",
       },
       {
+        name: "Typescript",
+      },
+      {
         name: "TailwindCSS",
       },
       {
@@ -304,7 +307,7 @@ const About = () => {
                       <h4 className="mb-2 text-xl font-semibold">Frontend</h4>
                       <div className="mb-8 border-b border-accent"></div>
                       {/* skill list frontend */}
-                      <div className="grid grid-cols-1 md:grid-flow-col md:grid-cols-2 md:grid-rows-4 xl:grid-rows-4">
+                      <div className="grid grid-cols-1 md:grid-flow-col md:grid-cols-2 md:grid-rows-5">
                         {getData(skillData, "frontend").data.map(
                           (item, index) => {
                             const { name } = item;
