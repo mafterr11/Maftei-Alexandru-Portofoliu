@@ -43,16 +43,13 @@ const skillData = [
     title: "frontend",
     data: [
       {
-        name: "HTML, CSS",
-      },
-      {
-        name: "JavaScript",
+        name: "HTML5, CSS, Javascript",
       },
       {
         name: "ReactJS",
       },
       {
-        name: "NextJS 14",
+        name: "NextJS",
       },
       {
         name: "TailwindCSS",
@@ -62,6 +59,12 @@ const skillData = [
       },
       {
         name: "Framer Motion",
+      },
+      {
+        name: "GSAP",
+      },
+      {
+        name: "Prismic CMS",
       },
     ],
   },
@@ -108,7 +111,7 @@ const About = () => {
           university: "SDA Academy - Java/Frontend",
           qualification: "Certificate",
           years: "2023-2024",
-        }, 
+        },
       ],
     },
     {
@@ -193,7 +196,7 @@ const About = () => {
                 <TabsContent value="personal">
                   <div className="text-center xl:text-left">
                     <h3 className="mb-4">{t("tab1.title")}</h3>
-                    <p className="subtitle mx-auto max-w-xl xl:mx-0 max-xl:text-balance">
+                    <p className="subtitle mx-auto max-w-xl max-xl:text-balance xl:mx-0">
                       {t("tab1.description")}
                     </p>
                     {/* icons */}
@@ -299,9 +302,9 @@ const About = () => {
                     {/* skills */}
                     <div className="mb-16">
                       <h4 className="mb-2 text-xl font-semibold">Frontend</h4>
-                      <div className="mb-4 border-b border-accent"></div>
+                      <div className="mb-8 border-b border-accent"></div>
                       {/* skill list frontend */}
-                      <div className="grid md:grid-cols-2">
+                      <div className="grid grid-cols-1 md:grid-flow-col md:grid-cols-2 md:grid-rows-4 xl:grid-rows-4">
                         {getData(skillData, "frontend").data.map(
                           (item, index) => {
                             const { name } = item;
@@ -327,9 +330,9 @@ const About = () => {
                       <h4 className="mb-2 text-xl font-semibold xl:text-left ">
                         Backend
                       </h4>
-                      <div className="mb-4 border-b border-accent"></div>
+                      <div className="mb-8 border-b border-accent"></div>
                       {/* skill list backend */}
-                      <div className="grid md:grid-cols-2">
+                      <div className="grid grid-cols-1 md:grid-flow-col md:grid-cols-2 md:grid-rows-4 xl:grid-rows-4">
                         {getData(skillData, "backend").data.map(
                           (item, index) => {
                             const { name } = item;
