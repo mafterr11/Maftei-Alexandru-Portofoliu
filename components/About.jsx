@@ -108,7 +108,7 @@ const About = () => {
           university: "SDA Academy - Java/Frontend",
           qualification: "Certificate",
           years: "2023-2024",
-        },
+        }, 
       ],
     },
     {
