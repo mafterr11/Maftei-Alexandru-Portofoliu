@@ -3,7 +3,7 @@ import { pathnames } from "./navigation";
 
 export default createMiddleware({
   // A list of all locales that are supported
-  locales: ["en", "ro"],
+  locales: ["ro", "en"],
   // Used when no locale matches
   defaultLocale: "ro",
   pathnames,

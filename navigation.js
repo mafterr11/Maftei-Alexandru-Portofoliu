@@ -2,8 +2,8 @@ import { createLocalizedPathnamesNavigation } from "next-intl/navigation";
 
 export const pathnames = {
   "/projects": {
-    en: "/projects",
     ro: "/proiecte",
+    en: "/projects",
   },
 };
 
