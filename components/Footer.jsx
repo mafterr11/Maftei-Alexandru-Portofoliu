@@ -16,7 +16,7 @@ const Footer = () => {
               href="https://www.linkedin.com/in/maftei-alexandru/"
               className="hover"
             >
-              <span className="text-accent">Maftei Alexandru.</span>
+              <span className="text-accent">Myriad Tech</span>
             </a>
           </div>
           <div className="text-center font-semibold underline">
