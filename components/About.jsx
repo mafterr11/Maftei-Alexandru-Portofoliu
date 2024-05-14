@@ -225,9 +225,9 @@ const About = () => {
                     <div className="grid gap-y-8 md:grid-cols-2">
                       {/* ed */}
                       <div className="flex flex-col gap-y-6">
-                        <div className="flex items-center gap-x-4 text-[22px] text-accent">
-                          <GraduationCap size={28} />
-                          <h4 className="font-medium capitalize">
+                        <div className="flex items-center gap-x-4 text-[22px]">
+                          <GraduationCap size={28} className="text-accent"/>
+                          <h4 className="font-bold capitalize">
                             {getData(qualificationData, t("edu")).title}
                           </h4>
                         </div>
@@ -242,7 +242,7 @@ const About = () => {
                                     <div className="absolute -left-[5px] h-[11px] w-[11px] rounded-full bg-accent transition-all duration-500 group-hover:translate-y-[84px]"></div>
                                   </div>
                                   <div>
-                                    <div className="mb-2 text-xl font-semibold leading-none">
+                                    <div className="mb-2 text-xl font-medium leading-none">
                                       {university}
                                     </div>
                                     <div className="mb-4 text-lg leading-none">
@@ -260,9 +260,9 @@ const About = () => {
                       </div>
                       {/* experience */}
                       <div className="flex flex-col gap-y-6">
-                        <div className="flex items-center gap-x-4 text-[22px] text-accent">
-                          <Briefcase size={28} />
-                          <h4 className="font-medium capitalize">
+                        <div className="flex items-center gap-x-4 text-[22px]">
+                          <Briefcase size={28} className="text-accent"/>
+                          <h4 className="font-bold capitalize">
                             {getData(qualificationData, t("exp")).title}
                           </h4>
                         </div>
@@ -277,7 +277,7 @@ const About = () => {
                                     <div className="absolute -left-[5px] h-[11px] w-[11px] rounded-full bg-accent transition-all duration-500 group-hover:translate-y-[84px]"></div>
                                   </div>
                                   <div>
-                                    <div className="mb-2 text-xl font-semibold leading-none">
+                                    <div className="mb-2 text-xl font-medium leading-none">
                                       {company}
                                     </div>
                                     <div className="mb-4 text-lg leading-none">
