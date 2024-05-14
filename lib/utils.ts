@@ -11,7 +11,7 @@ export function constructMetadata({
   description = "Alege Myriad Tech pentru servicii personalizate de web development, transformând viziunea afacerii tale în realitate prin soluții digitale inovatoare.",
   keywords = "dezvoltare web, design web personalizat, dezvoltator web freelancer, site-uri responsive, solutii e-commerce, Myriad Tech, design web, freelancer, bucuresti, romania, afacere mica, maftei alexandru, preturi site, super pret",
   image = "/logo.png",
-  icons = "/icon.svg",
+  icons = "/favicon.ico",
 }: {
   title?: string;
   description?: string;
