@@ -12,7 +12,7 @@ const ProjectCard = ({ project }) => {
   };
   return (
     <Card
-      className="group hover:cursor-pointer hover:bg-accent/5 relative h-[620px] overflow-hidden border-2 border-black/15 bg-body shadow-md"
+      className="group relative h-[620px] overflow-hidden border-2 border-black/15 bg-body shadow-md hover:cursor-pointer hover:bg-accent/5"
       onClick={() => handleClick()}
     >
       <CardHeader className="p-0">
@@ -31,7 +31,7 @@ const ProjectCard = ({ project }) => {
           <div className="absolute right-2 top-4 flex flex-col gap-y-4">
             <Link
               href={project.link}
-              className="flex h-[45px] w-[45px] items-center justify-center rounded-md bg-black/85 transition-all duration-500 group-hover:rotate-[360deg] hover:bg-accent/70 group-hover:scale-100 group-hover:opacity-100 max-lg:scale-100 max-lg:opacity-100 xl:scale-0 xl:opacity-0"
+              className="flex h-[45px] w-[45px] items-center justify-center rounded-md bg-black/85 transition-all duration-500 hover:bg-accent/70 group-hover:rotate-[360deg] group-hover:scale-100 group-hover:opacity-100 max-xl:transform-none max-lg:scale-100 max-lg:opacity-100 xl:scale-0 xl:opacity-0"
             >
               <Link2Icon className="text-white" />
             </Link>
