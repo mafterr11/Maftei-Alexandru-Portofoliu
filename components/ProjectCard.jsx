@@ -3,16 +3,17 @@ import Image from "next/image";
 import { Card, CardHeader } from "@/components/ui/card";
 import { Github, Link2Icon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 const ProjectCard = ({ project }) => {
+  const currentRoute = usePathname();
   const router = useRouter();
   const handleClick = () => {
     router.push(`${project.link}`);
   };
   return (
     <Card
-      className="group relative h-[620px] overflow-hidden border-2 border-black/15 bg-body shadow-md hover:cursor-pointer hover:bg-accent/5"
+      className={`group relative h-[620px] overflow-hidden border-2 border-black/15 bg-body shadow-md hover:cursor-pointer hover:bg-accent/5 ${currentRoute === "/en/projects" || currentRoute === "/ro/proiecte" ? "hover:-translate-y-2 hover:scale-[1.01]" : ""} transition-all duration-500 ease-in-out`}
       onClick={() => handleClick()}
     >
       <CardHeader className="p-0">
