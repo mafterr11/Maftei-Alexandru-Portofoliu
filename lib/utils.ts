@@ -11,14 +11,12 @@ export function constructMetadata({
   description = "Alege Myriad Tech pentru servicii personalizate de web development, transformând viziunea afacerii tale în realitate prin soluții digitale inovatoare.",
   keywords = "dezvoltare web, design web personalizat, dezvoltator web freelancer, site-uri responsive, solutii e-commerce, Myriad Tech, design web, freelancer, bucuresti, romania, afacere mica, maftei alexandru, preturi site, super pret",
   image = "/logo.png",
-  image2 = "/logo2.png",
   icons = "/icon.svg",
 }: {
   title?: string;
   description?: string;
   keywords?: string;
   image?: string;
-  image2?: string;
   icons?: string;
 } = {}): Metadata {
   return {
@@ -34,7 +32,7 @@ export function constructMetadata({
       card: "summary_large_image",
       title,
       description,
-      images: [image2],
+      images: [image],
       creator: "@myriad-tech",
     },
     icons,
