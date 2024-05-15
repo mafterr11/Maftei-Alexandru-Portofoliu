@@ -27,10 +27,12 @@ export function constructMetadata({
       title,
       description,
       images: [{ url: image }],
+      type: 'website',
     },
     twitter: {
       card: "summary_large_image",
       title,
+      site:"https://myriad-tech.ro",
       description,
       images: [image],
       creator: "@myriad-tech",
