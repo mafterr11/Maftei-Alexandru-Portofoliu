@@ -35,6 +35,14 @@ const WorkSwiper = () => {
       // github: "/",
     },
     {
+      image: "/work/dianazu.png",
+      category: t("category.presentation"),
+      name: "DianaZU",
+      description: t("dianazu"),
+      link: "https://dianazu.vercel.app",
+      // github: "/",
+    },
+    {
       image: "/work/electroniCobra.png",
       category: "ecommerce",
       name: "electroniCobra",

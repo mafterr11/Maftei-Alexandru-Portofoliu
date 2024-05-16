@@ -35,8 +35,16 @@ const ProjectsPage = () => {
       // github: "/",
     },
     {
+      image: "/work/dianazu.png",
+      category: t("category.presentation"),
+      name: "DianaZU",
+      description: t("dianazu"),
+      link: "https://dianazu.vercel.app",
+      // github: "/",
+    },
+    {
       image: "/work/electroniCobra.png",
-      category: t("category.shop"),
+      category: "ecommerce",
       name: "electroniCobra",
       description: t("electroniCobra"),
       link: "https://ecommerce-template-demo.vercel.app",
