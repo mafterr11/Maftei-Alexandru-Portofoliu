@@ -11,13 +11,13 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-center">
           <Socials className="flex gap-x-6 text-[20px]" />
           <div className="my-2 flex items-center justify-center gap-x-1 text-center">
-            Copyright &copy; {currentYear} -
             <a
               href="https://www.linkedin.com/in/maftei-alexandru/"
               className="hover"
             >
-              <span className="text-accent">Myriad Tech</span>
+              <span className="text-accent hover:font-medium">Myriad Tech</span>
             </a>
+            &copy; {currentYear} - {t("rights")}
           </div>
           <div className="text-center font-semibold underline">
             <Link href={t("gdpr")}>{t("name")}</Link>

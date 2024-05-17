@@ -142,6 +142,7 @@
   },
   "Footer": {
     "gdpr": "/en/politica-de-confidentialitate",
-    "name": "Privacy Policy"
+    "name": "Privacy Policy",
+    "rights": "All rights reserved"
   }
 }
