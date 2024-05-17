@@ -44,7 +44,7 @@ const ProjectsPage = () => {
     },
     {
       image: "/work/electroniCobra.png",
-      category: "ecommerce",
+      category: t("category.shop"),
       name: "electroniCobra",
       description: t("electroniCobra"),
       link: "https://ecommerce-template-demo.vercel.app",

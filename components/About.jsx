@@ -168,7 +168,7 @@ const About = () => {
               width={800}
               height={800}
               alt="Alexandru Maftei profile picture"
-              className="rounded-full border-2 border-accent object-cover"
+              className="rounded-full border-2 border-accent object-cover transition-all duration-300 ease-in-out hover:scale-[1.03]"
             />
           </motion.div>
           {/* Tabs */}

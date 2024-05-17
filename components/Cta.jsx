@@ -33,8 +33,8 @@ const Cta = () => {
             viewport={{ once: true, ammount: 0.4 }}
           >
             <Link href={tLink("contact-link")}>
-              <Button className="gap-x-2">
-                {tLink("contact-button")} <Send size={18} />
+              <Button className="gap-x-2 group">
+                {tLink("contact-button")} <Send size={18} className="transition-all ease-in-out duration-300 group-hover:rotate-[20deg]"/>
               </Button>
             </Link>
           </motion.div>
