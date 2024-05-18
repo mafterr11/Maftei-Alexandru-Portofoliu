@@ -114,7 +114,7 @@ const ProjectsPage = () => {
               })}
             </TabsList>
             {/* tabs content */}
-            <div className="grid grid-cols-1 gap-4 text-lg lg:grid-cols-3 xl:mt-8">
+            <div className="grid grid-cols-1 gap-8 md:max-xl:px-6 text-lg md:grid-cols-2 xl:grid-cols-3 xl:mt-8">
               {filteredProjects.map((project, index) => {
                 return (
                   <TabsContent value={category} key={index}>

@@ -51,8 +51,12 @@ const Hero = () => {
                 viewport={{ once: true, ammount: 0.4 }}
               >
                 <Link href={t("contact-link")}>
-                  <Button className="gap-x-2 shadow-button min-w-[180px] group">
-                    {t("contact-button")} <Send size={18} className="transition-all ease-in-out duration-300 group-hover:rotate-[20deg]"/>
+                  <Button className="group min-w-[180px] gap-x-2 shadow-button">
+                    {t("contact-button")}{" "}
+                    <Send
+                      size={18}
+                      className="transition-all duration-300 ease-in-out group-hover:rotate-[20deg]"
+                    />
                   </Button>
                 </Link>
               </motion.div>
@@ -68,9 +72,15 @@ const Hero = () => {
                   rel="noopener noreferrer"
                   download
                 >
-                  <Button className="gap-x-2 shadow-button min-w-[180px]" variant="secondary">
+                  <Button
+                    className="group min-w-[180px] gap-x-2 shadow-button"
+                    variant="secondary"
+                  >
                     {t("download-button")}
-                    <Download size={18} />
+                    <Download
+                      size={18}
+                      className="transition-all duration-300 ease-in-out group-hover:rotate-[20deg]"
+                    />
                   </Button>
                 </a>
               </motion.div>
