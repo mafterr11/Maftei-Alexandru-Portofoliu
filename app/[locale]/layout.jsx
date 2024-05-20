@@ -6,6 +6,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import pick from "lodash/pick";
 import { Analytics } from "@vercel/analytics/react";
+import { constructMetadata } from "@/lib/utils";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -18,16 +19,8 @@ const recursive = Recursive({
   variable: "--font-recursive"
 });
 
-export const metadata = {
-  title: "Myriad - Web Development",
-  description:
-    "Hello, my name is Maftei Alexandru. Lets start this journey together and create your dream website! ",
-  keywords:
-    "web development, frontend, web design, freelancer, bucuresti, romania, small buisiness, maftei alexandru, site prices, myriad tech",
-  icons: {
-    icon: "/icon.svg",
-  },
-};
+export const metadata = constructMetadata();
+
 
 export default function RootLayout({ children, params: { locale } }) {
   const messages = useMessages();
