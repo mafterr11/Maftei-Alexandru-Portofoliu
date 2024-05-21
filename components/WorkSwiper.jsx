@@ -19,6 +19,14 @@ const WorkSwiper = () => {
       // github: "https://github.com/mafterr11/MadinyTattoo",
     },
     {
+      image: "/work/monte-bianco.png",
+      category: t("category.presentation"),
+      name: "Monte Bianco",
+      description: t("monte-bianco"),
+      link: "https://www.montebianco.ro/",
+      // github: "/",
+    },
+    {
       image: "/work/tng.png",
       category: t("category.presentation"),
       name: "TNG GRUP",
@@ -56,14 +64,6 @@ const WorkSwiper = () => {
       name: "Manarh",
       description: t("manarh"),
       link: "/",
-      // github: "/",
-    },
-    {
-      image: "/work/monte-bianco.png",
-      category: t("category.progress"),
-      name: "Monte Bianco",
-      description: t("monte-bianco"),
-      link: "https://montebianco.vercel.app",
       // github: "/",
     },
   ];

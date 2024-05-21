@@ -8,65 +8,65 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";
 
 const ProjectsPage = () => {
-  const t = useTranslations("Proiecte");
-  const projectData = [
-    {
-      image: "/work/madinytattoo.png",
-      category: t("category.presentation"),
-      name: "MadinyTattoo",
-      description: t("madiny"),
-      link: "https://madinytattoo.ro",
-      // github: "https://github.com/mafterr11/MadinyTattoo",
-    },
-    {
-      image: "/work/tng.png",
-      category: t("category.presentation"),
-      name: "TNG GRUP",
-      description: t("tng"),
-      link: "https://tngag.ro",
-      // github: "https://github.com/mafterr11/TNG-GRUP",
-    },
-    {
-      image: "/work/myriad-AI.png",
-      category: t("category.presentation"),
-      name: "Myriad-AI",
-      description: t("myriad-AI"),
-      link: "https://myriad-ai.vercel.app",
-      // github: "/",
-    },
-    {
-      image: "/work/dianazu.png",
-      category: t("category.presentation"),
-      name: "DianaZU",
-      description: t("dianazu"),
-      link: "https://dianazu.vercel.app",
-      // github: "/",
-    },
-    {
-      image: "/work/electroniCobra.png",
-      category: t("category.shop"),
-      name: "electroniCobra",
-      description: t("electroniCobra"),
-      link: "https://ecommerce-template-demo.vercel.app",
-      // github: "/",
-    },
-    {
-      image: "/work/manarh.webp",
-      category: t("category.progress"), //Fullstack
-      name: "Manarh",
-      description: t("manarh"),
-      link: "/",
-      // github: "/",
-    },
-    {
-      image: "/work/monte-bianco.png",
-      category: t("category.progress"),
-      name: "Monte Bianco",
-      description: t("monte-bianco"),
-      link: "https://montebianco.vercel.app",
-      // github: "/",
-    },
-  ];
+const t = useTranslations("Proiecte");
+const projectData = [
+  {
+    image: "/work/madinytattoo.png",
+    category: t("category.presentation"),
+    name: "MadinyTattoo",
+    description: t("madiny"),
+    link: "https://madinytattoo.ro",
+    // github: "https://github.com/mafterr11/MadinyTattoo",
+  },
+  {
+    image: "/work/monte-bianco.png",
+    category: t("category.presentation"),
+    name: "Monte Bianco",
+    description: t("monte-bianco"),
+    link: "https://www.montebianco.ro/",
+    // github: "/",
+  },
+  {
+    image: "/work/tng.png",
+    category: t("category.presentation"),
+    name: "TNG GRUP",
+    description: t("tng"),
+    link: "https://tngag.ro",
+    // github: "https://github.com/mafterr11/TNG-GRUP",
+  },
+  {
+    image: "/work/myriad-AI.png",
+    category: t("category.presentation"),
+    name: "Myriad-AI",
+    description: t("myriad-AI"),
+    link: "https://myriad-ai.vercel.app",
+    // github: "/",
+  },
+  {
+    image: "/work/dianazu.png",
+    category: t("category.presentation"),
+    name: "DianaZU",
+    description: t("dianazu"),
+    link: "https://dianazu.vercel.app",
+    // github: "/",
+  },
+  {
+    image: "/work/electroniCobra.png",
+    category: t("category.shop"),
+    name: "electroniCobra",
+    description: t("electroniCobra"),
+    link: "https://ecommerce-template-demo.vercel.app",
+    // github: "/",
+  },
+  {
+    image: "/work/manarh.webp",
+    category: t("category.progress"), //Fullstack
+    name: "Manarh",
+    description: t("manarh"),
+    link: "/",
+    // github: "/",
+  },
+];
   const uniqueCategories = [
     t("page.tab"),
     ...new Set(projectData.map((item) => item.category)),
