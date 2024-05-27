@@ -51,10 +51,10 @@ const projectData = [
     // github: "/",
   },
   {
-    image: "/work/electroniCobra.png",
+    image: "/work/minionsUnite.png",
     category: t("category.shop"),
-    name: "electroniCobra",
-    description: t("electroniCobra"),
+    name: "minionsUnite",
+    description: t("minionsUnite"),
     link: "https://ecommerce-template-demo.vercel.app",
     // github: "/",
   },
