@@ -80,7 +80,7 @@ const projectData = [
 
   return (
     <section className="min-h-screen pt-40">
-      <div className="container mx-auto">
+      <div className="container mx-auto xl:max-2xl:max-w-[1280px]">
         <motion.h2
           variants={fadeIn("down", 0.2)}
           initial="hidden"

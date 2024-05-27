@@ -14,7 +14,7 @@ const ProjectCard = ({ project }) => {
 
   return (
     <Card
-      className={`group relative h-[620px] overflow-hidden border-2 border-black/15 bg-body shadow-md hover:cursor-pointer hover:bg-accent/5 ${currentRoute === "/en/projects" || currentRoute === "/ro/proiecte" ? "hover:-translate-y-2 hover:scale-[1.01]" : ""} transition-all duration-500 ease-in-out`}
+      className={`group relative h-[620px] overflow-hidden border-2 border-black/15 bg-body shadow-md hover:cursor-pointer hover:bg-accent/5 ${currentRoute === "/en/projects" || currentRoute === "/ro/proiecte" ? "hover:-translate-y-2 hover:scale-[1.01] xl:w-[400px] 2xl:w-[450px]" : ""} transition-all duration-500 ease-in-out`}
       onClick={() => handleClick()}
     >
       <CardHeader className="p-0">

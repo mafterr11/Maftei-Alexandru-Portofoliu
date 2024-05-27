@@ -37,7 +37,7 @@ const Services = () => {
   ];
   return (
     <section className="mb-12 bg-body-light py-12 pb-20 xl:mb-36">
-      <div className="container mx-auto">
+      <div className="container">
         <motion.h2
           variants={fadeIn("down", 0.4)}
           initial="hidden"

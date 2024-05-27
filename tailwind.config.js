@@ -19,6 +19,7 @@ module.exports = {
       md: "768px",
       lg: "960px",
       xl: "1200px",
+      "2xl": "1500px",
     },
     colors: {
       accent: "#796250",
@@ -42,7 +43,7 @@ module.exports = {
     },
     extend: {
       boxShadow: {
-        'button': '2px 3px 3px rgba(0, 0, 0, 0.25)',
+        button: "2px 3px 3px rgba(0, 0, 0, 0.25)",
       },
       backgroundImage: {
         work: "url('/project-bg-light.png')",
