@@ -149,19 +149,19 @@ const About = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, ammount: 0.4 }}
-          className="section-title mx-auto mb-8 text-center xl:mb-24"
+          className="section-title mx-auto mb-8 text-center xl:mb-32"
         >
           <Dot />
           {t("title")}
         </motion.h2>
-        <div className="flex flex-col gap-24 xl:flex-row">
+        <div className="flex flex-col gap-x-32 xl:flex-row justify-center items-center">
           {/* Image */}
           <motion.div
             variants={fadeIn("down", 0.4)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, ammount: 0.4 }}
-            className="relative hidden h-[425px] w-[505px] flex-1 bg-no-repeat xl:flex"
+            className="relative hidden h-[425px] w-[425px]  bg-no-repeat xl:flex"
           >
             <Image
               src="/profile-picture.jpg"
@@ -177,7 +177,7 @@ const About = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, ammount: 0.4 }}
-            className="flex-1"
+            className=""
           >
             <Tabs defaultValue="personal" className="xl:w-[650px]">
               <TabsList className="grid w-full xl:max-w-[520px] xl:grid-cols-3 xl:border">
