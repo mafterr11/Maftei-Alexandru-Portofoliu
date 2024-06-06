@@ -52,8 +52,8 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
       </div>
       <aside
         className={`${
-          isMenuOpen ? "right-0" : "-right-full"
-        } fixed bottom-0 top-0 z-20 h-full border-l-2 border-accent bg-body px-8 pb-4 pt-8 transition-all duration-500`}
+          isMenuOpen ? "right-0 top-0 scale-100" : "-right-full -top-full scale-0"
+        } fixed bottom-0 top-0 z-20 h-full border-l-2 border-accent bg-body px-8 pb-4 pt-8 transition-all duration-700`}
       >
         <div className="flex h-full flex-col items-center justify-between text-black">
           {/* close btn */}
