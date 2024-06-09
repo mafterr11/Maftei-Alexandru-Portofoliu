@@ -144,7 +144,7 @@ const About = () => {
   return (
     <section className="pb-12 xl:h-[900px] xl:py-24">
       <div className="container mx-auto">
-        <motion.h2
+        <motion.h1
           variants={fadeIn("up", 0.4)}
           initial="hidden"
           whileInView={"show"}
@@ -153,7 +153,7 @@ const About = () => {
         >
           <Dot />
           {t("title")}
-        </motion.h2>
+        </motion.h1>
         <div className="flex flex-col gap-x-32 xl:flex-row justify-center items-center">
           {/* Image */}
           <motion.div

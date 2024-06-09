@@ -17,8 +17,8 @@ const Work = () => {
   const messages = useMessages();
 
   return (
-    <section className="relative mb-12 max-xl:overflow-x-hidden xl:mb-24 xl:py-16">
-      <div className="container flex flex-col gap-x-40 xl:max-2xl:gap-x-24 xl:flex-row">
+    <section className="relative mb-12 max-xl:overflow-x-hidden xl:py-16">
+      <div className="container flex flex-col gap-x-40 xl:flex-row xl:max-2xl:gap-x-24">
         {/* text */}
         <motion.div
           variants={fadeIn("right", 0.4)}
@@ -27,10 +27,10 @@ const Work = () => {
           viewport={{ once: true, ammount: 0.4 }}
           className="mx-auto mb-12 flex max-w-[400px] flex-col items-center justify-center text-center xl:mx-0 xl:h-[400px] xl:items-start xl:text-left"
         >
-          <h2 className="section-title mb-4">
+          <h1 className="section-title mb-4">
             <Dot />
             {t("title")}
-          </h2>
+          </h1>
           <p className="subtitle mb-8">{t("subtitle")}</p>
           <Link href={t("projects-link")}>
             <Button>{t("projects-button")}</Button>
