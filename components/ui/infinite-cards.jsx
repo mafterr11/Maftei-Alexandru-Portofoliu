@@ -2,7 +2,6 @@
 
 import { Star } from "lucide-react";
 import React, { useEffect, useState, useRef } from "react";
-import HalfStar from "./half-star";
 import Link from "next/link";
 
 export const InfiniteMovingCards = ({
