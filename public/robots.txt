@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.myriad-tech.ro
+Host: https://myriad-tech.ro
 
 # Sitemaps
-Sitemap: https://www.myriad-tech.ro/sitemap.xml
+Sitemap: https://myriad-tech.ro/sitemap.xml
