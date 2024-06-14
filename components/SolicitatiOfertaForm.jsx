@@ -65,7 +65,7 @@ export default function SolicitatiOfertaForm() {
   const { toast } = useToast();
   const t = useTranslations("Contact");
 
-  // RECAPTCHA
+  // RECAPTCHA  
   const captchaSubmit = async () => {
     if (!executeRecaptcha) {
       console.error("ReCAPTCHA not ready");

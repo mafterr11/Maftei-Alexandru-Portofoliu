@@ -18,7 +18,7 @@ export function Reviews() {
   );
 }
 
-const testimonials = [
+const testimonials = [  
   {
     quote:
       "Am colaborat cu Alexandru pentru crearea site-ului meu și pot spune că experiența a fost fantastică. Site-ul este animat și minimalist, ceea ce îmi pune în valoare lucrările de artă într-un mod foarte profesionist.",
