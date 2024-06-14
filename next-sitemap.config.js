@@ -3,7 +3,7 @@ module.exports = {
   siteUrl: `https://myriad-tech.ro`,
   alternateRefs: [
     {
-      href: "https://myriad-tech.ro",
+      href: "https://myriad-tech.ro/ro",
       hreflang: "ro",
     },
     {
