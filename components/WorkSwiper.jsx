@@ -66,6 +66,14 @@ const WorkSwiper = () => {
       // github: "/",
     },
     {
+      image: "/work/PIA.jpg",
+      category: t("category.others"),
+      name: "Multi-Step Form",
+      description: t("pia"),
+      link: "https://offerfest-pia.vercel.app",
+      // github: "/",
+    },
+    {
       image: "/work/manarh.webp",
       category: t("category.progress"), //Fullstack
       name: "Manarh",

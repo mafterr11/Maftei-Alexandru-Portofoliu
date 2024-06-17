@@ -59,6 +59,14 @@ const projectData = [
     // github: "/",
   },
   {
+    image: "/work/PIA.jpg",
+    category: t("category.others"),
+    name: "Multi-Step Form",
+    description: t("pia"),
+    link: "https://offerfest-pia.vercel.app",
+    // github: "/",
+  },
+  {
     image: "/work/manarh.webp",
     category: t("category.progress"), //Fullstack
     name: "Manarh",
@@ -99,7 +107,7 @@ const projectData = [
           viewport={{ once: true, ammount: 0.4 }}
         >
           <Tabs defaultValue={category} className="mb-24 xl:mb-48">
-            <TabsList className="mx-auto mb-12 grid h-full w-full max-md:gap-y-3 md:grid-cols-4 md:border lg:max-w-[640px]">
+            <TabsList className="mx-auto mb-12 grid h-full w-full max-md:gap-y-3 md:grid-cols-5 md:border lg:max-w-fit">
               {categories.map((category, index) => {
                 return (
                   <TabsTrigger

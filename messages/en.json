@@ -56,7 +56,8 @@
     "category": {
       "presentation": "Presentation site",
       "progress": "In progress",
-      "shop": "E-commerce"
+      "shop": "E-commerce",
+      "others": "Others"
     },
     "madiny": "This is a modern minimalist website, featuring a captivating video background on the home page. The platform brings body art to life with craftsmanship and customized design, providing an immersive digital experience.",
     "tng": "Navigate the TNG Group's portfolio through its presentation website that includes a custom complex contact form, enhanced security with reCaptcha, and various shadow-modified elements.",
@@ -65,7 +66,8 @@
     "myriad-AI": "With its CMS(Content Management System) integration, clients can effortlessly manage content, making updates and customization a seamless experience. This is perfect for businesses seeking an online presence that is easy to maintain.",
     "dianazu": "A sleek one-page portfolio website I developed, featuring smooth scrolling and a dynamic loading scroll bar for an enhanced browsing experience.",
     "minionsUnite": "This is an e-commerce website offering secure authentication features, providing customers with a seamless and safe shopping experience. The platform is  tailored for businesses that need a versatile, reliable online store with robust customer authentication.",
-    "mbody": "This is an innovative presentation website, available in both Romanian and English, offering an interactive experience through smooth animations and modern design."
+    "mbody": "This is an innovative presentation website, available in both Romanian and English, offering an interactive experience through smooth animations and modern design.",
+    "pia": "Introducing our cutting-edge multi-step form designed specifically for car dealership events. As a web developer, I've crafted this form with a focus on seamless UI and intuitive navigation to ensure users have a smooth and hassle-free experience."
   },
   "Nav": {
     "home": {
