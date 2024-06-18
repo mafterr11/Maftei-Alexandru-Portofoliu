@@ -35,6 +35,13 @@ const projectData = [
     // github: "https://github.com/mafterr11/TNG-GRUP",
   },
   {
+    image: "/work/mbody.png",
+    category: t("category.presentation"),
+    name: "MBody Evolution",
+    description: t("mbody"),
+    link: "https://mbody.vercel.app",
+  },
+  {
     image: "/work/myriad-AI.png",
     category: t("category.presentation"),
     name: "Myriad-AI",

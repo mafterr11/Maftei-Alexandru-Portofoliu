@@ -10,7 +10,7 @@ import { fadeIn } from "@/variants";
 const Hero = () => {
   const t = useTranslations("Hero");
   return (
-    <section className="mb-24 bg-body-light py-24 xl:pt-56">
+    <section className="mb-24 bg-grainy py-24 xl:pt-56">
       <div className="container mx-auto">
         <div className="relative flex justify-between gap-x-8">
           {/* text */}

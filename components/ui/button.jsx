@@ -11,12 +11,7 @@ const buttonVariants = cva(
       variant: {
         default:
           "bg-accent text-white hover:bg-accent/90 hover:scale-[0.98] shadow-button",
-        destructive: "bg-red-500 text-slate-50 hover:bg-red-500/90",
-        outline:
-          "border border-slate-200 bg-white hover:bg-slate-100 hover:text-slate-900",
-        secondary: "bg-accent/25 hover:bg-accent/35 hover:scale-[0.98] ",
-        ghost: "hover:bg-slate-100 hover:text-slate-900 ",
-        link: "text-slate-900 underline-offset-4 hover:underline dark:text-slate-50",
+        secondary: "bg-[#DEDDD9] hover:bg-[#D4D3D0] hover:scale-[0.98] ",
       },
       size: {
         default:

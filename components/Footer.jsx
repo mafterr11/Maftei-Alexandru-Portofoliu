@@ -6,7 +6,7 @@ const Footer = () => {
   const t = useTranslations("Footer");
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="border-t-2 border-accent bg-body-light py-4">
+    <footer className="border-t-2 border-accent bg-grainy py-4">
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center">
           <Socials className="flex gap-x-6 text-[20px]" />

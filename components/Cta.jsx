@@ -11,7 +11,7 @@ const Cta = () => {
   const tLink = useTranslations("Hero");
 
   return (
-    <section className="mb-44 bg-body-light py-24">
+    <section className="mb-44 bg-grainy py-24">
       <div className="container mx-auto">
         <div className="flex flex-col items-center">
           <motion.h2

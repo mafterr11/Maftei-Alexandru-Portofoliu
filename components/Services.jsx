@@ -29,14 +29,20 @@ const Services = () => {
     },
     {
       icon: <Gem size={72} strokeWidth={0.8} />,
-      title: "Google Ads",
+      title: "SEO",
       description: t("third.description"),
       speed: 0.8,
-      soon: t("third.soon"),
     },
+    // {
+    //   icon: <Gem size={72} strokeWidth={0.8} />,
+    //   title: "Google Ads",
+    //   description: t("fourth.description"),
+    //   speed: 0.8,
+    //   soon: t("fourth.soon"),
+    // },
   ];
   return (
-    <section className="mb-12 bg-body-light py-12 pb-20 xl:mb-36">
+    <section className="mb-12 bg-grainy py-12 pb-20 xl:mb-36">
       <div className="container">
         <motion.h1
           variants={fadeIn("down", 0.4)}
@@ -60,7 +66,7 @@ const Services = () => {
                 viewport={{ once: true, ammount: 0.4 }}
               >
                 <Card className="relative flex h-[320px] w-full max-w-[424px] flex-col items-center justify-start bg-accent/0 pb-10 pt-20">
-                  <CardHeader className="absolute -top-[65px] bg-body-light text-accent">
+                  <CardHeader className="absolute -top-[65px] bg-grainy text-accent">
                     <div className="flex h-[80px] w-[140px] items-center justify-center">
                       {item.icon}
                     </div>
