@@ -14,6 +14,7 @@ const Footer = () => {
             <a
               href="https://www.linkedin.com/in/maftei-alexandru/"
               className="hover"
+              target="_blank"
             >
               <span className="text-accent hover:font-medium">Myriad Tech</span>
             </a>
