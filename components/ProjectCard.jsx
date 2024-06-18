@@ -1,11 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Card, CardHeader } from "@/components/ui/card";
-import { Github, Link2Icon } from "lucide-react";
+import { ArrowRight, Github, Link2Icon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 const ProjectCard = ({ project }) => {
+  const t = useTranslations("Proiecte");
   const currentRoute = usePathname();
 
   const handleClick = () => {
@@ -47,12 +49,15 @@ const ProjectCard = ({ project }) => {
           </div>
         </div>
       </CardHeader>
-      <div className="h-full px-8 py-6">
+      <div className="px-8 py-6">
         <Badge className="absolute left-5 top-4 mb-2 bg-accent text-sm font-medium uppercase text-white">
           {project.category}
         </Badge>
         <h4 className="mb-4">{project.name}</h4>
         <p className="text-bakab text-lg">{project.description}</p>
+      </div>
+      <div className="absolute bottom-4 right-24 flex scale-0 items-center justify-center gap-x-1 opacity-0 transition-all duration-700 ease-in-out group-hover:scale-100 group-hover:opacity-100 bg-accent text-white font-medium px-2 rounded-md text-[16px]">
+        {t("page.demo")} <ArrowRight />
       </div>
     </Card>
   );

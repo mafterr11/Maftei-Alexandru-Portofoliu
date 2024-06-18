@@ -113,7 +113,7 @@ const projectData = [
                   <TabsTrigger
                     value={category}
                     key={index}
-                    className="w-[162px] md:w-auto"
+                    className="w-[162px] md:w-auto rounded-[5px]"
                     onClick={() => setCategory(category)}
                   >
                     {category}

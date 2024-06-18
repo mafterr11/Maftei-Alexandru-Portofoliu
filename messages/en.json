@@ -51,7 +51,8 @@
   "Proiecte": {
     "page": {
       "title": "My Projects",
-      "tab": "All Projects"
+      "tab": "All Projects",
+      "demo": "See the live demo"
     },
     "category": {
       "presentation": "Presentation site",

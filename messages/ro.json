@@ -51,7 +51,8 @@
   "Proiecte": {
     "page": {
       "title": "Proiectele mele",
-      "tab": "Toate proiectele"
+      "tab": "Toate proiectele",
+      "demo": "Vezi demonstrația live"
       
     },
     "category": {
@@ -66,7 +67,7 @@
     "monte-bianco": "Site-ul dispune de un meniu dropdown mobil intuitiv, care permite o navigare ușoară pe diverse dispozitive. Utilizatorii pot naviga fără efort prin catalogul extins de produse prin intermediul unor file interactive, îmbunătățind experiența de navigare.",
     "myriad-AI": "Datorită integrării CMS (Sistem de gestionare a conținutului), clienții pot gestiona cu ușurință conținutul, făcând actualizările și personalizarea o experiență fără efort. Acest lucru este ideal pentru companiile care caută o prezență online ușor de întreținut.",
     "dianazu": "O pagină de portofoliu simplă, pe care am dezvoltat-o, cu smooth scrolling și o bară de încărcare dinamică pentru o experiență de navigare îmbunătățită.",
-    "minionsUnite": "Acesta este un magazin online care oferă funcții de autentificare securizată, oferind clienților o experiență de cumpărături fără probleme și sigură. Platforma este concepută pentru afaceri care au nevoie de un magazin online versatil și de încredere, cu autentificare robustă a clienților.",
+    "minionsUnite": "Este un magazin online care oferă funcții de autentificare securizată, oferind clienților o experiență de cumpărături fără probleme și sigură. Platforma este concepută pentru afaceri care au nevoie de un magazin online versatil și de încredere.",
     "mbody": "Acesta este un site de prezentare inovativ, disponibil în limba română și engleză, care oferă o experiență interactivă prin animații fluide și un design modern.",
     "pia": "Introducem formularul nostru multi-step, conceput special pentru evenimentele organizate de dealerii auto. Am creat acest formular cu un accent deosebit pe o interfață de utilizare fără cusur și o navigare intuitivă, pentru a asigura utilizatorilor o experiență fluidă și fără probleme."
   },
