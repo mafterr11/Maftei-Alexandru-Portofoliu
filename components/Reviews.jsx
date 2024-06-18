@@ -4,11 +4,12 @@ import React, { useEffect, useState } from "react";
 import { InfiniteMovingCards } from "./ui/infinite-cards";
 import { Star } from "lucide-react";
 import HalfStar from "./ui/half-star";
+import { Dot } from "./Dot";
 
 export function Reviews() {
   return (
     <div className="relative mb-12 flex h-[45rem] flex-col items-center justify-center overflow-hidden rounded-md antialiased xl:mb-24">
-      <h1 className="section-title mb-16">What Our Clients Say</h1>
+      <h1 className="section-title mb-16"><Dot />What Our Clients Say</h1>
       <InfiniteMovingCards
         items={testimonials}
         direction="right"
