@@ -46,6 +46,14 @@
     "projects-button": "Toate Proiectele",
     "projects-link": "/ro/projects"
   },
+  "Reviews": {
+    "title": "Ce spun clienții noștri",
+    "madiny": "Am colaborat cu Alexandru pentru crearea site-ului meu și pot spune că experiența a fost fantastică. Site-ul este animat și minimalist, ceea ce îmi pune în valoare lucrările de artă într-un mod foarte profesionist.",
+    "tng": "Am comunicat foarte eficient pe parcursul întregului proces, iar acest lucru s-a reflectat în calitatea finală a site-ului. Nu am întâmpinat probleme tehnice, ceea ce este esențial pentru o prezență online fără griji. Mulțumesc pentru dedicare și profesionalism!",
+    "monte-bianco": "Colaborarea cu Alexandru pentru crearea site-ului Montebianco.ro a fost o alegere excelentă, deoarece toate cerințele noastre au fost întâmpinate cu soluții creative și eficiente. Recomand cu căldură serviciile sale tuturor celor care își doresc un site funcțional și atractiv.",
+    "mbody": "Site-ul creat pentru serviciile mele de personal training este exact ceea ce îmi doream. Design-ul este dinamic și inspirațional, exact ca antrenamentele pe care le ofer. Trecerea de la o secțiune la alta este fluidă, iar utilizatorii pot găsi ușor informațiile de care au nevoie. Mulțumesc pentru efortul de a înțelege și de a transpune în realitate viziunea mea!",
+    "dianazu": "Ca designer grafic, am nevoie de un site care să-mi pună în valoare lucrările, și exact asta ai realizat. Designul este curat și modern, iar portofoliul meu arată fantastic pe orice dispozitiv. "
+  },
   "Cta": {
     "title": "Pregătit să îți transformi visele în realitate?",
     "title2": "Sunt întotdeauna aici pentru a ajuta",
@@ -56,7 +64,6 @@
       "title": "Proiectele mele",
       "tab": "Toate proiectele",
       "demo": "Vezi demonstrația live"
-      
     },
     "category": {
       "presentation": "Site de prezentare",

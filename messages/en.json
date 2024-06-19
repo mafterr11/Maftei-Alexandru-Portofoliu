@@ -46,6 +46,14 @@
     "projects-button": "All Projects",
     "projects-link": "/en/projects"
   },
+  "Reviews": {
+    "title": "What Our Clients Say",
+    "madiny": "I collaborated with Alexandru for the creation of my website, and I can say that the experience was fantastic. The website is animated and minimalist, which showcases my artworks in a very professional manner.",
+    "tng": "We communicated very effectively throughout the entire process, and this was reflected in the final quality of the website. I did not encounter any technical issues, which is essential for a hassle-free online presence. Thank you for your dedication and professionalism!",
+    "monte-bianco": "Collaborating with Alexandru for the creation of the Montebianco.ro website was an excellent choice, as all our requirements were met with creative and efficient solutions. I highly recommend his services to anyone who wants a functional and attractive website.",
+    "mbody": "The website created for my personal training services is exactly what I wanted. The design is dynamic and inspirational, just like the workouts I offer. The transition from one section to another is smooth, and users can easily find the information they need. Thank you for the effort to understand and bring my vision to reality!",
+    "dianazu": "As a graphic designer, I need a website that showcases my work, and that's exactly what you achieved. The design is clean and modern, and my portfolio looks fantastic on any device."
+  },
   "Cta": {
     "title": "Prepared to turn your dreams into reality?",
     "title2": "I am always here to help",
