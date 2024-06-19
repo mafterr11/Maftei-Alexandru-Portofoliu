@@ -76,19 +76,16 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="border-slate-700 group relative flex w-[350px] max-w-full flex-shrink-0 flex-col justify-between rounded-2xl border px-8 py-6 transition-all duration-300 ease-in-out hover:scale-[1.02] md:w-[450px]"
-            style={{
-              background:
-                "linear-gradient(180deg, var(--slate-800), var(--slate-900))",
-            }}
+            className="border-slate-700 bg-softPaper bg-cover bg-center group relative flex w-[350px] max-w-full flex-shrink-0 flex-col justify-between rounded-2xl border px-8 py-6 transition-all duration-300 ease-in-out hover:scale-[1.02] md:w-[450px]"
             key={item.name}
           >
+            <div className="bg-body-light/80 rounded-2xl bg-cover bg-center bg-no-repeat absolute inset-0"/>
             <div>
-              <span className="text-gray-100  block text-sm font-normal leading-[1.6]">
+              <span className="relative text-gray-100  block text-sm font-normal leading-[1.6]">
                 {item.quote}
               </span>
             </div>
-            <div className="mt-6 flex flex-col">
+            <div className="relative mt-6 flex flex-col">
               <span className="text-gray-400 text-sm font-normal leading-[1.6] group-hover:font-bold">
                 {item.name}
               </span>
