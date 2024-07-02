@@ -22,7 +22,7 @@ const Hero = () => {
               viewport={{ once: true, ammount: 0.4 }}
               className="mb-4 font-recursive text-sm font-semibold uppercase tracking-[4px] text-accent"
             >
-              Web Developer
+              Alexandru Maftei
             </motion.div>
             <motion.h1
               variants={fadeIn("down", 0.4)}
