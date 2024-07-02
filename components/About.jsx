@@ -167,6 +167,7 @@ const About = () => {
               src="/profile-picture.jpg"
               width={800}
               height={800}
+              loading="lazy"
               alt="Alexandru Maftei profile picture"
               className="rounded-full border-2 border-accent object-cover transition-all duration-300 ease-in-out hover:scale-[1.03]"
             />

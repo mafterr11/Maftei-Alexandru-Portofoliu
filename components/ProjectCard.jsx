@@ -29,7 +29,7 @@ const ProjectCard = ({ project }) => {
             width={500}
             height={500}
             alt="Alexandru Maftei latest projects"
-            priority
+            loading="lazy"
           />
           {/* btns */}
           <div className="absolute right-2 top-4 flex flex-col gap-y-4">
