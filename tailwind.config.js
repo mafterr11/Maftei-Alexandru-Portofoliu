@@ -50,8 +50,8 @@ module.exports = {
       backgroundImage: {
         work: "url('/project-bg-light.png')",
         contact: "url('/illustration-dark.svg')",
-        grainy: "url('/grainy-bg.png')",
-        softPaper: "url('/soft-paper.jpg')",
+        grainy: "url('/grainy-bg.webp')",
+        softPaper: "url('/soft-paper.webp')",
       },
       fontFamily: {
         roboto: [`var(--font-roboto)`, "sans-serif"],
