@@ -44,7 +44,7 @@ const Services = () => {
   return (
     <section className="mb-12 bg-grainy py-12 pb-20 xl:mb-36">
       <div className="container">
-        <motion.h1
+        <motion.h2
           variants={fadeIn("down", 0.4)}
           initial="hidden"
           whileInView={"show"}
@@ -53,7 +53,7 @@ const Services = () => {
         >
           <Dot />
           {t("title")}
-        </motion.h1>
+        </motion.h2>
         {/* grid items */}
         <div className="grid justify-center gap-y-24 xl:grid-cols-3 xl:gap-x-8">
           {servicesData.map((item, index) => {

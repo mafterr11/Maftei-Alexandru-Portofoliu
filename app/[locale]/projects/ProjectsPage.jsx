@@ -96,7 +96,7 @@ const projectData = [
   return (
     <section className="min-h-screen pt-40">
       <div className="container mx-auto xl:max-w-[1330px]">
-        <motion.h2
+        <motion.h1
           variants={fadeIn("down", 0.2)}
           initial="hidden"
           whileInView={"show"}
@@ -105,7 +105,7 @@ const projectData = [
         >
           <Dot />
           {t("page.title")}
-        </motion.h2>
+        </motion.h1>
         {/* tabs */}
         <motion.div
           variants={fadeIn("down", 0.5)}
