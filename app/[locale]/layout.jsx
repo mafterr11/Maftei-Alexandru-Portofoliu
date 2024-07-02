@@ -35,7 +35,7 @@ export default function RootLayout({ children, params: { locale } }) {
           type="image/webp"
         />
       </Head>
-      <body className={`${roboto.variable} ${recursive.variable}`}>
+      <body className={`${roboto.variable} ${recursive.variable} overflow-x-hidden`}>
         <NextIntlClientProvider messages={messages}>
           {/* messages={pick(
             messages,
