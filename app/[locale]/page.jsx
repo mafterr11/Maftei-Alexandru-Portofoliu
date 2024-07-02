@@ -1,9 +1,12 @@
-import About from "@/components/About";
+import dynamic from "next/dynamic";
 import Hero from "@/components/Hero";
-import Services from "@/components/Services";
-import Work from "@/components/Work";
-import Cta from "@/components/Cta";
 import { Reviews } from "@/components/Reviews";
+
+// Use dynamic for lazy loading non-critical components
+const About = dynamic(() => import("@/components/About"), { ssr: false });
+const Services = dynamic(() => import("@/components/Services"), { ssr: false });
+const Work = dynamic(() => import("@/components/Work"), { ssr: false });
+const Cta = dynamic(() => import("@/components/Cta"), { ssr: false });
 
 export default function Home() {
   return (
