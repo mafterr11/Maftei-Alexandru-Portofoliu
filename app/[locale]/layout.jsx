@@ -26,15 +26,6 @@ export default function RootLayout({ children, params: { locale } }) {
   const messages = useMessages();
   return (
     <html lang={locale}>
-      <Head>
-        {/* Preload the LCP image */}
-        <link
-          rel="preload"
-          href="/grainy-bg.webp"
-          as="image"
-          type="image/webp"
-        />
-      </Head>
       <body className={`${roboto.variable} ${recursive.variable} overflow-x-hidden`}>
         <NextIntlClientProvider messages={messages}>
           {/* messages={pick(
