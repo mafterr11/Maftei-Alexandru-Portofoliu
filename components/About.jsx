@@ -46,10 +46,7 @@ const skillData = [
         name: "HTML5, CSS, Javascript",
       },
       {
-        name: "ReactJS",
-      },
-      {
-        name: "NextJS",
+        name: "ReactJS, NextJS",
       },
       {
         name: "Typescript",
@@ -61,13 +58,13 @@ const skillData = [
         name: "Shadcn-UI",
       },
       {
-        name: "Framer Motion",
-      },
-      {
-        name: "GSAP",
+        name: "GSAP, Framer Motion",
       },
       {
         name: "Prismic CMS",
+      },
+      {
+        name: "Wordpress, WooCommerce",
       },
     ],
   },
