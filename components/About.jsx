@@ -158,7 +158,7 @@ const About = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, ammount: 0.4 }}
-            className="relative hidden h-[425px] w-[425px]  bg-no-repeat xl:flex"
+            className="relative hidden h-[425px] w-[425px]  bg-no-repeat xl:flex shrink-0"
           >
             <Image
               src="/profile-picture.jpg"

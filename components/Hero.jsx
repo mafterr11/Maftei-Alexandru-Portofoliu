@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <section className="mb-24 bg-grainy py-24 xl:pt-56">
       <div className="container mx-auto">
-        <div className="relative flex justify-between gap-x-8">
+        <div className="relative flex justify-between gap-x-8 xl:px-6 2xl:px-20">
           {/* text */}
           <div className="mx-auto flex max-w-[650px] flex-col text-center xl:mx-0 xl:text-left">
             <motion.div
@@ -92,7 +92,7 @@ const Hero = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, ammount: 0.4 }}
-            className="absolute -right-2 -top-2 hidden h-[500px] w-[500px] bg-no-repeat xl:flex"
+            className="hidden h-[500px] w-[500px] shrink-0 bg-no-repeat xl:flex"
           >
             <Image
               src="/logo.png"
