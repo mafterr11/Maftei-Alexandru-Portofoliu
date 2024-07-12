@@ -1,7 +1,7 @@
 {
   "Hero": {
     "title": "Expert în web development și SEO",
-    "subtitle": "Sunt un Fullstack Developer cu abilități în dezvoltarea web modernă și Java Spring, adept în crearea de site-uri web responsive și asigurarea unei integrări fără probleme între frontend și backend.",
+    "subtitle": "Sunt un Fullstack Developer cu abilități în dezvoltarea web modernă și Java Spring, adept în crearea de site-uri web responsive și asigurarea unei integrări fără probleme între frontend și backend. Specializat în creare de site-uri web și optimizare SEO, te pot ajuta să-ți transformi prezența online.",
     "contact-button": "Contactați-mă",
     "contact-link": "/ro/contact",
     "download-button": "Descărcați CV"
@@ -11,7 +11,7 @@
     "tab1": {
       "trigger": "Informații personale",
       "title": "Excelență de top în servicii",
-      "description": "Excelez în dezvoltarea de site-uri web prietenoase cu utilizatorul, folosind tehnologie avansată, oferind interacțiuni cu utilizatorii dinamice și captivante."
+      "description": "Excelez în dezvoltarea de site-uri web prietenoase cu utilizatorul, folosind tehnologie avansată, oferind interacțiuni dinamice și captivante. Ofer servicii de web design București și soluții de design web personalizat."
     },
     "tab2": {
       "trigger": "Calificări",
@@ -27,13 +27,13 @@
   "Services": {
     "title": "Serviciile mele",
     "first": {
-      "description": "Prin intermediul Figma, realizăm site-uri web vizual impresionante și intuitive, prioritizând experiența utilizatorului pentru a vă asigura o prezență online impactantă."
+      "description": "Prin intermediul Figma, realizăm site-uri web vizual impresionante și intuitive, prioritizând experiența utilizatorului. Echipa noastră se concentrează pe web design personalizat pentru a îndeplini cerințele fiecărui client."
     },
     "second": {
-      "description": "Construirea de soluții web robuste, scalabile cu ultimele tehnologii pentru a livra site-uri web de înaltă performanță personalizate pentru a satisface nevoile afacerii dvs."
+      "description": "Construim soluții web robuste și scalabile cu ultimele tehnologii, livrând site-uri web de înaltă performanță, personalizate pentru nevoile afacerii dvs. Serviciile includ crearea de site-uri web și dezvoltare de aplicații web."
     },
     "third": {
-      "description": "Îmbunătățirea vizibilității site-ului dvs. online prin strategii SEO cuprinzătoare, inclusiv optimizarea textelor alternative pentru imagini, gestionarea metadatelor și plasarea strategică a cuvintelor cheie."
+      "description": "Îmbunătățim vizibilitatea site-ului dvs. online prin strategii SEO care includ optimizarea imaginilor, gestionarea metadatelor și plasarea cuvintelor cheie. Optimizăm structura site-ului web pentru a maximiza traficul organic și conversiile."
     },
     "fourth": {
       "description": "Maximizarea vizibilității dvs. online și direcționarea traficului țintit către site-ul dvs. cu strategii personalizate Google Ads.",
@@ -56,7 +56,7 @@
   },
   "Cta": {
     "title": "Pregătit să îți transformi visele în realitate?",
-    "title2": "Sunt întotdeauna aici pentru a ajuta",
+    "title2": "Contactează Myriad Tech pentru servicii profesionale de web design și development",
     "contact-button": "Contactați-mă"
   },
   "Proiecte": {

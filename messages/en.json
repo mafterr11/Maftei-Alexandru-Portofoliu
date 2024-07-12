@@ -1,7 +1,7 @@
 {
   "Hero": {
     "title": "Expert in Web Development and SEO",
-    "subtitle": "I am a Fullstack Developer skilled in modern web development and Java Spring, adept at creating responsive websites and ensuring seamless integration between frontend and backend.",
+    "subtitle": "I am a Fullstack Developer with skills in modern web development and Java Spring, adept at creating responsive websites and ensuring seamless integration between frontend and backend. Specialized in website creation and SEO optimization, I can help transform your online presence.",
     "contact-button": "Contact Me",
     "contact-link": "/en/contact",
     "download-button": "Download CV"
@@ -11,7 +11,7 @@
     "tab1": {
       "trigger": "Personal Info",
       "title": "Top-Tier Service Excellence",
-      "description": "I excel in developing user-friendly websites using advanced technology, providing dynamic and captivating user interactions."
+      "description": "I excel in developing user-friendly websites using advanced technology, offering dynamic and engaging interactions. I provide web design services in Bucharest and customized web design solutions."
     },
     "tab2": {
       "trigger": "Qualifications",
@@ -27,13 +27,13 @@
   "Services": {
     "title": "My Services",
     "first": {
-      "description": "Through Figma, we create visually impressive and intuitive websites, prioritizing user experience to ensure you have a striking online presence."
+      "description": "Through Figma, we create visually impressive and intuitive websites, prioritizing user experience. Our team focuses on custom web design to meet each client's requirements."
     },
     "second": {
-      "description": "Building robust, scalable web solutions with the latest technologies to deliver high-performance websites tailored to meet your business needs."
+      "description": "We build robust and scalable web solutions with the latest technologies, delivering high-performance websites customized for your business needs. Services include website creation and web application development."
     },
     "third": {
-      "description": "Enhancing your site's online visibility through comprehensive SEO strategies, including optimized image alt texts, metadata management, and strategic keyword placement."
+      "description": "We enhance your website's online visibility through SEO strategies that include image optimization, metadata management, and keyword placement. We optimize the website structure to maximize organic traffic and conversions."
     },
     "fourth": {
       "description": "Maximizing your online visibility and driving targeted traffic to your site with customized Google Ads strategies.",
@@ -56,7 +56,7 @@
   },
   "Cta": {
     "title": "Prepared to turn your dreams into reality?",
-    "title2": "I am always here to help",
+    "title2": "Contact Myriad Tech for professional web design and development services",
     "contact-button": "Contact Me"
   },
   "Proiecte": {
