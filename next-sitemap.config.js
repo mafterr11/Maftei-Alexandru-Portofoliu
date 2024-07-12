@@ -14,7 +14,6 @@ module.exports = {
   // This is the workaround
   transform: (config, path) => {
     // The first few fields are given their default values as seen on:
-    // https://github.com/iamvishnusankar/next-sitemap#custom-transformation-function
     return {
       loc: path,
       changefreq: config.changefreq,
