@@ -71,15 +71,15 @@
       "shop": "E-commerce",
       "others": "Others"
     },
-    "madiny": "This is a modern minimalist website, featuring a captivating video background on the home page. The platform brings body art to life with craftsmanship and customized design, providing an immersive digital experience.",
-    "tng": "Navigate the TNG Group's portfolio through its presentation website that includes a custom complex contact form, enhanced security with reCaptcha, and various shadow-modified elements.",
-    "manarh": "This full-stack website features both user authentication and a personalized favorites section built from scratch, along with multiple custom elements tailored according to customer ideas. ",
-    "monte-bianco": "The website features an intuitive mobile dropdown menu, enabling easy navigation on various devices. Users can effortlessly browse through the extensive product catalog via interactive tabs, enhancing the browsing experience.",
-    "myriad-AI": "With its CMS(Content Management System) integration, clients can effortlessly manage content, making updates and customization a seamless experience. This is perfect for businesses seeking an online presence that is easy to maintain.",
-    "dianazu": "A sleek one-page portfolio website I developed, featuring smooth scrolling and a dynamic loading scroll bar for an enhanced browsing experience.",
-    "minionsUnite": "This is an e-commerce website offering secure authentication features, providing customers with a seamless and safe shopping experience. The platform is  tailored for businesses that need a versatile, reliable online store with robust customer authentication.",
-    "mbody": "This is an innovative presentation website, available in both Romanian and English, offering an interactive experience through smooth animations and modern design.",
-    "pia": "Introducing our cutting-edge multi-step form designed specifically for car dealership events. As a web developer, I've crafted this form with a focus on seamless UI and intuitive navigation to ensure users have a smooth and hassle-free experience."
+      "madiny": "This is a modern minimalist website with a captivating video background on the homepage. The platform brings body art to life with mastery and personalized web design, offering an immersive digital experience.",
+      "tng": "Navigate through the TNG Group portfolio with a presentation site that includes a personalized complex contact form, enhanced security with reCaptcha, and various elements modified with shadows.",
+      "manarh": "This full-stack website includes user authentication and a custom favorites section built from scratch, along with multiple customized elements according to client ideas.",
+      "monte-bianco": "This website includes an intuitive mobile dropdown menu, facilitating easy and accessible navigation on various devices. Users can effortlessly explore, significantly improving the navigation experience. The modern web design ensures optimal use on all platforms.",
+      "myriad-AI": "Thanks to the CMS integration, clients can easily manage content, making updates and personalization a hassle-free experience. Ideal for companies looking for an easy-to-maintain online presence and efficient web design solutions.",
+      "dianazu": "A simple portfolio page developed with smooth scrolling and a dynamic loading bar, offering an improved navigation experience and modern web design.",
+      "minionsUnite": "This online store offers secure authentication, ensuring a simple and safe shopping experience for customers. Ideal for businesses that need a versatile and reliable online store, the platform is optimized to deliver maximum performance and fluid navigation.",
+      "mbody": "Available in Romanian and English, this presentation site stands out with an interactive experience thanks to fluid animations and modern web design, ensuring a strong online presence.",
+      "pia": "We have developed a multi-step form, specially designed for auto dealers' events, focusing on a user-friendly interface and intuitive navigation, offering a simple and efficient user experience."
   },
   "Nav": {
     "home": {
