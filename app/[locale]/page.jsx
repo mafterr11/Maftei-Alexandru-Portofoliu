@@ -10,13 +10,13 @@ const Cta = dynamic(() => import("@/components/Cta"), { ssr: false });
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Hero />
       <About />
       <Services />
       <Work />
       <Reviews />
       <Cta />
-    </main>
+    </>
   );
 }

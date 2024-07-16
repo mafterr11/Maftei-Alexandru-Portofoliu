@@ -26,7 +26,9 @@ export default function RootLayout({ children, params: { locale } }) {
   const messages = useMessages();
   return (
     <html lang={locale}>
-      <body className={`${roboto.variable} ${recursive.variable} overflow-x-hidden`}>
+      <body
+        className={`${roboto.variable} ${recursive.variable} overflow-x-hidden`}
+      >
         <NextIntlClientProvider messages={messages}>
           {/* messages={pick(
             messages,
@@ -41,7 +43,7 @@ export default function RootLayout({ children, params: { locale } }) {
             "Contact",
           )} */}
           <Header />
-          {children}
+          <main>{children}</main>
           <Analytics />
           <Footer />
           <Toaster />

@@ -94,7 +94,7 @@ const projectData = [
   });
 
   return (
-    <section className="min-h-screen pt-40">
+    <div className="min-h-screen pt-40">
       <div className="container mx-auto xl:max-w-[1330px]">
         <motion.h1
           variants={fadeIn("down", 0.2)}
@@ -141,7 +141,7 @@ const projectData = [
           </Tabs>
         </motion.div>
       </div>
-    </section>
+    </div>
   );
 };
 

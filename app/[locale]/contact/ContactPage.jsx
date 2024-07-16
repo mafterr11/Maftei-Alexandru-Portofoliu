@@ -11,7 +11,7 @@ import GoogleCaptchaWrapper from "../../GoogleCaptchaWrapper";
 const ContactPage = () => {
   const t = useTranslations("Contact");
   return (
-    <section className="min-h-screen pt-24 xl:pt-40">
+    <div className="min-h-screen pt-24 xl:pt-40">
       <div className="container mx-auto">
         {/* text / ilustration */}
         <div className="mb-6 grid pt-12 xl:mb-24 xl:h-[480px] xl:grid-cols-2">
@@ -143,7 +143,7 @@ const ContactPage = () => {
           </motion.div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
