@@ -28,7 +28,7 @@ const ProjectCard = ({ project }) => {
             src={project.image}
             width={500}
             height={500}
-            alt="Alexandru Maftei latest projects"
+            alt={project.name}
             loading="lazy"
           />
           {/* btns */}

@@ -95,11 +95,11 @@ const Hero = () => {
             className="hidden h-[500px] w-[500px] shrink-0 bg-no-repeat xl:flex"
           >
             <Image
-              src="/logo.png"
+              src="/Myriad Tech logo.png"
               width={800}
               height={800}
               priority={true}
-              alt="Alexandru Maftei profile picture"
+              alt="Myriad Tech logo"
               className="rounded-full border-2 border-accent object-cover"
             />
           </motion.div>

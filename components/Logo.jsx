@@ -10,7 +10,7 @@ const Logo = ({ source, size }) => {
           width={800}
           height={800}
           className={`${size} w-auto`}
-          alt="Myriad Tech logo"
+          alt={source}
           priority={true}
         />
       </div>

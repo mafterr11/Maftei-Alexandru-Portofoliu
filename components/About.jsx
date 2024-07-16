@@ -161,11 +161,11 @@ const About = () => {
             className="relative hidden h-[425px] w-[425px]  bg-no-repeat xl:flex shrink-0 xl:max-2xl:ml-4"
           >
             <Image
-              src="/profile-picture.jpg"
+              src="/Alexandru Maftei poza de profil.jpg"
               width={800}
               height={800}
               loading="lazy"
-              alt="Alexandru Maftei profile picture"
+              alt="Alexandru Maftei poza de profil"
               className="rounded-full border-2 border-accent object-cover transition-all duration-300 ease-in-out hover:scale-[1.03]"
             />
           </motion.div>
