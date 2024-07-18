@@ -2,7 +2,7 @@ import { constructMetadata } from "@/lib/utils";
 import ProjectsPage from "./ProjectsPage";
 
 export const metadata = constructMetadata({
-  title: "Projects by Myriad Tech",
+  title: "Proiecte Myriad Tech",
   description:
     "Descoperiți proiectele noastre de dezvoltare web realizate la Myriad Tech. Explorați portofoliul nostru pentru a vedea exemple de site-uri web personalizate și soluții e-commerce eficiente.",
   keywords:
