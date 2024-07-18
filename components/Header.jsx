@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className="fixed left-0 right-0 top-0 z-50 w-full border-b-[2px] border-accent/60 bg-body py-3 text-black shadow-md transition-all duration-200">
       <div>
-        <div className="flex items-center justify-between px-7 md:px-12 md:max-lg:justify-between xl:gap-x-32 py-2 max-md:py-1">
+        <div className="flex items-center justify-between px-7 py-2 max-md:py-1 md:px-12 md:max-lg:justify-between xl:gap-x-32">
           <Logo source={"/Myriad Tech header logo.png"} size={"h-7"} />
           <Nav
             containerStyles="hidden xl:flex items-center gap-x-16"
