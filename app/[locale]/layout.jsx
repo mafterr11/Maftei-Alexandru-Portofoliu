@@ -7,7 +7,6 @@ import { NextIntlClientProvider, useMessages } from "next-intl";
 import pick from "lodash/pick";
 import { Analytics } from "@vercel/analytics/react";
 import { constructMetadata } from "@/lib/utils";
-import Head from "next/head";
 
 const roboto = Roboto({
   subsets: ["latin"],
