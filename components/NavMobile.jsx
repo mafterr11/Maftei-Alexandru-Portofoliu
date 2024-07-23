@@ -46,26 +46,31 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
       {/* nav trigger btn */}
       <div
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className="cursor-pointer outline-none"
+        className={`${isMenuOpen ? "opacity-20" : "opacity-100"} cursor-pointer outline-none transition-all duration-500`}
       >
-        <RiMenu2Line className="text-4xl transition-all duration-200" />
+        <RiMenu2Line className="text-4xl" />
       </div>
       <aside
         className={`${
-          isMenuOpen ? "right-0 top-0 scale-100" : "-right-full -top-full scale-0"
-        } fixed bottom-0 top-0 z-20 h-full border-l-2 border-accent bg-body px-8 pb-4 pt-8 ease-in-out transition-all duration-700`}
+          isMenuOpen
+            ? "right-0 top-0 scale-100"
+            : "-right-full -top-full scale-0"
+        } fixed bottom-0 top-0 z-20 h-full border-l-2 border-accent bg-body px-8 pb-4 pt-8 transition-all duration-700 ease-in-out`}
       >
         <div className="flex h-full flex-col items-center justify-between text-black">
           {/* close btn */}
           <div
             onClick={() => setIsMenuOpen(false)}
-            className="absolute right-3  top-2 flex h-8 w-8 cursor-pointer items-center justify-center text-4xl"
+            className="absolute right-3 top-2 flex h-8 w-8 cursor-pointer items-center justify-center text-4xl"
           >
             <IoCloseOutline />
           </div>
           {/* logo */}
           <div onClick={() => setIsMenuOpen(false)} className="mt-3">
-            <Logo source={"/Myriad Tech header logo telefon.png"} size={"h-[3.75rem]"} />
+            <Logo
+              source={"/Myriad Tech header logo telefon.png"}
+              size={"h-[3.75rem]"}
+            />
           </div>
           {/* links */}
           <div className="flex flex-col gap-y-8">
