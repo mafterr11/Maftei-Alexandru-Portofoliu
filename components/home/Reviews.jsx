@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { InfiniteMovingCards } from "./ui/infinite-cards";
+import { InfiniteMovingCards } from "../ui/infinite-cards";
 import { Star } from "lucide-react";
-import HalfStar from "./ui/half-star";
-import { Dot } from "./Dot";
+import HalfStar from "../ui/half-star";
+import { Dot } from "../Dot";
 import { useTranslations } from "next-intl";
 
 export function Reviews() {

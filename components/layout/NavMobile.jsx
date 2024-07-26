@@ -4,10 +4,10 @@ import { useState } from "react";
 import { BiSolidFoodMenu } from "react-icons/bi";
 import { IoCloseOutline, IoHome, IoChatbubblesSharp } from "react-icons/io5";
 import { RiMenu2Line } from "react-icons/ri";
-import Socials from "./Socials";
+import Socials from "../Socials";
 import { useTranslations } from "next-intl";
-import LocalSwitcher from "./LocalSwitcher";
 import Logo from "./Logo";
+import LocalSwitcher from "../ui/LocalSwitcher";
 
 const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
   const t = useTranslations("Nav");
@@ -30,20 +30,9 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
     },
   ];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  // const [isServiciiOpen, setIsServiciiOpen] = useState(false);
-
-  // const toggleServicii = () => {
-  //   setIsServiciiOpen((prev) => !prev);
-  // };
-  // const closeMenuAndNavigate = (path) => {
-  //   setIsMenuOpen(false);
-  //   setIsServiciiOpen(false);
-  //   window.location.href = path;
-  // };
-
   return (
     <div className={`${containerStyles}`}>
-      {/* nav trigger btn */}
+      {/* Nav trigger btn */}
       <div
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         className={`${isMenuOpen ? "opacity-20" : "opacity-100"} cursor-pointer outline-none transition-all duration-500`}
@@ -58,21 +47,21 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
         } fixed bottom-0 top-0 z-20 h-full border-l-2 border-accent bg-body px-8 pb-4 pt-8 transition-all duration-700 ease-in-out`}
       >
         <div className="flex h-full flex-col items-center justify-between text-black">
-          {/* close btn */}
+          {/* Close btn */}
           <div
             onClick={() => setIsMenuOpen(false)}
             className="absolute right-3 top-2 flex h-8 w-8 cursor-pointer items-center justify-center text-4xl"
           >
             <IoCloseOutline />
           </div>
-          {/* logo */}
+          {/* Logo */}
           <div onClick={() => setIsMenuOpen(false)} className="mt-3">
             <Logo
               source={"/Myriad Tech header logo telefon.png"}
               size={"h-[3.75rem]"}
             />
           </div>
-          {/* links */}
+          {/* Links */}
           <div className="flex flex-col gap-y-8">
             {links.map((link, index) => {
               return (
@@ -88,7 +77,7 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
               );
             })}
           </div>
-          {/* bottom part */}
+          {/* Bottom part */}
           <div className="flex flex-col items-center justify-center gap-y-5">
             <LocalSwitcher />
             <Socials />

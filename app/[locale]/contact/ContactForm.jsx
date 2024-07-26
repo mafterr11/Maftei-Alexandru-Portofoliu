@@ -14,18 +14,16 @@ import {
   FormControl,
   FormField,
   FormItem,
-  FormLabel,
   FormMessage,
 } from "@/components/ui/form";
+import { Label } from "../../../components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
-// RECAPTCHA
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import axios from "axios";
 import { useTranslations } from "next-intl";
-import { Label } from "./ui/label";
 
 const formSchema = z.object({
   nume: z.string().min(3, {
@@ -49,9 +47,9 @@ const formSchema = z.object({
 });
 
 export default function SolicitatiOfertaForm() {
-  // RECAPTCHA
+  // RECAPTCHA START
   const { executeRecaptcha } = useGoogleReCaptcha();
-
+  // RECAPTCHA END
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -65,7 +63,7 @@ export default function SolicitatiOfertaForm() {
   const { toast } = useToast();
   const t = useTranslations("Contact");
 
-  // RECAPTCHA  
+  // RECAPTCHA START
   const captchaSubmit = async () => {
     if (!executeRecaptcha) {
       console.error("ReCAPTCHA not ready");
@@ -85,7 +83,7 @@ export default function SolicitatiOfertaForm() {
       throw new Error("Failed to verify reCAPTCHA");
     }
   };
-
+  // RECAPTCHA END
   const onSubmit = async (formData) => {
     try {
       // Await the captchaSubmit function to complete and get the token
@@ -142,7 +140,7 @@ export default function SolicitatiOfertaForm() {
           className="mt-4 space-y-2 xs:space-y-4"
           onSubmit={form.handleSubmit(onSubmit)}
         >
-          {/* Nume si Prenume */}
+          {/* Name */}
           <>
             <FormField
               control={form.control}
@@ -196,7 +194,7 @@ export default function SolicitatiOfertaForm() {
               )}
             />
           </>
-          {/* Tel */}
+          {/* Phone */}
           <>
             <FormField
               control={form.control}
@@ -226,6 +224,7 @@ export default function SolicitatiOfertaForm() {
               )}
             />
           </>
+          {/* Message */}
           <>
             <FormField
               control={form.control}
@@ -253,6 +252,7 @@ export default function SolicitatiOfertaForm() {
               )}
             />
           </>
+          {/* GDPR */}
           <>
             <FormField
               control={form.control}

@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import { Download, Send } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";

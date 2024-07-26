@@ -1,6 +1,6 @@
 "use client";
 import { MailIcon, PhoneCall } from "lucide-react";
-import SolicitatiOfertaForm from "@/components/SolicitatiOfertaForm";
+import ContactForm from "./ContactForm";
 import { useTranslations } from "next-intl";
 import { RiWhatsappLine } from "react-icons/ri";
 import { MoveRight } from "lucide-react";
@@ -13,9 +13,9 @@ const ContactPage = () => {
   return (
     <div className="min-h-screen pt-24 xl:pt-40">
       <div className="container mx-auto">
-        {/* text / ilustration */}
+        {/* Container */}
         <div className="mb-6 grid pt-12 xl:mb-24 xl:h-[480px] xl:grid-cols-2">
-          {/* text */}
+          {/* Text */}
           <div className="flex flex-col justify-center">
             <motion.div
               variants={fadeIn("down", 0.2)}
@@ -46,7 +46,7 @@ const ContactPage = () => {
               {t("subtitle")}
             </motion.p>
           </div>
-          {/* ilustration */}
+          {/* Ilustration */}
           <motion.div
             variants={fadeIn("left", 0.2)}
             initial="hidden"
@@ -55,9 +55,9 @@ const ContactPage = () => {
             className="hidden w-full bg-contact bg-contain bg-top bg-no-repeat xl:flex"
           />
         </div>
-        {/* info text and form */}
+        {/* Details container */}
         <div className="mb-24 grid xl:mb-32 xl:grid-cols-2">
-          {/* info text */}
+          {/* Info text */}
           <div className="mb-12 flex flex-col gap-y-4 text-base xl:mb-24 xl:gap-y-4 xl:text-lg">
             {/* Phone */}
             <motion.div
@@ -138,7 +138,7 @@ const ContactPage = () => {
             viewport={{ once: true, ammount: 0.4 }}
           >
             <GoogleCaptchaWrapper>
-              <SolicitatiOfertaForm />
+              <ContactForm />
             </GoogleCaptchaWrapper>
           </motion.div>
         </div>

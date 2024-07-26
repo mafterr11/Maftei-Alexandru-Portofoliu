@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import Socials from "./Socials";
+import Socials from "../Socials";
 import Link from "next/link";
 
 const Footer = () => {

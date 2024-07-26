@@ -1,8 +1,8 @@
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
 import { useTransition } from "react";
-import { Switch } from "@/components/ui/switch"; // Ensure this is the correct import path
-import { Label } from "./ui/label";
+import { Switch } from "@/components/ui/switch";
+import { Label } from "./label";
 
 export default function LocalSwitcher() {
   const [isPending, startTransition] = useTransition();
@@ -17,16 +17,14 @@ export default function LocalSwitcher() {
       router.replace(`/${nextLocale}${actualPath}`);
     });
   };
-
-  // Adjusted to reflect a proper switch behavior
   return (
     <div className="relative flex items-center justify-center">
       <Switch
-        checked={localeActive === "en"} // Assuming "en" is the "checked" state
-        onCheckedChange={toggleLocale} // This prop handles change events
+        checked={localeActive === "en"}
+        onCheckedChange={toggleLocale}
         disabled={isPending}
         id="language-switch"
-        aria-label="Language Switch" // Providing an accessible name
+        aria-label="Language Switch"
       />
       <Label
         htmlFor="language-switch"

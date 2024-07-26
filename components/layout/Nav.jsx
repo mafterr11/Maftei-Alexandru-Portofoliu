@@ -1,9 +1,9 @@
 "use client";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import Socials from "./Socials";
+import Socials from "../Socials";
 import { useTranslations } from "next-intl";
-import LocalSwitcher from "./LocalSwitcher";
+import LocalSwitcher from "../ui/LocalSwitcher";
 
 const Nav = ({ containerStyles, linkStyles }) => {
   const t = useTranslations("Nav");

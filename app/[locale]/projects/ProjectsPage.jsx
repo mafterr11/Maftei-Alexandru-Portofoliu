@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Tabs, TabsList, TabsContent, TabsTrigger } from "@/components/ui/tabs";
-import ProjectCard from "@/components/ProjectCard";
+import ProjectCard from "@/components/home/ProjectCard";
 import { useTranslations } from "next-intl";
 import { Dot } from "@/components/Dot";
 import { motion } from "framer-motion";
@@ -89,7 +89,7 @@ const projectData = [
   const [categories, setCategories] = useState(uniqueCategories);
   const [category, setCategory] = useState(t("page.tab"));
   const filteredProjects = projectData.filter((project) => {
-    // if category  is all projects return all projects, else filter
+    // If category  is all projects return all projects, else filter
     return category === t("page.tab") ? project : project.category === category;
   });
 
@@ -106,7 +106,7 @@ const projectData = [
           <Dot />
           {t("page.title")}
         </motion.h1>
-        {/* tabs */}
+        {/* Tabs */}
         <motion.div
           variants={fadeIn("down", 0.5)}
           initial="hidden"
@@ -128,7 +128,7 @@ const projectData = [
                 );
               })}
             </TabsList>
-            {/* tabs content */}
+            {/* Tabs content */}
             <div className="grid grid-cols-1 gap-8 md:max-xl:px-6 text-lg md:grid-cols-2 xl:grid-cols-3 xl:mt-8">
               {filteredProjects.map((project, index) => {
                 return (

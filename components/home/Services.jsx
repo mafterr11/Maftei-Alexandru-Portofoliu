@@ -8,7 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { useTranslations } from "next-intl";
-import { Dot } from "./Dot";
+import { Dot } from "../Dot";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";
 

@@ -13,7 +13,7 @@ import {
   Briefcase,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Dot } from "./Dot";
+import { Dot } from "../Dot";
 
 const infoData = [
   {
