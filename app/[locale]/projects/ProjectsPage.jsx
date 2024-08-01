@@ -6,82 +6,11 @@ import { useTranslations } from "next-intl";
 import { Dot } from "@/components/Dot";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";
+import { data } from "@/data";
 
 const ProjectsPage = () => {
 const t = useTranslations("Proiecte");
-const projectData = [
-  {
-    image: "/work/madinytattoo.png",
-    category: t("category.presentation"),
-    name: "MadinyTattoo",
-    description: t("madiny"),
-    link: "https://madinytattoo.ro",
-    // github: "https://github.com/mafterr11/MadinyTattoo",
-  },
-  {
-    image: "/work/monte-bianco.png",
-    category: t("category.presentation"),
-    name: "Monte Bianco",
-    description: t("monte-bianco"),
-    link: "https://www.montebianco.ro/",
-    // github: "/",
-  },
-  {
-    image: "/work/tng.png",
-    category: t("category.presentation"),
-    name: "TNG GRUP",
-    description: t("tng"),
-    link: "https://tngag.ro",
-    // github: "https://github.com/mafterr11/TNG-GRUP",
-  },
-  {
-    image: "/work/mbody.png",
-    category: t("category.presentation"),
-    name: "MBody Evolution",
-    description: t("mbody"),
-    link: "https://mbody.vercel.app",
-  },
-  {
-    image: "/work/myriad-AI.png",
-    category: t("category.presentation"),
-    name: "Myriad-AI",
-    description: t("myriad-AI"),
-    link: "https://myriad-ai.vercel.app",
-    // github: "/",
-  },
-  {
-    image: "/work/dianazu.png",
-    category: t("category.presentation"),
-    name: "DianaZU",
-    description: t("dianazu"),
-    link: "https://dianazu.vercel.app",
-    // github: "/",
-  },
-  {
-    image: "/work/minionsUnite.png",
-    category: t("category.shop"),
-    name: "minionsUnite",
-    description: t("minionsUnite"),
-    link: "https://ecommerce-template-demo.vercel.app",
-    // github: "/",
-  },
-  {
-    image: "/work/PIA.jpg",
-    category: t("category.others"),
-    name: "Multi-Step Form",
-    description: t("pia"),
-    link: "https://offerfest-pia.vercel.app",
-    // github: "/",
-  },
-  {
-    image: "/work/manarh.webp",
-    category: t("category.progress"), //Fullstack
-    name: "Manarh",
-    description: t("manarh"),
-    link: "/",
-    // github: "/",
-  },
-];
+const projectData = data(t);
   const uniqueCategories = [
     t("page.tab"),
     ...new Set(projectData.map((item) => item.category)),
