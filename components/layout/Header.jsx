@@ -1,4 +1,3 @@
-"use client";
 import Nav from "./Nav";
 import NavMobile from "./NavMobile";
 import Logo from "./Logo";

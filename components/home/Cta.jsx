@@ -1,10 +1,9 @@
-"use client";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
 import { Send } from "lucide-react";
-import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";
+import { MotionDiv, MotionH2 } from "@/lib/motion-client";
 
 const Cta = () => {
   const t = useTranslations("Cta");
@@ -14,7 +13,7 @@ const Cta = () => {
     <section className="mb-44 bg-grainy py-24">
       <div className="container mx-auto">
         <div className="flex flex-col items-center">
-          <motion.h2
+          <MotionH2
             variants={fadeIn("down", 0.5)}
             initial="hidden"
             whileInView={"show"}
@@ -25,19 +24,23 @@ const Cta = () => {
             <span className="text-3xl font-medium md:max-xl:text-4xl">
               {t("title2")}
             </span>
-          </motion.h2>
-          <motion.div
+          </MotionH2>
+          <MotionDiv
             variants={fadeIn("down", 0.4)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, ammount: 0.4 }}
           >
             <Link href={tLink("contact-link")}>
-              <Button className="gap-x-2 group">
-                {tLink("contact-button")} <Send size={18} className="transition-all ease-in-out duration-300 group-hover:rotate-[20deg]"/>
+              <Button className="group gap-x-2">
+                {tLink("contact-button")}{" "}
+                <Send
+                  size={18}
+                  className="transition-all duration-300 ease-in-out group-hover:rotate-[20deg]"
+                />
               </Button>
             </Link>
-          </motion.div>
+          </MotionDiv>
         </div>
       </div>
     </section>

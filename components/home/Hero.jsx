@@ -1,11 +1,10 @@
-"use client";
 import Link from "next/link";
 import { Button } from "../ui/button";
 import { Download, Send } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";
+import { MotionDiv, MotionH1, MotionP } from "@/lib/motion-client";
 
 const Hero = () => {
   const t = useTranslations("Hero");
@@ -15,7 +14,7 @@ const Hero = () => {
         <div className="relative flex justify-between gap-x-8 xl:px-6 2xl:px-20">
           {/* text */}
           <div className="mx-auto flex max-w-[650px] flex-col text-center xl:mx-0 xl:text-left">
-            <motion.div
+            <MotionDiv
               variants={fadeIn("down", 0.2)}
               initial="hidden"
               whileInView={"show"}
@@ -23,8 +22,8 @@ const Hero = () => {
               className="mb-4 font-recursive text-sm font-semibold uppercase tracking-[4px] text-accent"
             >
               Alexandru Maftei
-            </motion.div>
-            <motion.h1
+            </MotionDiv>
+            <MotionH1
               variants={fadeIn("down", 0.4)}
               initial="hidden"
               whileInView={"show"}
@@ -32,8 +31,8 @@ const Hero = () => {
               className="mb-4"
             >
               {t("title")}
-            </motion.h1>
-            <motion.p
+            </MotionH1>
+            <MotionP
               variants={fadeIn("down", 0.6)}
               initial="hidden"
               whileInView={"show"}
@@ -41,10 +40,10 @@ const Hero = () => {
               className="subtitle mx-auto max-w-[490px] max-xl:text-balance xl:mx-0"
             >
               {t("subtitle")}
-            </motion.p>
+            </MotionP>
             {/* buttons */}
             <div className="mx-auto mb-12 flex flex-col gap-x-3 gap-y-3 md:flex-row xl:mx-0">
-              <motion.div
+              <MotionDiv
                 variants={fadeIn("right", 0.8)}
                 initial="hidden"
                 whileInView={"show"}
@@ -59,8 +58,8 @@ const Hero = () => {
                     />
                   </Button>
                 </Link>
-              </motion.div>
-              <motion.div
+              </MotionDiv>
+              <MotionDiv
                 variants={fadeIn("left", 0.8)}
                 initial="hidden"
                 whileInView={"show"}
@@ -83,11 +82,11 @@ const Hero = () => {
                     />
                   </Button>
                 </a>
-              </motion.div>
+              </MotionDiv>
             </div>
           </div>
           {/* image */}
-          <motion.div
+          <MotionDiv
             variants={fadeIn("down", 0.4)}
             initial="hidden"
             whileInView={"show"}
@@ -102,7 +101,7 @@ const Hero = () => {
               alt="Myriad Tech logo"
               className="rounded-full border-2 border-accent object-cover"
             />
-          </motion.div>
+          </MotionDiv>
         </div>
       </div>
     </section>

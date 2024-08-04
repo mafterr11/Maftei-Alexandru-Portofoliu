@@ -1,12 +1,9 @@
-"use client";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";
 import {
   User2,
   MailIcon,
-  HomeIcon,
   PhoneCall,
   GraduationCap,
   Calendar,
@@ -14,6 +11,7 @@ import {
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Dot } from "../Dot";
+import { MotionDiv, MotionH2 } from "@/lib/motion-client";
 
 const infoData = [
   {
@@ -141,7 +139,7 @@ const About = () => {
   return (
     <section className="pb-12 xl:h-[900px] xl:py-24">
       <div className="container mx-auto">
-        <motion.h2
+        <MotionH2
           variants={fadeIn("up", 0.4)}
           initial="hidden"
           whileInView={"show"}
@@ -150,10 +148,10 @@ const About = () => {
         >
           <Dot />
           {t("title")}
-        </motion.h2>
+        </MotionH2>
         <div className="flex flex-col gap-x-32 xl:flex-row justify-center items-center">
           {/* Image */}
-          <motion.div
+          <MotionDiv
             variants={fadeIn("down", 0.4)}
             initial="hidden"
             whileInView={"show"}
@@ -168,9 +166,9 @@ const About = () => {
               alt="Alexandru Maftei poza de profil"
               className="rounded-full border-2 border-accent object-cover transition-all duration-300 ease-in-out hover:scale-[1.03]"
             />
-          </motion.div>
+          </MotionDiv>
           {/* Tabs */}
-          <motion.div
+          <MotionDiv
             variants={fadeIn("down", 0.6)}
             initial="hidden"
             whileInView={"show"}
@@ -358,7 +356,7 @@ const About = () => {
                 </TabsContent>
               </div>
             </Tabs>
-          </motion.div>
+          </MotionDiv>
         </div>
       </div>
     </section>

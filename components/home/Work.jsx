@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import WorkSwiper from "./WorkSwiper";
@@ -6,8 +5,8 @@ import {
   useTranslations,
 } from "next-intl";
 import { Dot } from "../Dot";
-import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";
+import { MotionDiv } from "@/lib/motion-client";
 
 const Work = () => {
   const t = useTranslations("Work");
@@ -16,7 +15,7 @@ const Work = () => {
     <section className="relative mb-12 max-xl:overflow-x-hidden xl:py-16">
       <div className="container flex flex-col gap-x-40 xl:flex-row xl:max-2xl:gap-x-24">
         {/* Text */}
-        <motion.div
+        <MotionDiv
           variants={fadeIn("right", 0.4)}
           initial="hidden"
           whileInView={"show"}
@@ -31,9 +30,9 @@ const Work = () => {
           <Link href={t("projects-link")}>
             <Button>{t("projects-button")}</Button>
           </Link>
-        </motion.div>
+        </MotionDiv>
         {/* Slider */}
-        <motion.div
+        <MotionDiv
           variants={fadeIn("left", 0.4)}
           initial="hidden"
           whileInView={"show"}
@@ -41,7 +40,7 @@ const Work = () => {
           className="xl:max-w-[800px]"
         >
           <WorkSwiper />
-        </motion.div>
+        </MotionDiv>
       </div>
     </section>
   );

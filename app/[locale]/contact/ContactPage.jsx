@@ -1,12 +1,11 @@
-"use client";
 import { MailIcon, PhoneCall } from "lucide-react";
 import ContactForm from "./ContactForm";
 import { useTranslations } from "next-intl";
 import { RiWhatsappLine } from "react-icons/ri";
 import { MoveRight } from "lucide-react";
-import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";
 import GoogleCaptchaWrapper from "../../GoogleCaptchaWrapper";
+import { MotionDiv, MotionH1, MotionP } from "@/lib/motion-client";
 
 const ContactPage = () => {
   const t = useTranslations("Contact");
@@ -17,7 +16,7 @@ const ContactPage = () => {
         <div className="mb-6 grid pt-12 xl:mb-24 xl:h-[480px] xl:grid-cols-2">
           {/* Text */}
           <div className="flex flex-col justify-center">
-            <motion.div
+            <MotionDiv
               variants={fadeIn("down", 0.2)}
               initial="hidden"
               whileInView={"show"}
@@ -26,8 +25,8 @@ const ContactPage = () => {
             >
               <span className="h-[2px] w-[30px] bg-accent"></span>
               <div>{t("subtitle2")}</div>
-            </motion.div>
-            <motion.h1
+            </MotionDiv>
+            <MotionH1
               variants={fadeIn("right", 0.2)}
               initial="hidden"
               whileInView={"show"}
@@ -35,8 +34,8 @@ const ContactPage = () => {
               className="mb-8 max-w-md"
             >
               {t("title")}
-            </motion.h1>
-            <motion.p
+            </MotionH1>
+            <MotionP
               variants={fadeIn("up", 0.2)}
               initial="hidden"
               whileInView={"show"}
@@ -44,10 +43,10 @@ const ContactPage = () => {
               className="subtitle max-w-[500px] text-balance"
             >
               {t("subtitle")}
-            </motion.p>
+            </MotionP>
           </div>
           {/* Ilustration */}
-          <motion.div
+          <MotionDiv
             variants={fadeIn("left", 0.2)}
             initial="hidden"
             whileInView={"show"}
@@ -60,7 +59,7 @@ const ContactPage = () => {
           {/* Info text */}
           <div className="mb-12 flex flex-col gap-y-4 text-base xl:mb-24 xl:gap-y-4 xl:text-lg">
             {/* Phone */}
-            <motion.div
+            <MotionDiv
               variants={fadeIn("down", 0.2)}
               initial="hidden"
               whileInView={"show"}
@@ -75,9 +74,9 @@ const ContactPage = () => {
               >
                 +40720425840
               </a>
-            </motion.div>
+            </MotionDiv>
             {/* Or */}
-            <motion.div
+            <MotionDiv
               variants={fadeIn("down", 0.3)}
               initial="hidden"
               whileInView={"show"}
@@ -85,9 +84,9 @@ const ContactPage = () => {
               className="font-bold"
             >
               {t("or")}
-            </motion.div>
+            </MotionDiv>
             {/* WhatsApp */}
-            <motion.div
+            <MotionDiv
               variants={fadeIn("down", 0.4)}
               initial="hidden"
               whileInView={"show"}
@@ -102,9 +101,9 @@ const ContactPage = () => {
               >
                 {t("whatsapp")}
               </a>
-            </motion.div>
+            </MotionDiv>
             {/* Or */}
-            <motion.div
+            <MotionDiv
               variants={fadeIn("down", 0.5)}
               initial="hidden"
               whileInView={"show"}
@@ -112,9 +111,9 @@ const ContactPage = () => {
               className="font-bold"
             >
               {t("or")}
-            </motion.div>
+            </MotionDiv>
             {/* Send email */}
-            <motion.div
+            <MotionDiv
               variants={fadeIn("down", 0.6)}
               initial="hidden"
               whileInView={"show"}
@@ -130,10 +129,10 @@ const ContactPage = () => {
                   className="absolute -right-12 max-xl:rotate-90"
                 />
               </div>
-            </motion.div>
+            </MotionDiv>
           </div>
           {/* Form */}
-          <motion.div
+          <MotionDiv
             variants={fadeIn("down", 0.3)}
             initial="hidden"
             whileInView={"show"}
@@ -142,7 +141,7 @@ const ContactPage = () => {
             <GoogleCaptchaWrapper>
               <ContactForm />
             </GoogleCaptchaWrapper>
-          </motion.div>
+          </MotionDiv>
         </div>
       </div>
     </div>

@@ -1,6 +1,3 @@
-"use client";
-
-import React, { useEffect, useState } from "react";
 import { InfiniteMovingCards } from "../ui/infinite-cards";
 import { Star } from "lucide-react";
 import HalfStar from "../ui/half-star";

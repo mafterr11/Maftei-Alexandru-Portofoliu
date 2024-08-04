@@ -1,4 +1,3 @@
-"use client";
 import { GanttChartSquare, Blocks, Gem } from "lucide-react";
 import {
   Card,
@@ -9,8 +8,8 @@ import {
 } from "@/components/ui/card";
 import { useTranslations } from "next-intl";
 import { Dot } from "../Dot";
-import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";
+import { MotionDiv, MotionH2 } from "@/lib/motion-client";
 
 const Services = () => {
   const t = useTranslations("Services");
@@ -44,7 +43,7 @@ const Services = () => {
   return (
     <section className="mb-12 bg-grainy py-12 pb-20 xl:mb-36">
       <div className="container">
-        <motion.h2
+        <MotionH2
           variants={fadeIn("down", 0.4)}
           initial="hidden"
           whileInView={"show"}
@@ -53,12 +52,12 @@ const Services = () => {
         >
           <Dot />
           {t("title")}
-        </motion.h2>
+        </MotionH2>
         {/* grid items */}
         <div className="grid justify-center gap-y-24 xl:grid-cols-3 xl:gap-x-8">
           {servicesData.map((item, index) => {
             return (
-              <motion.div
+              <MotionDiv
                 key={index}
                 variants={fadeIn("down", item.speed)}
                 initial="hidden"
@@ -81,7 +80,7 @@ const Services = () => {
                     </CardDescription>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </MotionDiv>
             );
           })}
         </div>
