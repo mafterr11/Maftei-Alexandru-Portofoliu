@@ -76,6 +76,7 @@ const ContactPage = () => {
                 +40720425840
               </a>
             </motion.div>
+            {/* Or */}
             <motion.div
               variants={fadeIn("down", 0.3)}
               initial="hidden"
@@ -102,6 +103,7 @@ const ContactPage = () => {
                 {t("whatsapp")}
               </a>
             </motion.div>
+            {/* Or */}
             <motion.div
               variants={fadeIn("down", 0.5)}
               initial="hidden"
