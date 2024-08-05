@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { Suspense, useState } from "react";
 import { Tabs, TabsList, TabsContent, TabsTrigger } from "@/components/ui/tabs";
 import ProjectCard from "@/components/home/ProjectCard";
 import { useTranslations } from "next-intl";
@@ -58,6 +58,7 @@ const projectData = data(t);
               })}
             </TabsList>
             {/* Tabs content */}
+            <Suspense fallback={<div>Loading...</div>}>
             <div className="grid grid-cols-1 gap-8 md:max-xl:px-6 text-lg md:grid-cols-2 xl:grid-cols-3 xl:mt-8">
               {filteredProjects.map((project, index) => {
                 return (
@@ -67,6 +68,7 @@ const projectData = data(t);
                 );
               })}
             </div>
+            </Suspense>
           </Tabs>
         </motion.div>
       </div>
