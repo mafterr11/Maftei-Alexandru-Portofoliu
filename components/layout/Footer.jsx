@@ -33,6 +33,7 @@ const Footer = () => {
               style={{ width: "250px" }}
               src="https://wpfitness.eu/wp-content/uploads/2022/10/anpc-sal.png"
               alt="Solutionarea Alternativa a Litigiilor"
+              loading="lazy"
             />
           </a>
           <br />
@@ -45,6 +46,7 @@ const Footer = () => {
               style={{ width: "250px" }}
               src="https://wpfitness.eu/wp-content/uploads/2022/10/anpc-sol.png"
               alt="Solutionarea Online a Litigiilor"
+              loading="lazy"
             />
           </a>
         </div>

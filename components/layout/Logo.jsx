@@ -7,8 +7,8 @@ const Logo = ({ source, size }) => {
       <div className={`${size} w-auto`}>
         <Image
           src={source}
-          width={800}
-          height={800}
+          width={250}
+          height={250}
           className={`${size} w-auto`}
           alt={source}
           priority={true}
