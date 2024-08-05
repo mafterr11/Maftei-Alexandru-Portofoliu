@@ -49,7 +49,7 @@ const projectData = data(t);
                   <TabsTrigger
                     value={category}
                     key={index}
-                    className="w-[162px] md:w-auto rounded-[5px]"
+                    className="w-[162px] md:w-auto rounded-[5px] hover:bg-accent hover:text-white"
                     onClick={() => setCategory(category)}
                   >
                     {category}
