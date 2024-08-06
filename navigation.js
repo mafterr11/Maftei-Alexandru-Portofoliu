@@ -7,5 +7,5 @@ export const pathnames = {
   },
 };
 
-export const { Link, redirect, usePathname, useRouter, getPathname } =
+export const { Link, permanentRedirect, usePathname, useRouter, getPathname } =
   createLocalizedPathnamesNavigation({  pathnames });
