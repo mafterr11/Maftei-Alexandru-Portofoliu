@@ -38,6 +38,7 @@ const ProjectCard = ({ project }) => {
               target="_"
               className="flex h-[45px] w-[45px] items-center justify-center rounded-md bg-black/85 transition-all duration-500 hover:bg-accent/70 group-hover:rotate-[360deg] group-hover:scale-100 group-hover:opacity-100 max-xl:transform-none max-lg:scale-100 max-lg:opacity-100 xl:scale-0 xl:opacity-0"
             >
+              <span className="sr-only">Link catre acest proiect</span>
               <Link2Icon className="text-white" />
             </Link>
             {/* <Link
@@ -56,7 +57,7 @@ const ProjectCard = ({ project }) => {
         <h4 className="mb-4">{project.name}</h4>
         <p className="text-bakab text-lg">{project.description}</p>
       </div>
-      <div className="absolute bottom-4 right-24 flex scale-0 items-center justify-center gap-x-1 opacity-0 transition-all duration-700 ease-in-out group-hover:scale-100 group-hover:opacity-100 bg-accent text-white font-medium px-2 rounded-md text-[16px]">
+      <div className="absolute bottom-4 right-24 flex scale-0 items-center justify-center gap-x-1 rounded-md bg-accent px-2 text-[16px] font-medium text-white opacity-0 transition-all duration-700 ease-in-out group-hover:scale-100 group-hover:opacity-100">
         {t("page.demo")} <ArrowRight />
       </div>
     </Card>

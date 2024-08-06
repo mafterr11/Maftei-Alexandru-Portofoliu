@@ -4,7 +4,6 @@ import Header from "../../components/layout/Header";
 import Footer from "../../components/layout/Footer";
 import { Toaster } from "@/components/ui/toaster";
 import { NextIntlClientProvider, useMessages } from "next-intl";
-import pick from "lodash/pick";
 import { Analytics } from "@vercel/analytics/react";
 import { constructMetadata } from "@/lib/utils";
 
@@ -29,18 +28,6 @@ export default function RootLayout({ children, params: { locale } }) {
         className={`${roboto.variable} ${recursive.variable} overflow-x-hidden`}
       >
         <NextIntlClientProvider messages={messages}>
-          {/* messages={pick(
-            messages,
-            "Hero",
-            "About",
-            "Services",
-            "Work",
-            "Reviews",
-            "Cta",
-            "Nav",
-            "Proiecte",
-            "Contact",
-          )} */}
           <Header />
           <main>{children}</main>
           <Analytics />

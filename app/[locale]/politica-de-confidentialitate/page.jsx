@@ -1,12 +1,18 @@
+import { constructMetadata } from "@/lib/utils";
 import { useTranslations } from "next-intl";
+
+export const metadata = constructMetadata({
+  title: "Politica de confidentialitate - Myriad Tech",
+  description: "Aceasta pagina cuprinde termenii si conditiile de utilizare a site-ului web Myriad Tech.",
+})
 
 const PoliticaDeConfidentialitate = () => {
   const t = useTranslations("Terms");
   return (
     <div className="container mx-auto py-[12rem]">
-      <h2 className="mb-32 text-center font-normal text-accent">
+      <h1 className="text-4xl tracking-wide mb-32 text-center font-normal text-accent">
         {t("titlu")}
-      </h2>
+      </h1>
       <p className="my-4 text-sm">
         <span className="text-accent">-</span> {t("1")}
       </p>
