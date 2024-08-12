@@ -176,7 +176,9 @@
   },
   "Footer": {
     "gdpr": "/ro/politica-de-confidentialitate",
+    "cookies": "/ro/politica-cookies",
     "name": "Politica de confidențialitate",
+    "name2": "Politica cookies",
     "rights": "Toate drepturile rezervate"
   }
 }

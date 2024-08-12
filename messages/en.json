@@ -177,7 +177,9 @@
   },
   "Footer": {
     "gdpr": "/en/politica-de-confidentialitate",
+    "cookies": "/en/politica-cookies",
     "name": "Privacy Policy",
+    "name2": "Cookie Policy",
     "rights": "All rights reserved"
   }
 }

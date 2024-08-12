@@ -10,8 +10,11 @@ const Footer = () => {
       <div className="flex flex-col items-center justify-center max-xl:gap-y-2 xl:flex-row-reverse xl:justify-between xl:px-24">
         {/* Right Side */}
         <div className="flex items-center justify-center gap-x-6 max-md:flex-col max-md:gap-y-5">
-          <div className="text-center font-semibold underline">
+          <div className="text-center font-semibold underline max-md:flex-col">
             <Link href={t("gdpr")}>{t("name")}</Link>
+          </div>
+          <div className="text-center font-semibold underline max-md:flex-col">
+            <Link href={t("cookies")}>{t("name2")}</Link>
           </div>
           <Socials className="flex gap-x-6 text-[20px]" />
         </div>
