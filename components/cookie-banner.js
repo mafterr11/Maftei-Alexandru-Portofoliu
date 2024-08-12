@@ -5,12 +5,14 @@
 
 import { useState, useEffect } from "react";
 import { getLocalStorage, setLocalStorage } from "@/lib/storage-helper";
+import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 // CookieBanner component that displays a banner for cookie consent.
 export default function CookieBanner() {
   const [cookieConsent, setCookieConsent] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
-
+  const t = useTranslations("Cookies");
   // Retrieve cookie consent status from local storage on component mount
   useEffect(() => {
     const storedCookieConsent = getLocalStorage("cookie_consent", null);
@@ -47,10 +49,11 @@ export default function CookieBanner() {
         <div className="m-3 flex items-center gap-2 rounded-xl border-2 border-solid border-accent bg-body p-5 max-md:flex-col max-md:items-start">
           <div className="text-left">
             <p className="mr-3 max-w-xl">
-              Folosim sistemul cookies pentru a asigura buna functionare a
-              website-ului. Daca doresti sa utilizezi site-ul in continuare
-              inseamna ca esti de acord cu politica de cookies si o accepti
-              Politica cookies
+              {t("text1")}{" "}
+              <Link className="font-semibold" href={t("path")}>
+                {t("name")}
+              </Link>{" "}
+              {t("text2")}
             </p>
           </div>
           <div className="flex flex-col gap-2 max-md:flex-row">
@@ -58,13 +61,13 @@ export default function CookieBanner() {
               className="group rounded-sm bg-accent px-4 py-2 text-white"
               onClick={() => setCookieConsent(true)}
             >
-              Accept
+              {t("buttons.yes")}
             </button>
             <button
               className="bg-red-500 rounded-sm border border-black/50 px-4 py-2 text-black"
               onClick={() => setCookieConsent(false)}
             >
-              Decline
+              {t("buttons.no")}
             </button>
           </div>
         </div>
