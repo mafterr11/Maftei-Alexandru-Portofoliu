@@ -64,7 +64,7 @@ const Services = () => {
                 whileInView={"show"}
                 viewport={{ once: true, ammount: 0.4 }}
               >
-                <Card className="relative flex h-[320px] w-full max-w-[424px] flex-col items-center justify-start bg-accent/0 pb-10 pt-20">
+                <Card className="relative flex h-[400px] xl:h-[350px] w-full max-w-[424px] flex-col items-center justify-start bg-accent/0 pb-10 pt-20">
                   <CardHeader className="absolute -top-[65px] bg-grainy text-accent">
                     <div className="flex h-[80px] w-[140px] items-center justify-center">
                       {item.icon}
