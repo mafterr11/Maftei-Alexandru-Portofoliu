@@ -72,7 +72,7 @@ const ContactPage = () => {
                 target="blank"
                 className="transition-all duration-300 hover:scale-95 hover:text-accent"
               >
-                +40720425840
+                +40.720.425.840
               </a>
             </MotionDiv>
             {/* Or */}
