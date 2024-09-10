@@ -1,9 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import WorkSwiper from "./WorkSwiper";
-import {
-  useTranslations,
-} from "next-intl";
+import { useTranslations } from "next-intl";
 import { Dot } from "../Dot";
 import { fadeIn } from "@/variants";
 import { MotionDiv } from "@/lib/motion-client";
@@ -12,15 +10,15 @@ const Work = () => {
   const t = useTranslations("Work");
 
   return (
-    <section className="relative mb-12 max-xl:overflow-x-hidden xl:py-16">
-      <div className="container flex flex-col gap-x-40 xl:flex-row xl:max-2xl:gap-x-24">
+    <section className="relative mb-12 max-xl:overflow-x-hidden xl:pb-16">
+      <div className="container flex flex-col items-center justify-center gap-x-40 xl:max-2xl:gap-x-24">
         {/* Text */}
         <MotionDiv
           variants={fadeIn("right", 0.4)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, ammount: 0.4 }}
-          className="mx-auto mb-12 flex max-w-[400px] flex-col items-center justify-center text-center xl:mx-0 xl:h-[400px] xl:items-start xl:text-left"
+          className="mx-auto mb-12 flex max-w-[400px] flex-col items-center justify-center text-center xl:mx-0 xl:pb-20"
         >
           <h2 className="section-title mb-4">
             <Dot />
@@ -37,7 +35,7 @@ const Work = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, ammount: 0.4 }}
-          className="xl:max-w-[800px]"
+          className="max-w-full lg:max-w-[90%]"
         >
           <WorkSwiper />
         </MotionDiv>

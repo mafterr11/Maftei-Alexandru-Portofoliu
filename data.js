@@ -71,12 +71,12 @@ const rawData = [
     link: "https://offerfest-pia.vercel.app",
     // github: "/",
   },
-  {
-    image: "/work/manarh.webp",
-    categoryKey: "category.progress", // Fullstack
-    name: "Manarh",
-    descriptionKey: "manarh",
-    link: "/",
-    // github: "/",
-  },
+  // {
+  //   image: "/work/manarh.webp",
+  //   categoryKey: "category.progress", // Fullstack
+  //   name: "Manarh",
+  //   descriptionKey: "manarh",
+  //   link: "/",
+  //   // github: "/",
+  // },
 ];

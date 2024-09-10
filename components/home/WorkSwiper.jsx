@@ -10,15 +10,18 @@ import { data } from "@/data";
 
 const WorkSwiper = () => {
   const t = useTranslations("Proiecte");
-  const projectData =  data(t);
+  const projectData = data(t);
   return (
     <Swiper
-      className="h-[660px]"
+      className="h-[690px]"
       slidesPerView={1}
       slidesPerGroup={1}
       breakpoints={{
-        640: {
+        700: {
           slidesPerView: 2,
+        },
+        1400: {
+          slidesPerView: 3,
         },
       }}
       spaceBetween={30}

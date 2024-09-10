@@ -9,8 +9,8 @@ import { fadeIn } from "@/variants";
 import { data } from "@/data";
 
 const ProjectsPage = () => {
-const t = useTranslations("Proiecte");
-const projectData = data(t);
+  const t = useTranslations("Proiecte");
+  const projectData = data(t);
   const uniqueCategories = [
     t("page.tab"),
     ...new Set(projectData.map((item) => item.category)),
@@ -43,13 +43,18 @@ const projectData = data(t);
           viewport={{ once: true, ammount: 0.4 }}
         >
           <Tabs defaultValue={category} className="mb-24 xl:mb-48">
-            <TabsList className="mx-auto mb-12 grid h-full w-full max-md:gap-y-3 md:grid-cols-5 md:border lg:max-w-fit">
+            <TabsList
+              className="mx-auto mb-12 grid h-full w-full max-md:gap-y-3 md:border lg:max-w-fit"
+              style={{
+                gridTemplateColumns: `repeat(${Math.min(categories.length, 5)}, minmax(0, 1fr))`,
+              }}
+            >
               {categories.map((category, index) => {
                 return (
                   <TabsTrigger
                     value={category}
                     key={index}
-                    className="w-[162px] md:w-auto rounded-[5px] hover:bg-accent hover:text-white"
+                    className="w-[162px] rounded-[5px] hover:bg-accent hover:text-white md:w-auto"
                     onClick={() => setCategory(category)}
                   >
                     {category}
@@ -59,15 +64,15 @@ const projectData = data(t);
             </TabsList>
             {/* Tabs content */}
             <Suspense fallback={<div>Loading...</div>}>
-            <div className="grid grid-cols-1 gap-8 md:max-xl:px-6 text-lg md:grid-cols-2 xl:grid-cols-3 xl:mt-8">
-              {filteredProjects.map((project, index) => {
-                return (
-                  <TabsContent value={category} key={index}>
-                    <ProjectCard project={project} />
-                  </TabsContent>
-                );
-              })}
-            </div>
+              <div className="grid grid-cols-1 gap-8 text-lg md:grid-cols-2 md:max-xl:px-6 xl:mt-8 xl:grid-cols-3">
+                {filteredProjects.map((project, index) => {
+                  return (
+                    <TabsContent value={category} key={index}>
+                      <ProjectCard project={project} />
+                    </TabsContent>
+                  );
+                })}
+              </div>
             </Suspense>
           </Tabs>
         </motion.div>
