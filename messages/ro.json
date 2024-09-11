@@ -135,6 +135,16 @@
         "4": "Termenii și condițiile",
         "5": "Google."
       }
+    },
+    "faq": {
+      "q1": "Ce servicii ofer?",
+      "a1": "Ofer servicii personalizate de dezvoltare web, inclusiv design de website, dezvoltare, configurare e-commerce și optimizare. Sunt specializat în framework-uri precum Next.js și Wordpress, asigurându-mă că site-ul tău este rapid, securizat și scalabil. De asemenea, pot ajuta cu mentenanța și actualizările site-ului după lansare.",
+      "q2": "Care este costul pentru dezvoltarea unui website?",
+      "a2": "Prețul variază în funcție de complexitatea proiectului. În general, percep taxe pe proiect, oferind diferite pachete pentru site-uri de bază, e-commerce sau aplicații web personalizate. După o consultație inițială, pot oferi o estimare clară și detaliată adaptată nevoilor tale.",
+      "q3": "Website-ul meu va fi optimizat și compatibil cu dispozitivele mobile?",
+      "a3": "Da, fiecare site pe care îl dezvolt este complet responsive, ceea ce înseamnă că va arăta și funcționa perfect pe toate dispozitivele, de la telefoane mobile la desktopuri. De asemenea, optimizez pentru viteză și SEO, pentru a mă asigura că site-ul tău are performanțe bune.",
+      "q4": "Care este procesul pentru a începe?",
+      "a4": "Procesul începe cu o consultație inițială pentru a discuta obiectivele și cerințele proiectului tău. După aceea, voi crea o propunere care detaliază termenii, costurile și livrabilele. Odată ce ne înțelegem, trecem la faza de dezvoltare, cu verificări regulate pentru a ne asigura că totul este conform planului. După lansare, ofer servicii de suport, dacă este necesar."
     }
   },
   "Terms": {

@@ -135,6 +135,16 @@
         "4": "Terms of Service",
         "5": "apply."
       }
+    },
+    "faq": {
+      "q1": "What services do I offer?",
+      "a1": "I offer custom web development services including website design, development, e-commerce setup, and optimization. I specialize in frameworks like Next.js and Wordpress, ensuring your site is fast, secure, and scalable. Additionally, I can help with website maintenance and updates post-launch.",
+      "q2": "What is the cost of developing a website?",
+      "a2": "Pricing varies based on the scope of the project. I typically charge per project, offering different packages for basic websites, e-commerce, or custom web applications. After an initial consultation, I can provide a clear, detailed estimate tailored to your needs.",
+      "q3": "Will my website be mobile-friendly and optimized?",
+      "a3": "Yes, every website I develop is fully responsive, meaning it will look great and function perfectly on all devices, from smartphones to desktops. I also optimize for speed and SEO to ensure your site performs well.",
+      "q4": "What is the process for getting started?",
+      "a4": "The process begins with an initial consultation to discuss your project goals and requirements. From there, I`ll create a proposal outlining the timeline, cost, and deliverables. Once agreed, we move into the development phase with regular check-ins to ensure everything is on track. After launch, I offer support services as needed."
     }
   },
   "Terms": {
