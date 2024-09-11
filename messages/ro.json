@@ -93,6 +93,13 @@
     "contact": {
       "name": "Contact",
       "link": "/ro/contact"
+    },
+    "specialBtn": {
+      "name": "Angajează-mă",
+      "title": "Vreți o ofertă?",
+      "subtext": "Nu ezitați să mă contactați direct prin WhatsApp. Sunt mereu disponibil pentru a răspunde prompt la orice întrebări pe care le aveți.",
+      "tel": "Sună-mă",
+      "wapp": "Trimite un mesaj"
     }
   },
   "Contact": {

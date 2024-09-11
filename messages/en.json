@@ -93,6 +93,13 @@
     "contact": {
       "name": "Contact",
       "link": "/en/contact"
+    },
+    "specialBtn": {
+      "name": "Hire me",
+      "title": "Would you like a quote?",
+      "subtext": "Feel free to contact me directly via WhatsApp. I am always available to promptly answer any questions you may have.",
+      "tel": "Call me",
+      "wapp": "Send a message"
     }
   },
   "Contact": {
