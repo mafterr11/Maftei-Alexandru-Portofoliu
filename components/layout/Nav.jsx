@@ -63,7 +63,7 @@ const Nav = ({ containerStyles, linkStyles }) => {
             </DialogTitle>
           </DialogHeader>
           <p className="mb-6 text-xl">{t("specialBtn.subtext")}</p>
-          <div className="flex max-md:flex-col max-md:gap-y-4 items-center justify-center gap-x-4">
+          <div className="flex items-center justify-center gap-x-4 max-md:flex-col max-md:gap-y-4">
             <Button size="sm" className="relative w-full">
               <a href="http://wa.me/+40720425840" target="blank">
                 <RiWhatsappLine size={22} className="absolute left-4" />{" "}

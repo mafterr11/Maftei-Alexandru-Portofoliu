@@ -43,12 +43,7 @@ const ProjectsPage = () => {
           viewport={{ once: true, ammount: 0.4 }}
         >
           <Tabs defaultValue={category} className="mb-24 xl:mb-48">
-            <TabsList
-              className="mx-auto mb-12 grid h-full w-full max-md:gap-y-3 md:border lg:max-w-fit"
-              style={{
-                gridTemplateColumns: `repeat(${Math.min(categories.length, 5)}, minmax(0, 1fr))`,
-              }}
-            >
+            <TabsList className="mx-auto mb-12 flex h-full w-fit justify-center max-md:flex-col max-md:gap-y-3 md:border">
               {categories.map((category, index) => {
                 return (
                   <TabsTrigger
@@ -62,6 +57,7 @@ const ProjectsPage = () => {
                 );
               })}
             </TabsList>
+
             {/* Tabs content */}
             <Suspense fallback={<div>Loading...</div>}>
               <div className="grid grid-cols-1 gap-8 text-lg md:grid-cols-2 md:max-xl:px-6 xl:mt-8 xl:grid-cols-3">
