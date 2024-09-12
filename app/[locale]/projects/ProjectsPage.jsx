@@ -43,7 +43,7 @@ const ProjectsPage = () => {
           viewport={{ once: true, ammount: 0.4 }}
         >
           <Tabs defaultValue={category} className="mb-24 xl:mb-48">
-            <TabsList className="mx-auto mb-12 flex h-full w-fit justify-center max-md:flex-col max-md:gap-y-3 md:border">
+            <TabsList className="mx-auto mb-12 flex h-full w-fit justify-center max-md:flex-col max-md:gap-y-3 md:border xl:gap-x-6">
               {categories.map((category, index) => {
                 return (
                   <TabsTrigger
