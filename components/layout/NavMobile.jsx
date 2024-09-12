@@ -3,19 +3,13 @@ import Link from "next/link";
 import { useState } from "react";
 import { BiSolidFoodMenu } from "react-icons/bi";
 import { IoCloseOutline, IoHome, IoChatbubblesSharp } from "react-icons/io5";
-import { RiMenu2Line, RiPhoneLine, RiWhatsappLine } from "react-icons/ri";
+import { RiMenu2Line } from "react-icons/ri";
 import Socials from "../Socials";
 import { useTranslations } from "next-intl";
 import Logo from "./Logo";
 import LocalSwitcher from "../ui/LocalSwitcher";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "../ui/dialog";
-import { Button } from "../ui/button";
+import HireMe from "./HireMe";
+
 
 const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
   const t = useTranslations("Nav");
@@ -88,33 +82,7 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
 
           {/* Bottom part */}
           <div className="flex flex-col items-center justify-center gap-y-5">
-            <Dialog>
-              <DialogTrigger asChild>
-                <Button size="sm">{t("specialBtn.name")}</Button>
-              </DialogTrigger>
-              <DialogContent>
-                <DialogHeader>
-                  <DialogTitle className="text-3xl">
-                    {t("specialBtn.title")}
-                  </DialogTitle>
-                </DialogHeader>
-                <p className="mb-6 text-xl">{t("specialBtn.subtext")}</p>
-                <div className="flex items-center justify-center gap-x-4 max-md:flex-col max-md:gap-y-4">
-                  <Button size="sm" className="relative w-full">
-                    <a href="http://wa.me/+40720425840" target="blank">
-                      <RiWhatsappLine size={22} className="absolute left-4" />{" "}
-                      {t("specialBtn.wapp")}
-                    </a>
-                  </Button>
-                  <Button size="sm" className="relative w-full">
-                    <a href="tel:+40720425840" target="blank">
-                      <RiPhoneLine size={22} className="absolute left-4" />{" "}
-                      {t("specialBtn.tel")}
-                    </a>
-                  </Button>
-                </div>
-              </DialogContent>
-            </Dialog>
+            <HireMe />
             <LocalSwitcher />
             <Socials />
           </div>
