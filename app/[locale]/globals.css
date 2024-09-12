@@ -92,3 +92,28 @@
 .grecaptcha-badge {
   visibility: hidden;
 }
+
+
+/* Scrollbar track (background) */
+::-webkit-scrollbar {
+  width: 16px; 
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+  background: #F3F6F9;
+  border: 2px solid #0000000a; /* Adjust width */
+    /* Color of the scrollbar track */
+}
+
+/* Scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #796250; /* Color of the scrollbar thumb */
+  border-radius: 5px;  /* Optional: Round the edges */
+  border: 2px solid #f1f1f1;  /* Optional: Add border */
+}
+
+/* Hover effect for scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #92755f;  /* Darker color when hovering */
+}
