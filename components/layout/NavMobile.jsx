@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BiSolidFoodMenu } from "react-icons/bi";
 import { IoCloseOutline, IoHome, IoChatbubblesSharp } from "react-icons/io5";
 import { RiMenu2Line } from "react-icons/ri";
@@ -10,10 +10,8 @@ import Logo from "./Logo";
 import LocalSwitcher from "../ui/LocalSwitcher";
 import HireMe from "./HireMe";
 
-
 const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
   const t = useTranslations("Nav");
-
   const links = [
     {
       path: t("home.link"),
@@ -32,6 +30,20 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
     },
   ];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const setVh = () => {
+      const vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty("--vh", `${vh}px`);
+    };
+
+    setVh();
+    window.addEventListener("resize", setVh);
+
+    return () => {
+      window.removeEventListener("resize", setVh);
+    };
+  }, []);
   return (
     <div className={`${containerStyles}`}>
       {/* Nav trigger btn */}
@@ -43,10 +55,8 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
       </div>
       <aside
         className={`${
-          isMenuOpen
-            ? "right-0 top-0 scale-100"
-            : "-right-full -top-full scale-0"
-        } fixed bottom-0 top-0 z-20 h-full border-l-2 border-accent bg-body px-8 pb-4 pt-8 transition-all duration-700 ease-in-out`}
+          isMenuOpen ? "right-0 top-0" : "-right-full -top-full"
+        } fixed bottom-0 top-0 z-20 h-screen-vh border-l-2 border-accent bg-body px-8 pb-4 pt-8 transition-all duration-700 ease-in-out`}
       >
         <div className="flex h-full flex-col items-center justify-between text-black">
           {/* Close btn */}

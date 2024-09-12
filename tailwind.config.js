@@ -44,6 +44,9 @@ module.exports = {
       },
     },
     extend: {
+      height: {
+        'screen-vh': 'calc(var(--vh, 1vh) * 100)', 
+      },
       boxShadow: {
         button: "2px 3px 3px rgba(0, 0, 0, 0.25)",
       },
