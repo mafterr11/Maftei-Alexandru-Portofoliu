@@ -11,7 +11,8 @@ const buttonVariants = cva(
       variant: {
         default:
           "bg-accent text-white hover:bg-accent/90 hover:scale-[0.98] shadow-button",
-        secondary: "bg-[#DEDDD9] hover:bg-[#D4D3D0] hover:scale-[0.98] ",
+        secondary:
+          "bg-[#DEDDD9] border border-black/40 hover:bg-[#D4D3D0] hover:scale-[0.98] ",
       },
       size: {
         default:

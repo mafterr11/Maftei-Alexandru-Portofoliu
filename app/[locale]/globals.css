@@ -8,7 +8,7 @@
   }
 
   body {
-    @apply overflow-x-hidden bg-body font-roboto tracking-[0.5px] text-black;
+    @apply overflow-x-hidden bg-body font-roboto tracking-[0.5px] text-black/95;
   }
 
   h1,
@@ -18,7 +18,7 @@
   }
 
   h1 {
-    @apply text-5xl font-bold tracking-[-2px] xl:text-[65px] xl:leading-[80px];
+    @apply text-4xl font-bold tracking-[-2px] xl:text-[65px] xl:leading-[80px];
   }
   h2 {
     @apply text-4xl font-bold;
