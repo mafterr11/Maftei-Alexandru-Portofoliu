@@ -3,8 +3,10 @@ import { useState } from "react";
 import { ChevronDownIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
+import { MotionDiv } from "@/lib/motion-client";
+import { fadeIn } from "@/variants";
 
-export default function CustomAccordion() {
+export default function Faq() {
   const [openItem, setOpenItem] = useState(null);
   const t = useTranslations("Contact");
   const services = [
@@ -32,13 +34,17 @@ export default function CustomAccordion() {
   return (
     <div className="mt-12 w-full max-w-2xl space-y-4">
       {services.map((service, index) => (
-        <div
+        <MotionDiv
           key={index}
           className="border-primary overflow-hidden rounded-lg border"
+          variants={fadeIn("down", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, ammount: 0.4 }}
         >
           <button
             onClick={() => setOpenItem(openItem === index ? null : index)}
-            className="bg-accent/5 hover:bg-accent/80 hover:text-white flex w-full items-center justify-between p-4 text-left transition-colors"
+            className="flex w-full items-center justify-between bg-accent/5 p-4 text-left transition-colors hover:bg-accent/80 hover:text-white"
           >
             <span className="flex items-center text-lg font-semibold">
               <span className="mr-3 text-2xl">{service.icon}</span>
@@ -59,7 +65,7 @@ export default function CustomAccordion() {
           >
             <p className="text-muted-foreground p-4">{service.description}</p>
           </div>
-        </div>
+        </MotionDiv>
       ))}
     </div>
   );

@@ -6,7 +6,7 @@ import { MoveRight } from "lucide-react";
 import { fadeIn } from "@/variants";
 import GoogleCaptchaWrapper from "../../GoogleCaptchaWrapper";
 import { MotionDiv, MotionH1, MotionP } from "@/lib/motion-client";
-import CustomAccordion from "./custom-accordion";
+import Faq from "./Faq";
 
 const ContactPage = () => {
   const t = useTranslations("Contact");
@@ -131,7 +131,7 @@ const ContactPage = () => {
                 />
               </div>
             </MotionDiv>
-            <CustomAccordion/>
+            <Faq />
           </div>
           {/* Form */}
           <MotionDiv
