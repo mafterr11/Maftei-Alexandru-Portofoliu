@@ -19,7 +19,7 @@ const Hero = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, ammount: 0.4 }}
-              className="mb-4 font-recursive text-base font-semibold uppercase tracking-[4px] text-accent"
+              className="mb-4 font-recursive text-lg font-semibold uppercase tracking-[4px] text-accent"
             >
               Alexandru Maftei
             </MotionDiv>
