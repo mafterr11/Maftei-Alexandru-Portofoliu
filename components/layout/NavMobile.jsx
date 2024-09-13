@@ -56,9 +56,13 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
       <aside
         className={`${
           isMenuOpen ? "right-0 top-0" : "-right-full -top-full"
-        } fixed bottom-0 top-0 z-20 h-screen-vh w-full border-l-2 border-t-2 border-b-2 border-accent bg-body px-8 pb-4 pt-8 transition-all duration-700 ease-in-out`}
+        } fixed bottom-0 top-0 z-20 w-full transition-all duration-700 ease-in-out`}
+        onClick={() => setIsMenuOpen(false)}
       >
-        <div className="flex h-full flex-col items-center justify-between text-black">
+        <div
+          onClick={(e) => e.stopPropagation()}
+          className="absolute bottom-0 right-0 top-0 flex h-screen-vh flex-col items-center justify-between border-l-2 border-accent bg-body px-8 pb-4 pt-8 text-black"
+        >
           {/* Close btn */}
           <div
             onClick={() => setIsMenuOpen(false)}
