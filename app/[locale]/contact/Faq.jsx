@@ -44,7 +44,7 @@ export default function Faq() {
         >
           <button
             onClick={() => setOpenItem(openItem === index ? null : index)}
-            className="flex w-full items-center justify-between bg-accent/5 p-4 text-left transition-colors hover:bg-accent/80 hover:text-white"
+            className={`${openItem === index ? "bg-accent/90 text-white" : ""} flex w-full items-center justify-between bg-accent/5 p-4 text-left transition-colors`}
           >
             <span className="flex items-center text-lg font-semibold">
               <span className="mr-3 text-2xl">{service.icon}</span>
