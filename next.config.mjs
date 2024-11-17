@@ -8,16 +8,17 @@ const nextConfig = {
     return [
       {
         source: "/",
-        destination: "/ro", // Matched parameters can be used in the destination
+        destination: "/ro",
         permanent: true,
       },
       {
         source: "/ro/projects",
-        destination: "/ro/proiecte", // Matched parameters can be used in the destination
+        destination: "/ro/proiecte",
         permanent: true,
       },
     ];
   },
+  // Add other Next.js configurations here
 };
 
 export default withNextIntl(nextConfig);
