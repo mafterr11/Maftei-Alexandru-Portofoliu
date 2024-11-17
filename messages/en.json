@@ -84,15 +84,15 @@
   "Nav": {
     "home": {
       "name": "Home",
-      "link": "/en"
+      "link": "/"
     },
     "projects": {
       "name": "Projects",
-      "link": "/en/projects"
+      "link": "/projects"
     },
     "contact": {
       "name": "Contact",
-      "link": "/en/contact"
+      "link": "/contact"
     },
     "specialBtn": {
       "name": "Hire me",

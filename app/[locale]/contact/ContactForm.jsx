@@ -141,7 +141,7 @@ export default function SolicitatiOfertaForm() {
           onSubmit={form.handleSubmit(onSubmit)}
         >
           {/* Name */}
-          <>
+          <div>
             <FormField
               control={form.control}
               name="nume"
@@ -166,7 +166,7 @@ export default function SolicitatiOfertaForm() {
                 </FormItem>
               )}
             />
-          </>
+          </div>
           {/* Email */}
           <>
             <FormField
@@ -175,7 +175,7 @@ export default function SolicitatiOfertaForm() {
               render={({ field }) => (
                 <FormItem>
                   <FormControl>
-                    <>
+                    <div>
                       <Label>{t("form.email.label")}</Label>
                       <div className="relative flex items-center">
                         <Input
@@ -187,7 +187,7 @@ export default function SolicitatiOfertaForm() {
                         />
                         <MailIcon className="absolute right-6" size={20} />
                       </div>
-                    </>
+                    </div>
                   </FormControl>
                   <FormMessage className="text-red" />
                 </FormItem>
@@ -202,7 +202,7 @@ export default function SolicitatiOfertaForm() {
               render={({ field }) => (
                 <FormItem>
                   <FormControl>
-                    <>
+                    <div>
                       <Label>{t("form.tel.label")}</Label>
                       <div className="relative flex items-center">
                         <Input
@@ -217,7 +217,7 @@ export default function SolicitatiOfertaForm() {
                           size={20}
                         />
                       </div>
-                    </>
+                    </div>
                   </FormControl>
                   <FormMessage className="text-red" />
                 </FormItem>
@@ -232,7 +232,7 @@ export default function SolicitatiOfertaForm() {
               render={({ field }) => (
                 <FormItem>
                   <FormControl>
-                    <>
+                    <div>
                       <Label>{t("form.msg.label")}</Label>
                       <div className="relative flex items-center">
                         <Textarea
@@ -245,7 +245,7 @@ export default function SolicitatiOfertaForm() {
                           size={20}
                         />
                       </div>
-                    </>
+                    </div>
                   </FormControl>
                   <FormMessage className="text-red" />
                 </FormItem>
