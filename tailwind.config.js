@@ -1,6 +1,5 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
-const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -25,27 +24,28 @@ module.exports = {
       xl: "1200px",
       "2xl": "1500px",
     },
-    colors: {
-      accent: "#796250",
-      body: {
-        DEFAULT: "#fbfdff",
-        light: "#EAE9E7",
-      },
-      white: "#fff",
-      black: {
-        DEFAULT: "#0d0c0b",
-        heavy: "#000000",
-      },
-      grey: {
-        light: "#ECECEC",
-      },
-      red: {
-        DEFAULT: "#ED2939",
-      },
-    },
+
     extend: {
+      colors: {
+        accent: "#796250",
+        body: {
+          DEFAULT: "#fbfdff",
+          light: "#EAE9E7",
+        },
+        white: "#fff",
+        black: {
+          DEFAULT: "#0d0c0b",
+          heavy: "#000000",
+        },
+        grey: {
+          light: "#ECECEC",
+        },
+        red: {
+          DEFAULT: "#ED2939",
+        },
+      },
       height: {
-        'screen-vh': 'calc(var(--vh, 1vh) * 100)', 
+        "screen-vh": "calc(var(--vh, 1vh) * 100)",
       },
       boxShadow: {
         button: "2px 3px 3px rgba(0, 0, 0, 0.25)",
@@ -78,20 +78,32 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
     },
   },
-  plugins: [
-    require("tailwindcss-animate"),
-    addVariablesForColors
-  ],
+  plugins: [require("tailwindcss-animate"), addVariablesForColors],
 };
 
 function addVariablesForColors({ addBase, theme }) {
-  let allColors = flattenColorPalette(theme("colors"));
-  let newVars = Object.fromEntries(
-    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  const colors = theme("colors");
+  const flattenColors = (colorsObj, prefix = "") => {
+    return Object.keys(colorsObj).reduce((acc, key) => {
+      const value = colorsObj[key];
+      const newKey = prefix ? `${prefix}-${key}` : key;
+      if (typeof value === "string") {
+        acc[newKey] = value;
+      } else {
+        Object.assign(acc, flattenColors(value, newKey));
+      }
+      return acc;
+    }, {});
+  };
+
+  const allColors = flattenColors(colors);
+  const newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val]),
   );
 
   addBase({

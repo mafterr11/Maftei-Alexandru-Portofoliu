@@ -76,7 +76,7 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="border-slate-700 bg-softPaper bg-cover bg-center group relative flex w-[350px] max-w-full flex-shrink-0 flex-col justify-between rounded-2xl border px-8 py-6 transition-all duration-300 ease-in-out hover:scale-[1.02] md:w-[450px]"
+            className="border-slate-700 bg-softPaper bg-cover bg-center group relative flex w-[350px] max-w-full shrink-0 flex-col justify-between rounded-2xl border px-8 py-6 transition-all duration-300 ease-in-out hover:scale-[1.02] md:w-[450px]"
             key={item.name}
           >
             <div className="bg-body-light/80 rounded-2xl absolute inset-0"/>
