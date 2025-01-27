@@ -29,36 +29,42 @@
     @apply overflow-x-hidden bg-body font-roboto tracking-[0.5px] text-black/95;
   }
 
-  h1,
-  h2,
-  h3 {
+  h1, h2, h3 {
     @apply font-bold leading-3;
   }
 
   h1 {
     @apply text-4xl font-bold tracking-[-2px] xl:text-[65px] leading-8 xl:leading-[80px];
   }
+
   h2 {
     @apply text-4xl leading-8 font-bold;
   }
+
   h3 {
     @apply text-3xl leading-8 font-bold;
   }
+
   h4 {
     @apply text-[22px] font-semibold;
   }
+
   p {
     @apply leading-8 text-black/80;
   }
+
   a {
     @apply cursor-pointer transition-all duration-300;
   }
+
   label {
     @apply mb-2 block font-normal text-black;
   }
+
   .subtitle {
     @apply mb-8 text-lg font-light;
   }
+
   .section-title {
     @apply relative flex w-max items-center justify-between gap-x-3 text-4xl font-bold;
   }
