@@ -81,18 +81,18 @@ export const InfiniteMovingCards = ({
           >
             <div className="bg-body-light/80 rounded-2xl absolute inset-0"/>
             <div>
-              <span className="relative text-gray-100  block text-sm font-normal leading-[1.6]">
+              <span className="relative text-black  block text-sm font-normal leading-[1.6]">
                 {item.quote}
               </span>
             </div>
             <div className="relative mt-6 flex flex-col">
-              <span className="text-gray-400 text-sm font-normal leading-[1.6] group-hover:font-bold">
+              <span className="text-black/80 text-sm font-normal leading-[1.6] group-hover:font-bold">
                 {item.name}
               </span>
               <Link
                 target="_blank"
                 href={item.title}
-                className="text-gray-400 text-sm font-normal leading-[1.6] group-hover:font-bold"
+                className="text-black/80 text-sm font-normal leading-[1.6] group-hover:font-bold"
               >
                 {item.title}
               </Link>
