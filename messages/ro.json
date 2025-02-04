@@ -88,11 +88,11 @@
     },
     "projects": {
       "name": "Proiecte",
-      "link": "/ro/proiecte"
+      "link": "/projects"
     },
     "contact": {
       "name": "Contact",
-      "link": "/ro/contact"
+      "link": "/contact"
     },
     "specialBtn": {
       "name": "Angajează-mă",
