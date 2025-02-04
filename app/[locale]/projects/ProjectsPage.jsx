@@ -32,6 +32,7 @@ const ProjectsPage = () => {
           viewport={{ once: true, ammount: 0.4 }}
           className="section-title mx-auto mb-8 text-center xl:mb-16"
         >
+          <Dot />
           {t("page.title")}
         </motion.h1>
         {/* Tabs */}
@@ -48,7 +49,7 @@ const ProjectsPage = () => {
                   <TabsTrigger
                     value={category}
                     key={index}
-                    className="hover:bg-accent w-[162px] rounded-[5px] hover:text-white md:w-auto"
+                    className="w-[162px] rounded-[5px] hover:bg-accent hover:text-white md:w-auto"
                     onClick={() => setCategory(category)}
                   >
                     {category}
