@@ -1,8 +1,8 @@
 export const Dot = () => {
   return (
-    <div className="relative text-[65px] text-accent">
+    <div className="text-accent relative text-[65px]">
       &#x2022;{" "}
-      <span className=" absolute right-0 top-[9px] h-4 w-4 rounded-full border-2 border-black-heavy/50"></span>
+      <span className="border-black-heavy/50 absolute top-0 right-0 h-4 w-4 rounded-full border-2"></span>
     </div>
   );
 };

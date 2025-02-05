@@ -41,7 +41,7 @@ const Services = () => {
     // },
   ];
   return (
-    <section className="mb-12 bg-grainy py-12 pb-20 xl:mb-36">
+    <section className="bg-grainy mb-12 py-12 pb-20 xl:mb-36">
       <div className="container">
         <MotionH2
           variants={fadeIn("down", 0.4)}
@@ -64,8 +64,8 @@ const Services = () => {
                 whileInView={"show"}
                 viewport={{ once: true, ammount: 0.4 }}
               >
-                <Card className="relative flex h-[400px] xl:h-[350px] w-full max-w-[424px] flex-col items-center justify-start bg-accent/0 pb-10 pt-20">
-                  <CardHeader className="absolute -top-[65px] bg-grainy text-accent">
+                <Card className="bg-accent/0 relative flex h-[400px] w-full max-w-[424px] flex-col items-center justify-start pt-20 pb-10 xl:h-[350px]">
+                  <CardHeader className="bg-grainy text-accent absolute -top-[65px]">
                     <div className="flex h-[80px] w-[140px] items-center justify-center">
                       {item.icon}
                     </div>
@@ -74,7 +74,7 @@ const Services = () => {
                     <CardTitle className="mb-4">{item.title}</CardTitle>
                     <CardDescription className="relative text-lg text-balance">
                       {item.description}
-                      <span className="absolute -bottom-14 left-0 right-0 font-bold underline">
+                      <span className="absolute right-0 -bottom-14 left-0 font-bold underline">
                         {item.soon}
                       </span>
                     </CardDescription>

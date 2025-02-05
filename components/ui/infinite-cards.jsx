@@ -76,23 +76,23 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="border-slate-700 bg-softPaper bg-cover bg-center group relative flex w-[350px] max-w-full flex-shrink-0 flex-col justify-between rounded-2xl border px-8 py-6 transition-all duration-300 ease-in-out hover:scale-[1.02] md:w-[450px]"
+            className="bg-softPaper group relative flex w-[350px] max-w-full shrink-0 flex-col justify-between rounded-2xl border border-slate-700 bg-cover bg-center px-8 py-6 transition-all duration-300 ease-in-out hover:scale-[1.02] md:w-[450px]"
             key={item.name}
           >
-            <div className="bg-body-light/80 rounded-2xl absolute inset-0"/>
+            <div className="bg-body-light/80 absolute inset-0 rounded-2xl" />
             <div>
-              <span className="relative text-gray-100  block text-sm font-normal leading-[1.6]">
+              <span className="relative block text-sm leading-[1.6] font-normal">
                 {item.quote}
               </span>
             </div>
             <div className="relative mt-6 flex flex-col">
-              <span className="text-gray-400 text-sm font-normal leading-[1.6] group-hover:font-bold">
+              <span className="text-sm leading-[1.6] font-normal group-hover:font-bold">
                 {item.name}
               </span>
               <Link
                 target="_blank"
                 href={item.title}
-                className="text-gray-400 text-sm font-normal leading-[1.6] group-hover:font-bold"
+                className="text-sm leading-[1.6] font-normal group-hover:font-bold"
               >
                 {item.title}
               </Link>
