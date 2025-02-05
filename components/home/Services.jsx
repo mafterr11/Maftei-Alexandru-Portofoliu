@@ -65,7 +65,8 @@ const Services = () => {
                 viewport={{ once: true, ammount: 0.4 }}
               >
                 <Card className="bg-accent/0 relative flex h-[400px] w-full max-w-[424px] flex-col items-center justify-start pt-20 pb-10 xl:h-[350px]">
-                  <CardHeader className="bg-grainy text-accent absolute -top-[65px]">
+                  <div className="bg-grainy absolute -top-2 h-5 w-20" />
+                  <CardHeader className="text-accent absolute -top-[65px] bg-transparent">
                     <div className="flex h-[80px] w-[140px] items-center justify-center">
                       {item.icon}
                     </div>
