@@ -50,7 +50,7 @@ const ProjectCard = ({ project }) => {
           </div>
         </div>
       </CardHeader>
-      <div className="px-8 py-6">
+      <div className="px-4 py-3 max-md:text-center">
         <Badge className="absolute left-5 top-4 mb-2 bg-accent text-sm font-medium uppercase text-white">
           {project.category}
         </Badge>
