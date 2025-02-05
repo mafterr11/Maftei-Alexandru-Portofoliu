@@ -70,7 +70,7 @@ const Services = () => {
                       {item.icon}
                     </div>
                   </CardHeader>
-                  <CardContent className="text-center">
+                  <CardContent className="-mt-2 text-center">
                     <CardTitle className="mb-4">{item.title}</CardTitle>
                     <CardDescription className="relative text-lg text-balance">
                       {item.description}
