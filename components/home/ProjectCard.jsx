@@ -55,7 +55,7 @@ const ProjectCard = ({ project }) => {
           {project.category}
         </Badge>
         <h4 className="mb-4">{project.name}</h4>
-        <p className="text-bakab text-lg">{project.description}</p>
+        <p className="text-lg">{project.description}</p>
       </div>
       <div className="absolute bottom-4 right-24 flex scale-0 items-center justify-center gap-x-1 rounded-md bg-accent px-2 text-[16px] font-medium text-white opacity-0 transition-all duration-700 ease-in-out group-hover:scale-100 group-hover:opacity-100">
         {t("page.demo")} <ArrowRight />
