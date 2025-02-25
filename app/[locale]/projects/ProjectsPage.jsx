@@ -3,7 +3,6 @@ import React, { Suspense, useState } from "react";
 import { Tabs, TabsList, TabsContent, TabsTrigger } from "@/components/ui/tabs";
 import ProjectCard from "@/components/home/ProjectCard";
 import { useTranslations } from "next-intl";
-import { Dot } from "@/components/Dot";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";
 import { data } from "@/data";
@@ -42,13 +41,13 @@ const ProjectsPage = () => {
           viewport={{ once: true, ammount: 0.4 }}
         >
           <Tabs defaultValue={category} className="mb-24 xl:mb-48">
-            <TabsList className="mx-auto mb-12 flex h-full w-fit justify-center max-md:flex-col max-md:gap-y-3 md:border xl:gap-x-6">
+            <TabsList className="mx-auto mb-12 flex h-full w-fit justify-center max-md:flex-col max-md:gap-y-3 md:border xl:gap-x-2">
               {categories.map((category, index) => {
                 return (
                   <TabsTrigger
                     value={category}
                     key={index}
-                    className="hover:bg-accent w-[162px] rounded-[5px] hover:text-white md:w-auto"
+                    className={`w-[162px]  md:w-auto ${category === "All Projects" ? "rounded-l-[5px]" : category === "Others" ? "rounded-r-[5px]" : ""}`}
                     onClick={() => setCategory(category)}
                   >
                     {category}
