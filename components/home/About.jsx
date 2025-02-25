@@ -15,82 +15,37 @@ import { MotionDiv, MotionH2 } from "@/lib/motion-client";
 import Qualifications from "./Qualifications";
 
 const infoData = [
-  {
-    icon: <User2 size={20} />,
-    text: "Maftei Alexandru",
-  },
-  {
-    icon: <PhoneCall size={20} />,
-    text: "+40720425840",
-  },
-  {
-    icon: <MailIcon size={20} />,
-    text: "alexandrumaftei95@gmail.com",
-  },
-  {
-    icon: <Calendar size={20} />,
-    text: "14 Aug, 1995",
-  },
-  {
-    icon: <GraduationCap size={20} />,
-    text: "Academia de Studii Economice ",
-  },
+  { icon: <User2 size={20} />, text: "Maftei Alexandru" },
+  { icon: <PhoneCall size={20} />, text: "+40720425840" },
+  { icon: <MailIcon size={20} />, text: "alexandrumaftei95@gmail.com" },
+  { icon: <Calendar size={20} />, text: "14 Aug, 1995" },
+  { icon: <GraduationCap size={20} />, text: "Academia de Studii Economice " },
 ];
 
 const skillData = [
   {
     title: "frontend",
     data: [
-      {
-        name: "HTML5, CSS, Javascript",
-      },
-      {
-        name: "ReactJS, NextJS",
-      },
-      {
-        name: "Typescript",
-      },
-      {
-        name: "TailwindCSS",
-      },
-      {
-        name: "Shadcn-UI",
-      },
-      {
-        name: "GSAP, Framer Motion",
-      },
-      {
-        name: "Prismic CMS",
-      },
-      {
-        name: "Wordpress, WooCommerce",
-      },
+      { name: "HTML5, CSS, Javascript" },
+      { name: "ReactJS, NextJS" },
+      { name: "Typescript" },
+      { name: "TailwindCSS" },
+      { name: "Shadcn-UI" },
+      { name: "GSAP, Framer Motion" },
+      { name: "Prismic CMS" },
+      { name: "Wordpress, WooCommerce" },
     ],
   },
   {
     title: "backend",
     data: [
-      {
-        name: "Java",
-      },
-      {
-        name: "Maven, Gradle",
-      },
-      {
-        name: "Spring",
-      },
-      {
-        name: "Hibernate",
-      },
-      {
-        name: "MySQL, PostgreSQL",
-      },
-      {
-        name: "PostMan",
-      },
-      {
-        name: "GitHub",
-      },
+      { name: "Java" },
+      { name: "Maven, Gradle" },
+      { name: "Spring" },
+      { name: "Hibernate" },
+      { name: "MySQL, PostgreSQL" },
+      { name: "PostMan" },
+      { name: "GitHub" },
     ],
   },
 ];
@@ -116,21 +71,13 @@ const About = () => {
     {
       title: t("exp"),
       data: [
-        {
-          company: "DB Schenker",
-          role: "Transport Agent",
-          years: "2018-2022",
-        },
+        { company: "DB Schenker", role: "Transport Agent", years: "2018-2022" },
         {
           company: "Porsche Inter Auto",
           role: "Digital Specialist",
           years: "2022-prezent",
         },
-        {
-          company: "Freelancer",
-          role: "Web Developer",
-          years: "2023-present",
-        },
+        { company: "Freelancer", role: "Web Developer", years: "2023-present" },
       ],
     },
   ];
@@ -138,7 +85,7 @@ const About = () => {
     return arr.find((item) => item.title === title);
   };
   return (
-    <section className="pb-12 xl:h-[900px] xl:my-24">
+    <section className="pb-12 xl:my-24 xl:h-[900px]">
       <div className="container mx-auto">
         <MotionH2
           variants={fadeIn("up", 0.4)}
@@ -150,14 +97,14 @@ const About = () => {
           <Dot />
           {t("title")}
         </MotionH2>
-        <div className="flex flex-col gap-x-32 xl:flex-row justify-center items-center">
+        <div className="flex flex-col items-center justify-center gap-x-32 xl:flex-row">
           {/* Image */}
           <MotionDiv
             variants={fadeIn("down", 0.4)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, ammount: 0.4 }}
-            className="relative hidden h-[425px] w-[425px]  bg-no-repeat xl:flex shrink-0 xl:max-2xl:ml-4"
+            className="relative hidden h-[425px] w-[425px] shrink-0 bg-no-repeat xl:flex xl:max-2xl:ml-4"
           >
             <Image
               src="/Alexandru Maftei poza de profil.jpg"
@@ -165,7 +112,7 @@ const About = () => {
               height={800}
               loading="lazy"
               alt="Alexandru Maftei poza de profil"
-              className="rounded-full border-2 border-accent object-cover transition-all duration-300 ease-in-out hover:scale-[1.03]"
+              className="border-accent rounded-full border-2 object-cover transition-all duration-300 ease-in-out hover:scale-[1.03]"
             />
           </MotionDiv>
           {/* Tabs */}
@@ -176,8 +123,11 @@ const About = () => {
             viewport={{ once: true, ammount: 0.4 }}
             className=""
           >
-            <Tabs defaultValue="personal" className="xl:w-[750px]">
+            <Tabs defaultValue="skills" className="xl:w-[750px]">
               <TabsList className="grid w-full xl:max-w-[520px] xl:grid-cols-3 xl:border">
+                <TabsTrigger className="w-[162px] xl:w-auto" value="skills">
+                  {t("tab3.trigger")}
+                </TabsTrigger>
                 <TabsTrigger className="w-[162px] xl:w-auto" value="personal">
                   {t("tab1.trigger")}
                 </TabsTrigger>
@@ -187,12 +137,21 @@ const About = () => {
                 >
                   {t("tab2.trigger")}
                 </TabsTrigger>
-                <TabsTrigger className="w-[162px] xl:w-auto" value="skills">
-                  {t("tab3.trigger")}
-                </TabsTrigger>
               </TabsList>
               {/* tabs content */}
               <div className="mt-12 text-lg xl:mt-8">
+                {/* Skills */}
+                <TabsContent value="skills">
+                  <div className="text-center xl:text-left">
+                    <h3 className="mb-8">{t("tab3.title")}</h3>
+                    {/* skills */}
+                    <div className="mb-16">
+                      <div className="border-accent mb-8 border-b"></div>
+                      {/* skill list frontend */}
+                      <Qualifications />
+                    </div>
+                  </div>
+                </TabsContent>
                 <TabsContent value="personal">
                   <div className="text-center xl:text-left">
                     <h3 className="mb-4">{t("tab1.title")}</h3>
@@ -226,7 +185,7 @@ const About = () => {
                       {/* ed */}
                       <div className="flex flex-col gap-y-6">
                         <div className="flex items-center gap-x-4 text-[22px]">
-                          <GraduationCap size={28} className="text-accent"/>
+                          <GraduationCap size={28} className="text-accent" />
                           <h4 className="font-bold capitalize">
                             {getData(qualificationData, t("edu")).title}
                           </h4>
@@ -239,10 +198,10 @@ const About = () => {
                               return (
                                 <div className="group flex gap-x-8" key={index}>
                                   <div className="relative ml-2 h-[84px] w-[1px] bg-black/15">
-                                    <div className="absolute -left-[5px] h-[11px] w-[11px] rounded-full bg-accent transition-all duration-500 group-hover:translate-y-[84px]"></div>
+                                    <div className="bg-accent absolute -left-[5px] h-[11px] w-[11px] rounded-full transition-all duration-500 group-hover:translate-y-[84px]"></div>
                                   </div>
                                   <div>
-                                    <div className="mb-2 text-xl font-medium leading-none">
+                                    <div className="mb-2 text-xl leading-none font-medium">
                                       {university}
                                     </div>
                                     <div className="mb-4 text-lg leading-none">
@@ -261,7 +220,7 @@ const About = () => {
                       {/* experience */}
                       <div className="flex flex-col gap-y-6">
                         <div className="flex items-center gap-x-4 text-[22px]">
-                          <Briefcase size={28} className="text-accent"/>
+                          <Briefcase size={28} className="text-accent" />
                           <h4 className="font-bold capitalize">
                             {getData(qualificationData, t("exp")).title}
                           </h4>
@@ -274,10 +233,10 @@ const About = () => {
                               return (
                                 <div className="group flex gap-x-8" key={index}>
                                   <div className="relative ml-2 h-[84px] w-[1px] bg-black/15">
-                                    <div className="absolute -left-[5px] h-[11px] w-[11px] rounded-full bg-accent transition-all duration-500 group-hover:translate-y-[84px]"></div>
+                                    <div className="bg-accent absolute -left-[5px] h-[11px] w-[11px] rounded-full transition-all duration-500 group-hover:translate-y-[84px]"></div>
                                   </div>
                                   <div>
-                                    <div className="mb-2 text-xl font-medium leading-none">
+                                    <div className="mb-2 text-xl leading-none font-medium">
                                       {company}
                                     </div>
                                     <div className="mb-4 text-lg leading-none">
@@ -293,17 +252,6 @@ const About = () => {
                           )}
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </TabsContent>
-                <TabsContent value="skills">
-                  <div className="text-center xl:text-left">
-                    <h3 className="mb-8">{t("tab3.title")}</h3>
-                    {/* skills */}
-                    <div className="mb-16">
-                      <div className="mb-8 border-b border-accent"></div>
-                      {/* skill list frontend */}
-                        <Qualifications />
                     </div>
                   </div>
                 </TabsContent>
