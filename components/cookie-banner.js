@@ -58,13 +58,13 @@ export default function CookieBanner() {
           </div>
           <div className="flex flex-col gap-2 max-md:flex-row">
             <button
-              className="group rounded-xs bg-accent px-4 py-2 text-white"
+              className="group rounded-xs bg-accent px-4 py-2 text-white cursor-pointer"
               onClick={() => setCookieConsent(true)}
             >
               {t("buttons.yes")}
             </button>
             <button
-              className="bg-red-500 rounded-xs border border-black/50 px-4 py-2 text-black"
+              className="bg-red-500 rounded-xs border border-black/50 px-4 py-2 text-white cursor-pointer"
               onClick={() => setCookieConsent(false)}
             >
               {t("buttons.no")}

@@ -123,7 +123,7 @@ const About = () => {
         {
           company: "Porsche Inter Auto",
           role: "Digital Specialist",
-          years: "2022-2024",
+          years: "2022-prezent",
         },
         {
           company: "Freelancer",
