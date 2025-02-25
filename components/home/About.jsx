@@ -97,14 +97,14 @@ const About = () => {
           >
             <Tabs defaultValue="skills" className="xl:w-[750px]">
               <TabsList className="grid w-full xl:max-w-[520px] xl:grid-cols-3 xl:border">
-                <TabsTrigger className="w-[162px] xl:w-auto" value="skills">
+                <TabsTrigger className="w-[162px] xl:w-auto rounded-l-md" value="skills">
                   {t("tab3.trigger")}
                 </TabsTrigger>
-                <TabsTrigger className="w-[162px] xl:w-auto" value="personal">
+                <TabsTrigger className="w-[162px] xl:w-auto rounded-nonne" value="personal">
                   {t("tab1.trigger")}
                 </TabsTrigger>
                 <TabsTrigger
-                  className="w-[162px] xl:w-auto"
+                  className="w-[162px] xl:w-auto rounded-r-md"
                   value="qualifications"
                 >
                   {t("tab2.trigger")}
