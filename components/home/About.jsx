@@ -22,34 +22,6 @@ const infoData = [
   { icon: <GraduationCap size={20} />, text: "Academia de Studii Economice " },
 ];
 
-const skillData = [
-  {
-    title: "frontend",
-    data: [
-      { name: "HTML5, CSS, Javascript" },
-      { name: "ReactJS, NextJS" },
-      { name: "Typescript" },
-      { name: "TailwindCSS" },
-      { name: "Shadcn-UI" },
-      { name: "GSAP, Framer Motion" },
-      { name: "Prismic CMS" },
-      { name: "Wordpress, WooCommerce" },
-    ],
-  },
-  {
-    title: "backend",
-    data: [
-      { name: "Java" },
-      { name: "Maven, Gradle" },
-      { name: "Spring" },
-      { name: "Hibernate" },
-      { name: "MySQL, PostgreSQL" },
-      { name: "PostMan" },
-      { name: "GitHub" },
-    ],
-  },
-];
-
 const About = () => {
   const t = useTranslations("About");
   const qualificationData = [

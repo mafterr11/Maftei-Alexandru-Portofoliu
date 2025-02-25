@@ -14,7 +14,7 @@ const HireMe = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button size="sm">{t("specialBtn.name")}</Button>
+        <Button size="sm" >{t("specialBtn.name")}</Button>
       </DialogTrigger>
       <DialogContent>
         <DialogHeader>

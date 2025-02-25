@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="container mx-auto">
         <div className="relative flex justify-between gap-x-8 xl:px-6 2xl:px-20">
           {/* text */}
-          <div className="mx-auto flex max-w-[650px] flex-col text-center xl:mx-0 xl:text-left">
+          <div className="mx-auto flex max-w-[750px] flex-col text-center xl:mx-0 xl:text-left">
             <MotionDiv
               variants={fadeIn("down", 0.2)}
               initial="hidden"
@@ -39,7 +39,7 @@ const Hero = () => {
               viewport={{ once: true, ammount: 0.4 }}
               className="subtitle mx-auto max-w-[490px] max-xl:text-balance xl:mx-0"
             >
-              {t("subtitle")}
+              {t("subtitle")}<span className="font-bold underline underline-offset-2">{t("subtitle2")}</span>{t("subtitle3")}
             </MotionP>
             {/* buttons */}
             <div className="mx-auto mb-12 flex flex-col gap-x-3 gap-y-3 md:flex-row xl:mx-0">

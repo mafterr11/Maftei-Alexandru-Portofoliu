@@ -10,7 +10,7 @@ const qualifications = [
   {
     title: "Typescript",
     icon: "/qualifications/ts.svg",
-    description: "Strongly Typed Javascript",
+    description: "Type-Safe Javascript",
   },
   {
     title: "TailwindCSS",
@@ -60,7 +60,7 @@ const qualifications = [
   {
     title: "Javascript",
     icon: "/qualifications/javascript.svg",
-    description: "Web Programming Language",
+    description: "Programming Language",
   },
 ];
 
