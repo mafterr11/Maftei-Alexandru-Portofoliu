@@ -8,6 +8,11 @@ const qualifications = [
     description: "React Framework",
   },
   {
+    title: "React",
+    icon: "/qualifications/react.svg",
+    description: "Javascript Framework",
+  },
+  {
     title: "Typescript",
     icon: "/qualifications/ts.svg",
     description: "Type-Safe Javascript",
@@ -46,11 +51,6 @@ const qualifications = [
     title: "WooCommerce",
     icon: "/qualifications/woo.svg",
     description: "Ecommerce Plugin",
-  },
-  {
-    title: "HTML",
-    icon: "/qualifications/html.svg",
-    description: "Standard Markup Language",
   },
   {
     title: "CSS",
