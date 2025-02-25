@@ -12,6 +12,7 @@ import {
 import { useTranslations } from "next-intl";
 import { Dot } from "../Dot";
 import { MotionDiv, MotionH2 } from "@/lib/motion-client";
+import Qualifications from "./Qualifications";
 
 const infoData = [
   {
@@ -137,7 +138,7 @@ const About = () => {
     return arr.find((item) => item.title === title);
   };
   return (
-    <section className="pb-12 xl:h-[900px] xl:py-24">
+    <section className="pb-12 xl:h-[900px] xl:my-24">
       <div className="container mx-auto">
         <MotionH2
           variants={fadeIn("up", 0.4)}
@@ -175,7 +176,7 @@ const About = () => {
             viewport={{ once: true, ammount: 0.4 }}
             className=""
           >
-            <Tabs defaultValue="personal" className="xl:w-[650px]">
+            <Tabs defaultValue="personal" className="xl:w-[750px]">
               <TabsList className="grid w-full xl:max-w-[520px] xl:grid-cols-3 xl:border">
                 <TabsTrigger className="w-[162px] xl:w-auto" value="personal">
                   {t("tab1.trigger")}
@@ -300,57 +301,9 @@ const About = () => {
                     <h3 className="mb-8">{t("tab3.title")}</h3>
                     {/* skills */}
                     <div className="mb-16">
-                      <h4 className="mb-2 text-xl font-semibold">Frontend</h4>
                       <div className="mb-8 border-b border-accent"></div>
                       {/* skill list frontend */}
-                      <div className="grid grid-cols-1 md:grid-flow-col md:grid-cols-2 md:grid-rows-5">
-                        {getData(skillData, "frontend").data.map(
-                          (item, index) => {
-                            const { name } = item;
-                            return (
-                              <div
-                                className="mx-auto text-center xl:mx-0 xl:text-left"
-                                key={index}
-                              >
-                                <div className="font-medium">
-                                  <span className="hidden text-accent xl:inline-block">
-                                    &#x2022;
-                                  </span>{" "}
-                                  {name}
-                                </div>
-                              </div>
-                            );
-                          },
-                        )}
-                      </div>
-                    </div>
-                    {/* Skill List Backend */}
-                    <div>
-                      <h4 className="mb-2 text-xl font-semibold xl:text-left ">
-                        Backend
-                      </h4>
-                      <div className="mb-8 border-b border-accent"></div>
-                      {/* skill list backend */}
-                      <div className="grid grid-cols-1 md:grid-flow-col md:grid-cols-2 md:grid-rows-4 xl:grid-rows-4">
-                        {getData(skillData, "backend").data.map(
-                          (item, index) => {
-                            const { name } = item;
-                            return (
-                              <div
-                                className="mx-auto text-center xl:mx-0 xl:text-left"
-                                key={index}
-                              >
-                                <div className="font-medium">
-                                  <span className="hidden text-accent xl:inline-block">
-                                    &#x2022;
-                                  </span>{" "}
-                                  {name}
-                                </div>
-                              </div>
-                            );
-                          },
-                        )}
-                      </div>
+                        <Qualifications />
                     </div>
                   </div>
                 </TabsContent>

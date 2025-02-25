@@ -5,35 +5,73 @@ const qualifications = [
   {
     title: "NextJS",
     icon: "/qualifications/nextjs.svg",
-    description: "waefawfawefwaf",
-  },
-  {
-    title: "TailwindCSS",
-    icon: "/qualifications/tailwind.svg",
-    description: "waefawfawefwaf",
+    description: "React Framework",
   },
   {
     title: "Typescript",
     icon: "/qualifications/ts.svg",
-    description: "waefawfawefwaf",
+    description: "Strongly Typed Javascript",
   },
   {
-    title: "Prisma",
-    icon: "/qualifications/prisma.svg",
-    description: "waefawfawefwaf",
+    title: "TailwindCSS",
+    icon: "/qualifications/tailwind.svg",
+    description: "CSS Framework",
   },
   {
     title: "Framer Motion",
     icon: "/qualifications/framer.svg",
-    description: "waefawfawefwaf",
+    description: "Animation Library for React",
+  },
+  {
+    title: "Prisma",
+    icon: "/qualifications/prisma.svg",
+    description: "ORM for Node.js & Typescript",
+  },
+  {
+    title: "Postgresql",
+    icon: "/qualifications/postgresql.svg",
+    description: "Relational Database",
+  },
+  {
+    title: "Git",
+    icon: "/qualifications/github.svg",
+    description: "Version Control System",
+  },
+  {
+    title: "Wordpress",
+    icon: "/qualifications/wordpress.svg",
+    description: "Content Management System",
+  },
+  {
+    title: "WooCommerce",
+    icon: "/qualifications/woo.svg",
+    description: "Ecommerce Plugin",
+  },
+  {
+    title: "HTML",
+    icon: "/qualifications/html.svg",
+    description: "Standard Markup Language",
+  },
+  {
+    title: "CSS",
+    icon: "/qualifications/css.svg",
+    description: "Styling language",
+  },
+  {
+    title: "Javascript",
+    icon: "/qualifications/javascript.svg",
+    description: "Web Programming Language",
   },
 ];
 
 const Qualifications = () => {
   return (
-    <div className="grid grid-cols-2 gap-3 mb-8 max-md:grid-cols-1">
+    <div className="mb-8 grid grid-cols-2 gap-4 max-md:grid-cols-1">
       {qualifications.map((qualification, index) => (
-        <div key={index} className="flex items-center gap-3 border p-2 shadow-lg">
+        <div
+          key={index}
+          className="hover:bg-body flex cursor-pointer items-center gap-3 border p-2 shadow-lg transition-transform duration-300 ease-linear hover:z-50 hover:scale-[2] hover:rotate-[-5deg]"
+        >
           <div className="relative h-12 w-12">
             <Image
               src={qualification.icon}
