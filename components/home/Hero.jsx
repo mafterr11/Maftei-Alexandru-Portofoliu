@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <section className="mb-24 bg-grainy pt-24 pb-8 xl:pt-56 xl:pb-24">
       <div className="container mx-auto">
-        <div className="relative flex justify-between gap-x-8 xl:px-6 2xl:px-20">
+        <div className="relative flex justify-between items-center gap-x-8 xl:px-6 2xl:px-20">
           {/* text */}
           <div className="mx-auto flex max-w-[750px] flex-col text-center xl:mx-0 xl:text-left">
             <MotionDiv

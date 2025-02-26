@@ -57,7 +57,7 @@ const About = () => {
     return arr.find((item) => item.title === title);
   };
   return (
-    <section className="pb-12 xl:my-24 xl:h-[900px]">
+    <section className="pb-24 my-24">
       <div className="container mx-auto">
         <MotionH2
           variants={fadeIn("up", 0.4)}
@@ -69,14 +69,14 @@ const About = () => {
           <Dot />
           {t("title")}
         </MotionH2>
-        <div className="flex flex-col items-center justify-center gap-x-32 xl:flex-row">
+        <div className="flex flex-col-reverse items-center justify-center gap-x-32 xl:flex-row">
           {/* Image */}
           <MotionDiv
             variants={fadeIn("down", 0.4)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, ammount: 0.4 }}
-            className="relative hidden h-[425px] w-[425px] shrink-0 bg-no-repeat xl:flex xl:max-2xl:ml-4"
+            className="relative xl:h-[50vh] xl:w-[50vh] shrink-0 bg-no-repeat xl:flex xl:max-2xl:ml-4"
           >
             <Image
               src="/Alexandru Maftei poza de profil.jpg"
@@ -84,7 +84,7 @@ const About = () => {
               height={800}
               loading="lazy"
               alt="Alexandru Maftei poza de profil"
-              className="border-accent rounded-full border-2 object-cover transition-all duration-300 ease-in-out hover:scale-[1.03]"
+              className="border-accent md:max-xl:hidden rounded-lg border-2 object-cover transition-all duration-300 ease-in-out hover:scale-[1.03]"
             />
           </MotionDiv>
           {/* Tabs */}
@@ -97,14 +97,20 @@ const About = () => {
           >
             <Tabs defaultValue="skills" className="xl:w-[750px]">
               <TabsList className="grid w-full xl:max-w-[520px] xl:grid-cols-3 xl:border">
-                <TabsTrigger className="w-[162px] xl:w-auto rounded-l-md" value="skills">
+                <TabsTrigger
+                  className="w-[162px] rounded-l-md xl:w-auto"
+                  value="skills"
+                >
                   {t("tab3.trigger")}
                 </TabsTrigger>
-                <TabsTrigger className="w-[162px] xl:w-auto rounded-nonne" value="personal">
+                <TabsTrigger
+                  className="rounded-nonne w-[162px] xl:w-auto"
+                  value="personal"
+                >
                   {t("tab1.trigger")}
                 </TabsTrigger>
                 <TabsTrigger
-                  className="w-[162px] xl:w-auto rounded-r-md"
+                  className="w-[162px] rounded-r-md xl:w-auto"
                   value="qualifications"
                 >
                   {t("tab2.trigger")}
