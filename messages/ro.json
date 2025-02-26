@@ -128,7 +128,7 @@
         "label": "Mesaj",
         "input": "Transmiteți un mesaj"
       },
-      "gdpr": "Sunt de acord cu prelucrarea datelor(GDPR)",
+      "gdpr": "Sunt de acord cu prelucrarea datelor personale(GDPR).",
       "btn": "Trimite",
       "reCaptcha": {
         "1": "Site protejat de reCAPTCHA și se aplică",
