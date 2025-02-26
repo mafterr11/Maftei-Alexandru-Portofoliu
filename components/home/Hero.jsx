@@ -99,7 +99,7 @@ const Hero = () => {
               height={800}
               priority={true}
               alt="Myriad Tech logo"
-              className="rounded-full border-2 border-accent object-cover"
+              className="rounded-lg border-2 border-accent object-cover transition-all duration-300 ease-linear hover:scale-[1.03] hover:rotate-[3deg]"
             />
           </MotionDiv>
         </div>
