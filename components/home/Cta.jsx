@@ -10,7 +10,7 @@ const Cta = () => {
   const tLink = useTranslations("Hero");
 
   return (
-    <section className="mb-44 bg-grainy py-24">
+    <section className="bg-grainy mb-44 py-24">
       <div className="container mx-auto">
         <div className="flex flex-col items-center">
           <MotionH2
@@ -18,10 +18,10 @@ const Cta = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, ammount: 0.4 }}
-            className="mb-6 flex max-w-3xl flex-col items-center justify-center gap-y-2 text-center"
+            className="mb-6 flex flex-col items-center justify-center gap-y-2 text-center"
           >
             {t("title")}
-            <span className="text-3xl font-medium md:max-xl:text-4xl">
+            <span className="text-3xl font-normal md:font-medium md:max-xl:text-4xl">
               {t("title2")}
             </span>
           </MotionH2>

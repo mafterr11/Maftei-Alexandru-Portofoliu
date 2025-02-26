@@ -22,9 +22,9 @@ const ContactPage = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, ammount: 0.4 }}
-              className="mb-4 flex items-center gap-x-4 text-lg text-accent"
+              className="text-accent mb-4 flex items-center gap-x-4 text-lg"
             >
-              <span className="h-[2px] w-[30px] bg-accent"></span>
+              <span className="bg-accent h-[2px] w-[30px]"></span>
               <div>{t("subtitle2")}</div>
             </MotionDiv>
             <MotionH1
@@ -52,7 +52,7 @@ const ContactPage = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, ammount: 0.4 }}
-            className="hidden w-full bg-contact bg-contain bg-top bg-no-repeat xl:flex"
+            className="bg-contact hidden w-full bg-contain bg-top bg-no-repeat xl:flex"
           />
         </div>
         {/* Details container */}
@@ -71,7 +71,7 @@ const ContactPage = () => {
               <a
                 href="tel:+40720425840"
                 target="blank"
-                className="transition-all duration-300 hover:scale-95 hover:text-accent"
+                className="hover:text-accent transition-all duration-300 hover:scale-95"
               >
                 +40.720.425.840
               </a>
@@ -98,7 +98,7 @@ const ContactPage = () => {
               <a
                 href="http://wa.me/+40720425840"
                 target="blank"
-                className="transition-all duration-300 hover:scale-95 hover:text-accent"
+                className="hover:text-accent transition-all duration-300 hover:scale-95"
               >
                 {t("whatsapp")}
               </a>
