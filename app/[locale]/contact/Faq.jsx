@@ -44,10 +44,12 @@ export default function Faq() {
         >
           <button
             onClick={() => setOpenItem(openItem === index ? null : index)}
-            className={`${openItem === index ? "bg-accent/90 text-white" : ""} hover:cursor-pointer flex w-full items-center justify-between bg-accent/5 p-4 text-left transition-colors`}
+            className={`${openItem === index ? "bg-accent/90 text-white" : ""} bg-accent/5 flex w-full items-center justify-between p-4 text-left transition-colors hover:cursor-pointer`}
           >
-            <span className="flex items-center text-lg font-semibold">
-              <span className="mr-3 text-2xl">{service.icon}</span>
+            <span
+              className={`flex items-center text-lg font-semibold ${service.icon === "📱" ? "gap-x-1" : ""}`}
+            >
+              <span className={`mr-3 text-2xl ${service.icon === "📱" ? "ml-1" : ""}`}>{service.icon}</span>
               {service.title}
             </span>
             <ChevronDownIcon
