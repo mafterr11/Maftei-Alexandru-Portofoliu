@@ -32,7 +32,7 @@ const ProjectCard = ({ project }) => {
             loading="lazy"
           />
           {/* btns */}
-          <div className="absolute top-3 right-1 flex flex-col gap-y-4">
+          <div className="absolute top-2 right-2 flex flex-col gap-y-4">
             <Link
               href={project.link}
               target="_"
@@ -57,7 +57,7 @@ const ProjectCard = ({ project }) => {
         <h4 className="mb-4">{project.name}</h4>
         <p className="text-lg">{project.description}</p>
       </div>
-      <div className="bg-accent absolute right-24 bottom-4 flex scale-0 items-center justify-center gap-x-1 rounded-md px-2 text-[16px] font-medium text-white opacity-0 transition-all duration-700 ease-in-out group-hover:scale-100 group-hover:opacity-100">
+      <div className="bg-accent absolute right-20 bottom-4 flex scale-0 items-center justify-center gap-x-1 rounded-md px-2 text-[16px] font-medium text-white opacity-0 transition-all duration-700 ease-in-out group-hover:scale-100 group-hover:opacity-100">
         {t("page.demo")} <ArrowRight />
       </div>
     </Card>
