@@ -10,11 +10,11 @@ import { useTranslations } from "next-intl";
 import { RiPhoneLine, RiWhatsappLine } from "react-icons/ri";
 
 const HireMe = () => {
-    const t = useTranslations("Nav");
+  const t = useTranslations("Nav");
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button size="sm" >{t("specialBtn.name")}</Button>
+        <Button size="sm">{t("specialBtn.name")}</Button>
       </DialogTrigger>
       <DialogContent>
         <DialogHeader>
@@ -30,7 +30,10 @@ const HireMe = () => {
               {t("specialBtn.wapp")}
             </a>
           </Button>
-          <Button size="sm" className="relative w-full bg-transparent text-black border-2 border-accent hover:bg-transparent">
+          <Button
+            size="sm"
+            className="border-accent relative w-full border-2 bg-transparent text-black hover:bg-transparent"
+          >
             <a href="tel:+40720425840" target="blank">
               <RiPhoneLine size={22} className="absolute left-4" />{" "}
               {t("specialBtn.tel")}
