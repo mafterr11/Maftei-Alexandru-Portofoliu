@@ -73,15 +73,14 @@
       "shop": "E-commerce",
       "others": "Others"
     },
-    "madiny": "This is a modern minimalist website with a captivating video background on the homepage. The platform brings body art to life with mastery and personalized web design, offering an immersive digital experience.",
-    "tng": "Navigate through the TNG Group portfolio with a presentation site that includes a personalized complex contact form, enhanced security with reCaptcha, and various elements modified with shadows.",
-    "manarh": "This full-stack website includes user authentication and a custom favorites section built from scratch, along with multiple customized elements according to client ideas.",
-    "monte-bianco": "This website includes an intuitive mobile dropdown menu, facilitating easy and accessible navigation on various devices. Users can effortlessly explore, significantly improving the navigation experience. The modern web design ensures optimal use on all platforms.",
-    "myriad-AI": "Thanks to the CMS integration, clients can easily manage content, making updates and personalization a hassle-free experience. Ideal for companies looking for an easy-to-maintain online presence and efficient web design solutions.",
-    "dianazu": "A simple portfolio page developed with smooth scrolling and a dynamic loading bar, offering an improved navigation experience and modern web design.",
-    "minionsUnite": "This online store offers secure authentication, ensuring a simple and safe shopping experience for customers. Ideal for businesses that need a versatile and reliable online store, the platform is optimized to deliver maximum performance and fluid navigation.",
-    "mbody": "Available in Romanian and English, this presentation site stands out with an interactive experience thanks to fluid animations and modern web design, ensuring a strong online presence.",
-    "pia": "We have developed a multi-step form, specially designed for auto dealers' events, focusing on a user-friendly interface and intuitive navigation, offering a simple and efficient user experience."
+    "madiny": "This is a modern, minimalist website with a captivating video background on the homepage. The platform masterfully brings body art to life, offering an immersive digital experience.",
+    "tng": "A presentation website that includes a complex, custom contact form with enhanced security through reCaptcha.",
+    "monte-bianco": "This website features an intuitive mobile dropdown menu, ensuring easy navigation, while the modern web design guarantees optimal usability across all platforms.",
+    "myriad-AI": "Thanks to CMS integration, clients can easily manage content, making updates and customization a seamless experience.",
+    "dianazu": "A simple portfolio page, developed with smooth scrolling and a dynamic loading bar.",
+    "minionsUnite": "This online store provides secure authentication, ensuring a simple and safe shopping experience for customers. Ideal for businesses that need a versatile and reliable online store.",
+    "mbody": "Available in both Romanian and English, this presentation website stands out with an interactive experience thanks to smooth animations and a modern web design.",
+    "pia": "I developed a multi-step form specifically designed for auto dealer events, focusing on a user-friendly interface and intuitive navigation, providing a smooth and efficient user experience."
   },
   "Nav": {
     "home": {

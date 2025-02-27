@@ -57,7 +57,7 @@ const About = () => {
     return arr.find((item) => item.title === title);
   };
   return (
-    <section className="pb-24 my-24">
+    <section className="my-24 pb-24">
       <div className="container mx-auto">
         <MotionH2
           variants={fadeIn("up", 0.4)}
@@ -76,7 +76,7 @@ const About = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, ammount: 0.4 }}
-            className="relative xl:h-[50vh] xl:w-[50vh] shrink-0 bg-no-repeat xl:flex xl:max-2xl:ml-4"
+            className="relative shrink-0 bg-no-repeat xl:flex xl:h-[50vh] xl:w-[50vh] xl:max-2xl:ml-4"
           >
             <Image
               src="/Alexandru Maftei poza de profil.jpg"
@@ -84,7 +84,7 @@ const About = () => {
               height={800}
               loading="lazy"
               alt="Alexandru Maftei poza de profil"
-              className="border-accent md:max-xl:hidden rounded-lg border-2 object-cover transition-all duration-300 ease-in-out hover:scale-[1.03] hover:rotate-[-3deg]"
+              className="border-accent rounded-lg border-2 object-cover transition-all duration-300 ease-in-out hover:scale-[1.03] hover:rotate-[-3deg] md:max-xl:hidden"
             />
           </MotionDiv>
           {/* Tabs */}
