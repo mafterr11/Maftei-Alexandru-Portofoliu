@@ -84,7 +84,7 @@ const About = () => {
               height={800}
               loading="lazy"
               alt="Alexandru Maftei poza de profil"
-              className="border-accent rounded-lg border-2 object-cover transition-all duration-300 ease-in-out hover:scale-[1.03] hover:rotate-[-3deg] md:max-xl:hidden"
+              className="border-accent rounded-lg border-2 object-cover transition-transform duration-300 ease-in-out hover:scale-[1.03] hover:rotate-[-3deg] md:max-xl:hidden"
             />
           </MotionDiv>
           {/* Tabs */}
