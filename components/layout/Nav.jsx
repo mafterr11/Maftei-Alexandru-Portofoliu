@@ -2,8 +2,11 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import LocalSwitcher from "../ui/LocalSwitcher";;
+import LocalSwitcher from "../ui/LocalSwitcher";
 import HireMe from "./HireMe";
+import { MotionDiv } from "@/lib/motion-client";
+import { useState } from "react";
+import { motion } from "framer-motion";
 
 const Nav = ({ containerStyles, linkStyles }) => {
   const t = useTranslations("Nav");
@@ -23,22 +26,30 @@ const Nav = ({ containerStyles, linkStyles }) => {
     },
   ];
   const currentRoute = usePathname();
+  const [hovered, setHovered] = useState(t("home.name"));
   return (
     <nav className={`${containerStyles}`}>
       <div className="flex items-center justify-center gap-x-8">
         {links.map((link, index) => {
           return (
-            <Link
+            <MotionDiv
               key={index}
-              href={link.path}
-              className={`${linkStyles} ${
-                currentRoute === link.path
-                  ? "text-base capitalize underline decoration-accent decoration-2 underline-offset-[0.5rem] hover:scale-[0.97]"
-                  : "hover text-base capitalize hover:scale-[0.97]"
-              }`}
+              onHoverStart={() => setHovered(link.name)}
+              className="relative"
             >
-              <span>{link.name}</span>
-            </Link>
+              <Link
+                href={link.path}
+                className={`${linkStyles} relative text-base capitalize ${hovered === link.name && "z-50 p-1.5 text-white"}`}
+              >
+                {link.name}
+              </Link>
+              {hovered === link.name && (
+                <motion.span
+                  layoutId="highlight"
+                  className="bg-accent absolute inset-0 z-40 rounded-xs"
+                ></motion.span>
+              )}
+            </MotionDiv>
           );
         })}
       </div>
