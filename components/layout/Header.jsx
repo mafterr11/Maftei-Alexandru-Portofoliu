@@ -4,7 +4,7 @@ import Logo from "./Logo";
 
 const Header = () => {
   return (
-    <header className="border-accent/60 bg-body fixed top-0 right-0 left-0 z-50 mx-auto w-full border-b-[2px] py-3 text-black shadow-md transition-all duration-200 ">
+    <header className="border-accent/90 bg-body fixed top-5 right-0 left-0 z-50 mx-auto w-[70%] border-b-2 py-3 text-black shadow-md transition-all duration-200 max-xl:top-0 max-xl:w-full xl:rounded-md xl:border-2">
       <div>
         <div className="flex items-center justify-between px-7 py-2 max-md:py-1 md:px-12 md:max-lg:justify-between xl:gap-x-32">
           <Logo source={"/Myriad Tech header logo.png"} size={"h-7"} />
