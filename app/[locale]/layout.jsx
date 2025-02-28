@@ -10,6 +10,7 @@ import { Suspense } from "react";
 import GoogleAnalytics from "@/components/google-analytics";
 import CookieBanner from "@/components/cookie-banner";
 import { getMessages } from "next-intl/server";
+import LenisScroll from "./LenisScroll";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -40,7 +41,9 @@ export default async function RootLayout({ children, params }) {
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
-          <main>{children}</main>
+          <main>
+            <LenisScroll/>
+            {children}</main>
           <CookieBanner />
           <Analytics />
           <Footer />
