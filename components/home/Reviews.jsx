@@ -3,6 +3,8 @@ import { Star } from "lucide-react";
 import HalfStar from "../ui/half-star";
 import { Dot } from "../Dot";
 import { useTranslations } from "next-intl";
+import { MotionDiv, MotionH2 } from "@/lib/motion-client";
+import { fadeIn } from "@/variants";
 
 export function Reviews() {
   const t = useTranslations("Reviews");
@@ -41,15 +43,28 @@ export function Reviews() {
 
   return (
     <section className="relative mb-12 flex h-[45rem] flex-col items-center justify-center overflow-hidden rounded-md antialiased xl:mb-24">
-      <h2 className="section-title mb-16">
+      <MotionH2
+        variants={fadeIn("down", 0.4)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true, ammount: 0.4 }}
+        className="section-title mb-16"
+      >
         <Dot />
         {t("title")}
-      </h2>
-      <InfiniteMovingCards
-        items={testimonials}
-        direction="left"
-        speed="slow"
-      />
+      </MotionH2>
+      <MotionDiv
+        variants={fadeIn("down", 0.6)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true, ammount: 0.4 }}
+      >
+        <InfiniteMovingCards
+          items={testimonials}
+          direction="left"
+          speed="slow"
+        />
+      </MotionDiv>
     </section>
   );
 }

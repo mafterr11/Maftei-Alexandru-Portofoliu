@@ -24,13 +24,13 @@ const Services = () => {
       icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
       title: "Web Design",
       description: t("first.description"),
-      speed: 0.5,
+      speed: 0.6,
     },
     {
       icon: <Gem size={72} strokeWidth={0.8} />,
       title: "SEO",
       description: t("third.description"),
-      speed: 0.8,
+      speed: 1,
     },
     // {
     //   icon: <Gem size={72} strokeWidth={0.8} />,

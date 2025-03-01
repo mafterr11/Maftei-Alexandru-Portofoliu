@@ -25,7 +25,7 @@ const Nav = ({ containerStyles, linkStyles }) => {
       name: t("contact.name"),
     },
   ];
-  const [hovered, setHovered] = useState(null);
+  const [hovered, setHovered] = useState(t("home.name"));
   return (
     <nav className={`${containerStyles}`}>
       <div className="flex items-center justify-center gap-x-8">

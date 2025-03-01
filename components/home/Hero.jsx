@@ -9,7 +9,7 @@ import { MotionDiv, MotionH1, MotionP } from "@/lib/motion-client";
 const Hero = () => {
   const t = useTranslations("Hero");
   return (
-    <section className="mb-24 bg-grainy pt-24 pb-8 xl:pt-56 xl:pb-24">
+    <section className="mb-24 bg-grainy pt-24 pb-8 xl:pt-56 xl:pb-24 h-screen">
       <div className="container mx-auto">
         <div className="relative flex justify-between items-center gap-x-8 xl:px-6 2xl:px-20">
           {/* text */}

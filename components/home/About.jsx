@@ -60,7 +60,7 @@ const About = () => {
     <section className="my-24 pb-24">
       <div className="container mx-auto">
         <MotionH2
-          variants={fadeIn("up", 0.4)}
+          variants={fadeIn("down", 0.4)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, ammount: 0.4 }}
@@ -72,7 +72,7 @@ const About = () => {
         <div className="flex flex-col-reverse items-center justify-center gap-x-32 xl:flex-row">
           {/* Image */}
           <MotionDiv
-            variants={fadeIn("down", 0.4)}
+            variants={fadeIn("down", 0.6)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, ammount: 0.4 }}
