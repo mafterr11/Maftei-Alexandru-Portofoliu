@@ -137,7 +137,7 @@ export default function SolicitatiOfertaForm() {
     <>
       <Form {...form}>
         <form
-          className="mt-4 space-y-2 xs:space-y-4"
+          className="xs:space-y-4 mt-4 space-y-2"
           onSubmit={form.handleSubmit(onSubmit)}
         >
           {/* Name */}
@@ -150,7 +150,7 @@ export default function SolicitatiOfertaForm() {
                   <FormControl as="div">
                     <div className="">
                       <Label>{t("form.name.label")}</Label>
-                      <div className="relative flex items-center">
+                      <div className="group relative flex items-center">
                         <Input
                           placeholder={t("form.name.input")}
                           type="name"
@@ -213,7 +213,7 @@ export default function SolicitatiOfertaForm() {
                           {...field}
                         />
                         <PhoneIcon
-                          className="absolute right-6 top-4"
+                          className="absolute top-4 right-6"
                           size={20}
                         />
                       </div>
@@ -241,7 +241,7 @@ export default function SolicitatiOfertaForm() {
                           {...field}
                         />
                         <MessageSquare
-                          className="absolute right-6 top-4"
+                          className="absolute top-4 right-6"
                           size={20}
                         />
                       </div>
