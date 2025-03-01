@@ -51,7 +51,7 @@ const ProjectCard = ({ project }) => {
         <h4 className="mb-4">{project.name}</h4>
         <p className="text-lg leading-7">{project.description}</p>
       </div>
-      <div className="bg-accent absolute inset-x-0 bottom-4 mx-auto flex w-[50%] xl:scale-0 items-center justify-center gap-x-1 rounded-md px-2 text-[16px] font-medium text-white xl:opacity-0 transition-all duration-700 ease-in-out xl:group-hover:scale-100 xl:group-hover:opacity-100">
+      <div className="bg-accent absolute inset-x-0 bottom-4 mx-auto flex w-[50%] xl:scale-0 items-center justify-center gap-x-1 rounded-md px-2 text-[16px] max-xl:text-[14px] font-medium text-white xl:opacity-0 transition-all duration-700 ease-in-out xl:group-hover:scale-100 xl:group-hover:opacity-100">
         {t("page.demo")} <ArrowRight />
       </div>
     </Card>
