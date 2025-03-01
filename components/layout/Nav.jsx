@@ -45,7 +45,7 @@ const Nav = ({ containerStyles, linkStyles }) => {
               {hovered === link.name && (
                 <motion.span
                   layoutId="highlight"
-                  className="bg-accent absolute inset-0 z-40 rounded-xs"
+                  className="bg-accent absolute inset-0 z-40 rounded-sm"
                 ></motion.span>
               )}
             </MotionDiv>
