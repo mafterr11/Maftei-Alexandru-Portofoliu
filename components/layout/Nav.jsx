@@ -38,7 +38,7 @@ const Nav = ({ containerStyles, linkStyles }) => {
             >
               <Link
                 href={link.path}
-                className={`${linkStyles} relative text-base capitalize ${hovered === link.name && "z-50 p-1.5 text-white"}`}
+                className={`${linkStyles} relative   ${hovered === link.name && "z-50 p-1.5 text-white"}`}
               >
                 {link.name}
               </Link>

@@ -10,7 +10,7 @@ const Header = () => {
           <Logo source={"/Myriad Tech header logo.png"} size={"h-7"} />
           <Nav
             containerStyles="hidden xl:flex items-center gap-x-16"
-            linkStyles="text-xl"
+            linkStyles="text-base uppercase"
           />
           <NavMobile
             containerStyles="xl:hidden"
