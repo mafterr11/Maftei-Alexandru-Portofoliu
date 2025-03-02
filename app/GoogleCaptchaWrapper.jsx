@@ -1,5 +1,3 @@
-"use client";
-import React from "react";
 import { ReCaptchaProvider } from "next-recaptcha-v3";
 
 export default function GoogleCaptchaWrapper({ children }) {
