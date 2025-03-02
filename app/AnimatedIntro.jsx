@@ -1,9 +1,9 @@
 "use client";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
-  //  Word animation on enter
-  //  Word animation on enter
-  //  Word animation on enter
+//  Word animation on enter
+//  Word animation on enter
+//  Word animation on enter
 
 // Animation Variants
 const wordVariants = {

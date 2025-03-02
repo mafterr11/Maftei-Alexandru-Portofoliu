@@ -2,9 +2,9 @@
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import AnimatedIntro from "./AnimatedIntro";
-  //  Word animation on enter
-  //  Word animation on enter
-  //  Word animation on enter
+//  Word animation on enter
+//  Word animation on enter
+//  Word animation on enter
 
 const AnimatedGreeting = ({ children }) => {
   const pathname = usePathname(); // Detect the current page

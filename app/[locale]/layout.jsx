@@ -27,7 +27,7 @@ const recursive = Recursive({
 export const metadata = constructMetadata();
 
 export default async function RootLayout({ children, params }) {
-  const { locale } = params;
+  const { locale } = await params;
   const messages = await getMessages(locale);
 
   return (
