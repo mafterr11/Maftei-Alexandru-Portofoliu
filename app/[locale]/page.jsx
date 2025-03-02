@@ -1,20 +1,6 @@
 import Hero from "@/components/home/Hero";
 import { Reviews } from "@/components/home/Reviews";
-import dynamic from "next/dynamic";
 
-// Use dynamic for lazy loading non-critical components
-const About = dynamic(() => import("@/components/home/About"), {
-  ssr: false, // Load only on client
-});
-const Services = dynamic(() => import("@/components/home/Services"), {
-  ssr: false, // Load only on client
-});
-const Work = dynamic(() => import("@/components/home/Work"), {
-  ssr: false, // Load only on client
-});
-const Cta = dynamic(() => import("@/components/home/Cta"), {
-  ssr: false, // Load only on client
-});
 
 export default function Home() {
   return (

@@ -1,3 +1,4 @@
+"use client";
 import { InfiniteMovingCards } from "../ui/infinite-cards";
 import { Star } from "lucide-react";
 import HalfStar from "../ui/half-star";
