@@ -22,12 +22,12 @@ const AnimatedIntro = ({ children }) => {
 
   useEffect(() => {
     if (index < words.length) {
-      const interval = setInterval(() => setIndex((prev) => prev + 1), 500);
+      const interval = setInterval(() => setIndex((prev) => prev + 1), 700);
       return () => clearInterval(interval);
     } else {
       // Start fading out the black background while fading in the homepage
       setTimeout(() => setStartPageFade(true), 300); // Overlap transition
-      setTimeout(() => setShowHomePage(true), 1000); // Ensure no gap
+      setTimeout(() => setShowHomePage(true), 700); // Ensure no gap
     }
   }, [index, words.length]);
 
