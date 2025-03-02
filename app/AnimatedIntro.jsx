@@ -52,11 +52,11 @@ const AnimatedIntro = ({ children }) => {
           initial={{ opacity: 1 }}
           animate={{ opacity: startPageFade ? 0 : 1 }}
           exit={{ opacity: 0, transition: { duration: 1 } }}
-          className="fixed inset-0 z-50 flex h-screen w-screen items-center justify-center overflow-hidden bg-black text-white"
+          className="fixed inset-0 z-50 flex h-screen w-screen items-center justify-center bg-black text-white"
         >
           <motion.div
             key={index}
-            className="absolute top-1/2 text-4xl font-bold"
+            className="flex items-center justify-center text-4xl font-bold"
           >
             <motion.span {...wordVariants}>
               {index < words.length ? words[index] : ""}
