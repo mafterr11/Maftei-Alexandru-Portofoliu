@@ -11,6 +11,7 @@ import GoogleAnalytics from "@/components/google-analytics";
 import CookieBanner from "@/components/cookie-banner";
 import { getMessages } from "next-intl/server";
 import LenisScroll from "./LenisScroll";
+import AnimatedGreeting from "../AnimatedGreeting";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -26,29 +27,30 @@ const recursive = Recursive({
 export const metadata = constructMetadata();
 
 export default async function RootLayout({ children, params }) {
-  const { locale } = await params;
+  const { locale } = params;
   const messages = await getMessages(locale);
 
   return (
     <html lang={locale}>
-      {/* Google Analytics */}
       <Suspense fallback={null}>
         <GoogleAnalytics GA_MEASUREMENT_ID="G-EB4XXB3ES6" />
       </Suspense>
-      {/* Google Analytics */}
       <body
         className={`${roboto.variable} ${recursive.variable} overflow-x-hidden`}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <Header />
-          <main>
-            <LenisScroll/>
-            {children}
+          {/* Word animation on enter AnimatedGreeting*/}
+          <AnimatedGreeting>
+            <Header />
+            <main>
+              <LenisScroll />
+              {children}
             </main>
-          <Footer />
-          <CookieBanner />
-          <Analytics />
-          <Toaster />
+            <Footer />
+            <CookieBanner />
+            <Analytics />
+            <Toaster />
+          </AnimatedGreeting>
         </NextIntlClientProvider>
       </body>
     </html>
