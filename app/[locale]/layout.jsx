@@ -43,10 +43,11 @@ export default async function RootLayout({ children, params }) {
           <Header />
           <main>
             <LenisScroll/>
-            {children}</main>
+            {children}
+            </main>
+          <Footer />
           <CookieBanner />
           <Analytics />
-          <Footer />
           <Toaster />
         </NextIntlClientProvider>
       </body>
