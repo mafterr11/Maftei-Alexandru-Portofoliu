@@ -21,7 +21,11 @@ const AnimatedGreeting = ({ children }) => {
     }
   }, [isHomePage]);
 
-  return showIntro ? <AnimatedIntro>{children}</AnimatedIntro> : children;
+  return showIntro ? (
+    <AnimatedIntro>{children}</AnimatedIntro>
+  ) : (
+    <>{children}</>
+  );
 };
 
 export default AnimatedGreeting;

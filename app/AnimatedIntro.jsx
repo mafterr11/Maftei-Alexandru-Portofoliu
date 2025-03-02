@@ -1,11 +1,10 @@
 "use client";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 //  Word animation on enter
 //  Word animation on enter
 //  Word animation on enter
 
-// Animation Variants
 const wordVariants = {
   initial: { opacity: 0, y: 20, scale: 0.5 },
   animate: { opacity: 1, y: 0, scale: 1 },
@@ -13,12 +12,12 @@ const wordVariants = {
   transition: { duration: 0.5, ease: "easeInOut" },
 };
 
-// Animated Intro Component
 const AnimatedIntro = ({ children }) => {
   const words = ["Hello 🔥", "Salutare 👾", "Gutten ✔️", "Bonjour 😏"];
-  // const words = text.split(" ");
   const [index, setIndex] = useState(0);
+  // Black BG intro page fade timing
   const [startPageFade, setStartPageFade] = useState(false);
+  // Home page fade timing
   const [showHomePage, setShowHomePage] = useState(false);
 
   useEffect(() => {
