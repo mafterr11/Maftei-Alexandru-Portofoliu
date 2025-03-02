@@ -11,14 +11,15 @@ const AnimatedGreeting = ({ children }) => {
 
   useEffect(() => {
     setHasMounted(true); // Ensure proper mounting in SSR
-
     const hasVisited = sessionStorage.getItem("hasVisitedHomePage");
+
     if (!hasVisited && isHomePage) {
       sessionStorage.setItem("hasVisitedHomePage", "true");
       setShowIntro(true);
     } else {
       setShowIntro(false); // Skip animation if already visited
     }
+    
   }, [isHomePage]);
 
   // Prevent flicker: Only render if mounted
