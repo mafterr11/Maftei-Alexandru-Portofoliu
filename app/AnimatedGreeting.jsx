@@ -2,30 +2,29 @@
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import AnimatedIntro from "./AnimatedIntro";
-//  Word animation on enter
-//  Word animation on enter
-//  Word animation on enter
 
 const AnimatedGreeting = ({ children }) => {
-  const pathname = usePathname(); // Detect the current page
-  const isHomePage = pathname === "/ro" || pathname === "/en"; // Ensure correct check
-  const [showIntro, setShowIntro] = useState(false);
+  const pathname = usePathname();
+  const isHomePage = pathname === "/ro" || pathname === "/en";
+  const [showIntro, setShowIntro] = useState(true); // Start with intro visible
+  const [hasMounted, setHasMounted] = useState(false); // Prevent hydration issues
 
   useEffect(() => {
-    // Check if the intro has been played before
-    const hasVisited = sessionStorage.getItem("hasVisitedHomePage");
+    setHasMounted(true); // Ensure proper mounting in SSR
 
+    const hasVisited = sessionStorage.getItem("hasVisitedHomePage");
     if (!hasVisited && isHomePage) {
+      sessionStorage.setItem("hasVisitedHomePage", "true");
       setShowIntro(true);
-      sessionStorage.setItem("hasVisitedHomePage", "true"); // Mark as visited
+    } else {
+      setShowIntro(false); // Skip animation if already visited
     }
   }, [isHomePage]);
 
-  return showIntro ? (
-    <AnimatedIntro>{children}</AnimatedIntro>
-  ) : (
-    <>{children}</>
-  );
+  // Prevent flicker: Only render if mounted
+  if (!hasMounted) return null;
+
+  return showIntro ? <AnimatedIntro>{children}</AnimatedIntro> : <>{children}</>;
 };
 
 export default AnimatedGreeting;
