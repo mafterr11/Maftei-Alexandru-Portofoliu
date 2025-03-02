@@ -1,3 +1,4 @@
+"use client"
 import { InfiniteMovingCards } from "../ui/infinite-cards";
 import { Star } from "lucide-react";
 import HalfStar from "../ui/half-star";
@@ -6,7 +7,7 @@ import { useTranslations } from "next-intl";
 import { MotionDiv, MotionH2 } from "@/lib/motion-client";
 import { fadeIn } from "@/variants";
 
-export function Reviews() {
+const Reviews = () => {
   const t = useTranslations("Reviews");
   const testimonials = [
     {
@@ -67,4 +68,6 @@ export function Reviews() {
       </MotionDiv>
     </section>
   );
-}
+};
+
+export default Reviews;

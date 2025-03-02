@@ -18,7 +18,7 @@ const Hero = () => {
             <MotionDiv
               variants={fadeIn("down", 0.2)}
               initial="hidden"
-              whileInView={"show"}
+              animate={"show"}
               viewport={{ once: true, ammount: 0.4 }}
               className="font-recursive text-accent mb-4 text-lg font-semibold tracking-[4px] uppercase"
             >
@@ -27,7 +27,7 @@ const Hero = () => {
             <MotionH1
               variants={fadeIn("down", 0.4)}
               initial="hidden"
-              whileInView={"show"}
+              animate={"show"}
               viewport={{ once: true, ammount: 0.4 }}
               className="mb-4"
             >
@@ -36,7 +36,7 @@ const Hero = () => {
             <MotionP
               variants={fadeIn("down", 0.6)}
               initial="hidden"
-              whileInView={"show"}
+              animate={"show"}
               viewport={{ once: true, ammount: 0.4 }}
               className="subtitle mx-auto max-w-[490px] max-xl:text-balance xl:mx-0"
             >
@@ -51,7 +51,7 @@ const Hero = () => {
               <MotionDiv
                 variants={fadeIn("right", 0.8)}
                 initial="hidden"
-                whileInView={"show"}
+                animate={"show"}
                 viewport={{ once: true, ammount: 0.4 }}
               >
                 <Link href={t("contact-link")}>
@@ -67,7 +67,7 @@ const Hero = () => {
               <MotionDiv
                 variants={fadeIn("left", 0.8)}
                 initial="hidden"
-                whileInView={"show"}
+                animate={"show"}
                 viewport={{ once: true, ammount: 0.4 }}
               >
                 <a
@@ -94,7 +94,7 @@ const Hero = () => {
           <MotionDiv
             variants={fadeIn("down", 0.4)}
             initial="hidden"
-            whileInView={"show"}
+            animate={"show"}
             viewport={{ once: true, ammount: 0.4 }}
             className="hidden h-[500px] w-[500px] shrink-0 bg-no-repeat xl:flex"
           >
