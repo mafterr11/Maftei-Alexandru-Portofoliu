@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 import { Button } from "../ui/button";
 import { Download, Send } from "lucide-react";
@@ -6,20 +5,9 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { fadeIn } from "@/variants";
 import { MotionDiv, MotionH1, MotionP } from "@/lib/motion-client";
-import { useEffect, useState } from "react";
 
 const Hero = () => {
   const t = useTranslations("Hero");
-  //  Word animation on enter
-  const [firstVisit, setFirstVisit] = useState(false);
-
-  useEffect(() => {
-    const hasVisited = sessionStorage.getItem("hasVisitedHomePage");
-    if (!hasVisited) {
-      setFirstVisit(true);
-    }
-  }, []);
-  //  Word animation on enter
 
   return (
     <section className="bg-grainy mb-24 h-screen pt-24 pb-8 xl:pt-56 xl:pb-24">
@@ -28,16 +16,16 @@ const Hero = () => {
           {/* text */}
           <div className="mx-auto flex max-w-[750px] flex-col text-center xl:mx-0 xl:text-left">
             <MotionDiv
-              variants={fadeIn("down", firstVisit ? 2.7 : 0.2)}
+              variants={fadeIn("down", 0.2)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: true, ammount: firstVisit ? 2.9 : 0.4 }}
+              viewport={{ once: true, ammount: 0.4 }}
               className="font-recursive text-accent mb-4 text-lg font-semibold tracking-[4px] uppercase"
             >
               Alexandru Maftei
             </MotionDiv>
             <MotionH1
-              variants={fadeIn("down", firstVisit ? 2.9 : 0.4)}
+              variants={fadeIn("down", 0.4)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, ammount: 0.4 }}
@@ -46,7 +34,7 @@ const Hero = () => {
               {t("title")}
             </MotionH1>
             <MotionP
-              variants={fadeIn("down", firstVisit ? 3.1 : 0.6)}
+              variants={fadeIn("down", 0.6)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, ammount: 0.4 }}
@@ -61,7 +49,7 @@ const Hero = () => {
             {/* buttons */}
             <div className="mx-auto mb-12 flex flex-col gap-x-3 gap-y-3 md:flex-row xl:mx-0">
               <MotionDiv
-                variants={fadeIn("right", firstVisit ? 3.3 : 0.8)}
+                variants={fadeIn("right", 0.8)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: true, ammount: 0.4 }}
@@ -77,7 +65,7 @@ const Hero = () => {
                 </Link>
               </MotionDiv>
               <MotionDiv
-                variants={fadeIn("left", firstVisit ? 3.3 : 0.8)}
+                variants={fadeIn("left", 0.8)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: true, ammount: 0.4 }}
@@ -104,7 +92,7 @@ const Hero = () => {
           </div>
           {/* image */}
           <MotionDiv
-            variants={fadeIn("down", firstVisit ? 2.9 : 0.4)}
+            variants={fadeIn("down", 0.4)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, ammount: 0.4 }}
