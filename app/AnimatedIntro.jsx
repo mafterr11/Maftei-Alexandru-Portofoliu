@@ -55,7 +55,7 @@ const AnimatedIntro = ({ children }) => {
         >
           <motion.div
             key={index}
-            className="flex items-center justify-center text-4xl font-bold"
+            className="flex items-center justify-center text-4xl font-bold max-md:pb-24"
           >
             <motion.span {...wordVariants}>
               {index < words.length ? words[index] : ""}

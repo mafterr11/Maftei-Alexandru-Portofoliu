@@ -47,7 +47,7 @@ const ProjectsPage = () => {
                   <TabsTrigger
                     value={category}
                     key={index}
-                    className={`w-[162px]  md:w-auto ${category === "All Projects" ? "rounded-l-[5px]" : category === "Others" ? "rounded-r-[5px]" : ""}`}
+                    className={`w-[162px] md:w-auto ${category === "All Projects" ? "rounded-l-[5px]" : category === "Others" ? "rounded-r-[5px]" : ""}`}
                     onClick={() => setCategory(category)}
                   >
                     {category}
@@ -62,7 +62,7 @@ const ProjectsPage = () => {
                 {filteredProjects.map((project, index) => {
                   return (
                     <TabsContent value={category} key={index}>
-                      <ProjectCard project={project} />
+                        <ProjectCard project={project} />
                     </TabsContent>
                   );
                 })}
