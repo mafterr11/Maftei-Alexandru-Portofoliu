@@ -24,7 +24,7 @@ const ProjectCard = ({ project }) => {
         <div className="bg-accent/15 bg-work relative flex h-[250px] w-full items-center justify-center bg-[110%] bg-no-repeat">
           {/* 1920 x 1079 pozele de proiect */}
           <Image
-            className="absolute bottom-0 h-[200px] w-[340px] rounded-t-md object-cover shadow-2xl"
+            className="absolute bottom-0 h-[200px] w-[340px] rounded-t-xs object-cover shadow-2xl"
             src={project.image}
             width={500}
             height={500}

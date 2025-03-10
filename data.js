@@ -33,6 +33,14 @@ const rawData = [
     // github: "https://github.com/mafterr11/TNG-GRUP",
   },
   {
+    image: "/work/bavagaz.png",
+    categoryKey: "category.presentation",
+    name: "BAVA GAZ CONSTRUCT",
+    descriptionKey: "bavagaz",
+    link: "https://www.bavagazconstruct.ro",
+    // github: "https://github.com/mafterr11/TNG-GRUP",
+  },
+  {
     image: "/work/mbody.png",
     categoryKey: "category.presentation",
     name: "MBody Evolution",
