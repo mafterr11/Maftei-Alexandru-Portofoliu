@@ -55,18 +55,18 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
       </div>
       <aside
         className={`${
-          isMenuOpen ? "right-0 top-0" : "-right-full -top-full"
-        } fixed bottom-0 top-0 z-20 w-full transition-all duration-700 ease-in-out`}
+          isMenuOpen ? "top-0 right-0" : "-top-full -right-full"
+        } fixed top-0 bottom-0 z-20 w-full transition-all duration-700 ease-in-out`}
         onClick={() => setIsMenuOpen(false)}
       >
         <div
           onClick={(e) => e.stopPropagation()}
-          className="absolute bottom-0 right-0 top-0 flex h-screen-vh flex-col items-center justify-between border-l-2 border-accent bg-body px-8 pb-4 pt-8 text-black"
+          className="h-screen-vh border-accent bg-body absolute top-0 right-0 bottom-0 flex flex-col items-center justify-between border-l-2 px-8 pt-8 pb-4 text-black"
         >
           {/* Close btn */}
           <div
             onClick={() => setIsMenuOpen(false)}
-            className="absolute right-3 top-2 flex h-8 w-8 cursor-pointer items-center justify-center text-4xl"
+            className="absolute top-2 right-3 flex h-8 w-8 cursor-pointer items-center justify-center text-4xl"
           >
             <IoCloseOutline />
           </div>
