@@ -137,7 +137,7 @@ export default function SolicitatiOfertaForm() {
     <>
       <Form {...form}>
         <form
-          className="xs:space-y-4 mt-4 space-y-2"
+          className="xs:space-y-6 mt-4 space-y-2"
           onSubmit={form.handleSubmit(onSubmit)}
         >
           {/* Name */}
@@ -146,7 +146,7 @@ export default function SolicitatiOfertaForm() {
               control={form.control}
               name="nume"
               render={({ field }) => (
-                <FormItem>
+                <FormItem className="relative">
                   <FormControl as="div">
                     <div className="">
                       <Label>{t("form.name.label")}</Label>
@@ -159,10 +159,10 @@ export default function SolicitatiOfertaForm() {
                           {...field}
                         />
                         <User className="absolute right-6" size={20} />
+                        <FormMessage className="text-red absolute top-full left-0 -mt-0.5 text-sm" />
                       </div>
                     </div>
                   </FormControl>
-                  <FormMessage className="text-red" />
                 </FormItem>
               )}
             />
@@ -173,8 +173,8 @@ export default function SolicitatiOfertaForm() {
               control={form.control}
               name="email"
               render={({ field }) => (
-                <FormItem>
-                  <FormControl>
+                <FormItem className="relative">
+                  <FormControl as="div">
                     <div>
                       <Label>{t("form.email.label")}</Label>
                       <div className="relative flex items-center">
@@ -186,10 +186,10 @@ export default function SolicitatiOfertaForm() {
                           {...field}
                         />
                         <MailIcon className="absolute right-6" size={20} />
+                        <FormMessage className="text-red absolute top-full left-0 -mt-0.5 text-sm" />
                       </div>
                     </div>
                   </FormControl>
-                  <FormMessage className="text-red" />
                 </FormItem>
               )}
             />
@@ -200,8 +200,8 @@ export default function SolicitatiOfertaForm() {
               control={form.control}
               name="telefon"
               render={({ field }) => (
-                <FormItem>
-                  <FormControl>
+                <FormItem className="relative">
+                  <FormControl as="div">
                     <div>
                       <Label>{t("form.tel.label")}</Label>
                       <div className="relative flex items-center">
@@ -216,10 +216,10 @@ export default function SolicitatiOfertaForm() {
                           className="absolute top-4 right-6"
                           size={20}
                         />
+                        <FormMessage className="text-red absolute top-full left-0 -mt-0.5 text-sm" />
                       </div>
                     </div>
                   </FormControl>
-                  <FormMessage className="text-red" />
                 </FormItem>
               )}
             />
@@ -230,8 +230,8 @@ export default function SolicitatiOfertaForm() {
               control={form.control}
               name="mesaj"
               render={({ field }) => (
-                <FormItem>
-                  <FormControl>
+                <FormItem className="relative">
+                  <FormControl as="div">
                     <div>
                       <Label>{t("form.msg.label")}</Label>
                       <div className="relative flex items-center">
@@ -244,10 +244,10 @@ export default function SolicitatiOfertaForm() {
                           className="absolute top-4 right-6"
                           size={20}
                         />
+                        <FormMessage className="text-red absolute top-full left-0 -mt-0.5 text-sm" />
                       </div>
                     </div>
                   </FormControl>
-                  <FormMessage className="text-red" />
                 </FormItem>
               )}
             />
@@ -258,7 +258,7 @@ export default function SolicitatiOfertaForm() {
               control={form.control}
               name="acceptTerms"
               render={({ field }) => (
-                <FormItem>
+                <FormItem className="relative">
                   <FormControl
                     as="label"
                     className="flex items-center space-x-3 pl-1"
@@ -271,10 +271,11 @@ export default function SolicitatiOfertaForm() {
                         checked={field.value}
                         className="h-[15px] w-[15px]"
                       />
+                      <FormMessage className="text-red absolute top-full left-0 -mt-0.5 text-sm" />
+
                       <span className="text-[15px]">{t("form.gdpr")}</span>
                     </div>
                   </FormControl>
-                  <FormMessage className="text-red" />
                 </FormItem>
               )}
             />
