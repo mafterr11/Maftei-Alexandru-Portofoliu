@@ -65,7 +65,7 @@ const MobileAnimatedButtonTest = () => {
             closed: {
               rotate: ["45deg", "0deg", "0deg"],
               bottom: ["50%", "50%", "35%"],
-              left: "calc(50% + 10px)"
+              left: "calc(50% + 10px)",
             },
           }}
           transition={{
