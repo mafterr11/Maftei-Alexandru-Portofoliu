@@ -10,7 +10,7 @@ import Logo from "./Logo";
 import LocalSwitcher from "../ui/LocalSwitcher";
 import HireMe from "./HireMe";
 
-const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
+const NavMobile = () => {
   const t = useTranslations("Nav");
   const links = [
     {
@@ -31,33 +31,21 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
   ];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const setVh = () => {
-      const vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty("--vh", `${vh}px`);
-    };
-
-    setVh();
-    window.addEventListener("resize", setVh);
-
-    return () => {
-      window.removeEventListener("resize", setVh);
-    };
-  }, []);
   return (
-    <div className={`${containerStyles}`}>
+    <div className="xl:hidden">
       {/* Nav trigger btn */}
       <div
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className={`${isMenuOpen ? "opacity-20" : "opacity-100"} cursor-pointer outline-hidden transition-all duration-500`}
+        className="cursor-pointer outline-hidden"
       >
         <RiMenu2Line className="text-4xl" />
       </div>
+      {/* Nav contents wrapper */}
       <aside
         className={`${
           isMenuOpen ? "top-0 right-0" : "-top-full -right-full"
         } fixed top-0 bottom-0 z-20 w-full transition-all duration-700 ease-in-out`}
-        onClick={() => setIsMenuOpen(false)}
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
         <div
           onClick={(e) => e.stopPropagation()}
@@ -65,13 +53,13 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
         >
           {/* Close btn */}
           <div
-            onClick={() => setIsMenuOpen(false)}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="absolute top-2 right-3 flex h-8 w-8 cursor-pointer items-center justify-center text-4xl"
           >
             <IoCloseOutline />
           </div>
           {/* Logo */}
-          <div onClick={() => setIsMenuOpen(false)} className="mt-3">
+          <div onClick={() => setIsMenuOpen(!isMenuOpen)} className="mt-3">
             <Logo
               source={"/Myriad Tech header logo telefon.png"}
               size={"h-[3.75rem]"}
@@ -85,10 +73,10 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
                   key={index}
                   href={link.path}
                   className="justify-base hover:text-orange flex items-center gap-x-3"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >
-                  <div className={`${iconStyles}`}>{link.icon}</div>
-                  <div className={`${linkStyles}`}>{link.name}</div>
+                  <div className="text-accent text-3xl">{link.icon}</div>
+                  <div className="uppercase">{link.name}</div>
                 </Link>
               );
             })}

@@ -12,11 +12,7 @@ const Header = () => {
             containerStyles="hidden xl:flex items-center gap-x-16"
             linkStyles="text-base uppercase"
           />
-          <NavMobile
-            containerStyles="xl:hidden"
-            iconStyles="text-3xl text-accent"
-            linkStyles="uppercase"
-          />
+          <NavMobile />
         </div>
       </div>
     </header>
