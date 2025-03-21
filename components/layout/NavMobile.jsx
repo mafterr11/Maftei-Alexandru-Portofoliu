@@ -49,7 +49,7 @@ const NavMobile = () => {
       >
         <div
           onClick={(e) => e.stopPropagation()}
-          className="h-screen border-accent bg-body absolute top-0 right-0 bottom-0 flex flex-col items-center justify-between border-l-2 px-8 pt-8 pb-4 text-black"
+          className="h-screen border-accent bg-body absolute top-0 right-0 bottom-0 flex flex-col items-center justify-between border-l-2 px-8 pt-8 pb-16 text-black"
         >
           {/* Close btn */}
           <div
