@@ -32,33 +32,31 @@ const NavMobile = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   useEffect(() => {
     const setVh = () => {
-      const vh = window.innerHeight * 0.01;
+      const vh = window.visualViewport
+        ? window.visualViewport.height * 0.01
+        : window.innerHeight * 0.01;
       document.documentElement.style.setProperty("--vh", `${vh}px`);
     };
-
-    setVh();
-
-    // Listen for viewport resize using ResizeObserver if available
-    let observer = null;
-
-    if ("ResizeObserver" in window) {
-      observer = new ResizeObserver(() => {
-        setVh();
-      });
-      observer.observe(document.documentElement);
+  
+    setVh(); // initial run
+  
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener("resize", setVh);
+      window.visualViewport.addEventListener("scroll", setVh); // captures chrome collapsing too
     } else {
-      // Fallback for older browsers
       window.addEventListener("resize", setVh);
     }
-
+  
     return () => {
-      if (observer) {
-        observer.disconnect();
+      if (window.visualViewport) {
+        window.visualViewport.removeEventListener("resize", setVh);
+        window.visualViewport.removeEventListener("scroll", setVh);
       } else {
         window.removeEventListener("resize", setVh);
       }
     };
   }, []);
+  
 
   return (
     <div className="xl:hidden">
