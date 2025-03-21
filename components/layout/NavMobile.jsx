@@ -32,17 +32,31 @@ const NavMobile = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   useEffect(() => {
     const setVh = () => {
-      // Ask: "How tall is the window *right now*?"
-      const height = window.innerHeight * 0.01;
-      // Store the answer in a note called --vh
-      document.documentElement.style.setProperty("--vh", `${height}px`);
+      const vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty("--vh", `${vh}px`);
     };
 
-    setVh(); // Ask and store the height right away
-    window.addEventListener("resize", setVh); // Ask again if the window changes
+    setVh();
+
+    // Listen for viewport resize using ResizeObserver if available
+    let observer = null;
+
+    if ("ResizeObserver" in window) {
+      observer = new ResizeObserver(() => {
+        setVh();
+      });
+      observer.observe(document.documentElement);
+    } else {
+      // Fallback for older browsers
+      window.addEventListener("resize", setVh);
+    }
 
     return () => {
-      window.removeEventListener("resize", setVh); // Stop asking if the component disappears
+      if (observer) {
+        observer.disconnect();
+      } else {
+        window.removeEventListener("resize", setVh);
+      }
     };
   }, []);
 
