@@ -209,5 +209,8 @@
 
 /* Inside your styles/globals.css file */
 .full-mobile-height {
-  height: calc(var(--vh, 1vh) * 100); 
+  height: calc(var(--vh, 1vh) * 100);
+  min-height: 100vh;
+  transition: height 0.2s ease;
 }
+
