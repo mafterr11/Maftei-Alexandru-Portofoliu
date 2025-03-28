@@ -16,7 +16,7 @@ const ProjectCard = ({ project }) => {
 
   return (
     <Card
-      className={`group bg-body hover:bg-accent/5 hover:scale-[0.98] relative h-[550px] overflow-hidden border-2 border-black/15 shadow-md hover:cursor-pointer ${currentRoute === "/en/projects" || currentRoute === "/ro/proiecte" ? "hover:-translate-y-2 hover:scale-[1.01] xl:w-[400px] 2xl:w-[400px]" : "xl:w-[380px] 2xl:w-[380px]"} transition-all duration-500 ease-in-out`}
+      className={`group bg-body hover:bg-accent/5 relative h-[550px] cursor-pointer overflow-hidden border-2 border-black/15 shadow-md hover:shadow-xl ${currentRoute === "/en/projects" || currentRoute === "/ro/proiecte" ? "hover:-translate-y-2 hover:scale-[1.01] xl:w-[400px] 2xl:w-[400px]" : "xl:w-[380px] 2xl:w-[380px]"} transition-all duration-500 ease-in-out`}
       onClick={() => handleClick()}
     >
       <CardHeader className="p-0">
@@ -51,7 +51,7 @@ const ProjectCard = ({ project }) => {
         <h4 className="mb-4">{project.name}</h4>
         <p className="text-lg leading-7">{project.description}</p>
       </div>
-      <div className="bg-accent absolute inset-x-0 bottom-4 mx-auto flex w-fit xl:scale-0 items-center justify-center gap-x-1 rounded-md px-2 text-[16px]  font-medium text-white xl:opacity-0 transition-all duration-700 ease-in-out xl:group-hover:scale-100 xl:group-hover:opacity-100">
+      <div className="text-accent absolute inset-x-0 bottom-4 mx-auto flex w-fit items-center justify-center gap-x-1 rounded-sm px-2 text-[16px] font-medium transition-all duration-500 ease-in-out hover:scale-95">
         {t("page.demo")} <ArrowRight />
       </div>
     </Card>

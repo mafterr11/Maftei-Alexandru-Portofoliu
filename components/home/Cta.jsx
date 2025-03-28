@@ -21,7 +21,7 @@ const Cta = () => {
             className="mb-6 flex flex-col items-center justify-center gap-y-2 text-center"
           >
             {t("title")}
-            <span className="text-3xl font-normal md:max-xl:text-4xl">
+            <span className="text-3xl font-normal text-black/80 md:max-xl:text-4xl">
               {t("title2")}
             </span>
           </MotionH2>

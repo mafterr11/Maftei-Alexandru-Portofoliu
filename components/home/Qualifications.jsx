@@ -72,17 +72,17 @@ const Qualifications = () => {
           key={index}
           className="hover:bg-body flex cursor-pointer items-center gap-3 border p-2 shadow-lg transition-transform duration-300 ease-linear hover:z-50 hover:scale-[1.3] hover:rotate-[-3deg]"
         >
-          <div className="relative h-12 w-12 ">
+          <div className="relative h-12 w-12">
             <Image
               src={qualification.icon}
-              className="object-contain "
+              className="object-contain"
               fill
               alt={`${qualification.title} image`}
             />
           </div>
           <div className="flex flex-col items-start">
             <div className="font-bold">{qualification.title}</div>
-            <div>{qualification.description}</div>
+            <div className="text-black/70">{qualification.description}</div>
           </div>
         </div>
       ))}

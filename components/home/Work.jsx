@@ -18,13 +18,13 @@ const Work = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, ammount: 0.4 }}
-          className="mx-auto mb-12 flex max-w-[400px] flex-col items-center justify-center text-center xl:mx-0 xl:pb-20"
+          className="mx-auto mb-12 flex max-w-[500px] flex-col items-center justify-center text-center xl:mx-0 xl:pb-20"
         >
           <h2 className="section-title mb-4">
             <Dot />
             {t("title")}
           </h2>
-          <p className="subtitle mb-8">{t("subtitle")}</p>
+          <p className="subtitle mb-8c">{t("subtitle")}</p>
           <Link href={t("projects-link")}>
             <Button>{t("projects-button")}</Button>
           </Link>
