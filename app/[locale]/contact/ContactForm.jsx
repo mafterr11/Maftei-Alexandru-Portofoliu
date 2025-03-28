@@ -162,7 +162,7 @@ export default function SolicitatiOfertaForm() {
                         <FormMessage className="text-red absolute top-full left-0 -mt-0.5 text-sm" />
                       </div>
                     </div>
-                  </FormControl> 
+                  </FormControl>
                 </FormItem>
               )}
             />
