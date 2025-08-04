@@ -72,6 +72,14 @@ const rawData = [
     // github: "/",
   },
   {
+    image: "/work/Chillink.png",
+    categoryKey: "category.wordpress",
+    name: "Chilli Ink Tattoo",
+    descriptionKey: "chilli-ink",
+    link: "https://chilli-ink.ro",
+    // github: "/",
+  },
+  {
     image: "/work/PIA.jpg",
     categoryKey: "category.others",
     name: "Multi-Step Form",
@@ -79,12 +87,5 @@ const rawData = [
     link: "https://offerfest-pia.vercel.app",
     // github: "/",
   },
-  // {
-  //   image: "/work/manarh.webp",
-  //   categoryKey: "category.progress", // Fullstack
-  //   name: "Manarh",
-  //   descriptionKey: "manarh",
-  //   link: "/",
-  //   // github: "/",
-  // },
+
 ];
