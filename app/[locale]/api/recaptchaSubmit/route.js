@@ -1,38 +1,24 @@
-import { NextResponse } from "next/server";
-import axios from "axios";
-
-export async function POST(request, response) {
-    const secretKey = process.env.RECAPTCHA_SECRET_KEY;
-
-    const postData = await request.json();
-
-    const { gRecaptchaToken } = postData;
-
-    let res;
-
-    const formData = `secret=${secretKey}&response=${gRecaptchaToken}`;
-
-    try {
-        res = await axios.post(
-            "https://www.google.com/recaptcha/api/siteverify",
-            formData,
-            {
-                headers: {
-                    "Content-Type": "application/x-www-form-urlencoded",
-                },
-            }
-        );
-
-    } catch (e) {
-        return NextResponse.json({ success: false })
+// app/api/recaptcha-verify/route.ts
+export async function POST(req) {
+  try {
+    const { token } = await req.json();
+    const secret = process.env.RECAPTCHA_SECRET_KEY;
+    if (!secret) {
+      return Response.json({ ok: false, error: "Missing RECAPTCHA_SECRET_KEY" }, { status: 500 });
     }
 
-    if (res && res.data?.success && res.data?.score > 0.5) {
-        return NextResponse.json({
-            success: true,
-            score: res.data.score,
-        });
-    } else {
-        return NextResponse.json({ success: false });
-    }
+    const resp = await fetch("https://www.google.com/recaptcha/api/siteverify", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams({ secret, response: token }),
+      cache: "no-store",
+    });
+    const data = await resp.json();
+
+    // Optional: enforce minimum score and action if you pass one from client
+    const ok = data.success === true && (data.score ?? 1) >= 0.5;
+    return Response.json({ ok, data }, { status: ok ? 200 : 400 });
+  } catch (e) {
+    return Response.json({ ok: false, error: "recaptcha_verify_error" }, { status: 500 });
+  }
 }

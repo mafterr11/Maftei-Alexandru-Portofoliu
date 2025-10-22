@@ -12,6 +12,7 @@ import CookieBanner from "@/components/cookie-banner";
 import { getMessages } from "next-intl/server";
 import LenisScroll from "./LenisScroll";
 import AnimatedGreeting from "../AnimatedGreeting";
+import Script from "next/script";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -29,9 +30,15 @@ export const metadata = constructMetadata();
 export default async function RootLayout({ children, params }) {
   const { locale } = await params;
   const messages = await getMessages(locale);
-
+   const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_KEY;
   return (
     <html lang={locale}>
+       <head>
+        <Script
+          src={`https://www.google.com/recaptcha/api.js?render=${siteKey}`}
+          strategy="afterInteractive"
+        />
+      </head>
       <Suspense fallback={null}>
         <GoogleAnalytics GA_MEASUREMENT_ID="G-EB4XXB3ES6" />
       </Suspense>
