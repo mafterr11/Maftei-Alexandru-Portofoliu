@@ -79,7 +79,7 @@ const About = () => {
             className="relative shrink-0 bg-no-repeat xl:flex xl:h-[50vh] xl:w-[50vh] xl:max-2xl:ml-4"
           >
             <Image
-              src="/Alexandru Maftei poza de profil.jpg"
+              src="/Alexandru Maftei poza de profil.png"
               width={800}
               height={800}
               loading="lazy"
