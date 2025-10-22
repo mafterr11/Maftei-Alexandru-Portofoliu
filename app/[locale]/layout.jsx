@@ -43,7 +43,7 @@ export default async function RootLayout({ children, params }) {
         <GoogleAnalytics GA_MEASUREMENT_ID="G-EB4XXB3ES6" />
       </Suspense>
       <body
-        className={`${roboto.variable} ${recursive.variable} overflow-x-hidden`}
+        className={`${roboto.variable} ${recursive.variable} overflow-x-hidden max-md:min-h-svh`}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
           {/* Word animation on enter AnimatedGreeting*/}
