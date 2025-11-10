@@ -222,7 +222,7 @@ export default function SolicitatiOfertaForm() {
             <FormItem className="relative">
               <FormControl >
                 <label className="flex items-center space-x-3 pl-1">
-                  <div>
+                  <div className="flex items-center justify-center gap-3">
                     <Input
                       type="checkbox"
                       id="acceptTerms"
@@ -239,7 +239,7 @@ export default function SolicitatiOfertaForm() {
           )}
         />
 
-        <div className="recaptcha-branding flex flex-col gap-y-4 max-xl:pt-4 md:flex-row md:gap-x-4">
+        <div className="recaptcha-branding flex flex-col max-md:items-center gap-y-4 max-xl:pt-4 md:flex-row md:gap-x-4">
           <Button
             type="submit"
             className="flex max-w-[166px] items-center gap-x-1 rounded-[8px]"
