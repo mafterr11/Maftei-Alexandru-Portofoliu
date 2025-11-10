@@ -3,16 +3,17 @@ import "./globals.css";
 import Header from "../../components/layout/Header";
 import Footer from "../../components/layout/Footer";
 import { Toaster } from "@/components/ui/toaster";
-import { NextIntlClientProvider } from "next-intl";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { Analytics } from "@vercel/analytics/react";
 import { constructMetadata } from "@/lib/utils";
 import { Suspense } from "react";
 import GoogleAnalytics from "@/components/google-analytics";
 import CookieBanner from "@/components/cookie-banner";
-import { getMessages } from "next-intl/server";
+import { getMessages, setRequestLocale } from "next-intl/server";
 import LenisScroll from "./LenisScroll";
 import AnimatedGreeting from "../AnimatedGreeting";
 import Script from "next/script";
+import { routing } from "@/i18n/routing";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -29,11 +30,15 @@ export const metadata = constructMetadata();
 
 export default async function RootLayout({ children, params }) {
   const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+  setRequestLocale(locale);
   const messages = await getMessages(locale);
-   const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_KEY;
+  const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_KEY;
   return (
     <html lang={locale}>
-       <head>
+      <head>
         <Script
           src={`https://www.google.com/recaptcha/api.js?render=${siteKey}`}
           strategy="afterInteractive"
