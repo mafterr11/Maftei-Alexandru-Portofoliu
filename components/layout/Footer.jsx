@@ -2,9 +2,9 @@ import { useTranslations } from "next-intl";
 import Socials from "../Socials";
 import Link from "next/link";
 
+const currentYear = new Date().getFullYear();
 const Footer = () => {
   const t = useTranslations("Footer");
-  const currentYear = new Date().getFullYear();
   return (
     <footer className="border-t-2 border-accent bg-grainy py-4">
       <div className="flex flex-col items-center justify-center max-xl:gap-y-2 xl:flex-row-reverse xl:justify-between xl:px-24">

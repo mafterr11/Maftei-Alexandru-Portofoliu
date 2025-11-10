@@ -10,10 +10,8 @@ const Work = dynamic(() => import("@/components/home/Work"));
 const Reviews = dynamic(() => import("@/components/home/Reviews"));
 const Cta = dynamic(() => import("@/components/home/Cta"));
 
-export default function Home({params}) {
-    const { locale } = use(params);
-
-  // Enable static rendering
+export default function Home({ params }) {
+  const { locale } = use(params);
   setRequestLocale(locale);
   return (
     <>
